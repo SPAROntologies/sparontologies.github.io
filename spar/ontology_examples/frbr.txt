@@ -1,0 +1,107 @@
+#id frbr_1
+
+#title Using FRBR for describing a bibliographic entity
+
+#description [FRBR DL](/ontologies/frbr) allows one to describe information related to a bibliographic entity such as the following one:
+
+>Pompeu Casanovas, Núria Casellas, Christoph Tempich, Denny Vrandečić, Richard Benjamins (2007). OPJK and DILIGENT: ontology modeling in a distributed environment. Artificial Intelligence and Law, 15 (2): 171-186. June 2007. Springer. DOI: 10.1007/s10506-007-9036-2. Print ISSN 0924-8463. Online ISSN 1572-8382. Published online (PDF) May 31, 2007.
+
+From the previous reference we can extract the following information:
+
+1. the document is an academic research article – deducible from the journal in which it is published;
+
+2. Pompeu Casanovas, Núria Casellas, Christoph Tempich, Denny Vrandečić, and Richard Benjamins are the authors of the article;
+
+3. the article was published in 2007;
+
+4. the article is entitled "OPJK and DILIGENT: ontology modeling in a distributed environment";
+
+5. it was published in the 2nd issue of the 15th volume of Artificial Intelligence and Law;
+
+6. the DOI of the article is "10.1007/s10506-007-9036-2";
+
+7. the Print ISSN of the journal is "0924-8463";
+
+8. the Online ISSN of the journal is "1572-8382";
+
+9. the PDF version of the article was published online on May 31, 2007;
+
+10. the journal issue within which the printed version of the article was published bears the publication date June 2007;
+
+11. the page range of the article within the printed version is "171-186";
+
+12. the publisher of the journal is Springer.
+
+Although it is possible to use FRBR (in combination with [DC Terms](http://dublincore.org/documents/dcmi-terms/)) to give a structured and unambiguous description of all the bibliographic entities, the example makes it clear the severe limitations of FRBR. These are caused by the lack of terms in the [FRBR Core ontology](http://vocab.org/frbr/core) which allow publications to be described in normal everyday language. This issue is addressed by using [FaBiO](/ontologies/fabio) entities, has shown in [one of its available examples](/ontologies/fabio#fabio_1).
+
+#code @prefix application: <http://purl.org/NET/mediatypes/application/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:opjk-and-diligent a frbr:Work ;
+    frbr:creator
+        :casanovas ,
+        :casellas,
+        :tempich,
+        :vrandecic,
+        :benjamins ;
+    dcterms:title
+        "OPJK and DILIGENT: ontology modeling in a distributed environment" ;
+    frbr:realization :version-of-record .
+
+:version-of-record a frbr:Expression ;
+    dcterms:issued "2007"^^xsd:gYear ;
+    dcterms:identifier "doi:10.1007/s10506-007-9036-2" ;
+    frbr:embodiment :printed , :pdf ;
+    frbr:partOf :issue-2-volume-15-ail .
+
+:issue-2-volume-15-ail a frbr:Expression ;
+    dcterms:identifier "2" ;
+    dcterms:description "Issue" ;
+    frbr:embodiment :printed-issue ;
+    frbr:partOf :volume-15-ail .
+
+:volume-15-ail a frbr:Expression ;
+    dcterms:identifier "15" ;
+    dcterms:description "Volume" ;
+    frbr:partOf :ail .
+
+:ail a frbr:Expression ;
+    dcterms:title "Artificial Intelligence and Law" .
+
+:printed-issue a frbr:Manifestation ;
+    frbr:producer :springer ;
+    dcterms:issued "06-2007"^^xsd:gYearMonth ;
+    frbr:part :printed .
+
+:printed a frbr:Manifestation ;
+    frbr:producer :springer ;
+    dcterms:issued "06-2007"^^xsd:gYearMonth ;
+    dcterms:extent [ a dcterms:SizeOrDuration ;
+        dcterms:description "171-186"  ] .
+
+:pdf a frbr:Manifestation ;
+    frbr:producer :springer ;
+    dcterms:format application:pdf ;
+    dcterms:issued "31-05-2007"^^xsd:date .
+
+:casanovas a frbr:Person ;
+    dcterms:description "Pompeu Casanovas" .
+
+:casellas a frbr:Person ;
+    dcterms:description "Nuria Casellas" .
+
+:tempich a frbr:Person ;
+    dcterms:description "Christoph Tempich" .
+
+:vrandecic a frbr:Person ;
+    dcterms:description "Denny Vrandečić" .
+
+:benjamins a frbr:Person ;
+    dcterms:description "Richard Benjamins" .
+
+:springer a frbr:CorporateBody ;
+    dcterms:description "Springer" .
+
+#cite Peroni, Silvio (2015): Example of use of FRBR DL #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1540739

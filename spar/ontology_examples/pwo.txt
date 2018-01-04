@@ -1,0 +1,253 @@
+#id pwo_1
+
+#title Describing the publishing workflow
+
+#description From the publisher's perspective, the first step of any workflow leading to a new journal publication starts with a formal submission of a manuscript written by someone, hereinafter the author. This activity expresses, at the same time, interest on the topics of the journal, and may acknowledge, indirectly, the quality of the journal itself – since authors (usually) would like to publish articles in a venue that they consider respectful and qualitatively worth for different reasons (e.g., appropriateness of topic, quality of reviews, journal impact factor, definite timing of the publishing process). Then, in the next step, i.e., the reviewing phase, the person (designated by the publisher) in charge of the quality of submitted material, hereinafter the editor, invites other people (hereinafter the reviewers) to assess the quality of the submitted manuscript. The opinions returned by the reviewers are the fundamental input that the editor uses to decide upon the fate of the manuscript during the next step, i.e., the decision phase. Finally, if the manuscript has been considered worth of publication in the present form, the editor will acknowledge the author of the acceptance of his/her work – and the next steps of the workflow will be in charge of the publisher itself.
+
+The whole publishing workflow we have just described can be formally represented by means of [PWO](/ontologies/pwo), with the help of entities defined in other [SPAR Ontologies](/ontologies), i.e., [FaBiO](/ontologies/fabio), [PSO](/ontologies/pso), [C4O](/ontologies/c4o), and [CiTO](/ontologies/cito).
+
+#code @prefix : <http://www.essepuntato.it/2015/pwo/publishing-domain/> .
+@prefix pwo: <http://purl.org/spar/pwo/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix pso: <http://purl.org/spar/pso/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix tisit: <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#> .
+@prefix taskex: <http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix part: <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix swj: <http://semantic-web-journal.com/sejp/> .
+@prefix swj-node: <http://semantic-web-journal.com/sejp/node/> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix parameter: <http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Initial workflow description
+:workflow a pwo:Workflow ;
+    pwo:hasFirstStep :step-one ;
+    pwo:hasStep
+        :step-one ,
+        :step-two ,
+        :step-three .
+
+:step-one a pwo:Step ; # Submission step
+    pwo:hasNextStep :step-two .
+
+:step-two a pwo:Step ; # Reviewing step
+    pwo:hasNextStep :step-three ;
+    parameter:hasParameter :review-time-constraint .
+
+:review-time-constraint a time:DurationDescription ;
+    time:weeks "5"^^xsd:decimal .
+
+:step-three a pwo:Step . # Notification step
+
+# Workflow execution
+:workflow-execution a pwo:WorkflowExecution ;
+    pwo:execute :workflow .
+
+# Executing step 1: Submission
+:workflow-execution pwo:involvesAction :submission-action .
+
+:step-one
+    taskex:isExecutedIn :submission-action ;
+    pwo:needs swj-node:432 ;
+    pwo:produces :submitted-status .
+
+# The event in which one of the authors
+# submits the manuscript
+:submission-action a pwo:Action ;
+    dcterms:description "Paolo Ciccarese submits the paper" ;
+    tisit:atTime :submission-time ;
+    part:hasParticipant
+        swj:paolo-ciccarese ,
+        swj-node:432 .
+
+:submission-time a ti:TimeInterval ;
+    ti:hasIntervalStartDate
+        "2013-01-21T10:08:28"^^xsd:dateTime ;
+    ti:hasIntervalEndDate
+        "2013-01-21T10:08:28"^^xsd:dateTime .
+
+# The new status 'submitted' associated
+# to the paper after the submission
+:submitted-status a pso:StatusInTime ;
+    pso:isStatusHeldBy swj-node:432 ;
+    pso:isAcquiredAsConsequenceOf :submission-action ;
+    pso:withStatus pso:submitted ;
+    tvc:atTime :submitted-time .
+
+:submitted-time a ti:TimeInterval ;
+    ti:hasIntervalStartDate
+        "2013-01-21T10:08:28"^^xsd:dateTime .
+
+# Executing step 2: Reviewing
+:workflow-execution
+    pwo:involvesAction
+        :reviewing-action ,
+        :reviews-notification-sending-action .
+
+:step-two
+    taskex:isExecutedIn
+        :reviewing-action ,
+        :reviews-notification-sending-action ;
+    # The review process can start only when
+    # a manuscript has been submitted
+    pwo:needs swj-node:432 , :submitted-status ;
+    pwo:produces
+      :review-1 ,
+      :review-2 ,
+      :under-review-status ,
+      :reviewed-status.
+
+:reviewing-action a pwo:Action ;
+    dcterms:description "Reviewers review the manuscript" ;
+    tisit:atTime :reviewing-time ;
+    part:hasParticipant
+        swj:csaba-veres ,
+        swj:fernando-naufel-do-amaral ,
+        swj-node:432 .
+
+:reviewing-time a ti:TimeInterval ;
+    ti:hasIntervalStartDate
+        "2013-02-26T12:00:07"^^xsd:dateTime ;
+    ti:hasIntervalEndDate
+        "2013-04-01T05:53:24"^^xsd:dateTime .
+
+:reviews-notification-sending-action a pwo:Action ;
+    dcterms:description
+        "The reviews are sent to the editor, i.e., Giancarlo Guizzardi" ;
+    tisit:atTime :reviews-time ;
+    part:hasParticipant
+        swj:csaba-veres ,
+        swj:fernando-naufel-do-amaral ,
+        :review-1 ,
+        :review-2 ,
+        swj:giancarlo-guizzardi .
+
+:reviews-time a ti:TimeInterval ;
+    ti:hasIntervalStartDate
+        "2013-03-14T11:16:34"^^xsd:dateTime ;
+    ti:hasIntervalEndDate
+        "2013-04-01T05:53:24"^^xsd:dateTime .
+
+# Review 1 by Csaba Veres
+:review-1 a fabio:Comment ;
+    frbr:realizationOf [ a fabio:Review ] ;
+    cito:reviews swj-node:432 ;
+    frbr:realizer swj:csaba-veres ;
+    c4o:hasContent
+        "The paper addresses a very practical..." .
+
+# Review 2 by Fernando Naufel do Amaral
+:review-2 a fabio:Comment ;
+    frbr:realizationOf [ a fabio:Review ] ;
+    cito:reviews swj-node:432 ;
+    frbr:realizer swj:fernando-naufel-do-amaral ;
+    c4o:hasContent
+        "The paper presents the Collection Ontology (CO)..." .
+
+# The paper has been assigned to the
+# under-review status for a while
+:under-review-status a pso:StatusInTime ;
+    pso:isStatusHeldBy swj-node:432 ;
+    pso:isAcquiredAsConsequenceOf :reviewing-action ;
+    pso:isLostAsConsequenceOf
+      :reviews-notification-sending-action ;
+    pso:withStatus pso:under-review ;
+    tvc:atTime :under-review-time .
+
+:under-review-time a ti:TimeInterval ;
+    ti:hasIntervalStartDate
+        "2013-02-26T12:00:07"^^xsd:dateTime ;
+    ti:hasIntervalEndDate
+        "2013-04-01T05:53:24"^^xsd:dateTime .
+
+# The paper status has changed in 'reviewed'
+# after reviewers' comments
+:reviewed-status a pso:StatusInTime ;
+    pso:isStatusHeldBy swj-node:432 ;
+    pso:isAcquiredAsConsequenceOf
+      :reviews-notification-sending-action ;
+    pso:withStatus pso:reviewed ;
+    tvc:atTime :reviewed-time .
+
+:reviewed-time a ti:TimeInterval ;
+    ti:hasIntervalStartDate
+        "2013-04-01T05:53:24"^^xsd:dateTime .
+
+# Executing step 3: Notification
+:workflow-execution
+    pwo:involvesAction
+        :decision-action ,
+        :notification-action .
+
+:step-three
+    taskex:isExecutedIn
+        :decision-action ,
+        :notification-action ;
+    pwo:needs
+        swj-node:432 ,
+        :review-1 ,
+        :review-2 ;
+    pwo:produces
+        :minor-revision-status ,
+        :decision-letter .
+
+:decision-action a pwo:Action ;
+    dcterms:description "The editor decides for acceptance or not" ;
+    tisit:atTime :decision-time ;
+    part:hasParticipant
+        swj:giancarlo-guizzardi ,
+        :review-1 ,
+        :review-2 ,
+        swj-node:432 .
+
+:decision-time a ti:TimeInterval ;
+    ti:hasIntervalStartDate
+        "2013-04-01T05:53:24"^^xsd:dateTime ;
+    ti:hasIntervalEndDate
+        "2013-06-10T17:47:53"^^xsd:dateTime .
+
+:notification-action a pwo:Action ;
+    dcterms:description
+        "The editor notifies his decision to the corresponding
+        author (i.e., Paolo Ciccarese)." ;
+    tisit:atTime :notification-time ;
+    part:hasParticipant
+        swj:giancarlo-guizzardi ,
+        :decision-letter ,
+        :review-1 ,
+        :review-2 ,
+        swj:paolo-ciccarese ,
+        swj-node:432 .
+
+:notification-time a ti:TimeInterval ;
+    ti:hasIntervalStartDate
+        "2013-06-10T17:47:53"^^xsd:dateTime ;
+    ti:hasIntervalEndDate
+        "2013-06-10T17:47:53"^^xsd:dateTime .
+
+# The decision letter written by the editor
+:decision-letter a fabio:Letter , fabio:Email ;
+    frbr:realizationOf [ a fabio:Opinion ] ;
+    cito:citesAsRelated swj-node:432 ;
+    frbr:realizer swj:giancarlo-guizzardi ;
+    c4o:hasContent
+        "Dear authors, Thank you for your interest in..." .
+
+# The minor revision status assigned to the paper after editor's decision
+:minor-revision-status a pso:StatusInTime ;
+    pso:isStatusHeldBy swj-node:432 ;
+    pso:isAcquiredAsConsequenceOf :decision-action ;
+    pso:withStatus swj:minorRevision ;
+    tvc:atTime :minor-revision-time .
+
+:minor-revision-time a ti:TimeInterval ;
+    ti:hasIntervalStartDate
+        "2013-06-10T17:47:53"^^xsd:dateTime .
+
+#cite Peroni, Silvio (2015): Example of use of PWO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1540728

@@ -1,0 +1,25 @@
+#name Five Stars of Online Research Articles Ontology
+
+#acronym Five*
+
+#url http://purl.org/spar/fivestars
+
+#source https://sparontologies.github.io/fivestars/current/fivestars.owl
+
+#documentation http://purl.org/spar/fivestars.html
+
+#repository https://github.com/sparontologies/fivestars
+
+#description Peer review, open access, enriched content, available datasets and machine-readable metadata are the core components of the *Five Stars of Online Journal Articles*, a constellation of five independent criteria within a multi-dimensional publishing universe against which online journal articles can be evaluated, to see how well they match up with current visions for enhanced research communications. These Five Stars of Online Journal Articles provide a conceptual framework by which to judge the degree to which any article achieves or falls short of the ideal, which should be useful to authors, editors and publishers. The five criteria namely are:
+
+* **Peer review.** Ensure your article is peer reviewed, to provide assurance of its scholarly value, quality and integrity. Possible values: (0) no peer review, (1) pre-publication peer review, (2) responsive peer review, (3) post-publication peer review, (4) open peer review.
+
+* **Open access.** Ensure others have cost-free open access both to read and to reuse your published article, to ensure its greatest possible readership and usefulness. Possible values: (0) no open access, (1) self-archiving green/gratis open access, (2) funder-mandated green/gratis open access, (3) author-pays gold/gratis open access, (4) author-pays gold/libre open access.
+
+* **Enriched content.** Use the full potential of Web technologies and Web standards to provide interactivity and semantic enrichment to the content of your online article. Possible values: (0) no enhancements, (1) active Web links, (2) semantic enrichment of the text, (3) 'lively' content, (4) data fusions ("mash-ups").
+
+* **Available datasets.** Ensure that all the data supporting the results you report are published under an open license, with sufficient metadata to enable their re-interpretation and reuse. Possible values: (0) no published data, (1) supplementary information files available, (2) article data downloadable in actionable form, (3) underlying datasets published, (4) data available to peer-reviewers.
+
+* **Machine-readable metadata.** Publish machine-readable metadata describing both your article and your cited references, so that these descriptions can be discovered and reused automatically. Possible values: (0) no available metadata, (1) structural markup available, (2) bibliographic and citation metadata available, (3) rich embedded markup, (4) structured article summary.
+
+The *Five Stars of Online Journal Articles Ontology* is a simple ontology written in OWL 2 DL that is intended for use by publishers and others wishing to encode Five Stars ratings, so they can accompany other machine-readable metadata for the article. The ontology includes 10 data properties, five for specifying the value of each factor (e.g., ``fivestars:hasOpenAccessRating``) and five for specifying a comment related to each value assigned (e.g., ``fivestars:openAccessRatingComment``).

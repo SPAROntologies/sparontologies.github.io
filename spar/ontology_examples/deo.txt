@@ -1,0 +1,75 @@
+#id deo_1
+
+#title Tagging paper blocks with rhetoric entities
+
+#description The [Research Articles in Simplified HTML (RASH)](https://rawgit.com/essepuntato/rash/master/documentation/index.html) format is a markup language that restricts the use of HTML elements for writing academic research articles. In particular, RASH authors to use RDFa annotations within any element of the language.
+
+By means of RDFa, [DEO](/ontologies/deo) can be used in RASH documents in order characterise the major rhetorical elements of a a research article, such as the introduction part, the evaluation section, the conclusions and so on. 
+
+#code <!DOCTYPE html>
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    prefix="
+        schema: http://schema.org/
+        prism: http://prismstandard.org/namespaces/basic/2.0/
+        deo: http://purl.org/spar/deo/
+        dcterms: http://purl.org/dc/terms/">
+    <!-- ... -->
+    <body>
+        <!-- ... -->
+        <div
+            id="sec_intro" class="section"
+            about="#sec_intro" typeof="deo:Introduction">
+            <h1>Introduction</h1>
+            <p>
+                In the last months of 2014, several posts
+                within technical mailing lists of the ...
+            </p>
+            <!-- ... -->
+        </div>
+        <div
+            id="sec_rationale" class="section"
+            about="#sec_rationale" typeof="deo:Motivation deo:Model">
+            <h1>A <q>Web-first</q> framework for research articles</h1>
+            <p>
+                Some works, e.g., Capadisli <i>et al.</i>
+                <a
+                    id="ref_linked_research" class="ref"
+                    about="#ref_linked_research" typeof="deo:Reference"
+                    property="dcterms:references" href="#linked-research"></a>,
+                suggest not to force any particular HTML ...
+            </p>
+            <!-- ... -->
+        </div>
+
+        <div
+            id="sec_tools" class="section"
+            about="#sec_tools" typeof="deo:Material">
+            <h1>Tools in the Framework</h1>
+            <p>
+                In this section we introduce all the tools shown...
+            </p>
+            <!-- ... -->
+        </div>
+
+        <div
+            id="sec_conclusions" class="section"
+            about="#sec_conclusions" typeof="deo:Conclusion">
+            <h1>Conclusions</h1>
+            <p>
+                In this paper we have introduced the <i>RASH Framework</i>,
+                i.e., a set of specifications and tools for writing...
+                <span
+                    id="bloc_future_works"
+                    about="#bloc_future_works" typeof="deo:FutureWork">
+                    As immediate future developments, we plan to create
+                    additional scripts for extracting RDF statements
+                    from RASH documents according to SPAR Ontologies...
+                </span>
+            </p>
+        </div>
+        <!-- ... -->
+    </body>
+</html>
+
+#cite Peroni, Silvio (2015): Example of use of DEO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1540796

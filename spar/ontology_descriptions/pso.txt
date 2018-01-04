@@ -1,0 +1,53 @@
+#name Publishing Status Ontology
+
+#acronym PSO
+
+#url http://purl.org/spar/pso
+
+#source https://sparontologies.github.io/pso/current/pso.owl
+
+#documentation http://purl.org/spar/pso.html
+
+#repository https://github.com/sparontologies/pso
+
+#description Documents can hold a particular status at a certain time as a direct consequence of a particular event. For instance, a document is under review until all reviewers send in their comments and the editor decides whether to accept or reject the paper. After the acceptance/rejection decision is made, the status "under review" is no longer valid and a new status, e.g., "reviewed" can be assigned. Along the same lines, it is sometimes useful to link documents to the decisions or events that cause the acquisition or loss of a particular status.
+
+Preexisting ontologies describing the status of documents (e.g., [BIBO](http://bibliontology.com/), the [Project Documents Ontology](http://ontologies.smile.deri.ie/pdo#) and the [Document Status Ontology](http://ontologi.es/status#)), rely for this on specific property links, i.e., statuses defined through appropriate object properties (e.g., ``<document-uri> :hasStatus :under-revision``) or data properties with a boolean assigned (e.g., ``<document-uri> :isUnderRevision "true"^^xsd:boolean``). However, this approach prevents a proper description of scenarios that require a temporal duration for each status. With the exception of the Document Status Ontology, which describes status changes as events, the other ontologies do not allow time-dependent data, or can do so only partially.
+
+*PSO*, the *Publishing Status Ontology*, has been developed in order to address these issues in a more satisfactory manner. In particular, PSO characterises the publication status of a document or any other publication entity at each of the different stages in the publishing process (e.g., draft, submitted, under review, rejected for publication, accepted for publication, version of record, peer reviewed, open access, etc.). As with [PRO](/ontologies/pro), PSO was developed following the [TVC pattern](http://www.essepuntato.it/2012/04/tvc), i.e., a model for describing scenarios in which something has a value during a particular time and for a particular context. Thus, using PSO, it is possible to describe the statuses of a document and how they change over time.
+
+<img class="img-responsive center-block" src="/static/img/spar/pso-diagram.png" alt="The diagram of PSO." />
+
+As shown in the figure above, the main entities of PSO are:
+
+* the class ``pso:StatusInTime``, that describes the particular situation of the status a document has at a particular time as consequence of one or more events;
+
+* the object property ``pso:hasStatusInTime``, that links any entity (such as a bibliographic work) to a ``pso:StatusInTime``;
+
+* the object property ``pso:withStatus``, that links the situation to the document status defined as individuals of the class ``pro:Status`` and its subclasses (i.e., ``pso:PublishingStatus`` and ``pso:ArticleProcessingChargeStatus``);
+
+* the class ``ti:TimeInterval``, used to express two (starting and ending) points in time that define a particular period related to (object property ``tvc:atTime``) a ``pso:StatusInTime`` situation;
+
+* the object properties ``isAcquiredAsConsequenceOf`` and ``isLostAsConsequenceOf``, that links a situation to the events (class ``part:Event``) of any publishing process that changes the status of the document (e.g., writing a draft, submitting a preprint for publication, or publishing the final paper).
+
+In addition, PSO includes specific indivudals of the class ``pso:Status`` to permit computer-readable descriptions to be made of the various types of open access publication, i.e.:
+
+* ``pso:gratis-open-access``, the status of a published work which is free to read on-line, in contrast to subscription-access works, but to which licensing restrictions apply, limiting the possibilities for downloading, text mining, modification, re-publication or re-use of the published work.  The term Gratis Open Access thus signifies removal of the price barrier to view.  While both imply ‘free’ (a potentially ambiguous word), Gratis Open Access equates to ‘free as in beer’ while Libre Open Access (q.v.) equates to ‘free as in speech’.  Gratis Open Access is thus a necessary but not a sufficient condition for true Libre Open Access.   Many ‘open access’ publications by commercial scholarly publishers are only Gratis Open Access, while almost all publications by ‘pure’ Open Access publishers are Libre Open Access;
+
+* ``pso:libre-open-access``, the status of a published work which is both free to read on-line, and to which additional usage rights apply, for example the right to text mine, make derivative works, re-use and re-publish the published work, such rights frequently being defined by application of an explicit license such as a Creative Commons license;
+
+* ``pso:green-open-access``, the status of a published work made available by the author, by self-archiving a version of the work for free and open public use in their institutional repository, in a central repository, or elsewhere, in parallel with publication of a subscription-access Version of Record of the work by a publisher.  The green open-access version of the work may be a preprint (the version of the article as first submitted for publication) or a postprint (the pre-publication version of the article after incorporation of authors’ responses to peer reviewers’ comments).  Its availability may have an embargo restriction imposed by the publisher of the subscription-access version of the work that prevents the green open-access version from being freely available until some substantial time after publication of the subscription-access journal issue containing that article.  A green open access work should be accompanied by a license explicitly defining usage rights, for example a Creative Commons Attribution License;
+
+* ``pso:gold-open-access``, the status of a published work, typically a journal article, made available by the publisher on the publisher’s own web site for third parties to read without payment of access or subscription fees.  Gold open access has the benefit that the article is findable where you expect it to be, but licensing restrictions may limit the possibilities for downloading, text mining, modification, re-publication or re-use of the published work.  Gold open-access publication typically involves payment by the author or his/her institution to the publisher of an article processing charge (aka an author publishing charge);
+
+* ``pso:closed-access``, the status of a work (typically a private or secret paper or a confidential dataset) that is typically held unpublished in a ‘dark’ archive whose existence is unknown by the wider world, and that is only available to the owner or copyright holder of the asset;
+
+* ``pso:open-access``, the status of a published work (typically a scholarly publication or a dataset) that is freely available via the Internet for third parties to read without payment of access or subscription fees, and (in the case of a work published under a full open-access license) that is freely available to download and reuse for any purposes including commercial ones, including modification of the original work, its integration with other material, and its re-publication, subject typically to a requirement that the original authors and the source of the original work are acknowledged in compliance with scholarly citation norms;
+
+* ``pso:embargoed``, the status of a published work that is subjected to a publication embargo, which means that the material cannot be published, or in the case of a press release that it cannot be reported on, until a particular date known as the embargo date.  For open-access journal articles, an embargoed article is one in which availability of the open-access version of the article is delayed by the publisher for a substantial embargo period, typically of six or twelve months, after subscription-access availability of the published work;
+
+* ``pso:restricted-access``, the status of a work (typically a scholarly paper or a dataset) to which access is restricted.  For example, confidential information to which access is made available only to those who have been approved by the owner or copyright holder of the asset after personal application, or to those with appropriate security clearance, or to those within a partnership;
+
+* ``pso:subscription-access``, the status of a published work, typically an article in a journal issue, that is not available to read without payment of an article access fee or a journal subscription fee for that publication.
+
+This comprehensive set of terms permits the various access statuses of documents to be encoded in RDF and published on the Semantic Web.

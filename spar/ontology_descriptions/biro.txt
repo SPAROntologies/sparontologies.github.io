@@ -1,0 +1,23 @@
+#name Bibliographic Reference Ontology
+
+#acronym BiRO
+
+#url http://purl.org/spar/biro
+
+#source https://sparontologies.github.io/biro/current/biro.owl
+
+#documentation http://purl.org/spar/biro.html
+
+#repository https://github.com/sparontologies/biro
+
+#description The *Bibliographic Reference Ontology* (*BiRO*) allows the description of reference lists and bibliographic references themselves. In particular, BiRO uses an [OWL-based definition of the FRBR model](/ontologies/frbr) to define bibliographic references and their compilation into ordered bibliographic lists, by means of the [Collections Ontology](http://purl.org/co), as shown in the following figure.
+
+<img class="img-responsive center-block" src="/static/img/spar/biro-diagram.png" alt="A Graffoo diagram introducing the Bibliographic Reference Ontology." />
+
+An individual bibliographic reference, such as one in the reference list of a published journal article, may exhibit varying degrees of incompleteness, depending on the formatting rules of the journal. For example, it may lack the title of the cited article, the full names of the listed authors, or indeed a full listing of the authors. BiRO provides a logical system for relating such incomplete bibliographic reference to:
+
+* the full bibliographic record for that cited article (``biro:BibliographicRecord``), which, in addition to any author and title fields missing from the reference (``biro:BibliographicReference``), may also be expected to include the name of the publisher, and the ISSN or ISBN of the publication;
+
+* collections of bibliographic records (``biro:BibliographicCollection``), such as library catalogues (``biro:LibraryCatalogue``);
+
+* ordered bibliographic lists (``biro:BibliographicList``), such as reference lists (``biro:ReferenceList``).

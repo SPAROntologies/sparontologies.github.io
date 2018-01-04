@@ -1,0 +1,112 @@
+#id scoro_1
+
+#title Specifying roles and contributions of an investigation
+
+#description Providing a description of how a certain research is described in a published paper, highlighting the various roles of the people who were involved and indicating explicitly their contribution, is crucial in research communications. Here we show how to provide an RDF description of all these information related to a particular article, i.e., "[Adventures
+in semantic publishing: exemplar semantic enhancement of
+a research article](http://dx.doi.org/10.1371/journal.pcbi.1000361)", by means of [SCoRO](/ontologies/scoro). While SCoRO is used for describing person's roles and contributions, in the example it is used in combination with [FaBiO](/ontologies/fabio), that provides structured vocabulary terms to characterize scholarly publications, and with [FRAPO](/ontologies/frapo), that provides structured vocabulary terms to describe research administration, research funding, and the projects and investigations that such funding supports.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:shotton-et-al-investigation a frapo:Investigation ;
+    dcterms:title "Experiments in Semantic Publishing" ;
+    frapo:hasOutput
+        <http://dx.doi.org/10.1371/journal.pcbi.1000361> .
+
+<http://dx.doi.org/10.1371/journal.pcbi.1000361>
+    a fabio:JournalArticle ;
+    dcterms:bibliographicCitation
+        "Shotton D, Portwin K, Klyne G, Miles A (2009). Adventures
+        in semantic publishing: exemplar semantic enhancement of
+        a research article. PLoS Computational Biology 5: e1000361." ;
+    dcterms:creator :shotton , :portwin , :klyne , :miles ;
+    prism:doi "10.1371/journal.pcbi.1000361" .
+
+:shotton a foaf:Person ;
+    foaf:name "David Shotton" ;
+    scoro:hasORCID "0000-0001-5506-523X" ;
+    pro:holdsRoleInTime
+        :shotton-author ,
+        :shotton-pi ,
+        :shotton-contribution .
+
+:shotton-author a pro:RoleInTime ;
+    pro:withRole
+        pro:author ,
+        scoro:senior-author ;
+    pro:relatesToDocument
+        <http://dx.doi.org/10.1371/journal.pcbi.1000361> .
+
+:shotton-pi a pro:RoleInTime ;
+    pro:withRole scoro:principal-investigator ;
+    tvc:atTime :pi-time ;
+    scoro:relatesToEntity :shotton-et-al-investigation .
+
+:pi-time a ti:timeInterval ;
+    ti:hasIntervalStartDate "2008-05-01"^^xsd:date ;
+    ti:hasIntervalEndDate "2009-04-17"^^xsd:date .
+
+:shotton-contribution a scoro:ContributionSituation ;
+    scoro:withContribution scoro:conceives-project ;
+    scoro:withEffort scoro:major-effort ;
+    scoro:hasContributionContext :shotton-et-al-investigation .
+
+# ...
+
+#cite Peroni, Silvio (2015): Example of use of SCoRO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1543378
+
+
+#id scoro_2
+
+#title Defining equal principal authorship roles
+
+#description The order in which the authors of a paper appear on the author list of the paper it self does not provide any clue about the actual authorship role of such authors, since there is no standard way to understand who is the principal author of the paper, who is a secondary author, and the like.
+
+[SCoRO](/ontologies/scoro) makes it easy to assert in a machine-readable manner that two authors on a paper, for example the first and second authors in an author list, have equal principal authorship roles by means of the object property ``scoro:isEqualToRoleInTime``, that allows one to link two ``pro:RoleInTime``situations (in principle involving two different people) as semantically equal from what concern the role they describe with regard to a certain publication. Note that, in a similar manner, two contributions can be declared to be the same, using the property ``scoro:isEqualToContributionSituation`` to equate one ``scoro:ContributionSituation`` with another.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+
+:silvio-peroni a foaf:Person ;
+    foaf:givenName "Silvio" ;
+    foaf:familyName "Peroni" ;
+    pro:holdsRoleInTime :sp-principal-author .
+
+:sp-principal-author  a pro:RoleInTime ;
+    pro:withRole scoro:principal-author ;
+    pro:relatesToDocument
+        <http://dx.doi.org/10.1016/j.websem.2012.08.001> .
+
+:david-shotton a foaf:Person ;
+    foaf:givenName "David" ;
+    foaf:familyName "Shotton" ;
+    pro:holdsRoleInTime :ds-principal-author .
+
+:ds-principal-author  a pro:RoleInTime ;
+    pro:withRole scoro:principal-author ;
+    pro:relatesToDocument
+        <http://dx.doi.org/10.1016/j.websem.2012.08.001> ;
+    scoro:isEqualToRoleInTime :sp-principal-author .
+
+<http://dx.doi.org/10.1016/j.websem.2012.08.001>
+    a fabio:JournalArticle ;
+    dcterms:title
+        "FaBiO and CiTO: ontologies for describing
+        bibliographic resources and citations" ;
+    dcterms:creator :silvio-peroni , :david-shotton .
+
+#cite Peroni, Silvio (2015): Example of use of SCoRO #2. figshare. http://dx.doi.org/10.6084/m9.figshare.1549669

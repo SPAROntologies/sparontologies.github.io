@@ -1,0 +1,239 @@
+#bibref Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (201). The Document Components Ontology (DoCO). In Semantic Web – Interoperability, Usability, Applicability, 7 (2): 167-181. Amsterdam, The Netherlands: IOS Press. https://doi.org/10.3233/SW-150177
+
+#main doco, deo
+
+#description This journal article introduces [DoCO](/ontoloties/doco) and [DEO](/ontologies/deo) with details about the main part of their classes, and several examples of use.
+
+
+#bibref Di Iorio, A., Peroni, S., Poggi, F., Vitali, F., Shotton, D. (2013). Recognising document components in XML-based academic articles. In Proceedings of the 2013 ACM symposium on Document Engineering (DocEng 2013): 181-184. New York, New York, USA: ACM. https://doi.org/10.1145/2494266.2494319
+
+#oa http://speroni.web.cs.unibo.it/publications/di-iorio-2013-recognising-document-components.pdf
+
+#secondary doco, deo
+
+#description This conference paper introduces the first version of an algorithm to retrieve [DoCO](/ontologies/doco) and [DEO](/ontologies/deo) structures from XML-based academic articles.
+
+
+#bibref Bagnacani, A., Ciancarini, P., Di Iorio, A., Nuzzolese, A. G., Peroni, S., Vitali, F. (2015). Knowledge management of scholarly products: Semantic Lancet Project. In Proceedings of 16th European Conference on Knowledge Management (ECKM 2015). Reading, UK: Academic Conferences and Publishing International.
+
+#oa http://speroni.web.cs.unibo.it/publications/bagnacani-in-press-knowledge-management-scholarly.pdf
+
+#secondary spar
+
+#description This conference paper describes the use of [SPAR Ontologies](/ontologies) within the [Semantic Lancet project](http://www.semanticlancet.eu).
+
+
+#bibref Di Iorio, A., Giannella, R., Peroni, S., Poggi, F., Vitali, F. (2015). Exploring scholarly papers through citations. In Proceedings of the 2015 ACM symposium on Document Engineering (DocEng 2015): 107-116. New York, New York, USA: ACM. https://doi.org/10.1145/2682571.2797065
+
+#oa http://speroni.web.cs.unibo.it/publications/di-iorio-in-press-exploring-scholarly-papers.pdf
+
+#secondary spar
+
+#description This conference paper describes [BEX](http://eelst.cs.unibo.it:8089/), a Web-based tool for navigating bibliographic scholarly data expressed according to [SPAR Ontologies](/ontologies).
+
+
+#bibref Bagnacani, A., Ciancarini, P., Di Iorio, A., Nuzzolese, A. G., Peroni, S., Vitali, F. (2015). The Semantic Lancet Project: a Linked Open Dataset for Scholarly Publishing. In Proceedings of Satellite Events of EKAW 2014, Lecture Notes in Artificial Intelligence 8982: 101-105 Berlin, Germany: Springer. https://doi.org/10.1007/978-3-319-17966-7_10
+
+#oa http://speroni.web.cs.unibo.it/publications/bagnacani-2015-semantic-lancet-project.pdf
+
+#secondary spar
+
+#description This poster paper briefly discuss the use of [SPAR Ontologies](/ontologies) within the [Semantic Lancet project](http://www.semanticlancet.eu).
+
+
+#bibref Peroni, S., Shotton, D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. In Journal of Web Semantics: Science, Services and Agents on the World Wide Web, 17 (December 2012): 33-43. Amsterdam, The Netherlands: Elsevier. https://doi.org/10.1016/j.websem.2012.08.001
+
+#oa http://speroni.web.cs.unibo.it/publications/peroni-2012-fabio-cito-ontologies.pdf
+
+#main fabio, cito
+
+#description This journal article introduces [FaBiO](/ontologies/fabio) and [CiTO](/ontologies/cito) with details and examples, and illustrates which projects have already adopted them.
+
+
+#bibref Ciccarese, P., Shotton, D., Peroni, S., Clark, T. (2014). CiTO + SWAN: The Web Semantics of Bibliographic Records, Citations, Evidence and Discourse Relationships. In Semantic Web – Interoperability, Usability, Applicability, 5 (4): 295-311. Amsterdam, The Netherlands: IOS Press. https://doi.org/10.3233/SW-130098
+
+#oa http://speroni.web.cs.unibo.it/publications/ciccarese-2014-cito-swan-semantics.pdf
+
+#secondary fabio, cito
+
+#description This journal article introduces the harmonisation process done for including [FaBiO](/ontologies/fabio) and [CiTO](/ontologies/cito) within the SWAN Ontology.
+
+
+#bibref Peroni, S. (2014). The Semantic Publishing and Referencing Ontologies. In Semantic Web Technologies and Legal Scholarly Publishing: 121-193. Cham, Switzerland: Springer. https://doi.org/10.1007/978-3-319-04777-5_5
+
+#main spar
+
+#oa http://speroni.web.cs.unibo.it/publications/peroni-2014-semantic-publishing-referencing.pdf
+
+#description This book chapter provides a first and quick introduction of the original eight [SPAR Ontologies](/ontologies).
+
+
+#bibref Ciancarini, P., Di Iorio, A., Nuzzolese, A. G., Peroni, S., Vitali, F. (2014). Evaluating citation functions in CiTO: cognitive issues. In Presutti, V., d'Amato, C., Gandon, F., d'Aquin, M., Staab, S., Tordai, A. (Eds.), Proceedings of the 11th Extended Semantic Web Conference (ESWC 2014), Lecture Notes in Computer Science 8465: 580-594. Berlin, Germany: Springer. https://doi.org/10.1007/978-3-319-07443-6_39
+
+#oa http://speroni.web.cs.unibo.it/publications/ciancarini-2014-evaluating-citation-functions.pdf
+
+#secondary cito
+
+#description This conference paper describes extensive experiments with humans for assessing how [CiTO](/ontologies/cito) properties have been understood and interpreted for annotation tasks.
+
+
+#bibref Peroni, S., Tomasi, F., Vitali, F., Zingoni, J. (2014). Semantic lenses as exploration method for scholarly articles. In Catarci, T., Ferro, N., Poggi, A. (Eds.), Bridging between Cultural Heritage Institutions - Proceedings of the 9th Italian Research Conference on Digital Libraries (IRCDL 2013) - Revised Selected Papers, Communications in Computer and Information Science (CCIS) 385: 118-129. Berlin, Germany: Springer. https://doi.org/10.1007/978-3-642-54347-0_13
+
+#oa http://speroni.web.cs.unibo.it/publications/peroni-2014-semantic-lenses-exploration.pdf
+
+#secondary spar
+
+#description This conference paper describes how to use [SPAR Ontologies](/ontologies) according to a broader theory, called semantic lenses*, that decouples the semantic annotations to associate to documents into context-based and content-based dimensions.
+
+#bibref Gonano, C. M., Mambelli, F., Peroni, S., Tomasi, F., Vitali, F. (2014). Zeri e LODE: Extracting the Zeri photo archive to linked open data: formalizing the conceptual model. In Proceedings of the 2014 IEEE/ACM Joint Conference on Digital Libraries (JCDL 2014): 289–298. Washington, District Columbia, USA: IEEE. https://doi.org/10.1109/JCDL.2014.6970182
+
+#oa http://speroni.web.cs.unibo.it/publications/gonano-2014-zeri-lode-extracting.pdf
+
+#secondary fabio
+
+#description This conference paper introduces an extension of [FaBiO](/ontologies/fabio) for describing photographs and their related metadata described according to an Italian model for photografic archives called [*Scheda F*](http://www.iccd.beniculturali.it/index.php?it/387/beni-fotografici).
+
+
+#bibref Daquino, M., Peroni, S., Tomasi, F., Vitali, F. (2014). Political Roles Ontology (PRoles): Enhancing Archival Authority Records through Semantic Web Technologies. In Agosti, M., Catarci, T., Esposito, F. (Eds.), Proceedings of the 10th Italian Research Conference on Digital Libraries (IRCDL 2014), Procedia Computer Science 38: 60–67. Amsterdam, The Netherlands: Elsevier. https://doi.org/10.1016/j.procs.2014.10.012 (Open Access)
+
+#secondary pro
+
+#description This conference paper introduces an extension of [PRO](/ontologies/pro) for describing political roles and their related cultural and historical contexts.
+
+
+#bibref Di Iorio, A., Nuzzolese, A. G., Peroni, S., Shotton, D., Vitali, F. (2014). Describing bibliographic references in RDF. In Garcia Castro, A., Lange, C., Lord, P., Stevens, R. (Eds.), Proceedings of 4th Workshop on Semantic Publishing (SePublica 2014), CEUR Workshop Proceedings 1155. Aachen, Germany: CEUR-WS.org. http://ceur-ws.org/Vol-1155/paper-05.pdf (Open Access)
+
+#main biro, c4o
+
+#description This workshop paper introduces [BiRO](/ontologies/bito) and [C4O](/ontologies/c4o) with several examples for demonstrating their use.
+
+
+#bibref Gangemi, A., Peroni, S., Shotton, D., Vitali, F. (2014). A pattern-based ontology for describing publishing workflows. In de Boer, V., Gangemi, A., Janowicz, K., Lawrynowicz, A. (Eds.), Proceedings of the 5th International Workshop on Ontology and Semantic Web Patterns (WOP 2014), CEUR Workshop Proceedings 1302: 2–13. Aachen, Germany: CEUR-WS.org. http://ceur-ws.org/Vol-1302/paper1.pdf (Open Access)
+
+#main pwo
+
+#description This workshop paper introduces the former version of [PWO](/ontologies/pwo), discussing the adopted pattern-based modelling process and introducing two examples of its application.
+
+
+#bibref Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Zhao, J., van Erp, M., Keßler, C., Kauppinen, T., van Ossenbruggen, J., van Hage, W. R. (Eds.), Proceedings of the 4th Workshop on Linked Science (LISC 2014), CEUR Workshop Proceedings 1282: 24–35. Aachen, Germany: CEUR-WS.org. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf (Open Access)
+
+#main bido
+
+#description This workshop paper introduces [BiDO](/ontologies/bido) and shows how it can be used for describing different bibliographic data associated to authors.
+
+
+#bibref Di Iorio, A., Peroni, S., Vitali, F., Zingoni, J. (2014). Semantic lenses to bring digital and semantic publishing together. In Zhao, J., van Erp, M., Keßler, C., Kauppinen, T., van Ossenbruggen, J., van Hage, W. R. (Eds.), Proceedings of the 4th Workshop on Linked Science (LISC 2014), CEUR Workshop Proceedings 1282: 12–23. Aachen, Germany: CEUR-WS.org. http://ceur-ws.org/Vol-1282/lisc2014_submission_6.pdf
+
+#secondary spar
+
+#description This conference paper describes TAL, i.e., a prototypical application that enables the navigation and understanding of a scholarly document by processing its annotations written according to [SPAR Ontologies](/ontologies).
+
+
+#bibref Peroni, S., Tomasi, F., Vitali, F. (2013). The aggregation of heterogeneous metadata in Web-based cultural heritage collections. A case study. In International Journal of Web Engineering and Technologies, 8 (4): 412-432. Olney, Buckinghamshire, UK: Inderscience Publisher. https://doi.org/10.1504/IJWET.2013.059107
+
+#oa http://speroni.web.cs.unibo.it/publications/peroni-2013-aggregation-heterogeneous-metadata.pdf
+
+#secondary pro
+
+#description This journal article shows how to use [PRO](/ontologies/pro) for describing the information about the roles of the various artists and other people in [Europeana](http://www.europeana.eu).
+
+
+#bibref Peroni, S., Tomasi, F., Vitali, F. (2013). Reflecting on the Europeana Data Model. In Agosti, M., Esposito, F., Ferilli, S., Ferro, N. (Eds.), Digital Libraries and Archives - Proceedings of the 8th Italian Research Conference on Digital Libraries (IRCDL 2012) - Revised Selected Papers, Communications in Computer and Information Science (CCIS) 354: 228-240. Berlin, Germany: Springer. https://doi.org/10.1007/978-3-642-35834-0_23
+
+#oa http://speroni.web.cs.unibo.it/publications/peroni-2013-reflecting-europeana-data.pdf
+
+#secondary pro
+
+#description This conference paper provides a preliminary discussion on the use [PRO](/ontologies/pro) for describing the information about the roles of the various artists and other people in [Europeana](http://www.europeana.eu).
+
+
+#bibref Ciancarini, P., Di Iorio, A., Nuzzolese, A. G., Peroni, S., Vitali, F. (2013). Semantic Annotation of Scholarly Documents and Citations. In Proceedings of 13th International Conference of the Italian Association for Artificial Intelligence (AI*IA 2013), Lecture Notes in Computer Science 8249: 336-347. Berlin, Germany: Springer. https://doi.org/10.1007/978-3-319-03524-6_29
+
+#oa http://speroni.web.cs.unibo.it/publications/ciancarini-2013-semantic-annotation-scholarly.pdf
+
+#secondary cito
+
+#description This conference paper introduces a theoretical framework for the knowledge management of scholarly data and then focuses on presenting the extention to CiTalO, a tool for the automatic identification of the nature of citations according to [CiTO](/ontologies/cito).
+
+
+#bibref Di Iorio, A., Nuzzolese, A. G., Peroni, S. (2013). Towards the automatic identification of the nature of citations. In García Castro, A., Lange, C., Lord, P., Stevens, R. (Eds.), Proceedings of 3rd Workshop on Semantic Publishing (SePublica 2013), CEUR Workshop Proceedings 994: 63-74. Aachen, Germany: CEUR-WS.org. http://ceur-ws.org/Vol-994/paper-06.pdf (Open Access)
+
+#secondary cito
+
+#description This workshop paper provides a first introduction of CiTalO, a tool for the automatic identification of the nature of citations according to [CiTO](/ontologies/cito).
+
+
+#bibref Di Iorio, A., Nuzzolese, A. G., Peroni, S. (2013). Characterising citations in scholarly documents: the CiTalO framework. In Cimiano, P., Fernández, M., Lopez, V., Schlobach, S., Völker, J. (Eds.), ESWC 2013 Satellite Events - Revised Selected Papers, Lecture Notes in Computer Science 7955. Berlin, Germany: Springer. https://doi.org/10.1007/978-3-642-41242-4_6
+
+#oa http://speroni.web.cs.unibo.it/publications/di-iorio-2013-characterising-citations-scholarly.pdf
+
+#secondary cito
+
+#description This workshop paper introduces CiTalO, a tool for the automatic identification of the nature of citations according to [CiTO](/ontologies/cito).
+
+
+#bibref Di Iorio, A., Nuzzolese, A. G., Peroni, S. (2013). Identifying functions of citations with CiTalO. In Cimiano, P., Fernández, M., Lopez, V., Schlobach, S., Völker, J. (Eds.), ESWC 2013 Satellite Events - Revised Selected Papers, Lecture Notes in Computer Science 7955: 231-235. Berlin, Germany: Springer. https://doi.org/10.1007/978-3-642-41242-4_30
+
+#oa http://speroni.web.cs.unibo.it/publications/di-iorio-2013-identifying-functions-citations.pdf
+
+#secondary cito
+
+#description This demo paper shows CiTalO in action when it tries to automatically identify the nature of citations according to [CiTO](/ontologies/cito).
+
+
+#bibref Peroni, S. (2012). Semantic Publishing: issues, solutions and new trends in scholarly publishing within the Semantic Web era. Ph. D. Thesis. Department of Computer Science, University of Bologna, Italy. http://amsdottorato.cib.unibo.it/4766/ (Open Access)
+
+#secondary spar
+
+#description Part of this Ph.D. thesis is dedicated to the description of the original eight [SPAR Ontologies](/ontologies).
+
+#bibref Peroni, S., Shotton, D., Vitali, F. (2012). Faceted documents: describing document characteristics using semantic lenses. In Proceedings of the 2012 ACM symposium on Document Engineering (DocEng 2012): 191-194. New York, New York, USA: ACM. https://doi.org/10.1145/2361354.2361396
+
+#oa http://speroni.web.cs.unibo.it/publications/peroni-2012-faceted-documents-describing.pdf
+
+#secondary spar
+
+#description This conference paper is the first one about *semantic lenses*, i.e., a theory that decouples the semantic annotations to associate to documents into different semantical level. [SPAR Ontologies](/ontologies) are then proposed as one of the possible ways for modelling specific lenses described by the theory.
+
+
+#bibref Peroni, S., Shotton, D., Vitali, F. (2012). Scholarly publishing and the Linked Data: describing roles, statuses, temporal and contextual extents. In Sack, H., Pellegrini, T. (Eds.), Proceedings of the 8th International Conference on Semantic Systems (i-Semantics 2012): 9-16. New York, New York, USA: ACM. https://doi.org/10.1145/2362499.2362502
+
+#oa http://speroni.web.cs.unibo.it/publications/peroni-2012-scholarly-publishing-linked.pdf
+
+#main pro, pso
+
+#description This conference paper introduces [PRO](/ontoloties/pro) and [PSO](/ontologies/pso) with details about their theorical foundations, and by discusssing several examples of use.
+
+#bibref Peroni, S., Lapeyre, D. A., Shotton, D. (2012). Mapping JATS to RDF using the SPAR (Semantic Publishing and Referencing) Ontologies. In Proceeding of the Journal Article Tag Suite Conference 2012 (JATS-Con 2012). Bethesda, Maryland, USA: National Center for Biotechnology Information. http://www.ncbi.nlm.nih.gov/books/NBK100491/ (Open Access)
+
+#secondary spar
+
+#description This conference paper describes the mapping between the [Journal Article Tag Suite (JATS) markup language](http://dtd.nlm.nih.gov/) and [SPAR Ontologies](/ontologies).
+
+
+#bibref Shotton, D., Peroni, S. (2010). Semantic annotation of publication entities. Presented during the Beyond the PDF Workshop. La Jolla, California, USA. http://speroni.web.cs.unibo.it/publications/shotton-2010-semantic-annotation-publication.pdf (Open Access)
+
+#secondary fabio, cito, doco, pwo
+
+#description This workshop paper provides a quick introduction on four [SPAR Ontologies](/ontologies), i.e., [FaBiO](/ontologies/fabio), [CiTO](/ontologies/cito), [DoCO](/ontologies/doco) and [PWO](/ontologies/pwo).
+
+
+#bibref Shotton, D. (2012). The Five Stars of Online Journal Articles - a Framework for Article Evaluation. In D-Lib Magazine, 18 (1/2). https://doi.org/10.1045/january2012-shotton (Open Access)
+
+#main fivestars
+
+#description This magazine article describes five factors — peer review, open access, enriched content, available datasets and machine-readable metadata — as the Five Stars of Online Journal Articles, a constellation of five independent criteria within a multi-dimensional publishing universe against which online journal articles can be evaluated, to see how well they match up with current visions for enhanced research communications.
+
+
+#bibref Shotton, D. (2010). CiTO, the Citation Typing Ontology. In Journal of Biomedical Semantics, 1 (Suppl 1):S6. https://doi.org/10.1186/2041-1480-1-S1-S6
+
+#secondary cito
+
+#description This journal article describes the version 1.6 of [CiTO](/ontologies/cito), before separating out from CiTO those aspects describing bibliographic entities, the quantification of citations, and the status of publications into three different ontologies, i.e., [FaBiO](/ontologies/fabio), [C4O](/ontologies/c4o) and [PSO](/ontologies/pso).
+
+
+#bibref Shotton, D., Portwin, K., Klyne, G., Miles, A. (2009). Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article. In PLoS Computational Biology, 5(4): e1000361. https://doi.org/10.1371/journal.pcbi.1000361
+
+#secondary cito
+
+#description This journal paper describes good practices for the semantic enhancements of research articles by using RDF and, in particular, the terms of the version 1.6 of [CiTO](/ontologies/cito).

@@ -1,0 +1,138 @@
+$def with (title, pages, pub_list, onto_acronym)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/favicon/spar/favicon.ico">
+
+    <title>$title</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/static/js/html5shiv.min.js"></script>
+      <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/spar/carousel.css" rel="stylesheet">
+    <link href="/static/css/spar/spar.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div id="top" class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">SPAR Ontologies</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                $for page in pages:
+                    <li><a href="$page['url']">$page['title']</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container-fluid marketing additional-margin">
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="featurette">
+          <h2 class="featurette-heading">Semantic Publishing and Referencing Ontologies</h2>
+
+          <p>In the past, several groups have proposed (Semantic Web) models, such as RDFS vocabularies and OWL ontologies, to describe particular aspects of the publishing domain. However, these models were mainly concerned with the description of the metadata of bibliographic resources (e.g., <a href="http://dublincore.org/documents/dcmi-terms/">DC Terms</a>, <a href="http://www.prismstandard.org/resources/mod_prism.html">PRISM</a> and <a href="http://bibliontology.com/">BIBO</a>). One of the first attempts to address the description of the whole publishing domain is the introduction of the <strong>Semantic Publishing and Referencing</strong> (<strong>SPAR</strong>) <strong>Ontologies</strong>. SPAR is a suite of orthogonal and complementary OWL 2 ontologies that enable all aspects of the publishing process to be described in machine-readable metadata statements, encoded using RDF.</p>
+          $for pub in pub_list:
+              $if "main" in pub and onto_acronym in pub["main"]:
+                  <p>Please <strong>use the following reference for citing</strong> the SPAR Ontologies suite in your works:</p>
+                  <div class="cite bg-success">
+                      <span>$pub["bibref"]</span>
+                      $if "oa" in pub:
+                          <span>Open Access at: $pub["oa"]</span>
+                  </div>
+          <p>
+              <img class="img-responsive center-block" src="/static/img/spar/spar-architecture.png" alt="All the ontologies included in the SPAR suite" />
+          </p>
+          <p>While the current suite contains several ontologies (see the figure above), the original suite of SPAR ontologies comprises eight distinct modules:</p>
+          <ul>
+              <li><p>the <a href="/ontologies/fabio">FRBR-aligned Bibliographic Ontology (FaBiO)</a> is an ontology for describing entities that are published or potentially publishable (e.g., journal articles, conference papers, books), and that contain or are referred to by bibliographic references;</p></li>
+              <li><p>the <a href="/ontologies/cito">Citation Typing Ontology (CiTO)</a> is an ontology that enables characterization of the nature or type of citations, both factually and rhetorically;</p></li>
+              <li><p>the <a href="/ontologies/biro">Bibliographic Reference Ontology (BiRO)</a> is an ontology meant to define bibliographic records, bibliographic references, and their compilation into bibliographic collections and bibliographic lists, respectively;</p></li>
+              <li><p>the <a href="/ontologies/c4o">Citation Counting and Context Characterisation Ontology (C4O)</a> is an ontology that permits the number of in-text citations of a cited source to be recorded, together with their textual citation contexts, along with the number of citations a cited entity has received globally on a particular date;</p></li>
+              <li><p>the <a href="/ontologies/doco">Document Components Ontology (DoCO)</a> in an ontology that provides a structured vocabulary written of document components, both structural (e.g., block, inline, paragraph, section, chapter) and rhetorical (e.g., introduction, discussion, acknowledgements, reference list, figure, appendix);</p></li>
+              <li><p>the <a href="/ontologies/pso">Publishing Status Ontology (PSO)</a> is an ontology designed to characterise the publication status of documents at each stage of the publishing process (draft, submitted, under review, etc.);</p></li>
+              <li><p>the <a href="/ontologies/pro">Publishing Roles Ontology (PRO)</a> is an ontology for the characterisation of the roles of agents – people, corporate bodies and computational agents in the publication process. These agents can be, e.g. authors, editors, reviewers, publishers or librarians;</p></li>
+              <li><p>the <a href="/ontologies/pwo">Publishing Workflow Ontology (PWO)</a> is a simple ontology for describing the steps in the workflow associated with the publication of a document or other publication entity.</p></li>
+          </ul>
+          <p>The main part of the aformentioned ontologies are based on other available and more general models. Two of those have been developed within the SPAR Ontologies:</p>
+          <ul>
+              <li><p>the <a href="/ontologies/frbr">Essential FRBR in OWL2 DL Ontology</a> is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the <a href="http://www.ifla.org/publications/functional-requirements-for-bibliographic-records">Functional Requirements for Bibliographic Records (FRBR)</a>, also described in Ian Davis's <a href="http://vocab.org/frbr/core">RDF vocabulary</a>. It is imported by <a href="/ontologies/fabio">FaBiO</a> and <a href="/ontologies/biro">BiRO</a>.</p></li>
+              <li><p>the <a href="/ontologies/deo">Discourse Elements Ontology (DEO)</a> is an ontology that provides a structured vocabulary for rhetorical elements within documents (e.g., Introduction, Discussion, Acknowledgements, Reference List, Figures, Appendix). It is imported by <a href="/ontologies/doco">DoCO</a>.</p></li>
+          </ul>
+          <p>The aforementioned ontologies form the original set of SPAR ontologies. However, this set has more recently been extended with other complementary ontologies that extend the coverage of the possible description of the publishing domain:</p>
+          <ul>
+              <li><p>the <a href="/ontologies/scoro">Scholarly Contributions and Roles Ontology (SCoRO)</a> is an ontology based on PRO for describing the contributions that may be made, and the roles that may be held by a person with respect to a journal article or other publication (e.g. the role of article guarantor or illustrator);</p></li>
+              <li><p>the <a href="/ontologies/frapo">Funding, Research Administration and Projects Ontology (FRAPO)</a> is an ontology for describing the administrative information of research projects, e.g., grant applications, funding bodies, project partners, etc.;</p></li>
+              <li><p>the <a href="/ontologies/datacite">DataCite Ontology (DataCite)</a> is an ontology that enables the metadata properties of the DataCite Metadata Schema Specification  (i.e., a list of metadata properties for the accurate and consistent identification of a resource for citation and retrieval purposes) to be described in RDF;</p></li>
+              <li><p>the <a href="/ontologies/bido">Bibliometric Data Ontology (BiDO)</a> is a modular ontology that allows the description of numerical and categorical bibliometric data (e.g., journal impact factor, author h-index, categories describing research careers) in RDF;</p></li>
+              <li><p>the <a href="/ontologies/fivestars">Five Stars of Online Research Articles Ontology (FiveStars)</a> is an ontology written in OWL 2 DL to enable characterization of the five attributes of an online journal article - peer review, open access, enriched content, available datasets and machine-readable metadata.</p></li>
+          </ul>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#" title="Back to top" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-circle-arrow-up"></span> Back to top</a></p>
+        <p>This website and all its content are licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> excepting where stated differently.</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/marked.min.js"></script>
+    <script type="application/javascript">
+        jQuery(".desc").each(function(el){
+            jQuery(this).after(marked(jQuery(this).text())).remove()});
+        jQuery(".cite span").each(function(el){
+            jQuery(this).after(marked(jQuery(this).text())).remove()});
+    </script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

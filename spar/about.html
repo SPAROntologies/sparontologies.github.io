@@ -1,0 +1,149 @@
+$def with (title, pages)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/favicon/spar/favicon.ico">
+
+    <title>$title</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/static/js/html5shiv.min.js"></script>
+      <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/spar/carousel.css" rel="stylesheet">
+    <link href="/static/css/spar/spar.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div id="top" class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">SPAR Ontologies</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                $for page in pages:
+                    <li><a href="$page['url']">$page['title']</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container-fluid marketing additional-margin">
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="featurette">
+          <h2 class="featurette-heading">About SPAR</h2>
+          <p>In this page we summarise briefly the historical context of SPAR Ontologies, which were born by means of a mutual collaboration between <a href="http://www.oerc.ox.ac.uk/people/david-shotton">David Shotton</a> (<a href="http://ox.ac.uk">University of Oxford</a>) and <a href="http://www.essepuntato.it">Silvio Peroni</a> (<a href="http://www.unibo.it">University of Bologna</a>). In addition, we list all the other people, researchers, friend who helped us to develop and share SPAR Ontologies in the Semantic Publishing community.</p>
+          <h3><a class="anchor" id="toc"></a>Table of contents</h3>
+          <ol>
+              <li><a href="#genesis">Genesis of SPAR Ontologies</a></li>
+              <li><a href="#collabs">Collaborators</a></li>
+          </ol>
+          <hr class="featurette-divider" />
+          <h3><a class="anchor" id="genesis"></a>
+              Genesis of SPAR Ontologies
+              <span class="pull-right">
+                  <a href="#toc" title="Back to the table of contents" class="btn btn-xs btn-info"><span class="glyphicon glyphicon-wrench"></span></a>
+                  <a href="#" title="Back to top" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+              </span>
+          </h3>
+          <p>The original motivation for creating the first of these ontologies, the <a href="/ontologies/cito">Citation Typing Ontology (CiTO)</a>, was provided by the semantic publishing work undertaken in 2008, described in:</p>
+          <p class="bg-info cite">Shotton, D., Portwin, K., Klyne, G., Miles, A. (2009). Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article. In PLoS Computational Biology, 5(4): e1000361. <a href="http://dx.doi.org/10.1371/journal.pcbi.1000361">http://dx.doi.org/10.1371/journal.pcbi.1000361</a></p>
+          <p>The version 1.6 of the CiTO ontology was developed by <a href="http://www.oerc.ox.ac.uk/people/david-shotton">David Shotton</a> from that work and published in 2009 in the following paper:</p>
+          <p class="bg-info cite">Shotton, D. (2010). CiTO, the Citation Typing Ontology. In Journal of Biomedical Semantics, 1 (Suppl 1):S6. <a href="http://dx.doi.org/10.1186/2041-1480-1-S1-S6">http://dx.doi.org/10.1186/2041-1480-1-S1-S6</a></p>
+          <p>In the second half of 2010, <a href="http://www.essepuntato.it">Silvio Peroni</a>, a Ph.D. student at that time, came for six months as an intern from the <a href="http://www.unibo.it">University of Bologna</a> to <a href="http://www.zoo.ox.ac.uk/people/view/shotton_dm.htm">David's research group at the University of Oxford</a>. In those six months, Silvio and David separated out from CiTO those aspects describing bibliographic entities into <a href="/ontologies/fabio">FaBiO</a>, the FRBR-aligned Bibliographic Ontology, those aspects describing the quantification of citations into <a href="/ontologies/c4o">C4O</a>, the Citation Counting and Context Characterization Ontology, and those aspects describing the status of publications into <a href="/ontologies/pso">PSO</a>, the Publications Status Ontology, leaving the current version of <a href="/ontologies/cito">CiTO</a> (v2) with the sole role of describing the nature and character of the citations themselves. In addition, during that time, they worked intimately and intensely together in a way that was remarkable and mutually beneficial, developing a unique corpus of new work relating to Semantic Publishing, i.e., the <a href="/ontologies">Semantic Publishing and Referencing (SPAR) Ontologies</a>.</p> <p>Following Silvio's return to Bologna, they continued to collaborate actively. Their actual corpus of work includes new ontologies that are finding <a href="/uptake">increasing use worldwide</a>, tools to assist third parties in the creation of ontologies (e.g., <a href="http://www.essepuntato.it/lode">LODE</a> and <a href="http://www.essepuntato.it/graffoo">Graffoo</a>), and mappings of document markup and metadata standards to RDF (e.g., <a href="http://www.ncbi.nlm.nih.gov/books/NBK100491/">the JATS to SPAR</a> work). This work continues to expand, as the list of <a href="/publications">new journal articles and conference papers about SPAR Ontologies</a> attests.</p>
+          <hr class="featurette-divider" />
+          <h3><a class="anchor" id="collabs"></a>
+              Collaborators
+              <span class="pull-right">
+                  <a href="#toc" title="Back to the table of contents" class="btn btn-xs btn-info"><span class="glyphicon glyphicon-wrench"></span></a>
+                  <a href="#" title="Back to top" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+              </span>
+          </h3>
+          <p>While Silvio Peroni and David Shotton are the main developers of the SPAR Ontologies, other researchers from different institutions have supported and helped them in developing and sharing some aspects of such ontologies. This section includes a (hopefully complete) list af all the people who have contributed actively to the cause by co-developing some ontologies and by co-authoring some SPAR-related research papers. All the people here are sorted in alphabetic ordered by given name.</p>
+          <ul>
+              <li><a href="http://www.istc.cnr.it/people/aldo-gangemi">Aldo Gangemi</a></li>
+              <li><a href="http://people.epfl.ch/alex.constantin">Alexandru Constantin</a></li>
+              <li><a href="http://www.springer.com/computer?SGWID=0-146-19-1381827-0">Aliaksandr Birukou</a></li>
+              <li><a href="http://www.well.ox.ac.uk/alistair-miles">Alistair Miles</a></li>
+              <li><a href="http://bagnacan.web.cs.unibo.it/">Andrea Bagnacani</a></li>
+              <li><a href="http://www.cs.unibo.it/~nuzzoles/">Andrea Giovanni Nuzzolese</a></li>
+              <li><a href="http://diiorio.web.cs.unibo.it/">Angelo Di Iorio</a></li>
+              <li><a href="https://www.winged.it/en/">Ciro Mattia Gonano</a></li>
+              <li><a href="http://www.mulberrytech.com/people/lapeyre/">Deborah A. Lapeyre</a></li>
+              <li><a href="http://people.kmi.open.ac.uk/motta/">Enrico Motta</a></li>
+              <li><a href="http://vitali.web.cs.unibo.it/">Fabio Vitali</a></li>
+              <li><a href="http://www.ninebynine.org/">Graham Klyne</a></li>
+              <li>Francesca Mambelli</li>
+              <li><a href="https://www.unibo.it/sitoweb/francesca.tomasi/">Francesca Tomasi</a></li>
+              <li><a href="http://kmi.open.ac.uk/people/member/francesco-osborne">Francesco Osborne</a></li>
+              <li><a href="https://www.unibo.it/sitoweb/francesco.poggi5/en">Francesco Poggi</a></li>
+              <li>Jacopo Zingoni</li>
+              <li><a href="https://sites.google.com/site/junzhaohome/">Jun Zhao</a></li>
+              <li>Katie Portwin</li>
+              <li><a href="https://www.unibo.it/sitoweb/marilena.daquino2">Marilena Daquino</a></li>
+              <li><a href="http://www.cs.unibo.it/~cianca/">Paolo Ciancarini</a></li>
+              <li><a href="http://www.hcklab.org/index.html">Paolo Ciccarese</a></li>
+              <li>Raffaele Giannella</li>
+              <li><a href="http://www.manchester.ac.uk/research/steve.pettifer/">Steve Pettifer</a></li>
+              <li><a href="http://www.massgeneral.org/neurology/researcher_profiles/clark_timothy.aspx">Tim Clark</a></li>
+          </ul>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#" title="Back to top" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-circle-arrow-up"></span> Back to top</a></p>
+        <p>This website and all its content are licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> excepting where stated differently.</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

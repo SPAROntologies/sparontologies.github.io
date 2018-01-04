@@ -1,0 +1,42 @@
+#name Citation Counting and Context Characterization Ontology
+
+#acronym C4O
+
+#url http://purl.org/spar/c4o
+
+#source https://sparontologies.github.io/c4o/current/c4o.owl
+
+#documentation http://purl.org/spar/c4o.html
+
+#repository https://github.com/sparontologies/c4o
+
+#description Besides defining reference lists and bibliographic references in a machine-readable form, it is also useful to describe how these references are used in the citing paper. In particular, we would need entities that describe all the items introduced in the following figure (where the paper "Intertextual semantics: a semantics for information design" cites "Towards a semantics for XML markup"), i.e.:
+
+<img class="img-responsive center-block col-sm-8 pull-right" src="/static/img/spar/c4o-components.png" alt="All the components that characterise a citation act." />
+
+* in-text reference pointers within the citing paper;
+
+* links to the bibliographic references denoted by in-text reference pointers;
+
+* how much a particular document is locally cited by the citing document – i.e., the total number of in-text reference pointers within the citing paper denoting the same bibliographic reference;
+how much an article is globally cited (according to particular bibliographic citation service, e.g., [Google Scholar](http://scholar.google.com));
+
+* the contexts involved in a citation – i.e., the part of the citing article containing a particular in-text reference pointer and the part of the cited article that is relevant to such citation.
+
+The *Citation Counting and Context Characterization Ontology* (*C4O*) has been developed to allow the description of the above entities. This ontology extends [BiRO](/ontologies/biro) in order to enable the characterisation of bibliographic citations in terms of their presence in an article by means of the following classes:
+
+* class ``c4o:InTextReferencePointer`` - an in-text reference pointer is a textual device denoting (property ``c4o:denotes``) a single bibliographic reference that is embedded in the text of a document within the context of a particular sentence;
+
+* class ``c4o:InTextReferencePointerList`` - a list containing (through the chain co:item and co:itemContent) only in-text reference pointers denoting the specific bibliographic references to which the list pertains (property c4o:pertains). Such a list cannot contain more than one item containing the same in-text reference pointer;
+
+* class ``c4o:SingleReferencePointerList`` - defined as subclass of the previous class, it is an in-text reference pointer list that pertains to exactly one bibliographic reference;
+
+* class ``c4o:GlobalCitationCount`` - the number of times a work has been cited globally (property ``c4o:hasGlobalCountValue``), as determined from a particular bibliographic information source (property ``c4o:hasGlobalCountSource``) on a particular date (property ``c4o:hasGlobalCountDate``).
+
+In addition, C4O provides the ontological structures (shown in the following figure) which allow one to record the number of in-text citations (property ``c4o:hasInTextCitationFrequency``) i.e., the number of in-text reference pointers to a single reference in the reference list of the citing article.
+
+<img class="img-responsive center-block" src="/static/img/spar/c4o-diagram.png" alt="The diagram of C4O." />
+
+Moreover, C4O enables ontological descriptions of the context where an in-text reference pointer appears in the citing document (modelled as shown in the following figure), and allows one to relate that context to relevant textual passages in the cited document.
+
+<img class="img-responsive center-block" src="/static/img/spar/c4o-in-text-reference.png" alt="The diagram of the C4O module for describing in-text-reference pointers." />

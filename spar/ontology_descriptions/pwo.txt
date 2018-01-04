@@ -1,0 +1,33 @@
+#name Publishing Workflow Ontology
+
+#acronym PWO
+
+#url http://purl.org/spar/pwo
+
+#source https://sparontologies.github.io/pwo/current/pwo.owl
+
+#documentation http://purl.org/spar/pwo.html
+
+#repository https://github.com/sparontologies/pwo
+
+#description When modelling any workflow, even in the publishing domain, one has to take into account and address some minimal characteristics or requirements:
+
+1. it involves a sequence of processes;
+
+1. each process allows one to initiate and then complete a piece of work during a specifiable time interval;
+
+1. the structure of a workflow is organised in procedural steps;
+
+1. each step describes tasks;
+
+1. each task is performed by organisations or people;
+
+1. each task requires some input information in order to produce an output.
+
+The *Publishing Workflow Ontology* (*PWO*) models the aforementioned requirements and enables the description of the logical steps in a workflow, as, e.g., the process of publication of a document. Each step may involve one or more events (or actions) that take place in a particular phase of the workflow (e.g., authors are writing the article, the article is under review, a reviewer suggests to revise the article, the article is in printing, the article has been published, etc.).
+
+As shown in the following figure, PWO is based on two main classes ``pwo:Workflow`` and ``pwo:Step``. ``pwo:Workflow`` represents a sequence of connected tasks (i.e., steps, by using the property ``pwo:hasFirstStep`` and ``pwo:hasStep``, which are ordered by means of ``pwo:hasNextStep``). ``pwo:Workflow`` is a subclass of ``plandesc:Plan``. We can use the class ``pwo:WorkflowExecution`` to represent the aggregate of the actions (class ``pwo:Action``) executed in the steps defined in a workflow. We can then abstract from the execution of individual steps, by saying that a certain workflow execution executes a workflow.
+
+<img class="img-responsive center-block" src="/static/img/spar/pwo-diagram.png" alt="The diagram of PWO." />
+
+The other main class of PWO is ``pwo:Step``. A step is an atomic unit of a workflow, and subclass of ``taskrole:Task``; it is characterised by (required) temporal parameters (``parameter:hasParameter``) describing the expected duration (time:DurationDescription) of executed actions, and it is associated with one or more (time-indexed) executed actions by using the property ``pwo:involvesAction``. A workflow step usually involves some input information (i.e., ``pwo:needs``), material or energy needed to complete the step, and some output information (i.e., ``pwo:produces``), material or energy produced by that step. In the case of a publishing workflow, a step typically results in the creation of a publication entity, usually by the modification of another pre-existing publication entity, e.g. the creation of an edited paper from a rough draft, or of an HTML representation from an XML document.

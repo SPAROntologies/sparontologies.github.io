@@ -1,0 +1,29 @@
+#name Publishing Roles Ontology
+
+#acronym PRO
+
+#url http://purl.org/spar/pro
+
+#source https://sparontologies.github.io/pro/current/pro.owl
+
+#documentation http://purl.org/spar/pro.html
+
+#repository https://github.com/sparontologies/pro
+
+#description The ability to define publishing roles is crucial for providing complete description of a scholarly resource such as a paper or a dataset. While pre-existing ontologies, e.g., [BIBO](http://bibliontology.com/), rely for roles on specific property links, i.e., roles defined through appropriate object properties (e.g., ``<document-uri> :hasAuthor <author-uri>``) or data properties (e.g., ``<author-uri> :hasAffiliation "Author's affiliation"``), none of those are able to satisfy the need for an ease of extendibility (if a new role has to taken into account) and for the simultaneous representation of time periods and contexts.
+
+Using [TVC pattern](http://www.essepuntato.it/2012/04/tvc) – i.e., a model for describing scenarios in which something has a value during a particular time and for a particular context – as the basis, we have implemented *PRO*, the *Publishing Roles Ontology*. This ontology permits the characterisation of the roles of agents – people, corporate bodies and computational agents – in the publication process. Furthermore, it allows one to specify the role an agent has in relation to a particular bibliographic entity (as author, editor, reviewer, etc.) or to a specific institution (as publisher, librarian, etc.), and the period during which each role is held.
+
+<img class="img-responsive center-block" src="/static/img/spar/pro-diagram.png" alt="The diagram of C4O." />
+
+As shown in the figure above, the main entities of PRO are:
+
+* ``pro:RoleInTime``, i.e., the class of the particular situation that describes the role an agent has within a particular time interval;
+
+* ``pro:holdsRoleInTime``, i.e., the object property linking any ``foaf:Agent`` (e.g., a person, a group, an organization or a software agent), to a ``pro:RoleInTime`` situation.
+
+* ``pro:withRole``, i.e., the object property linking the situation to the role the agent has – the available roles are defined as individuals of the class ``pro:Role`` (see its subclass ``pro:PublishingRole`` for roles specifically defined for the publishing domain);
+
+* ``ti:TimeInterval``, i.e., the class for defining two (starting and ending) points in time that define a particular period related to (object property ``tvc:atTime``) a ``pro:RoleInTime`` situation;
+
+* ``pro:relatesToDocument``, ``pro:relatesToPerson`` and ``pro:relatesToOrganization``, i.e., the object properties linking any kind of bibliographic work (``foaf:Document``), a person (``foaf:Person``) or publishing organization (``foaf:Organization``) taking part in a ``pro:RoleInTime`` as contextual extent.

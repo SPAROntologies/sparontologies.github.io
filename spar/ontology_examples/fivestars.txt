@@ -1,0 +1,44 @@
+#id fivestars_1
+
+#title Rating an article with the Five Stars of Online Journal Articles
+
+#description The [Five Stars of Online Journal Articles Ontology](/ontologies/fivestars) allows to encode ratings machine-readable form according to five different criteria, i.e., peer review, open access, enhanced content, available datasets, and machine-readable metadata. This example shows the Five Stars ratings for the following article (from which the example is extracted):
+
+<p class="cite bg-info">Shotton, D. (2012). The Five Stars of Online Journal Articles - a Framework for Article Evaluation. In D-Lib Magazine, 18 (1/2). http://dx.doi.org/10.1045/january2012-shotton</p>
+
+#code @prefix fivestars: <http://purl.org/spar/fivestars/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dx.doi.org/10.1045/january2012-shotton>
+    fivestars:hasPeerReviewRating
+        "3"^^xsd:nonNegativeInteger ;
+    fivestars:peerReviewRatingComment
+        "Post-publication responsive peer review of the preprint." ;
+
+    fivestars:hasOpenAccessRating
+        "4"^^xsd:nonNegativeInteger ;
+    fivestars:openAccessRatingComment
+        "Gold/libre open access without author fee!" ;
+
+    fivestars:hasEnhancedContentRating
+        "1"^^xsd:nonNegativeInteger ;
+    fivestars:enhancedContentRatingComment
+        "Plentiful Web links in text and to all references. No
+        additional semantic enhancement of text." ;
+
+    fivestars:hasAvailableDatasetsRating
+        "0"^^xsd:nonNegativeInteger ;
+
+    fivestars:hasMachine-readableMetadataRating
+        "1"^^xsd:nonNegativeInteger ;
+    fivestars:machine-readableMetadataRatingComment
+        "Structural markup in HTML only." ;
+
+    fivestars:hasOverallFiveStarsRating
+        "9"^^xsd:nonNegativeInteger ;
+    fivestars:overallFiveStarsRatingComment
+        "The nature of this article, being a position paper rather
+        than a research paper with primary research data, has
+        influenced the overall rating obtained." .
+
+#cite Peroni, Silvio (2015): Example of use of Five* #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1560007

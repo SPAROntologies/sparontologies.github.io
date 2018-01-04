@@ -1,0 +1,33 @@
+#name DataCite Ontology
+
+#acronym DataCite
+
+#url http://purl.org/spar/datacite
+
+#source https://sparontologies.github.io/datacite/current/datacite.owl
+
+#documentation http://purl.org/spar/datacite.html
+
+#repository https://github.com/sparontologies/datacite
+
+#description The *DataCite Ontology* (or simply *DataCite*) is an ontology written in OWL 2 DL to enable the metadata properties of the [DataCite Metadata Schema version 3.1](http://schema.datacite.org/meta/kernel-3.1/index.html) to be described in RDF.
+
+The main intent of the DataCite Ontology (shown in the following diagram) is to provide a flexible mechanism to define identifier for bibliographic resources (e.g., papers and datasets) and related entities (e.g., authors). To this end, we use the object property ``datacite:hasIdentifier`` that has as its object a member of the class ``datacite:Identifier`` or of one of its two sub-classes, ``datacite:ResourceIdentifier`` or ``datacite:AgentIdentifier``, while the latter one is sub-classed by three additional classes, i.e., ``datacite:PersonalIdentifier``, ``datacite:OrganizationIdentifier``, and ``datacite:FunderIdentifier``.
+
+<img class="img-responsive center-block" src="/static/img/spar/datacite-diagram.png" alt="A diagram of the main classes and properties of the DataCite Ontology." />
+
+The exact nature of the identifier is then defined using the second DataCite object property ``datacite:usesIdentifierScheme`` that has as its object the class ``datacite:IdentifierScheme`` or one of its two sub-classes: ``datacite:ResourceIdentifierScheme`` and ``datacite:AgentIdentifierScheme``, while the latter one is sub-classed by three additional classes, i.e., ``datacite:PersonalIdentifierScheme``, ``datacite:OrganizationIdentifierScheme``, and , ``datacite:FunderIdentifierScheme``.
+
+This provides a robust method for defining identifiers, since each specific identifier is defined as an individual member of its appropriate identifier scheme class. Of course, existing identifier schemes have been already defined within the ontology. For instance:
+
+* ``datacite:doi`` is an individual member of the class ``datacite:ResourceIdentifierScheme`` specifying a DataCite Digital Object Identifier;
+
+* ``datacite:orcid`` is an individual member of the class ``datacite:PersonalIdentifierScheme`` specifying an Open Researcher and Contributor Identifier;
+
+* ``datacite:fundref`` is an individual member of the class ``datacite:FunderIdentifierScheme`` specifying a FundRef Funder Identifier.
+
+As need arises, new identifiers can be added later as new members of each class, without having to modify the structure of the DataCite Ontology.  In addition, three members, i.e., ``datacite:local-resource-identifier-scheme``, ``datacite:local-personal-identifier-scheme``, ``datacite:local-organization-identifier-scheme`` and ``datacite:local-funder-identifier-scheme``, have been already added to permit the use of local identifiers.
+
+The class ``datacite:DescriptionType``, and the object properties ``datacite:hasDescription`` and ``datacite:hasDescriptionType`` have also been defined in order to link an entity to another item representing an entity description of a particular type. This is defined using the property ``datacite:hasDescriptionType``, which must have as its object one of the members of the class ``datacite:DescriptionType``, i.e., ``datacite:abstract``, ``datacite:methods``, ``datacite:other``, ``datacite:series-information`` and ``datacite:table-of-content``.  In this way it is possible to associate written documents (e.g. journal articles or 'data articles') as descriptions of datasets.
+
+Finally, it is also possible to provide a link between a resource, such as a dataset, and the document describing its metadata by means of [CiTO](/ontologies/cito), using the property ``cito:citesAsMetadataDocument``, and [FaBiO](/ontologies/fabio), by means of the class ``fabio:MetadataDocument``. In addition to these entities, the DataCite Ontology provides appropriate classes (i.e., ``datacite:MetadataScheme``) and properties (i.e., ``datacite:hasMetadataScheme``) to specify the particular scheme followed for creating the resource metadata exemplified in the metadata document.

@@ -1,0 +1,213 @@
+$def with (name, pages)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/favicon/spar/favicon.ico">
+
+    <title>$name</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/static/js/html5shiv.min.js"></script>
+      <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/spar/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">SPAR Ontologies</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                $for page in pages:
+                    <li><a href="$page['url']">$page['title']</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="first-slide" src="/static/img/spar/spar-ontologies.png" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Describing</h1>
+                  <p>The <strong>SPAR Ontologies</strong> are a set of modular OWL 2 DL ontologies for for describing all the main aspects of publishing domain</p>
+                  <p><a class="btn btn-lg btn-primary" href="ontologies" role="button">More details</a></p>
+                </div>
+              </div>
+            </div>
+          <div class="item">
+            <img class="second-slide" src="/static/img/spar/spar-turtle.png" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Using</h1>
+                <p>Use the <strong>SPAR Ontologies</strong> for creating and publishing machine-readable RDF metadata concerning the publishing domain</p>
+                <p><a class="btn btn-lg btn-primary" href="examples" role="button">See examples</a></p>
+              </div>
+            </div>
+          </div>
+        <div class="item">
+          <img class="third-slide" src="/static/img/spar/spar-citation.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Referencing</h1>
+              <p>Discover what is the more appropriate paper to cite for referring to a particular SPAR Ontology</p>
+              <p><a class="btn btn-lg btn-primary" href="publications" role="button">Citing SPAR</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container-fluid marketing">
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="featurette">
+          <h2 class="featurette-heading">Describing the publishing domain</h2>
+          <p class="lead"><img class="img-rounded" style="float:left; padding:10px" src="/static/img/spar/spar-logo.png" alt="SPAR Logo" height="120" />The <strong>Semantic Publishing and Referencing Ontologies</strong>, a.k.a. <strong>SPAR Ontologies</strong>, form a suite of orthogonal and complementary <a href="http://www.w3.org/TR/owl2-syntax/">OWL 2 DL</a> ontology modules for the creation of comprehensive machine-readable RDF metadata for every aspect of semantic publishing and referencing: document description, bibliographic resource identifiers, types of citations and related contexts, bibliographic references, document parts and status, agents' roles and contributions, bibliometric data and workflow processes.</p>
+          <p>The development of semantic models (vocabularies and ontologies) that fit the requirements of authors and publishers is one of the main research areas in <a href="https://semanticpublishing.wordpress.com">Semantic Scholarly Publishing</a>. Several recent works have proposed metadata schemas, vocabularies and ontologies to describe the publishing domain. However those models show some limitations, such as the non-fully-compliantness with the vocabulary used by publishers and the incomplete coverage of specific topics (e.g., characterisation of bibliographic citations, definition of agent's publishing roles, description of publishing workflows).</p>
+          <p>The SPAR Ontologies have been developed for addressing the aforementioned issues. Please take a look at the <a href="ontologies"><q>ontologies</q> page</a> and to the related <a href="examples">examples</a> to understand how to publish your scholarly data with SPAR Ontologies.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Development principles</h2>
+          <p class="lead">All SPAR Ontologies have been developed according the following principles:</p>
+          <ul class="lead">
+              <li><p>Addressing actors' requirements<br /><small>There should be an extensive dialogue with publishers and members of academic communities to clarify their requirements</small></p>
+              </li>
+              <li><p>Interoperable ontological modules<br /><small>Any area of interest of the publishing domain should be covered by separate yet interoperable ontologies</small></p></li>
+              <li><p>Minimum logical constraints<br /><small>Logical constraints, for example domain and range constraints on properties, should be added only where they are strictly required, to allow maximum reusability of each ontology module</small></p></li>
+              <li><p>Reusing existing vocabularies<br /><small>Where well-known and widely shared vocabularies covering parts of the domain already exist (e.g., <a href="http://dublincore.org/documents/dcmi-terms/">DC Terms</a> and <a href="http://www.w3.org/TR/skos-reference/">SKOS</a>), these should be properly imported and re-used</small></p></li>
+              <li><p>Supporting people with examples and tools<br /><small>Alongside the development of the ontologies, <a href="examples">examples of use</a> and tools (e.g., <a href="http://www.essepuntato.it/lode">LODE</a> and <a href="http://www.essepuntato.it/graffoo">Graffoo</a>) that assist people to understand each ontology with minimum effort, without having to know the specific technical language in which the ontology is implemented, should be used or opportunely developed</small>
+</p></li>
+          </ul>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="/static/img/spar/spar-principles.png" alt="SPAR Principles">
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="featurette">
+          <h2 class="featurette-heading">SPAR Ontologies in the wild</h2>
+          <p class="lead">SPAR Ontologies have been already adopted by different communities and in several projects for describing data related with the publishing domain. Please take a look at the <a href="uptake"><q>communities uptake</q> page</a> for a complete list of scholarly and industrial works and projects/initiatives citing or using SPAR Ontologies. Among those projects and initiatives, there are:</p>
+          <ul class="lead list-inline text-center">
+              <li><p><a href="https://github.com/alexgarciac/biotea">BioTea</a></p></li>
+              <li><p><a href="https://www.datacite.org">DataCite</a></p></li>
+              <li><p><a href="http://data.open.ac.uk">Data.open.ac.uk</a></p></li>
+              <li><p><a href="https://www.w3.org/TR/vocab-duv/">Data on the Web Best Practices WG @ W3C</a></p></li>
+              <li><p><a href="http://pro.europeana.eu/">Europeana Professional</a></p></li>
+              <li><p><a href="https://w3id.org/fr/def/core#">FAIR* Reviews</a></p></li>
+              <li><p><a href="http://linkedchemistry.info/">Linked Chemistry</a></p></li>
+              <li><p><a href="http://www.nature.com/ontologies/">Nature Ontologies</a></p></li>
+              <li><p><a href="http://opencitations.net/">OpenCitations</a></p></li>
+              <li><p><a href="http://pdfx.cs.man.ac.uk/">PDFX</a></p></li>
+              <li><p><a href="http://pubchem.ncbi.nlm.nih.gov/rdf/">PubChemRDF</a></p></li>
+              <li><p><a href="http://semanticscience.org">Semantic Science</a></p></li>
+              <li><p><a href="https://w3id.org/un/ontology/undo">United Nations System Document Ontology (UNDO)</a></p></li>
+              <li><p><a href="https://data.globalchange.gov/">US Global Change Information System</a></p></li>
+              <li><p><a href="http://utopiadocs.com/">Utopia Documents</a></p></li>
+		  </ul>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+      <!-- Two columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-6 text-center">
+          <img class="img-circle" src="/static/img/spar/spar-flower.png" alt="SPAR Logo" width="140" height="140">
+          <h2>Interact with the community</h2>
+          <p>There are several ways for getting the earlist updates about SPAR Ontologies, as well as for discussing topics related with the use of such ontologies with the other members of the SPAR community. Write us an <a href="mailto:sparontologies@gmail.com">email</a> and follow our <a href="https://twitter.com/sparontologies">social accounts</a> and <a href="https://groups.google.com/forum/#!forum/spar-ontologies">forums</a>.</p>
+          <p><a class="btn btn-default" href="contacts" role="button">Join the community &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-6 text-center">
+          <img class="img-circle" src="/static/img/spar/spar-authors.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Behind the scenes</h2>
+          <p>The SPAR Ontologies are the outcome of a joint work mainly done by <a href="http://www.essepuntato.it">Silvio Peroni</a> (<a href="http://www.unibo.it">University of Bologna</a>) and <a href="http://www.oerc.ox.ac.uk/people/david-shotton">David Shotton</a> (<a href="http://ox.ac.uk">University of Oxford</a>). However, other people from several universities worldwide have contributed in part to some aspects of the ontologies.</p>
+          <p><a class="btn btn-default" href="about" role="button">More about contributors &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <hr class="featurette-divider">
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#" title="Back to top" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-circle-arrow-up"></span> Back to top</a></p>
+        <p>This website and all its content are licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> excepting where stated differently.</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

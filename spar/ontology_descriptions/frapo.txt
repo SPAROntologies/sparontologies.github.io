@@ -1,0 +1,21 @@
+#name Funding, Research Administration and Projects Ontology
+
+#acronym FRAPO
+
+#url http://purl.org/cerif/frapo
+
+#source https://sparontologies.github.io/frapo/current/frapo.owl
+
+#documentation http://purl.org/cerif/frapo.html
+
+#repository https://github.com/sparontologies/frapo
+
+#description *FRAPO*, the* Funding, Research Administration and Projects Ontology*, is a [CERIF-compliant](http://www.eurocris.org/cerif/main-features-cerif) ontology for describing administrative information relating to grant funding and research projects. It can be used for the characterization of grant applications (e.g., ``frapo:Grant``), funding bodies (e.g., ``frapo:University``), research projects (e.g., ``frapo:Project``), project partners, etc., in other words the sort of information stored in [Current Research Information Systems (CRIS)](http://www.eurocris.org/). It can also be used to describe other types of projects, for example building projects and educational projects.
+
+FRAPO, which is written in OWL 2 DL, imports [FOAF](http://xmlns.com/foaf/spec/) for characterizing people.  FRAPO is designed to be used in conjunction with [SCoRO](/ontologies/scoro) that provides structured vocabulary terms to describe the contributions (``scoro:Contribution``) and roles of scholars (``pro:Role``), and the organizations of which they are members, with respect to projects, research investigations and other academic activities describable using FRAPO, and to the scholarly journal articles and other outputs that result from them, as shown in the following diagram.
+
+<img class="img-responsive center-block" src="/static/img/spar/frapo-diagram.png" alt="The diagram of FRAPO." />
+
+Terms for documents of relevance to the scholarly domain covered by FRAPO, including grant applications, project plans, project reports, datasets and journal articles, are already provided by [FaBiO](/ontologies/fabio) and are therefore not included within FRAPO.
+
+FRAPO also permits descriptions of various types of applications, funding programs, infrastructure entities (e.g., services and research facilities), and a wide range of financial entities (e.g., accounts, contracts, quotations, purchases, invoices and payments), and the relationships between them (e.g., has application outcome, is manufactured by, is purchased by, has dispatch date, has purchase order number, has acronym) not shown in the diagram above.

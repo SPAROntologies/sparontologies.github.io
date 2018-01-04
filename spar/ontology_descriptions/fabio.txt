@@ -1,0 +1,27 @@
+#name FRBR-aligned Bibliographic Ontology
+
+#acronym FaBiO
+
+#url http://purl.org/spar/fabio
+
+#source https://sparontologies.github.io/fabio/current/fabio.owl
+
+#documentation http://purl.org/spar/fabio.html
+
+#repository https://github.com/sparontologies/fabio
+
+#description **FaBiO**, the **FRBR-aligned Bibliographic Ontology**, is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials. However, they also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also anthologies, catalogues and similar collections.
+
+FaBiO already imports several entities from existing standards for bibliographic entity descriptions, i.e., <a href="http://www.ifla.org/publications/functional-requirements-for-bibliographic-records">FRBR</a>, <a href="http://dublincore.org/documents/dcmi-terms/">DC Terms</a>, <a href="http://www.prismstandard.org/resources/mod_prism.html">PRISM</a> and <a href="http://www.w3.org/TR/skos-reference/">SKOS</a>. In addition, FaBiO has been developed so to limit any restriction to its classes as well as the domains and ranges of its properties. This flexibility has the great advantage of allowing FaBiO to be used together with other models.
+
+In particular, FaBiO classes are structured according to the <a href="http://www.ifla.org/publications/functional-requirements-for-bibliographic-records">FRBR</a> schema of *Works*, *Expressions*, *Manifestations* and *Items*. The following <a href="http://www.essepuntato.it/graffoo">Graffoo</a> diagram shows additional properties that have been added to extends the <a href="/ontologies/frbr">FRBR data model</a> by linking Works and Manifestations (``fabio:hasManifestation`` and ``fabio:isManifestationOf``), Works and Items (``fabio:hasPortrayal`` and ``fabio:isPortrayedBy``), and Expressions and Items (``fabio:hasRepresentation`` and ``fabio:isRepresentedBy``).
+
+<img class="img-responsive center-block" src="/static/img/spar/fabio-frbr-properties.png" alt="The additional FaBiO properties that link Works and Manifestations, Works and Items and Expressions and Items" />
+
+With FaBiO, it thus becomes possible:
+
+* to write semantic descriptions of a wide variety of bibliographic objects, including conference papers (``fabio:ConferencePaper``), journal articles (``fabio:JournalArticle``), journal issues and volumes (``fabio:JournalIssue`` and ``fabio:JournalVolume``), using terms that closely resemble the language used in everyday speech by academics and publishers;
+
+* to employ FRBR categories (i.e., ``fabio:Work``, ``fabio:Expression``, ``fabio:Manifestation`` and ``fabio:Item``, all subclasses of the related FRBR classes) to define clear separations between each part of the publishing process, which involves different people (authors, publishers, readers), depending on which aspect of the bibliographic entity we are considering: the high-level conceptualisation of the research paper, the version of record of that paper forming a journal article, the publication of the article in various formats, and the individual physical or electronic exemplars of the published article that people may read and own;
+
+* to include with ease elements from other vocabularies which describe particular entities involved in the publishing process that are not specified by FaBiO itself, such as those from FOAF for persons and organisations.

@@ -1,0 +1,149 @@
+#id bido_1
+
+#title Specifying the impact factor of a journal
+
+#description Numeric bibliometric data are those characterised by a certain integer or float value related to a particular bibliometric measure. [BiDO](/ontologies/bido) allows one to specify these measures – e.g., h-index, author citation count, e-index, and journal impact factor – to bibliographic resources. For instance, in the following example we assign the 2014 Impact Factor to the [Journal of Web Semantics](http://www.journals.elsevier.com/journal-of-web-semantics).
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix journal: <http://www.journals.elsevier.com/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+journal:journal-of-web-semantics a fabio:Journal ;
+    bido:holdsBibliometricDataInTime :web-semantics-if-2014 .
+
+:web-semantics-if-2014 a bido:BibliometricDataInTime ;
+    tvc:atTime :2015-validity-period ;
+    bido:accordingTo :thomson-reuters ;
+    bido:withBibliometricData :web-semantics-if-2014-value .
+
+:2015-validity-period a time:Interval ;
+    time:hasBeginning :2015-01-01 ;
+    time:hasEnd :2015-12-31 .
+
+:web-semantics-if-2014-value a bido:NumericBibliometricData ;
+    bido:hasMeasure bido:journal-impact-factor ;
+    bido:hasNumericValue "2.464"^^xsd:float .
+
+:thomson-reuters a foaf:Organization ;
+    foaf:homepace <http://thomsonreuters.com> .
+
+#cite Peroni, Silvio (2015): Example of use of BiDO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1559974
+
+
+#id bido_2
+
+#title Assigning a research career category to a person
+
+#description The module of [BiDO](/ontologies/bido) for describing [research career chategories](http://purl.org/spar/bido-research-career-category) allows one to assign specific categories describing kinds of research careers to people, as described in the following paper:
+
+<p class="cite bg-info">Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Zhao, J., van Erp, M., Keßler, C., Kauppinen, T., van Ossenbruggen, J., van Hage, W. R. (Eds.), Proceedings of the 4th Workshop on Linked Science (LISC 2014), CEUR Workshop Proceedings 1282: 24–35. Aachen, Germany: CEUR-WS.org. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf</p>
+
+For instance, in the example we assign a particular research category (defined mainly by mathematical and geometrical features) to John Doe.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+
+:john-doe a foaf:Person ;
+    bido:holdsBibliometricDataInTime :5-years-research-career .
+
+:5-years-research-career a bido:BibliometricDataInTime ;
+    tvc:atTime :since-july-2014 ;
+    bido:accordingTo :research-career-algorithm ;
+    bido:withBibliometricData
+        :increasing-with-prem-dec-and-low-log-slope-in-243-729-5-y-beg .
+
+:since-july-2014 a time:Interval ;
+    time:hasBeginning :2014-07-11 .
+
+:research-career-algorithm a fabio:Algorithm ;
+    cito:isDescribedBy <http://ceur-ws.org/Vol-1282/lisc2014_submission_9> ;
+    frbr:realization :algorithm-implementation .
+
+:algorithm-implementation a fabio:ComputerProgram .
+
+:increasing-with-prem-dec-and-low-log-slope-in-243-729-5-y-beg
+    a bido:ResearchCareerCategory ;
+    bido:hasCurve :increasing-curve-with-premature-deceleration ;
+    bido:hasSlope :low-logarithmic-slope ;
+    bido:hasOrderOfMagnitude bido:243-729 ;
+    bido:concernsResearchPeriod bido:5-years-beginning .
+
+:increasing-curve-with-premature-deceleration a bido:Curve ;
+    bido:hasTrend bido:increasing ;
+    bido:hasAccelerationPoint :premature-deceleration .
+
+:low-logarithmic-slope a bido:Slope ;
+    bido:hasStrength bido:low ;
+    bido:hasGrowth bido:logarithmic .
+
+#cite Peroni, Silvio (2015): Example of use of BiDO #2. figshare. http://dx.doi.org/10.6084/m9.figshare.1559973
+
+
+#id bido_3
+
+#title Conference rank and average of reviews per paper
+
+#description This example shows how to use [BiDO](http://purl.org/spar/bido) for describing numeric and categorial bibliometric data related to a conference, i.e., the '5th International Conference on Automated Deduction'. In particular, we specify average number of reviews per paper and the conference ranking that the conference has. The particular module used for specifying such data is the [Review Measures module](http://purl.org/spar/bido-review-measures).
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix conf: <http://lod.springer.com/data_v2/conference/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix onto: <http://lod.springer.com/data_v2/ontology/class/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+
+conf:cade1980 a onto:Conference ;
+    rdfs:label
+        "5th International Conference on Automated Deduction" ;
+    bido:holdsBibliometricDataInTime
+        conf:cade1980-avg-num-reviews-per-paper ,
+        conf:cade1980-cff-rank .
+
+conf:cade1980-avg-num-reviews-per-paper
+    a bido:BibliometricDataInTime ;
+    rdfs:label
+        "3 reviews per paper on average (according to Springer)" ;
+    bido:withBibliometricData
+        conf:cade1980-numeric-data-avg-num-reviews-per-paper ;
+    bido:accordingTo :springer .
+
+:springer a foaf:Organization ;
+    rdfs:label "Springer" ;
+    foaf:homepage <http://www.springer.com> .
+
+conf:cade1980-numeric-data-avg-num-reviews-per-paper
+    a bido:NumericBibliometricData ;
+    rdfs:label "3 reviews per paper on average" ;
+    bido:hasNumericValue "3"^^xsd:integer ;
+    bido:hasMeasure bido:average-of-reviews-per-paper .
+
+conf:cade1980-cff-rank a bido:BibliometricDataInTime ;
+    rdfs:label "B (according to CORE)" ;
+    tvc:atTime :2015-validity-period ;
+    bido:withBibliometricData bido:core-b ;
+    bido:accordingTo :core .
+
+:2015-validity-period a time:Interval ;
+    time:hasBeginning :2015-01-01 ;
+    time:hasEnd :2015-12-31 .
+
+:core a foaf:Organization ;
+    rdfs:label
+        "Computing Research and Education Association of Australasia" ;
+    foaf:homepage <http://www.core.edu.au> .
+
+#cite Peroni, Silvio (2015): Example of use of BiDO #3. figshare. http://dx.doi.org/10.6084/m9.figshare.1559979

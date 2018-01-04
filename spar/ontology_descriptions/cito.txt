@@ -1,0 +1,23 @@
+#name Citation Typing Ontology
+
+#acronym CiTO
+
+#url http://purl.org/spar/cito
+
+#source https://sparontologies.github.io/cito/current/cito.owl
+
+#documentation http://purl.org/spar/cito.html
+
+#repository https://github.com/sparontologies/cito
+
+#description **CiTO**, **the Citation Typing Ontology**, makes it possible for authors (or others) to mark citation links and to capture their citation *intent* (e.g., ``cito:extends``, ``cito:usesMethodIn``, ``cito:supports``) when someone cites a particular publication. In particular, CiTO allows one to create metadata describing citations that are distinct from metadata describing the cited works themselves, and permits the motives of an author when referring to another document to be captured.
+
+CiTO contains just two main object properties, ``cito:cites`` and its inverse ``cito:isCitedBy``, each of which has forty-one sub-properties, plus four additional generic object properties – i.e.  ``cito:shareAuthorWith``, ``cito:sharesAuthorInstitutionWith``, ``cito:sharesFundingAgencyWith`` and ``cito:likes`` – that may be used even outside a citation. As defined in [Functions of Citations Ontology](/ontologies/foco), all these properties (and, consequently, their inverses) may be classified as rhetorical and/or factual, with the rhetorical properties being grouped in three sets depending on their connotation: positive, informative (or neutral) or negative. Note that all the domain and range constraints from the object properties are not defined, so that this ontology could be easily integrated with other models, e.g., [FaBiO](/ontologies/fabio).
+
+CiTO makes available a mechanism that permits the citation itself to be reified, so that it can become the subject or object of other RDF statements. In particular, the reifying class is ``cito:Citation``, and its accompanying object properties, i.e.,  ``cito:hasCitingEntity``, ``cito:hasCitationCharacterization`` and ``cito:hasCitedEntity``, can be employed to reify direct citation statements made using the CiTO citation object property ``cito:cites`` or one of its sub-properties.
+
+In addition, two other ontologies have been defined for explicitly describing specific aspects of CiTO, i.e.:
+
+* the [Functions of Citations Ontology (FOCO)](http://www.essepuntato.it/2013/03/cito-functions) that provides a classification for all the CiTO properties according to their factual and positive/neutral/negative rhetorical functions;
+
+* the [CiTO to Wordnet Ontology (C2W)](http://www.essepuntato.it/2013/03/cito2wordnet) that maps all the CiTO properties defining citations with the appropriate Wordnet synsets (as defined in their RDF formalisation).</p></li>

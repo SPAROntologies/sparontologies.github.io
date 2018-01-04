@@ -1,0 +1,55 @@
+#id frapo_1
+
+#title Describing fundings, investigations and research outputs
+
+#description The specification of the connection between a research paper, the investigation done and discussed in it and the funds that allowed such investigation are important aspects to describe in the paper itself. Usually, such aspects are introduced in a footnote or, even better, in an appropriate acknowledgement section that describe them in natural language.
+
+The use of [FRAPO](/ontologies/frapo) in combination with other SPAR Ontologies such as [FaBiO](/ontologies/fabio) and [SCoRO](/ontologies/scoro) permits the description of the aforementioned aspects in RDF. For instance, the well-known paper published by a young Peter Mika and entitled "[Ontologies are us: a unified model of social networks and semantics](http://dx.doi.org/10.1016/j.websem.2006.11.002)" has been one of the outcomes of Mika's investigation founded by his Ph.D. scholarship. [FRAPO](/ontologies/frapo) allows one to explicitly describe all of this by means of its several classes and properties.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix person: <http://data.semanticweb.org/person/> .
+@prefix org: <http://data.semanticweb.org/organization/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+
+org:vrije-universiteit-amsterdam a frapo:University ;
+    foaf:name "Free University Amsterdam"@en ;
+    frapo:awards :phd-scholarship-2004 .
+
+:investigation a frapo:Investigation ;
+    frapo:hasOutput
+        <http://dx.doi.org/10.1016/j.websem.2006.11.002> .
+
+:phd-scholarship-2004 a frapo:Scholarship ;
+    foaf:name "Ph.D. Scholarship 2004" ;
+    frapo:funds :investigation .
+
+person:peter-mika a foaf:Person ;
+    foaf:name "Peter Mika" ;
+        pro:holdsRoleInTime :affiliation-vua ;
+        scoro:makesContribution
+            :mika-writes-draft ,
+            :mika-revises-manuscript .
+
+:mika-writes-draft a scoro:ContributionSituation ;
+    scoro:withContribution scoro:writes-manuscript-draft ;
+    scoro:withContributionEffort scoro:solo-effort ;
+    scoro:relatesToEntity
+        <http://dx.doi.org/10.1016/j.websem.2006.11.002> .
+
+:mika-revises-manuscript a scoro:ContributionSituation ;
+    scoro:withContribution scoro:revises-manuscript ;
+    scoro:withContributionEffort scoro:solo-effort ;
+    scoro:relatesToEntity
+        <http://dx.doi.org/10.1016/j.websem.2006.11.002> .
+
+:affiliation-vua a pro:RoleInTime ;
+    pro:withRole scoro:affiliate ;
+    pro:relatesToOrganization org:vrije-universiteit-amsterdam ;
+    pro:relatesToDocument
+        <http://dx.doi.org/10.1016/j.websem.2006.11.002> .
+
+#cite Peroni, Silvio (2015): Example of use of FRAPO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1549721

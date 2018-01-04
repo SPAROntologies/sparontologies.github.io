@@ -1,0 +1,146 @@
+$def with (title, pages, projects, publications)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/favicon/spar/favicon.ico">
+
+    <title>$title</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/static/js/html5shiv.min.js"></script>
+      <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/spar/carousel.css" rel="stylesheet">
+    <link href="/static/css/spar/spar.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div id="top" class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">SPAR Ontologies</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                $for page in pages:
+                    <li><a href="$page['url']">$page['title']</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container-fluid marketing additional-margin">
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="featurette">
+          <h2 class="featurette-heading">Communities uptake</h2>
+          <p>The <a href="/ontologies">SPAR Ontologies</a> have drawn the attention of the Semantic Publishing community as a reference point for standardising entity descriptions and fostering interoperability between services. As a demonstration of their adoption, in this page we list all the projects that use any of the SPAR Ontologies and all the scholarly documents that explicitly cite them.</p>
+          <p>Since both the lists of projects and publications could be not exhaustive, we kindly invite to <a href="mailto:sparontologies@gmail.com?subject=New SPAR-related item&body=Dear Silvio,%0D%0D[Please write here your text. For suggesting a new project, please write its name, URL and provide a short description of it (optionally including which and how SPAR Ontologies are used within it). For suggesting a new publication, please indicate the title, the list of authors and an URL.]">write us an email</a> <strong>for pointing out additional projects and publications</strong> and for requesting an update of the description of any of the listed projects. We will be honoured to add them in this page.</p>
+          <h3><a class="anchor" id="toc"></a>Table of contents</h3>
+          <ol>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#publications">Publications</a></li>
+          </ol>
+
+          <hr class="featurette-divider" />
+          <h3>
+              <a class="anchor" id="projects"></a>
+              Projects
+              <span class="pull-right">
+                  <a href="#toc" title="Back to the table of contents" class="btn btn-xs btn-info"><span class="glyphicon glyphicon-wrench"></span></a>
+                  <a href="#" title="Back to top" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+              </span>
+          </h3>
+          <p>In this section we list all the projects that use SPAR Ontologies for modelling parts of their domain. The following list of projects (sorted in alphabetic order) was compiled by considering personal communications and by googling about SPAR Ontologies adoption.</p>
+          <dl>
+              $for project in projects:
+                <dt>
+                    <a class="anchor" id="$project['id']"></a>
+                    <a href="$project['url']">$project['name']</a>
+                </dt>
+                <dl><p class="desc">$project['description']</p></dl>
+          </dl>
+
+          <hr class="featurette-divider" />
+          <h3>
+              <a class="anchor" id="publications"></a>
+              Publications
+              <span class="pull-right">
+                  <a href="#toc" title="Back to the table of contents" class="btn btn-xs btn-info"><span class="glyphicon glyphicon-wrench"></span></a>
+                  <a href="#" title="Back to top" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+              </span>
+          </h3>
+          <p>In this section we list all the publications citing any of the SPAR Ontologies. In particular, we consider all the scholarly works retrieved by using <a href="http://scholar.google.com">Google Scholar</a>. For creating the list, we did not consider any self citation and we took into consideration only the papers that comply with one of the following criteria:</p>
+          <ul>
+              <li>the paper was suggested in a personal communication (e.g., email);</li>
+              <li>the paper cites one of the <a href="/publications">SPAR Ontologies articles</a> by means of a proper bibliographic reference;</li>
+              <li>the paper contains, in its text, a reference to <code>http://www.sparontologies.net</code> or any other SPAR-related URL starting with either <code>http://purl.org/spar</code> or <code>http://purl.org/cerif</code>.</li>
+          </ul>
+          <p>Last update: July 11, 2015.</p>
+          <ol>
+              $for pub in publications:
+                <li><a href="$pub['url']">$pub['title']</a>, by <em>$pub['author']</em></li>
+          </ol>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#" title="Back to top" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-circle-arrow-up"></span> Back to top</a></p>
+        <p>This website and all its content are licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> excepting where stated differently.</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/marked.min.js"></script>
+    <script type="application/javascript">
+        jQuery(".desc").each(function(el){
+            jQuery(this).after(marked(jQuery(this).text())).remove()});
+    </script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

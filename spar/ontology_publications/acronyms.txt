@@ -1,0 +1,11 @@
+#cito CiTO: Citation Typing Ontology
+#fabio FaBiO: FRBR-aligned Bibliographic Ontology
+#doco DoCO: Document Components Ontology
+#deo DEO: Discourse Elements Ontology
+#biro BiRO: Bibliographic Reference Ontology
+#c4o C4O: Citation Count and Context Characterization Ontology
+#pso PSO: Publishing Status Ontology
+#pro PRO: Publishing Roles Ontology
+#pwo PWO: Publishing Workflow Ontology
+#bido BiDO: Bibliometric Data Ontology
+#fivestars Five*: Five Stars of Online Research Articles Ontology 

@@ -1,0 +1,124 @@
+#id dokieli
+#name Dokieli
+#url http://dokie.li/
+#description *Dokieli* is a general purpose client-side application for [document authoring, publication and interaction](http://csarven.ca/dokieli), which allows users to enable its capabilities according to their needs and technical resources. The editor is built on open Web standards and the documents are compliant with Linked Data best practices.
+
+#id w3c-duv
+#name Data on the Web Best Practices: Dataset Usage Vocabulary
+#url https://www.w3.org/TR/vocab-duv/
+#description The *Data on the Web Best Practices: Dataset Usage Vocabulary* is a W3C Working Draft (28 January 2016) which aims at filling a niche that helps standardize the way Web published dataset usage be conveyed and shared.
+
+#id datacite
+#name DataCite
+#url https://www.datacite.org
+#description *DataCite* is an international not-for-profit organization which aims at making data more accessible and more useful, by developing and supporting methods to locate, identify, cite and [describe in RDF](https://doi.org/10.6084/m9.figshare.2075356) data and other research objects.
+
+#id scienceai
+#name Science.ai
+#url https://science.ai
+#description The tools proposed by *science.ai* aims at simplifying the publishing process of scientific articles by means of Web technologies and conversion strategies from well-known document formats. One of its output is the [Scholarly Article Ontology](http://ns.science.ai/), which is used to describe, semantically, document components.
+
+#id pubchemrdf
+#name PubChemRDF
+#url http://pubchem.ncbi.nlm.nih.gov/rdf/
+#description *PubChemRDF* is an RDF triplestore which includes a number of semantic relationships, such as those between compounds and substances, the chemical descriptors associated with compounds and substances, the relationships between compounds, the provenance and attribution metadata of substances, and the concise bioactivity data view of substances.
+
+#id semantic_lancet
+#name Semantic Lancet
+#url http://www.semanticlancet.eu
+#description The *Semantic Lancet Project* is focused on building a Linked Open Dataset on scholarly publications. The current dataset contains metadata about all papers published in the [Journal of Web Semantics](http://www.journals.elsevier.com/journal-of-web-semantics/) by Elsevier.
+
+#id nature_ontologies
+#name Nature Ontologies
+#url http://www.nature.com/ontologies/
+#description The *Nature.com Ontologies* portal describes the approach adopted in [Springer Nature](http://www.springernature.com/) for using Linked Data technologies to manage the publishing of [nature.com](http://www.nature.com) titles.
+
+#id data_open
+#name Data.open.ac.uk
+#url http://data.open.ac.uk
+#description The *data.open.ac.uk* portal is the home of Open Linked Data from [The Open University](http://open.ac.uk). They interlink and expose data available in various institutional repositories of the University and make it available openly for reuse.
+
+#id biotea
+#name Biotea
+#url https://github.com/alexgarciac/biotea
+#description The *Biotea project* comprises and makes available a set of RDF files generated from the open-access subset of PMC and enriched with semantic annotations, a Web Services API for querying the RDF dataset, a SPARQL Protocol and RDF Query Language (SPARQL) endpoint containing a subset of the RDF files as a proof of concept, an article-centric prototype that acts as an interface to the WoD, and an implemented transformation process from our RDF files to Bio2RDF.
+
+#id europeana
+#name Europeana Professional
+#url http://pro.europeana.eu/
+#description The *Europeana Network* is a community created to shape and promote good practice in the world of digital cultural heritage. Europeana provides a platform that allows people to explore great achievements from the past to achieve great things in the future. They bring together the organisations that have heritage to share with the people and sectors who want to view, share and build with that heritage.
+
+#id linked_chemistry
+#name Linked Chemistry
+#url http://linkedchemistry.info/
+#description *Linked Chemistry* is a website that hosts linked chemical data, where with "linked" they refers to using dereferenceable IRIs and the Resource Description Framework (RDF).
+
+#id pdfx
+#name PDFX
+#url http://pdfx.cs.man.ac.uk/
+#description *PDFX* is a rule-based system for analysing scientific publications in PDF form and recovering their fine-grained logical and rhetorical structures . Its analysis result is stored in an XML format that describes the document's organisation into logical units, and also links it to geometrical typesetting markers in the original PDF, such as column or page break.
+
+#id occ
+#name OpenCitations
+#url http://opencitation.net
+#description The *OpenCitations Corpus* (*OCC*) is a new open repository of scholarly citation data. Its objective is to provide accurate bibliographic citation data that others may freely build upon, enhance and reuse for any purpose. It does this by making the citation data available under a Creative Commons CC0 1.0 public domain dedication, without restriction under copyright or database law.
+
+#id semantic_science
+#name Semantic Science
+#url https://code.google.com/p/semanticscience/
+#description *Semantic Science* is a new community portal to support the development of Semantic Web technologies (guides/presentations, RDF/OWL ontologies, knowledge systems) to facilitate the management, integration and discovery of scientific knowledge.
+
+#id utopia
+#name Utopia Documents
+#url http://utopiadocs.com/
+#description *Utopia Documents* is a PDF-reader designed to improve the user's experience of reading scholarly papers (particularly in the domain of the Life Sciences) by linking the article and its contents to online resources.
+
+#id lov
+#name Linked Open Vocabularies
+#url http://lov.okfn.org
+#description The *Linked Open Vocabularies Dataset* (*LOV*) describes the growing ecosystem of linked open vocabularies (RDFS or OWL ontologies) used in the Linked Data Cloud.
+
+#id citeulike
+#name CiteULike
+#url http://www.citeulike.org/
+#description *CiteULike* CiteULike is a web service which allows people, such as researchers, to store and share citations to academic papers.
+
+#id linked_education
+#name Linked Education
+#url http://linkededucation.org
+#description *Linked Education* aims at sharing resources and information related to educational Linked Data. In particular, it aims at facilitating and promoting the Web-scale sharing of educational data and resources based on state-of-the-art Linked Data principles.
+
+#id vivo
+#name VIVO
+#url http://vivoweb.org
+#description *VIVO* is an open source Semantic Web application that enables the discovery of research and scholarship across disciplines at that institution and beyond. VIVO supports browsing and a search function which returns faceted results for rapid retrieval of desired information.
+
+#id rashfwk
+#name RASH Framework
+#url http://github.com/essepuntato/rash
+#description The *RASH Framework* is a set of specifications and writing/conversion/extraction tools for writing academic articles in [RASH](https://rawgit.com/essepuntato/rash/master/documentation/index.html), i.e., a markup language defined as a subset of HTML+RDF for writing scientific articles.
+
+#id aligned
+#name ALIGNED
+#url http://www.aligned-project.eu
+#description The *ALIGNED project* is developing new ways to combine software and data engineering to speed the development of web-based data intensive systems. Within ALIGNED, the [Seshat Global History Databank use case](http://seshatdatabank.info/) is investigating automated SPAR support for creation of bibliographic references for historical, archaeological and social sciences data-sets.
+
+#id mediatype
+#name Media type as Linked Open Data
+#url http://w3id.org/spar/mediatype
+#description The *Media type as Linked Open Data* is a Web space reserved for providing a description in RDF of all the media types available at the official [IANA webpage](http://www.iana.org/assignments/media-types/media-types.xml). The RDF representation of each media type is accessible by concatenating the URL https://w3id.org/spar/mediatype/ with the identifier of the media type of interest (e.g., https://w3id.org/spar/mediatype/text/turtle).
+
+#id usglobalchange
+#name US Global Change Information System
+#url https://data.globalchange.gov/
+#description The Global Change Information System (GCIS) is part of the US Global Change Research Program (USGCRP), and has been created to coordinate and integrate the use of federal information products on changes in the global environment and the implications of those changes for society.
+
+#id fairreviews
+#name FAIR* Reviews
+#url https://w3id.org/fr/def/core#
+#description The FAIR* Reviews ontology aims at describing scientific reviews as relevant resources produced during the research publication workflow. Reviews are modelled as textual content containing a throughful evaluation of a given scientific contribution, and are written by a reviewer usually in the context of a venue (e.g. a conference, a journal).
+
+#id undo
+#name United Nations System Document Ontology (UNDO)
+#url https://w3id.org/un/ontology/undo
+#description The United Nations System Document Ontology (UNDO) provides a framework for the formal description of all entities and the relations that can exist among them in UN Documents. The idea behind the development of this model is to have a mechanism for sharing data about documents and their content in RDF format and, eventually, extended by the various agencies of the United Nations to meet their own domain specific requirements.

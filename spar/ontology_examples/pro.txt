@@ -1,0 +1,57 @@
+#id pro_1
+
+#title Author's affiliations in papers
+
+#description The description of the authors of papers and, in particular, which affiliation they have specified in the context of a particular paper is a crucial aspect to take into account when describing authors' roles. However, several existing ontologies, such as the [Semantic Web Conference Ontology](http://data.semanticweb.org/ns/swc/ontology), do not allow one to discern the context in which an person-role association holds. For instance, consider an author having different institutional affiliations in the context of different publications (e.g., because he/she moved from one to the other).
+
+In order to address this issue, [PRO](/ontologies/pro) provides a convenient way to describe all the contextualised and possibly time-indexed person-role associations, in order to provide a complete picture of how roles relate with person and in which contexts.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix dogfood: <http://data.semanticweb.org/organization/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:silvio-peroni a foaf:Person ;
+    foaf:name "Silvio Peroni" ;
+    pro:holdsRoleInTime
+        :silvio-peroni-author ,
+        :silvio-peroni-at-kmi ,
+        :silvio-peroni-at-unibo .
+
+:silvio-peroni-author a pro:RoleInTime ;
+    pro:withRole pro:author ;
+    pro:relatesToDocument
+        <http://dx.doi.org/10.1007/978-3-540-89704-0_17> ,
+        <http://dx.doi.org/10.1145/1600193.1600232> .
+
+:silvio-peroni-at-unibo a pro:RoleInTime ;
+    pro:withRole scoro:affiliate ;
+    pro:relatesToDocument
+        <http://dx.doi.org/10.1145/1600193.1600232> ;
+    pro:relatesToOrganization
+        dogfood:university-of-bologna ;
+    tvc:atTime :unibo-affiliation-time .
+
+:unibo-affiliation-time a ti:TimeInterval ;
+    ti:hasIntervalStartDate
+        "2009-01-01T00:00:00Z"^^xsd:dateTime .
+
+:silvio-peroni-at-kmi a pro:RoleInTime ;
+    pro:withRole scoro:affiliate ;
+    pro:relatesToDocument
+        <http://dx.doi.org/10.1007/978-3-540-89704-0_17> ;
+    pro:relatesToOrganization
+        dogfood:kmi-the-open-university-uk ;
+    tvc:atTime :kmi-affiliation-time .
+
+:kmi-affiliation-time a ti:TimeInterval ;
+    ti:hasIntervalStartDate
+        "2008-04-01T00:00:00Z"^^xsd:dateTime ;
+    ti:hasIntervalEndDate
+        "2008-09-30T23:59:59Z"^^xsd:dateTime .
+
+#cite Peroni, Silvio (2015): Example of use of PRO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1538655

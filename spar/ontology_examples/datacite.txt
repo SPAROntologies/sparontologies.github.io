@@ -1,0 +1,214 @@
+#id datacite_1
+
+#title Datasets' DOIs and authors' ORCIDs
+
+#description [DataCite](/ontologies/datacite) allows one to associate identifiers to a bibliographic entity (e.g., a dataset, a person, an article) specifying their exact nature by means of the object property ``datacite:usesIdentifierScheme``. In addition, it is also possible, through the object property ``datacite:hasDescription``, to link an entity to another item representing an entity description of a particular type. This is defined using the property ``datacite:hasDescriptionType``, which must have as its object one of the members of the class datacite:DescriptionType, i.e., ``datacite:abstract``, ``datacite:other``, ``datacite:series-information``, ``datacite:methods``, and ``datacite:table-of-content``.  In this way it is possible to associate written documents (e.g., journal articles) as descriptions of datasets.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix orcid: <http://orcid.org/> .
+
+<http://dx.doi.org/10.5061/dryad.15v26> a fabio:Dataset ;
+    datacite:hasIdentifier :dataset-doi ;
+    dcterms:creator
+        orcid:0000-0002-5159-9717 ,
+        orcid:0000-0002-7811-3617 ;
+    datacite:hasDescription
+        <http://dx.doi.org/10.1098/rsbl.2015.0486> .
+
+<http://dx.doi.org/10.1098/rsbl.2015.0486>
+    a fabio:JournalArticle ;
+    datacite:hasIdentifier :paper-doi ;
+    dcterms:creator
+        orcid:0000-0002-5159-9717 ,
+        orcid:0000-0002-7811-3617 ;
+    datacite:hasDescriptionType datacite:other .
+
+:paper-doi a datacite:PrimaryResourceIdentifier ;
+    literal:hasLiteralValue "10.1098/rsbl.2015.0486" ;
+    datacite:usesIdentifierScheme datacite:doi .
+
+:dataset-doi a datacite:PrimaryResourceIdentifier ;
+    literal:hasLiteralValue "10.5061/dryad.mq8r2" ;
+    datacite:usesIdentifierScheme datacite:doi .
+
+orcid:0000-0002-5159-9717 a foaf:Person ;
+    foaf:name "Nidhi Seethapathi" ;
+    datacite:hasIdentifier :seethapathi-orcid .
+
+:seethapathi-orcid a datacite:PersonalIdentifier ;
+    literal:hasLiteralValue "0000-0002-5159-9717" ;
+    datacite:usesIdentifierScheme datacite:orcid .
+
+orcid:0000-0002-7811-3617 a foaf:Person ;
+    foaf:name "Manoj Srinivasan" ;
+    datacite:hasIdentifier :srinivasan-orcid .
+
+:srinivasan-orcid a datacite:PersonalIdentifier ;
+    literal:hasLiteralValue "0000-0002-7811-3617" ;
+    datacite:usesIdentifierScheme datacite:orcid .
+
+#cite Peroni, Silvio (2015): Example of use of DataCite #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1554708
+
+
+#id datacite_2
+
+#title Conversion of a DataCite XML document into RDF
+
+#description This Turtle file is the RDF converted version of the exemplar DataCite XML document available at http://schema.datacite.org/meta/kernel-3.1/example/datacite-example-full-v3.1.xml. The conversion has been made by taking into account the guidelines available at the following document:
+
+<p class="cite bg-info">Peroni, S., Shotton, D., Ashton, J., Barton, A. J., Gramsbergen, E., Jacquemot, M.-C. (2016). DataCite2RDF: Mapping DataCite Metadata Schema 3.1 Terms to RDF. Version 3.2. http://dx.doi.org/10.6084/m9.figshare.2075356</p>
+
+#code @prefix : <http://schema.datacite.org/meta/kernel-3.1/example/> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:datacite-example-full-v3.1
+    datacite:hasIdentifier 
+        :datacite-example-full-v3.1-primary-id ,
+        :datacite-example-full-v3.1-alternate-id ;
+    dcterms:creator :elisabeth-miller ;
+    dcterms:title "Full DataCite XML Example"@en-us ;
+    fabio:hasSubtitle "Demonstration of DataCite Properties."@en-us ;
+    dcterms:publisher :datacite ;
+    fabio:hasPublicationYear "2014"^^xsd:gYear ;
+    dcterms:subject :computer-science ;
+    dcterms:contributor :joan-starr ;
+    dcterms:modified "2014-10-17"^^xsd:date ;
+    dcterms:language :en-us ;
+    a fabio:DataFile ;
+    datacite:hasGeneralResourceType dcmitype:Software ;
+    cito:citesAsMetadataDocument 
+    	:datacite-example-full-v3.1-metadata-document ;
+    cito:isReviewedBy :reviewing-document ;
+    dcterms:extent :datacite-example-full-v3.1-size ;
+    dcterms:format <https://w3id.org/spar/mediatype/application/xml> ;
+    prism:versionIdentifier "3.1" ;
+    dcterms:rights :datacite-example-full-v3.1-rights ;
+    datacite:hasDescription :datacite-example-full-v3.1-abstract ;
+    dcterms:spatial :atlantic-ocean .
+       
+:datacite-example-full-v3.1-primary-id 
+	a datacite:PrimaryResourceIdentifier ;
+    datacite:usesIdentifierScheme datacite:doi ;
+    literal:hasLiteralValue "10.5072/example-full" .
+
+:datacite-example-full-v3.1-alternate-id 
+	a datacite:AlternateResourceIdentifier ;
+    datacite:usesIdentifierScheme datacite:url ;
+    literal:hasLiteralValue 
+    	"http://schema.datacite.org/schema/meta/kernel-3.1/example/datacite-example-full-v3.1.xml" .
+   
+:elisabeth-miller a foaf:Person ;
+    foaf:name "Miller, Elizabeth" ;
+    datacite:hasIdentifier :elisabeth-miller-orcid ;
+    pro:holdsRoleInTime :elisabeth-miller-affiliation .
+   
+:elisabeth-miller-orcid a datacite:PersonalIdentifier ;
+    datacite:usesIdentifierScheme datacite:orcid ;
+    literal:hasLiteralValue "0000-0001-5000-0007" .
+   
+:elisabeth-miller-affiliation a pro:RoleInTime ;
+    pro:withRole scoro:affiliate ;
+    pro:relatesToOrganization :datacite ;
+    pro:relatesToEntity :datacite-example-full-v3.1 .
+
+:datacite a foaf:Organization ;
+    foaf:name "DataCite" .
+
+:computer-science a skos:Concept ;
+    skos:prefLabel "000 computer science"@en-us ;
+    skos:inScheme <http://dewey.info/> .
+ 
+ :joan-starr a foaf:Person ;
+    foaf:name "Starr, Joan" ;
+    datacite:hasIdentifier :joan-starr-orcid ;
+    pro:holdsRoleInTime 
+        :joan-starr-project-leader ,
+        :joan-starr-affiliation .
+    
+:joan-starr-orcid a datacite:PersonalIdentifier ;
+    datacite:usesIdentifierScheme datacite:orcid ;
+    literal:hasLiteralValue "0000-0001-5000-0007" .
+   
+ :joan-starr-project-leader a pro:RoleInTime ;
+    pro:withRole scoro:project-leader ;
+    pro:relatesToEntity :datacite-example-full-v3.1 .
+ 
+:joan-starr-affiliation a pro:RoleInTime ;
+    pro:withRole scoro:affiliate ;
+    pro:relatesToOrganization :california-digital-library ;
+    pro:relatesToEntity :datacite-example-full-v3.1 .
+
+:california-digital-library a foaf:Organization ;
+    foaf:name "California Digital Library" .
+
+:en-us a dcterms:LinguisticSystem ;
+    dcterms:description "en-us"^^dcterms:RFC5646 .
+
+:datacite-example-full-v3.1-metadata-document a fabio:MetadataDocument ;
+    datacite:hasIdentifier :datacite-example-full-v3.1-metadata-document-id ;
+    datacite:usesMetadataScheme :citeproc-json .
+
+:datacite-example-full-v3.1-metadata-document-id a datacite:ResourceIdentifier ;
+    datacite:usesIdentifierScheme datacite:url ;
+    literal:hasLiteralValue "http://data.datacite.org/application/citeproc+json/10.5072/example-full" .
+
+:citeproc-json a datacite:MetadataScheme ;
+    fabio:hasURL 
+    	"https://github.com/citation-style-language/schema/raw/master/csl-data.json"^^xsd:anyURI .
+
+:reviewing-document
+    datacite:hasIdentifier :reviewing-document-id .
+
+:reviewing-document-id a datacite:ResourceIdentifier ;
+    datacite:usesIdentifierScheme datacite:arxiv ;
+    literal:hasLiteralValue "arXiv:0706.0001" .
+
+:datacite-example-full-v3.1-size 
+	a dcterms:SizeOrDuration ;
+    rdf:value "3KB" .
+
+:datacite-example-full-v3.1-rights 
+	a dcterms:RightsStatement ;
+    literal:hasLiteralValue "CC0 1.0 Universal" ;
+    fabio:hasURL 
+    	"http://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI .
+
+:datacite-example-full-v3.1-abstract
+    datacite:hasDescriptionType datacite:abstract ;
+    literal:hasLiteralValue 
+    	"XML example of all DataCite Metadata Schema v3.1 properties." .
+
+:atlantic-ocean a geo:Feature;
+    geo:hasGeometry 
+        :atlantic-ocean-lat-long ,
+        :atlantic-ocean-box ;
+    frapo:hasLocation "Atlantic Ocean" .
+
+:atlantic-ocean-lat-long a sf:Point ;
+    geo:asWKT "POINT(31.233 -67.302)"^^geo:wktLiteral .
+
+:atlantic-ocean-box a sf:Polygon ;
+    geo:asWKT 
+    	"POLYGON(41.090 -71.032, 41.090 -68.211, 42.893 -68.211, 42.893 -71.032, 41.090 -71.032)"^^geo:wktLiteral .
+
+#cite Peroni, Silvio (2016): Example of use of DataCite #2. figshare. https://dx.doi.org/10.6084/m9.figshare.2075353

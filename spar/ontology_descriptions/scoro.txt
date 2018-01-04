@@ -1,0 +1,51 @@
+#name Scholarly Contributions and Roles Ontology
+
+#acronym SCoRO
+
+#url http://purl.org/spar/scoro
+
+#source https://sparontologies.github.io/scoro/current/scoro.owl
+
+#documentation http://purl.org/spar/scoro.html
+
+#repository https://github.com/sparontologies/scoro
+
+#description *SCoRO*, the *Scholarly Contributions and Roles Ontology*, is a [CERIF-compliant](http://www.eurocris.org/cerif/main-features-cerif) ontology (summarised in the following picture) for use by authors, publishers and research administrators, for describe the contributions and roles of scholars, and the organizations of which they are members, with respect to projects, research investigations and other academic activities, and to the scholarly journal articles and other outputs that result from them.
+
+<img class="img-responsive center-block" src="/static/img/spar/scoro-diagram.png" alt="The diagram of SCoRO." />
+
+The 2012 [Harvard – Wellcome Trust workshop on Contributorship and Scholarly Attribution](http://projects.iq.harvard.edu/attribution_workshop) concluded that we need an easy and more straightforward way to define the contributions of both authors and non-authors. Rather than using numerical quantitation for accounting such contributions (e.g. "Dr X contributed 80% and Dr Y contributed 20% of the effort to the contribution of revising the manuscript"), the workshop participants concluded that is was sufficient to say that someone was solely responsible for a particular contribution, played a major role in it, played a minor role in it, or had no part in it.
+
+SCoRO meets this requirement by creating a limited controlled vocabulary of generic terms to describe contributions within the following four general categories:
+
+* intellectual contributions (``scoro:IntellectualContribution``), including the conception and design of experiments;
+
+* experimental contributions (``scoro:ExperimentalContribution``), including provision of experimental material, undertaking experiments and analyzing data;
+
+* organizational contributions (``scoro:OrganizationalContribution``), including fund-raising and project management; and
+
+* authorship contributions (``scoro:AuthorshipContribution``), such as drafting the paper and preparing the illustrations.
+
+It also provides the option of specifying the effort for each contribution (``scoro:ContributionEffort``), relative to that of others:
+
+* solely responsible for this contribution (``scoro:solo-effort``);
+
+* contributed major effort (``scoro:major-effort``);
+
+* contributed minor effort (``scoro:minor-effort``).
+
+The default position is that a person played no part in a particular contribution, which is assumed unless one of the other effort categories is specified.
+
+In addition to specifying such contributions, SCoRO extends [PRO](/ontologies/pro) by adding subclasses of ``pro:Role`` so as to distinguish and permit the separate definition of individuals' roles, under the following categories:
+
+* investigation roles (``scoro:InvestigationRole``), such as principal investigator, research assistant or technician;
+
+* project roles (``scoro:ProjectRole``), including project leader and project manager;
+
+* data roles (``scoro:DataRole``), such as data creator, data manager or curator;
+
+* authorship roles (``scoro:AuthorshipRole``), including corresponding author, senior author, article guarantor, and consortium author (to cover entries in author lists such as "... and members of the MalariaGen Consortium");
+
+* organizational roles (``scoro:OrganizationalRole``), including contact person, partner, rights holder.
+
+Additional background information about SCoRO are collected in the 2013 blog post "[SCoRO, the Scholarly Contributions and Roles Ontology](https://semanticpublishing.wordpress.com/2013/04/19/scoro/)".

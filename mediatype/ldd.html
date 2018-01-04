@@ -1,0 +1,172 @@
+$def with (data)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/favicon/spar/favicon.ico">
+
+
+    <title>Media type: $data["label"][0]</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/static/js/html5shiv.min.js"></script>
+      <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/mediatype/mediatype.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container-fluid marketing additional-margin">
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="featurette">
+          <h1 class="featurette-heading">
+              $data["label"][0] <br /> <span class="small">$data["__entityiri"]</span>
+          </h1>
+          <dl>
+              <dt class="bg-info">type</dt>
+              <dd>
+                  <ul class="list-unstyled">
+                      <li>
+                          $if 'label' in data["type"][0]:
+                            <a href="$data['type'][0]['__entityiri']"
+                               title="$data['type'][0]['__entityiri']">
+                                $data['type'][0]['label'][0]</a>
+                          $else:
+                            <a href="$data['type'][0]['__entityiri']">
+                                $data['type'][0]['__entityiri']</a>
+                      </li>
+                  </ul>
+              </dd>
+              $if 'name' in data:
+                  <dt class="bg-info">name</dt>
+                  <dd><ul class="list-unstyled"><li>$data["name"][0]</li></ul></dd>
+              $if 'title' in data:
+                  <dt class="bg-info">title</dt>
+                  <dd><ul class="list-unstyled"><li>$data["title"][0]</li></ul></dd>
+              $if 'homepage' in data:
+                  <dt class="bg-info">homepage</dt>
+                  <dd>
+                      <ul class="list-unstyled">
+                          $for res in data['homepage']:
+                            <li>
+                                $if 'label' in res:
+                                    <a href="$res['__entityiri']"
+                                       title="$res['__entityiri']">$res['label'][0]</a>
+                                $else:
+                                    <a href="$res['__entityiri']">$res['__entityiri']</a>
+                            </li>
+                      </ul>
+                  </dd>
+              $if 'status' in data:
+                  <dt class="bg-info">status</dt>
+                  <dd><ul class="list-unstyled"><li><a href="$data['status'][0]['__entityiri']"
+                         title="$data['status'][0]['__entityiri']">
+                        $data["status"][0]["label"][0]</a></li></ul></dd>
+              $if 'status in time' in data:
+                  <dt class="bg-info">status</dt>
+                  <dd><ul class="list-unstyled"><li><a href="$data['status in time'][0]['__entityiri']"
+                         title="$data['status in time'][0]['__entityiri']">
+                        $data["status in time"][0]["label"][0]</a></li></ul></dd>
+              $if 'contributor' in data:
+                  <dt class="bg-info">contributors</dt>
+                  <dd>
+                      <ul class="list-unstyled">
+                          $for res in data['contributor']:
+                            <li>
+                                $if 'label' in res:
+                                    <a href="$res['__entityiri']"
+                                       title="$res['__entityiri']">$res['label'][0]</a>
+                                $else:
+                                    <a href="$res['__entityiri']">$res['__entityiri']</a>
+                            </li>
+                      </ul>
+                  </dd>
+              $if 'rfc' in data:
+                  <dt class="bg-info">RFC</dt>
+                  <dd>
+                      <ul class="list-unstyled">
+                          $for res in data['rfc']:
+                            <li>
+                                $if 'label' in res:
+                                    <a href="$res['__entityiri']"
+                                       title="$res['__entityiri']">$res['label'][0]</a>
+                                $else:
+                                    <a href="$res['__entityiri']">$res['__entityiri']</a>
+                            </li>
+                      </ul>
+                  </dd>
+              $if 'related' in data:
+                  <dt class="bg-info">related resources</dt>
+                  <dd>
+                      <ul class="list-unstyled">
+                          $for res in data['related']:
+                              <li>
+                                  $if 'label' in res:
+                                    <a href="$res['__entityiri']"
+                                       title="$res['__entityiri']">$res['label'][0]</a>
+                                  $else:
+                                    <a href="$res['__entityiri']">$res['__entityiri']</a>
+                              </li>
+                      </ul>
+                  </dd>
+              $if 'described' in data:
+                  <dt class="bg-info">described in</dt>
+                  <dd>
+                      <ul class="list-unstyled">
+                          $for res in data['described']:
+                          <li>
+                              $if 'label' in res:
+                                <a href="$res['__entityiri']"
+                                   title="$res['__entityiri']">$res['label'][0]</a>
+                              $else:
+                                <a href="$res['__entityiri']">$res['__entityiri']</a>
+                          </li>
+                      </ul>
+                  </dd>
+              $if 'license' in data:
+                <dt class="bg-info">license</dt>
+                <dd><a href="$data['license'][0]['__entityiri']">$data["license"][0]['label'][0]</a></dd>
+          </dl>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <!-- FOOTER -->
+      <footer>
+        <p>Get it in another format: <a href="$''.join([data['__entityiri'],'.rdf'])">RDF/XML</a>, <a href="$''.join([data['__entityiri'],'.ttl'])">Turtle</a>, <a href="$''.join([data['__entityiri'],'.json'])">JSON-LD</a></p>
+        <p>All these data (independently from the particular representation used) are licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+#name Essential FRBR in OWL2 DL Ontology
+
+#acronym FRBR DL
+
+#url http://purl.org/spar/frbr
+
+#source https://sparontologies.github.io/frbr/current/frbr.owl
+
+#documentation http://purl.org/spar/frbr.html
+
+#repository https://github.com/sparontologies/frbr
+
+#description The [*Functional Requirements for Bibliographic Record* (*FRBR*)](http://www.ifla.org/publications/functional-requirements-for-bibliographic-records) is a general model, proposed by the International Federation of Library Association (IFLA), for describing documents and their evolution. It works for both physical and digital resources and it has proved to be very flexible and powerful. One of the most important aspects of FRBR is the fact that it is not associated with a particular metadata schema or implementation.
+
+FRBR describes all documents from four different and correlated points of view: *Work*, *Expression*, *Manifestation* and *Item*; each of which is a FRBR *Endeavour*. These can be illustrated by considering of the book *Alice's Adventures in Wonderland* by Lewis Carroll as an example:
+
+* *Work.* A FRBR Work is a high-level abstract Platonic concept of the essence of a distinct intellectual or artistic creation, for example the ideas in Lewis Carroll's head concerning *Alice's Adventures in Wonderland*, independent of any representation of these ideas in a particular form. A Work is realised through one or more Expressions;
+
+* *Expression.* A FRBR Expression is the realisation of the intellectual or artistic content of a Work. Thus the original text of *Alice's Adventures in Wonderland* and its Italian translation Le Avventure di Alice nel Paese delle Meraviglie refer to different Expressions of the same Work. An Expression is embodied in one or more Manifestations;
+
+* *Manifestation.* A FRBR Manifestation of a work defines its particular physical or electronic embodiment, for example, the particular format in which *Alice's Adventures in Wonderland* is stored: as a printed object or in HTML, represent two quite different Manifestations. In publishing, different manifestations of a journal article will all bear the same Digital Object Identifier (DOI), which identifies the Expression of the work, not its various Manifestations. However, a paperback and a hardback version of a book will bear different International Standard Book Numbers (ISBNs), since these identifiers are assigned at the Manifestation level. A Manifestation is exemplified by one or more Items;
+
+* *Item.* A FRBR Item is a particular physical or electronic copy of *Alice's Adventures in Wonderland* that a person can own, for example the printed version of the book you have in your bookcase, or the Mobipocket format copy you have downloaded to read on your e-book device. All Items that are identical to one another – for example books from the same printing, are exemplars of the same Manifestation.
+
+Starting from [Ian Davis's RDF vocabulary](http://vocab.org/frbr/core) that expresses the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), we have created an expression in OWL 2 DL of FRBR in order to be used in other [SPAR Ontologies](/ontologies) that require this kind of descriptions, e.g., [FaBiO](/ontologies/fabio) and [BiRO](/ontologies/biro).

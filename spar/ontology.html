@@ -1,0 +1,155 @@
+$def with (title, pages, name, acronym, url, documentation, repository, description, examples, pub_list, lowercase_acronym)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/favicon/spar/favicon.ico">
+
+    <title>$title $acronym</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/static/js/html5shiv.min.js"></script>
+      <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/spar/carousel.css" rel="stylesheet">
+    <link href="/static/css/spar/spar.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div id="top" class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">SPAR Ontologies</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                $for page in pages:
+                    <li><a href="$page['url']">$page['title']</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container-fluid marketing additional-margin">
+
+      <!-- START THE FEATURETTES -->
+
+      <div id="o" class="featurette">
+          <h2 class="featurette-heading">$name ($acronym)</h2>
+          <dl class="dl-horizontal lead">
+              <dt>URL</dt>
+              <dd><a href="$url">$url</a></dd>
+              <dt>Documentation</dt>
+              <dd><a href="$documentation">$documentation</a></dd>
+              <dt>Source</dt>
+              <dd>
+                  <a href="$documentation.replace('.html', '.xml')">
+                      $documentation.replace('.html', '.xml')</a> (RDF/XML)<br />
+                  <a href="$documentation.replace('.html', '.ttl')">
+                      $documentation.replace('.html', '.ttl')</a> (Turtle)<br />
+                  <a href="$documentation.replace('.html', '.nt')">
+                      $documentation.replace('.html', '.nt')</a> (N-triples)<br />
+                  <a href="$documentation.replace('.html', '.json')">
+                      $documentation.replace('.html', '.json')</a> (JSON-LD)
+              </dd>
+              <dt>Repository</dt>
+              <dd><a href="$repository">$repository</a></dd>
+              $for pub in pub_list:
+                $if "main" in pub and lowercase_acronym in pub["main"]:
+                      <dt>Reference</dt>
+                      <dd class="small">
+                          <div class="cite bg-success">
+                              <span>$pub["bibref"]</span>
+                              $if "oa" in pub:
+                                  <span>Open Access at: $pub["oa"]</span>
+                          </div>
+                      </dd>
+          </dl>
+          <p class="desc">$description</p>
+          <h3><a class="anchor" id="examples"></a>Examples of use of $acronym</h3>
+          <ol>
+            $for example in examples:
+                <li><a href="#$example['id']">$example["title"]</a></li>
+          </ol>
+          $for example in examples:
+            <hr class="featurette-divider" />
+            <div class="examples">
+                <h4>
+                    <a class="anchor" id="$example['id']"></a>
+                    <a href="#$example['id']" title="Direct link to this example" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-tag"></span></a>
+                    $example["title"]
+                    <span class="pull-right">
+                        <a href="#examples" title="Back to the example list" class="btn btn-xs btn-info"><span class="glyphicon glyphicon-wrench"></span></a>
+                        <a href="#" title="Back to top" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+                    </span>
+                </h4>
+                <p class="desc">$example["description"]</p>
+                <pre><code>$example["code"]</code></pre>
+                <div class="cite bg-info">
+                    <p><strong>Please cite the source above with the following reference:</strong></p>
+                    <span>$example["cite"]</span>
+                </p>
+            </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#" title="Back to top" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-circle-arrow-up"></span> Back to top</a></p>
+        <p>This website and all its content are licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> excepting where stated differently.</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/marked.min.js"></script>
+    <script type="application/javascript">
+        jQuery(".desc").each(function(el){
+            jQuery(this).after(marked(jQuery(this).text())).remove()});
+        jQuery(".cite span").each(function(el){
+            jQuery(this).after(marked(jQuery(this).text())).remove()});
+    </script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

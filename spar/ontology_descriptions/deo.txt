@@ -1,0 +1,37 @@
+#name Document Elements Ontology
+
+#acronym DEO
+
+#url http://purl.org/spar/deo
+
+#source https://sparontologies.github.io/deo/current/deo.owl
+
+#documentation http://purl.org/spar/deo.html
+
+#repository https://github.com/sparontologies/deo
+
+#description The pure rhetorical characterisation of document components is not necessarily linked to the structural organisation that a scholarly article may have. For example, some scientific journals require their articles to follow a particular rhetorical segmentation, in order to identify explicitly what the meaningful parts are from a scientific point of view – e.g., *Introduction*, *Background*, *Evaluation*, *Materials*, *Methods* and *Conclusion*. These parts usually, but not necessarily, correspond to the coarse structural parts of the article – its sections. Whilst the background is usually woven together with the introduction, it may also be presented as a separate section, or indeed may substitute for the introduction entirely.
+
+The characterisations of these purely rhetorical components, which are not always linked explicitly to a particular structure, are defined in the *Discourse Element Ontology* (*DEO*). DEO was developed by studying different corpora of scientific literature on different topics and publishers' guidelines. It provides a structured vocabulary for rhetorical elements within documents, enabling these to be described in RDF. The main class of this ontology is ``deo:DiscourseElement``, which describes all those elements of a document that carry out a rhetorical function. All the remaining rhetorical behaviours are modelled as subclasses of this class. Some of the DEO entities are aligned with some of the rhetorical blocks from the [SALT Rhetorical Ontology](http://lov.okfn.org/dataset/lov/vocabs/sro) and the [Ontology of Rhetorical Blocks (ORB)](http://www.w3.org/2001/sw/hcls/notes/orb/), and extends them by introducing 24 additional classes, including the following eight:
+
+* ``deo:Reference``, which specifies a connection either to a specific part of the document or to another publication. In written text, numbered superscripts standing for footnotes, items in a table of contents, and items describing entities in a reference section, can be modelled as individuals of this class;
+
+* ``deo:BibliographicReference``, a subclass of the deo:Reference that describes references to other publications, such as journal articles, books, book chapters or websites; such references are often contained in a footnote or a bibliographic reference list;
+
+* ``deo:Caption``, that defines the text accompanying another item (e.g., the legend describing a picture);
+
+* ``deo:Introduction``, the initial description that states the purpose and goals of the subsequent text;
+
+* ``deo:Materials``, that documents the specific materials used in the described work;
+
+* ``deo:Methods``, that documents the methods used in the work (may be combined with a description of the materials used);
+
+* ``deo:Results``, that describes a report of the specific findings of an investigation;
+
+* ``deo:RelatedWork``, that describes a critical review of current knowledge by specific reference to other relevant works, both in terms of substantive findings and theoretical and methodological contributions within a domain of study;
+
+* ``deo:FutureWork``, a proposal for new investigations to be undertaken in order to continue and advance the work described in the publication.
+
+Note that it is still possible to apply two different rhetorical characterisations to the same block of text. For instance, in journal articles it is common to have a section entitled "Materials and Methods", which can be characterised rhetorically by using both the classes ``deo:Methods`` and ``deo:Materials``.
+
+DEO is imported in [DoCO](/ontologies/doco), which is an OWL 2 DL ontology that provides a general-purpose structured vocabulary of document elements.
