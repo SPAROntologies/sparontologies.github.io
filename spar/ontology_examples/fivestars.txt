@@ -41,4 +41,4 @@
         than a research paper with primary research data, has
         influenced the overall rating obtained." .
 
-#cite Peroni, Silvio (2015): Example of use of Five* #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1560007
+#cite Peroni, Silvio (2015): Example of use of FiveStars #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1560007
