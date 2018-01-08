@@ -158,7 +158,7 @@ class Ontologies:
         result["bido-standard-bibliometric-measures"] = \
             "http://svn.code.sf.net/p/sempublishing/code/BiDO/bido-sbm.owl"
 
-        result["bido-review-measures"] = "http://svn.code.sf.net/p/sempublishing/code/BiDO/bido-rm.owl"
+        result["bido-review-measures"] = "http://svn.code.sf.net/p/sempublishing/code/BiDO/bido-review-measures.owl"
 
         result["bido-core"] = "http://svn.code.sf.net/p/sempublishing/code/BiDO/bido-core.owl"
 

@@ -37,7 +37,7 @@ There are the rules that a candidate ontology (*CO* from now on) must follow in 
 1. CO must be orthogonal, non-overlapping, complementary and interoperable with existing SPAR Ontologies;
 1. CO should acts primarily as a structured defined vocabulary, and should thus be extensive enough to cover vocabulary terms in common and professional usage;
 1. CO must be well-developed, accurate and explicit, and must have unambiguous explanatory English-language definitions for all classes, properties, and individuals it describes;
-1. CO must be given a name ("The *** Ontology") appropriate to its purpose, and a clear short acronym based on that name.  The acronym must contain no spaces or special characters - only English alphabetic characters and numerals are admissible;
+1. CO must be given a name ("The *** Ontology") appropriate to its purpose, and a clear short acronym based on that name. The acronym must contain no spaces or special characters - only English alphabetic characters, numerals, and the character "-" are admissible;
 1. CO must be written in OWL 2 DL;
 1. CO IRI must be composed by `http://purl.org/spar/` plus the lowercase string of its acronym (additional characters at the end, e.g. `/`, are not permitted);
 1. CO Version IRI (`owl:versionIRI`) must be composed by the CO IRI plus `/` plus the [ISO date](https://en.wikipedia.org/wiki/ISO_8601) `yyyy-mm-dd` referring to the publication date of that particular version;

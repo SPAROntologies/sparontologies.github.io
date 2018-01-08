@@ -110,9 +110,18 @@
 
 #bibref Gangemi, A., Peroni, S., Shotton, D., Vitali, F. (2014). A pattern-based ontology for describing publishing workflows. In de Boer, V., Gangemi, A., Janowicz, K., Lawrynowicz, A. (Eds.), Proceedings of the 5th International Workshop on Ontology and Semantic Web Patterns (WOP 2014), CEUR Workshop Proceedings 1302: 2–13. Aachen, Germany: CEUR-WS.org. http://ceur-ws.org/Vol-1302/paper1.pdf (Open Access)
 
-#main pwo
+#secondary pwo
 
 #description This workshop paper introduces the former version of [PWO](/ontologies/pwo), discussing the adopted pattern-based modelling process and introducing two examples of its application.
+
+
+#bibref Gangemi, A., Peroni, S., Shotton, D., Vitali, F. (2014). The Publishing Workflow Ontology (PWO). In Semantic Web – Interoperability, Usability, Applicability, 8 (5): 703-718. Amsterdam, The Netherlands: IOS Press. https://doi.org/10.3233/SW-160230
+
+#oa http://www.semantic-web-journal.net/system/files/swj1301.pdf
+
+#main pwo
+
+#description This journal article introduces the latest version of [PWO](/ontologies/pwo), discussing the adopted pattern-based modelling process and introducing two examples of its application.
 
 
 #bibref Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Zhao, J., van Erp, M., Keßler, C., Kauppinen, T., van Ossenbruggen, J., van Hage, W. R. (Eds.), Proceedings of the 4th Workshop on Linked Science (LISC 2014), CEUR Workshop Proceedings 1282: 24–35. Aachen, Germany: CEUR-WS.org. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf (Open Access)

@@ -1,6 +1,6 @@
 #name Essential FRBR in OWL2 DL Ontology
 
-#acronym FRBR DL
+#acronym FRBR
 
 #url http://purl.org/spar/frbr
 
