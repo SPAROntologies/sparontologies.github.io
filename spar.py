@@ -13,6 +13,7 @@ base_path = "spar" + os.sep
 ontology_base_path = base_path + os.sep + "ontology_descriptions" + os.sep
 documentation_base_path = base_path + os.sep + "ontology_documentations" + os.sep
 example_base_path = base_path + os.sep + "ontology_examples" + os.sep
+news_base_path = base_path + os.sep + "ontology_news" + os.sep
 publications_base_path = base_path + os.sep + "ontology_publications" + os.sep
 publication_list_path = publications_base_path + "publication_list.txt"
 citing_paper_list_path = publications_base_path + "citing_list.txt"
@@ -36,6 +37,7 @@ urls = (
     "/uptake/?", "Uptake",
     "/contacts/?", "Contacts",
     "/about/?", "About",
+    "/news/?", "News",
     "/mediatype/(.+)", "MediaType",
     "/mediatype/?", "MediaType"
 )
@@ -59,7 +61,7 @@ pages = [
     },
     {
         "url": "/uptake",
-        "title": "Communities Uptake"
+        "title": "Uptake"
     },
     {
         "url": "/contacts",
@@ -68,6 +70,10 @@ pages = [
     {
         "url": "/about",
         "title": "About"
+    },
+    {
+        "url": "/news",
+        "title": "News"
     }
 ]
 
@@ -113,7 +119,7 @@ class Uptake:
     def GET(self):
         web_logger.mes()
         return render.uptake(
-            "SPAR Ontologies - Publications", pages,
+            "SPAR Ontologies - Uptake", pages,
             sorted(process_hashformat(projects_list_path), key=itemgetter('name')),
             sorted(process_hashformat(citing_paper_list_path), key=itemgetter('title')))
 
@@ -122,6 +128,18 @@ class Contacts:
     def GET(self):
         web_logger.mes()
         return render.contacts("SPAR Ontologies - Contacts", pages)
+
+
+class News:
+    def GET(self):
+        all_news = []
+        for cur_dir, cur_subdir, cur_files in os.walk(news_base_path, topdown=True):
+            for cur_file in cur_files:
+                if cur_file.endswith(".txt"):
+                    cur_news_list = process_hashformat(cur_dir + cur_file)
+                    all_news += cur_news_list
+        web_logger.mes()
+        return render.news("SPAR Ontologies - News", pages, all_news)
 
 
 class About:

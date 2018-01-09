@@ -1,0 +1,13 @@
+#id 2018-01-09
+#title SPAR Ontologies in GitHub and new contribution guidelines
+#description Dear all,
+
+We are happy to share a bunch of New Year announcements about the SPAR Ontologies!
+
+First of all, we are thrilled to announce that the migration of all the SPAR Ontologies from Sourceforge to GitHub has been just completed. The new [SPAR Ontologies GitHub Organisation](https://github.com/sparontologies) includes several repositories, one for each ontology included in SPAR (e.g. https://github.com/sparontologies/cito). This makes easier to post and handle issues and to gather new feedback from the community by using the GitHub issue tracker available in each repository. The old [Sourceforge repository](https://sourceforge.net/projects/sempublishing/) will be still available to get the old versions of the various ontologies.
+
+While all the current (and future) ontologies will be available via the http://purl.org/spar and http://purl.org/cerif pURL domains (e.g. http://purl.org/spar/cito), we have also activated a new https://w3id.org/spar domain as an alternative route for getting to all them (e.g. https://w3id.org/spar/cito). However, even if they are also accessible via the w3id.org service, the IRIs of all the SPAR Ontologies and of all their entities keep the http://purl.org base for backward compatibility reasons – luckily, the pURL service is currently maintained by the [Internet Archive](https://archive.org/services/purl/). In addition, the content negotiation mechanism of all the SPAR ontologies is now handled outside the [SPAR Ontologies website](http://www.sparontologies.net), by means of the [w3id.org service](https://github.com/perma-id/w3id.org/blob/master/spar/.htaccess). Thus, in case of some issues in the website (e.g. server crashes), the ontologies will be reachable anyway.
+
+Finally, we are very happy to announce the new [contribution guidelines](https://sparontologies.github.io) for allowing the community to propose new ontologies to be added within the SPAR suite. We have defined a clear workflow - thanks to the new GitHub repository - for accepting external contribution in a more structured way, compared to what happened in the past. We are also very please to say we are in the process of including the [FAIR* Reviews ontology](https://w3id.org/fr/def/core) within the SPAR Ontologies, our very first early adopter of the aforementioned contribution guidelines.
+
+Please do not forget to follow us on [Twitter](https://twitter.com/sparontologies) for getting additional updates.

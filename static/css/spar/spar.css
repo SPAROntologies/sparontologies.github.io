@@ -22,6 +22,11 @@ a.anchor {
     visibility: hidden;
 }
 
+small.date {
+    padding: 2px;
+    border-radius: 5px;
+}
+
 @media (max-width: 1000px) {
     .navbar-default .navbar-nav > li > a {
         font-size:50% !important;

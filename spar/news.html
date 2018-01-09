@@ -1,4 +1,4 @@
-$def with (title, pages, examples)
+$def with (title, pages, news)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -69,38 +69,26 @@ $def with (title, pages, examples)
       <!-- START THE FEATURETTES -->
 
       <div class="featurette">
-          <h2 class="featurette-heading">Examples of use</h2>
-          <p>In this page we have collected several examples of use of SPAR Ontologies for describing the various aspects of the publishing domain. Those are the same examples available in all the pages introducing the various SPAR Ontologies. However, the examples are here listed together in order to compose a sort of <q>cookbook</q> for all the SPAR Ontologies. All the sources of the examples below are stored in <a href="http://figshare.com">figshare</a> for easy citing.</p>
-          <p>Each example is characterised by:</p>
-          <ul>
-              <li><p>a <em>title</em> of the scenario addressed;</p></li>
-              <li><p>a natural language <em>description</em> of such scenario;</p></li>
-              <li><p>the <em>source code</em> (either in Turtle or RDFa) of the example for addressing the scenario by means of SPAR Ontologies;</p></li>
-              <li><p>the <em>reference</em> for citing to such source code in scholarly papers (via <a href="http://figshare.com">figshare</a>).</p></li>
-          </ul>
-          <h3><a class="anchor" id="examples"></a>Table of contents</h3>
-          <ol>
-            $for example in examples:
-                <li><a href="#$example['id']">$example["title"]</a></li>
+          <h2 class="featurette-heading">News</h2>
+          <p>In this page we have collected all the news of new activities or announcements related to SPAR Ontologies.</p>
+          <h3><a class="anchor" id="news"></a>Table of contents</h3>
+          <ol class="list-unstyled">
+            $for one_news in news:
+                <li><a href="#$one_news['id']">$"/".join(reversed(one_news["id"].split('-'))) - $one_news["title"]</a></li>
           </ol>
-          $for example in examples:
+          $for one_news in news:
             <hr class="featurette-divider" />
-            <div class="examples">
+            <div class="news">
                 <h4>
-                    <a class="anchor" id="$example['id']"></a>
-                    <a href="#$example['id']" title="Direct link to this example" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-tag"></span></a>
-                    $example["title"]
+                    <a class="anchor" id="$one_news['id']"></a>
+                    <a href="#$one_news['id']" title="Direct link to this news" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-tag"></span></a>
+                    $one_news["title"] <small class="date bg-primary">$"/".join(reversed(one_news["id"].split('-')))</small>
                     <span class="pull-right">
-                        <a href="#examples" title="Back to the example list" class="btn btn-xs btn-info"><span class="glyphicon glyphicon-wrench"></span></a>
+                        <a href="#news" title="Back to the news list" class="btn btn-xs btn-info"><span class="glyphicon glyphicon-wrench"></span></a>
                         <a href="#" title="Back to top" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
                     </span>
                 </h4>
-                <p class="desc">$example["description"]</p>
-                <pre><code>$example["code"]</code></pre>
-                <div class="cite bg-info">
-                    <p><strong>Please cite the source above with the following reference:</strong></p>
-                    <span>$example["cite"]</span>
-                </div>
+                <p class="desc">$one_news["description"]</p>
             </div>
       </div>
 
