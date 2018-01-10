@@ -1,3 +1,8 @@
+#id wikidata
+#name Wikidata
+#url https://wikidata.org
+#description Wikidata is a free and open knowledge base that can be read and edited by both humans and machines which acts as central storage for the structured data of its Wikimedia sister projects. Several items in Wikidata [have been aligned](https://query.wikidata.org/embed.html#SELECT%20%3Fitem%20%3FitemLabel%20%3Ftype%20%3Fmatch%20WHERE%20%7B%0A%20%20%7B%20BIND%20%28%22%3D%22%20AS%20%3Ftype%29%20%3Fitem%20wdt%3AP1709%20%3Fmatch%20%7D%0A%20%20UNION%0A%20%20%7B%20BIND%20%28%22%3D%22%20AS%20%3Ftype%29%20%3Fitem%20wdt%3AP2888%20%3Fmatch%20%7D%0A%20%20UNION%0A%20%20%7B%20BIND%20%28%22%3E%22%20AS%20%3Ftype%29%20%3Fitem%20wdt%3AP3950%20%3Fmatch%20%7D%0A%20%20FILTER%20%28STRSTARTS%28STR%28%3Fmatch%29%2C%20%22http%3A%2F%2Fpurl.org%2Fspar%2F%22%29%29%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0A) with classes included in the SPAR Ontologies.
+
 #id dokieli
 #name Dokieli
 #url http://dokie.li/
