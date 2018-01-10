@@ -7,6 +7,7 @@ from ldd import LinkedDataDirector
 from operator import itemgetter
 from wl import WebLogger
 from oh import OntologyHandler
+import re
 
 # Vars
 base_path = "spar" + os.sep
@@ -161,51 +162,29 @@ class Examples:
 
 
 class Ontologies:
-    def get_ontology_url(self):
-        result = {}
-
-        for cur_dir, cur_subdir, cur_files in os.walk(ontology_base_path):
-            for cur_file in cur_files:
-                if cur_file.endswith(".txt"):
-                    cur_hash = process_hashformat(cur_dir + os.sep + cur_file)[0]
-                    result[cur_file.replace(".txt", "")] = cur_hash["source"]
-
-        result["bido-research-career-category"] = \
-            "http://svn.code.sf.net/p/sempublishing/code/BiDO/bido-rcc.owl"
-
-        result["bido-standard-bibliometric-measures"] = \
-            "http://svn.code.sf.net/p/sempublishing/code/BiDO/bido-sbm.owl"
-
-        result["bido-review-measures"] = "http://svn.code.sf.net/p/sempublishing/code/BiDO/bido-review-measures.owl"
-
-        result["bido-core"] = "http://svn.code.sf.net/p/sempublishing/code/BiDO/bido-core.owl"
-
-        result["pwo-alignment"] = "http://svn.code.sf.net/p/sempublishing/code/PWO/pwo-alignment.owl"
-
-        result["pattern"] = "http://svn.code.sf.net/p/dwellonit/code/StructuralPattern/pattern.owl"
-
-        return result
-
     def GET(self, onto_acronym):
         if onto_acronym is not None and onto_acronym.strip() != "":
-            ontology_path = ontology_base_path + onto_acronym + ".txt"
-            example_path = example_base_path + onto_acronym + ".txt"
-            if os.path.exists(ontology_path) and os.path.exists(example_path):
-                cur_ontology_dict = process_hashformat(ontology_path)[0]
-                cur_example_list = process_hashformat(example_path)
-                web_logger.mes()
-                return render.ontology("SPAR Ontologies - ", pages,
-                                       cur_ontology_dict["name"],
-                                       cur_ontology_dict["acronym"],
-                                       cur_ontology_dict["url"],
-                                       cur_ontology_dict["documentation"],
-                                       cur_ontology_dict["repository"],
-                                       cur_ontology_dict["description"],
-                                       cur_example_list,
-                                       process_hashformat(publication_list_path),
-                                       onto_acronym)
+            if re.search("%s(\.xml|\.ttl|\.json|\.html|\.nt)?" % src_fragment, onto_acronym):
+                web.seeother('https://w3id.org/spar/' + onto_acronym.replace(src_fragment, ""))
             else:
-                raise web.notfound()
+                ontology_path = ontology_base_path + onto_acronym + ".txt"
+                example_path = example_base_path + onto_acronym + ".txt"
+                if os.path.exists(ontology_path) and os.path.exists(example_path):
+                    cur_ontology_dict = process_hashformat(ontology_path)[0]
+                    cur_example_list = process_hashformat(example_path)
+                    web_logger.mes()
+                    return render.ontology("SPAR Ontologies - ", pages,
+                                           cur_ontology_dict["name"],
+                                           cur_ontology_dict["acronym"],
+                                           cur_ontology_dict["url"],
+                                           cur_ontology_dict["documentation"],
+                                           cur_ontology_dict["repository"],
+                                           cur_ontology_dict["description"],
+                                           cur_example_list,
+                                           process_hashformat(publication_list_path),
+                                           onto_acronym)
+                else:
+                    raise web.notfound()
         else:  # Load home
             web_logger.mes()
             return render.ontologies(
