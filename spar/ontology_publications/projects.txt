@@ -1,3 +1,8 @@
+#id scholarlydata
+#name ScholarlyData
+#url http://www.scholarlydata.org
+#description ScholarlyData dataset is a refactoring of the Semantic Web Dog Food (SWDF), in an effort to keep the dataset growing in good health. They use a novel data model, the Conference Ontology (http://www.scholarlydata.org/ontology) which is strongly aligned to the SPAR Ontologies, in particular to FaBiO, DoCO, PRO, and SCoRO.
+
 #id dataid
 #name DBpedia DataID
 #url http://wiki.dbpedia.org/projects/dbpedia-dataid
