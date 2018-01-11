@@ -1,3 +1,9 @@
+#id zerilode
+#name Zeri&LODE
+#url http://data.fondazionezeri.unibo.it/
+#description The Zeri&LODE project released the Zeri Photo Archive Linked Open Data dataset, which describes about 19,000 artworks of Modern Art (15th-16th centuries) and more than 30,000 photographs depicting such works are accurately described by means of like 11 million of RDF statements. The datamodel used for describing these data is strongly based on the SPAR Ontologies, in particular FaBiO, PRO, and CiTO.
+
+
 #id wikidata
 #name Wikidata
 #url https://wikidata.org
