@@ -1,3 +1,8 @@
+#id pandocscholar
+#name Pandoc Scholar
+#url https://pandoc-scholar.github.io/
+#description It is a package for [Pandoc](https://pandoc.org/) which allows one to create beautiful, semantically enriched articles. It uses CiTO for providing the semantic annotation to citations in a scholarly article.
+
 #id scholarlydata
 #name ScholarlyData
 #url http://www.scholarlydata.org
