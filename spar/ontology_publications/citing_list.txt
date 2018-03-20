@@ -6,10 +6,6 @@
 #author 박지영
 #url http://dev02.dbpia.co.kr/2/90/37/2903714.pdf?article=3868204
 
-#title 2 novembre 2017 Affiliation: Dipartimento di Informatica-Universita di Bologna Alma Mater Mail Address: Mura Anteo Zamboni, 7-40127 Bologna E-mail: paolo … (2017)
-#author P Ciancarini
-#url http://www.cs.unibo.it/cianca/wwwpages/curr.pdf
-
 #title 2015 Colloquium Booklet Complete Papers (2015)
 #author GR Bown
 #url http://eprints.glos.ac.uk/3485/7/2015%20Colloquium%20Booklet%20Program%20and%20Complete%20Papers%20Proofread.pdf
