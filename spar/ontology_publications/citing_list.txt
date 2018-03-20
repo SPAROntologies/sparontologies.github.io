@@ -294,10 +294,6 @@
 #author M Lana, F Ciotti, D Magro, S Peroni, F Tomasi, F Vitali
 #url https://www.researchgate.net/profile/Francesca_Tomasi/publication/266644614_Annotating_texts_with_ontologies_from_geography_to_persons_and_events/links/544fcc5e0cf201441e934ebd/Annotating-texts-with-ontologies-from-geography-to-persons-and-events.pdf
 
-#title Análisis de la información temporal en euskera (1989)
-#author BA Dıaz
-#url http://gplsi.dlsi.ua.es/sepln15/sites/gplsi.dlsi.ua.es.sepln15/files/attachments/begona_altuna.pdf
-
 #title Application of CIDOC-CRM for the Russian Heritage Cloud Platform (2015)
 #author E Cherny, P Haase, D Mouromtsev, A Andreev et al.
 #url https://link.springer.com/chapter/10.1007/978-3-319-23201-0_45
@@ -537,10 +533,6 @@
 #title Conceptualización y generación de RDF de los recursos bibliográficos de la Biblioteca “Benjamín Carrión” de UTPL (2016)
 #author MC Cabrera Loayza
 #url http://oa.upm.es/id/eprint/40329
-
-#title Concit-Corpus: Análisis de contexto de citas para detectar Función, Polaridad e Influencia (1989)
-#author M HERNÁNDEZ-ALVAREZ
-#url http://gplsi.dlsi.ua.es/sepln15/sites/gplsi.dlsi.ua.es.sepln15/files/attachments/Art%C3%ADculo%20simposio%20doctoralv2.pdf
 
 #title Concit-Corpus: Context Citation Analysis to learn Function, Polarity and Influence (2015)
 #author M Hernández Álvarez
@@ -1717,10 +1709,6 @@
 #title Scholar metadata and knowledge generation with human and artificial intelligence (2014)
 #author X Liu, C Guo, L Zhang
 #url http://onlinelibrary.wiley.com/doi/10.1002/asi.23013/full
-
-#title Scholarly Communication (2007)
-#author C Lagoze
-#url http://delosw.isti.cnr.it/files/pdf/DELOS_NSDL_sschool_07/Presentations/Lagoze.pdf
 
 #title Scholarly Data Mining: Making Sense of Scientific Literature (2017)
 #author H Saggion, F Ronzano
