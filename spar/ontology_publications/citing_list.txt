@@ -1,560 +1,2720 @@
-#title A Challenge Of Research Outputs In Gl Circuit: From Open Access To Open Use
+#title " 互联网+" 视角下的图书馆科学数据服务研究 (2016)
+#author 黄鑫， 邓仲华
+#url http://www.tsyqb.com/CN/article/downloadArticleFile.do?attachType=PDF&id=1639
+
+#title 'FRBR family'모형의 통합에 관한 연구 (2016)
+#author 박지영
+#url http://dev02.dbpia.co.kr/2/90/37/2903714.pdf?article=3868204
+
+#title 2015 Colloquium Booklet Complete Papers (2015)
+#author GR Bown
+#url http://eprints.glos.ac.uk/3485/7/2015%20Colloquium%20Booklet%20Program%20and%20Complete%20Papers%20Proofread.pdf
+
+#title 3. Workshop: The Emerging Innovative Models of Scientific Publishing: Are We Ready to Manage New Digital Entities? (2016)
+#author P Wang, D Wolfram
+#url http://www.isast.org/images/e-_Book_of_Abstracts_final_2016_v9.pdf#page=26
+
+#title A Challenge of Research Outputs in GL Circuit: From Open Access to Open Use. (2014)
 #author S Parinov, M Kogalovsky, V Lyapunov
-#url http://www.researchgate.net/profile/Leonardo_Candela/publication/264992687_A_Social_Networking_Research_Environment_for_Scientific_Data_Sharing_The_D4Science_Offering/links/54631e620cf2cb7e9da6790f.pdf#page=27
+#url https://www.researchgate.net/profile/Leonardo_Candela/publication/264992687_A_Social_Networking_Research_Environment_for_Scientific_Data_Sharing_The_D4Science_Offering/links/54631e620cf2cb7e9da6790f.pdf#page=27
 
-#title A Collaborative Methodology For Developing A Semantic Model For Interlinking Cancer Chemoprevention Linked-Data Sources
-#author D Zeginis, A Hasnain, N Loutas, H Deus, et al.
-#url http://aran.library.nuigalway.ie/xmlui/handle/10379/4842
+#title A Complete Bibliography of the Journal on Computing and Cultural Heritage (JOCCH) (2017)
+#author NHF Beebe
+#url ftp://ctan.math.utah.edu/tex-archive/macros/latex/contrib/business-research/doc/~/pub/tex/bib/jocch.pdf.gz
 
-#title A Hybrid Semantic Approach To Building Dynamic Maps Of Research Communities
-#author F Osborne, G Scavo, E Motta
-#url http://link.springer.com/chapter/10.1007/978-3-319-13704-9_28
+#title A Defeasible Description Logic for Representing Bibliographic Data (2017)
+#author H Khattab, A Moubaiddin, N Obeid
+#url https://link.springer.com/chapter/10.1007/978-3-319-55354-2_8
 
-#title A Method For Defining Human-Machine Micro-Task Workflows For Gathering Legal Information
-#author N Luz, N Silva, P Novais
-#url http://link.springer.com/chapter/10.1007/978-3-662-45960-7_20
+#title A Game with a Purpose to Access Europe's Cultural Treasure. (2015)
+#author J Schlötterer, C Seifert, L Wagner, M Granitzer
+#url http://ceur-ws.org/Vol-1345/gamifir15_2.pdf
 
-#title A Preliminary Study On The Semantic Representation Of The Notes To Dante Alighieri'S Convivio
-#author V Bartalesi, E Locuratolo, L Versienti, et al.
-#url http://dl.acm.org/citation.cfm?id=2517983
+#title A Model for Aggregating Manga Metadata Across Institutions: Improving the Granularity of Manga Bibliographic Data on the Semantic Web (2015)
+#author K Senan
+#url https://tsukuba.repo.nii.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=39009&item_no=1&page_id=13&block_id=83
 
-#title A Review Of Argumentation For The Social Semantic Web
-#author J Schneider, T Groza, A Passant
-#url http://www.semantic-web-journal.net/sites/default/files/swj138_2.pdf
+#title A Model to Represent and Process Scientific Knowledge in Biomedical Articles with Semantic Web Technologies. (2016)
+#author CH Marcondes, LC da Costa
+#url http://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=09437444&AN=113160129&h=xH5Tc%2FKJKNX1jDD88xauRDd2l1xCx16dV8rCiVgnCwoWR%2B74wG%2BD%2FtxdNJzypWrKJ0PkuvLVgAoPUVZwKqnyww%3D%3D&crl=c
 
-#title A Review Of Linked Data Proposals In The Learning Domain
-#author G Vega
+#title A Review of Linked Data Proposals in the Learning Domain. (2015)
+#author G Vega-Gorgojo, JI Asensio-Pérez, E Gómez-Sánchez et al.
 #url http://www.jucs.org/jucs_21_2/a_review_of_linked/jucs_21_02_0326_0364_gorgojo.pdf
 
-#title A Review Of Ontologies For Describing Scholarly And Scientific Documents
-#author A Ruiz-Iniesta, O Corcho
-#url http://www.researchgate.net/profile/Oscar_Corcho/publication/263495382_A_review_of_ontologies_for_describing_scholarly_and_scientific_document/links/53d8bc880cf2a19eee836c97.pdf
+#title A SKOS vocabulary for Linked Land Administration: Cadastre and Land Administration Thesaurus (2015)
+#author V Çağdaş, E Stubkjær
+#url https://www.sciencedirect.com/science/article/pii/S0264837715000654
 
-#title A Simple Scheme For Bibliography Acquisition Using Doi Content Negotiation Proxy
+#title A Semantic Infrastructure for Scientific Manuscripts (2016)
+#author G Falquet, CUIU Genève, L Nerima
+#url http://amsacta.unibo.it/5559/1/aiucd2016-boa.pdf#page=171
+
+#title A Typology of Semantic Relations Dedicated to Scientific Literature Analysis (2017)
+#author T Charnois
+#url https://books.google.it/books?hl=en&lr=&id=HWHTDgAAQBAJ&oi=fnd&pg=PA26&ots=9bnFnFu2jx&sig=aPUTw0_AAMCtOWxOtkMoKjUkbcI
+
+#title A case study: semantic integration of gene–disease associations for type 2 diabetes mellitus from literature and biomedical data resources (2014)
+#author D Rebholz-Schuhmann, C Grabmüller et al.
+#url https://www.sciencedirect.com/science/article/pii/S1359644613003917
+
+#title A collaborative methodology for developing a semantic model for interlinking Cancer Chemoprevention linked-data sources (2014)
+#author D Zeginis, A Hasnain, N Loutas, HF Deus et al.
+#url https://content.iospress.com/articles/semantic-web/sw112
+
+#title A document-inspired way for tracking changes of RDF data ()
+#author S Peroni, D Shotton, F Vitali
+#url https://pdfs.semanticscholar.org/faec/0ac63ad2cfaf0251111cea3851338f4ec55a.pdf
+
+#title A framework for analyzing the sustainability of peer produced science commons (2015)
+#author NM Weber
+#url http://search.proquest.com/openview/cab158e453329b67bc786c3e160a17fd/1?pq-origsite=gscholar&cbl=18750&diss=y
+
+#title A framework for ontology-based library data generation, access and exploitation (2016)
+#author D Vila-Suero
+#url http://oa.upm.es/id/eprint/44533
+
+#title A framework supporting the shift from traditional digital publications to enhanced publications (2015)
+#author A Bardi, P Manghi
+#url http://dlib.org/dlib/january15/bardi/01bardi.html
+
+#title A hybrid semantic approach to building dynamic maps of research communities (2014)
+#author F Osborne, G Scavo, E Motta
+#url https://link.springer.com/chapter/10.1007/978-3-319-13704-9_28
+
+#title A linked-data-driven and semantically-enabled journal portal for scientometrics (2013)
+#author Y Hu, K Janowicz, G McKenzie, K Sengupta et al.
+#url https://link.springer.com/chapter/10.1007/978-3-642-41338-4_8
+
+#title A method for defining human-machine micro-task workflows for gathering legal information (2014)
+#author N Luz, N Silva, P Novais
+#url https://link.springer.com/10.1007/978-3-662-45960-7_20
+
+#title A methodology for citing linked open data subsets (2015)
+#author G Silvello
+#url https://www.researchgate.net/profile/Gianmaria_Silvello/publication/270897747_A_Methodology_for_Citing_Linked_Open_Data_Subsets/links/54b8f1170cf2c27adc49085a.pdf
+
+#title A multi-disciplinary perspective on emergent and future innovations in peer review (2017)
+#author JP Tennant, JM Dugan, D Graziotin, DC Jacques et al.
+#url https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5686505.2/
+
+#title A new paradigm for the scientific article (2014)
+#author AK Weilenmann
+#url https://content.iospress.com/articles/information-services-and-use/isu753
+
+#title A novel approach for business document representation and processing without semantic ambiguity in e-commerce (2015)
+#author S Yang, J Guo
+#url http://ieeexplore.ieee.org/abstract/document/7339228/
+
+#title A preliminary study on the semantic representation of the notes to Dante Alighieri's Convivio (2013)
+#author V Bartalesi, E Locuratolo, L Versienti et al.
+#url https://dl.acm.org/citation.cfm?id=2517983
+
+#title A review of argumentation for the social semantic web (2013)
+#author J Schneider, T Groza, A Passant
+#url https://content.iospress.com/articles/semantic-web/sw073
+
+#title A review of ontologies for describing scholarly and scientific documents. (2014)
+#author A Ruiz-Iniesta, O Corcho
+#url https://www.researchgate.net/profile/Oscar_Corcho/publication/263495382_A_review_of_ontologies_for_describing_scholarly_and_scientific_document/links/53d8bc880cf2a19eee836c97.pdf
+
+#title A semantic model for content description in the Sapienza Digital Library (2015)
+#author A Di Iorio, M Schaerf
+#url https://link.springer.com/chapter/10.1007/978-3-319-41938-1_4
+
+#title A semantic model for scholarly electronic publishing (2011)
+#author CH Marcondes
+#url http://www.academia.edu/download/30839379/sepublica2011-complete.pdf#page=53
+
+#title A semantic model for scholarly electronic publishing in Biomedical Sciences (2014)
+#author CH Marcondes, LR Malheiros, LC Da Costa
+#url https://content.iospress.com/articles/semantic-web/sw111
+
+#title A simple scheme for bibliography acquisition using DOI content negotiation proxy (2014)
 #author K Ma, B Yang
 #url http://www.emeraldinsight.com/doi/abs/10.1108/EL-09-2012-0121
 
-#title A Specialisation Of The Europeana Data Model For The Representation Of Manuscripts: The Dm2E Model
+#title A simple taxonomy for computer science paper relationships (2013)
+#author J Swacha
+#url https://www.infona.pl/resource/bwmeta1.element.baztech-42391e4d-9b10-4fd2-a66b-35dbdd0a9a42
+
+#title A specialisation of the Europeana Data Model for the representation of manuscripts: The DM2E model (2014)
 #author E Dröge, J Iwanowa, S Hennicke
 #url http://ozk.unizd.hr/proceedings/index.php/lida/article/view/117
 
-#title A User-Centric Model To Semantically Annotate And Retrieve Scientific Documents
+#title A study of lexical distribution in citation contexts through the IMRaD standard (2014)
+#author M Bertin, I Atanassova
+#url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.644.8358&rep=rep1&type=pdf
+
+#title A survey on sentiment analysis of scientific citations (2017)
+#author A Yousif, Z Niu, JK Tarus, A Ahmad
+#url https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s10462-017-9597-8&casa_token=BBA7BHwEZbIAAAAA:M86edIQBu5MKQcmal1bGS1-mEmWoA2ib1TK9ZkboRb83Bfr3291FMYwms9kRZaCo20A8jfYgGPtqToazOg
+
+#title A user-centric model to semantically annotate and retrieve scientific documents (2013)
 #author H de Ribaupierre, G Falquet
-#url http://dl.acm.org/citation.cfm?id=2513213
+#url https://dl.acm.org/citation.cfm?id=2513213
 
-#title A Vague Sense Classifier For Detecting Vague Definitions In Ontologies
+#title A vague sense classifier for detecting vague definitions in ontologies (2014)
 #author P Alexopoulos, J Pavlopoulos
-#url http://www.aclweb.org/anthology/E14-4#page=53
+#url http://www.aclweb.org/anthology/E14-4007
 
-#title A-Posteriori Provenance-Enabled Linking Of Publications And Datasets Via Crowdsourcing
-#author L Dragan, M Luczak
-#url http://dialnet.unirioja.es/servlet/articulo?codigo=4945995
+#title A web application for exploring primary sources: The DanteSources case study (2018)
+#author V Bartalesi, C Meghini, D Metilli et al.
+#url https://academic.oup.com/dsh/advance-article/doi/10.1093/llc/fqy002/4850504
 
-#title Accessing Biological Data With Semantic Web Technologies
+#title A web-based system for connecting undergraduate students and researchers via textbooks for multi-disciplinary, research-oriented education ()
+#author SB Kraines, W Guo, T Makino
+#url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.217.8761&rep=rep1&type=pdf
+
+#title A-posteriori provenance-enabled linking of publications and datasets via crowdsourcing (2015)
+#author L Dragan, M Luczak-Rösch, E Simperl, H Packer et al.
+#url https://lirias.kuleuven.be/bitstream/123456789/504184/1/dragan_et_al_2015.pdf
+
+#title ACM: article content miner for assessing the quality of scientific output (2016)
+#author AG Nuzzolese, S Peroni, DR Recupero
+#url https://link.springer.com/chapter/10.1007/978-3-319-46565-4_22
+
+#title AN ONTOLOGY FOR THE USE OF QUALITY EVALUATED SOCIAL MEDIA DATA IN EMERGENCIES (2016)
+#author M Moi, N Rodehutskors, R Koch
+#url https://pdfs.semanticscholar.org/0112/66a561e25a57406b35457eb5031053f629c1.pdf
+
+#title APOPSIS: A Web-Based Platform for the Analysis of Structured Dialogues (2017)
+#author E Ymeralli, G Flouris, T Patkos et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-69459-7_16
+
+#title Accelerating scientists' knowledge turns (2011)
+#author C Goble, D De Roure, S Bechhofer
+#url https://link.springer.com/chapter/10.1007/978-3-642-37186-8_1
+
+#title Accelerating the development of an information ecosystem in health care, by stimulating the growth of safe intermediate processing of health information (IPHI) (2013)
+#author H Liyanage, ST Liaw et al.
+#url http://hijournal.bcs.org/index.php/jhi/article/view/28
+
+#title Accessing biological data in R with semantic web technologies (2014)
 #author E Willighagen
-#url https://peerj.com/preprints/185v1.pdf
+#url http://search.proquest.com/openview/78c2bb168e7f6dc08cf23da882dc8c1d/1?pq-origsite=gscholar&cbl=2045933&casa_token=UbhHQNh6Z2wAAAAA:SiJB3QhYwfCv6OjYAmgURZbOgJOlzxaPNgjUvQAlFudEq9oJxBAYW8sd_4O_xHhcKndg5X1WTA
 
-#title Advances In Semantic Authoring And Publishing
+#title Activity Analysis, Semantics and Metadata Building (2016)
+#author C Cote
+#url http://www.tandfonline.com/doi/abs/10.1080/19386389.2016.1216969
+
+#title Advances in semantic authoring and publishing (2012)
 #author T Groza
-#url https://books.google.it/books?hl=en&lr=&id=8up7AgAAQBAJ&oi=fnd&pg=PR1&dq=%22purl.org/spar%22+OR+%22sparontologies.net%22&ots=qQhJiXPSrE&sig=UDKmnvjKyxbJg1kC2S-vL54mTaU
+#url https://books.google.it/books?hl=en&lr=&id=8up7AgAAQBAJ&oi=fnd&pg=PR1&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=qRgEj0QTuB&sig=7WKxbeUpfXjXM0UTClm_rdz_-yA
 
-#title An Ontology Design Pattern For Cooking Recipes–Classroom Created
-#author M Sam, AA Krisnadhi, C Wang, J Gallagher, P Hitzler
-#url http://knoesis.org/faculty/pascal/pub/2014-recipe.pdf
+#title Adventures in data citation: sorghum genome data exemplifies the new gold standard (2012)
+#author SC Edmunds, TJ Pollard, B Hole et al.
+#url https://bmcresnotes.biomedcentral.com/articles/10.1186/1756-0500-5-223
 
-#title Analisi Di Riferimenti Bibliografici In Documenti Xml
-#author F Poggi, A Demian
-#url http://amslaurea.unibo.it/6622/1/demian_ariel_tesi.pdf
+#title Aemoo: Linked data exploration based on knowledge patterns (2017)
+#author AG Nuzzolese, V Presutti, A Gangemi, S Peroni et al.
+#url https://content.iospress.com/articles/semantic-web/sw222
 
-#title Annotating Evidence Based Clinical Guidelines
-#author R Hoekstra, A de Waard, R Vdovjak
-#url http://ceur-ws.org/Vol-952/paper_13.pdf
+#title All Aboard: Toward a Machine-Friendly Scholarly Communication System ()
+#author MF Scholarly
+#url http://www.academia.edu/download/46564252/The_Fourth_Paradigm_Data-Intensive_Scien20160617-24510-1knicnx.pdf#page=227
 
-#title Biotea: Rdfizing Pubmed Central In Support For The Paper As An Interface To The Web Of Data
-#author LJG Castro, C McLaughlin, A Garcia
-#url http://www.biomedcentral.com/content/pdf/2041-1480-4-S1-S5.pdf
+#title All and Each: A Socio-Technical Review of the Europeana Project. (2017)
+#author RS Bettivia, E Stainforth
+#url http://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=19384122&AN=127248292&h=v7OMSg3reg4b8vfrqxz90YxgOyfGbhWqI%2BPMRspuW%2F%2BZlt3EtMo9NuuwdfPSGj6Ttu28YkqaPyVHgQiQWdZyDw%3D%3D&crl=c
 
-#title BM2LOD: Platform For Publishing Bibliographic Data As Linked Open Data
-#author YH Delgado, LR Álvarez, AL Mederos, MMR García, et al.
-#url http://www.researchgate.net/profile/Yusniel_Hidalgo_Delgado/publication/260555049_BM2LOD_Platform_For_Publishing_Bibliographic_Data_As_Linked_Open_Data/links/0c9605363ca5ba559e000000.pdf
+#title Alternative approaches to assessing scientific results (2015)
+#author NA Mazov, VN Gureev
+#url https://link.springer.com/article/10.1134/S1019331615010116
 
-#title Citations And Annotations In Classics: Old Problems And New Perspectives
+#title Altmetria: métricas alternativas do impacto da comunicação científica (2017)
+#author IVP Souza
+#url http://repositorio.uff.br/jspui/handle/1/2811
+
+#title An Analysis of Identifier Use in SHARE (2017)
+#author C Hudson-Vitale et al.
+#url http://www.tandfonline.com/doi/abs/10.1080/10572317.2017.1383749
+
+#title An Ontology Design Pattern for Cooking Recipes-Classroom Created. (2014)
+#author M Sam, A Krisnadhi, C Wang, JC Gallagher, P Hitzler
+#url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.671.930&rep=rep1&type=pdf
+
+#title An application of semantic technologies to self adaptations (2016)
+#author F Poggi, D Rossi, P Ciancarini et al.
+#url http://ieeexplore.ieee.org/abstract/document/7740548/
+
+#title An incremental learning method to support the annotation of workflows with data-to-data relations (2016)
+#author E Daga, M d'Aquin, A Gangemi, E Motta
+#url https://link.springer.com/chapter/10.1007/978-3-319-49004-5_9
+
+#title An informatics project and online “Knowledge Centre” supporting modern genotype‐to‐phenotype research (2011)
+#author AJ Webb, GA Thorisson, AJ Brookes
+#url http://onlinelibrary.wiley.com/doi/10.1002/humu.21469/full
+
+#title An ontological perspective on thematic roles (2016)
+#author A Goy, D Magro, M Rovera
+#url https://link.springer.com/chapter/10.1007/978-3-319-58694-6_14
+
+#title An ontology for tuberculosis treatment adherence behaviour (2015)
+#author OA Ogundele, D Moodley, CJ Seebregts et al.
+#url https://dl.acm.org/citation.cfm?id=2815803
+
+#title An open annotation ontology for science on web 3.0 (2011)
+#author P Ciccarese, M Ocana et al.
+#url https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-2-S2-S4
+
+#title An up to date dataset of most cited authors and publications (2016)
+#author L Zemmouchi-Ghomari, D Ferhat et al.
+#url http://ieeexplore.ieee.org/abstract/document/7929111/
+
+#title Analisi di riferimenti bibliografici in documenti XML ()
+#author A Demian
+#url http://amslaurea.unibo.it/id/eprint/6622
+
+#title Analyse temporelle et sémantique des réseaux sociaux typés à partir du contenu de sites généré par des utilisateurs sur le Web (2016)
+#author Z Meng
+#url http://www.theses.fr/2016AZUR4090
+
+#title Analysing and Discovering Semantic Relations in Scholarly Data (2017)
+#author A Di Iorio, AG Nuzzolese, S Peroni, F Poggi et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-68130-6_1
+
+#title Analyzing the Evolution of Vocabulary Terms and their Impact on the LOD Cloud (2018)
+#author M Abdel-Qader, A Scherp, I Vagliano
+#url https://2018.eswc-conferences.org/wp-content/uploads/2018/02/ESWC2018_paper_148.pdf
+
+#title Annotated Corpus for Citation Context Analysis (2016)
+#author M Hernández Álvarez, JM Gómez, P Martínez-Barco
+#url http://rua.ua.es/dspace/handle/10045/69813
+
+#title Annotating Atomic Components of Papers in Digital Libraries: The Semantic and Social Web Heading towards a Living Document Supporting eSciences (2009)
+#author AG Castro, LJ García-Castro, A Labarga et al.
+#url https://link.springer.com/chapter/10.1007/978-3-642-03573-9_24
+
+#title Annotating Evidence Based Clinical Guidelines ()
+#author AL Ontology
+#url https://pure.uva.nl/ws/files/7587201/163275_paper_13.pdf
+
+#title Annotating texts with ontologies, from geography to persons and events (2014)
+#author M Lana, F Ciotti, D Magro, S Peroni, F Tomasi, F Vitali
+#url https://www.researchgate.net/profile/Francesca_Tomasi/publication/266644614_Annotating_texts_with_ontologies_from_geography_to_persons_and_events/links/544fcc5e0cf201441e934ebd/Annotating-texts-with-ontologies-from-geography-to-persons-and-events.pdf
+
+#title Análisis de la información temporal en euskera (1989)
+#author BA Dıaz
+#url http://gplsi.dlsi.ua.es/sepln15/sites/gplsi.dlsi.ua.es.sepln15/files/attachments/begona_altuna.pdf
+
+#title Application of CIDOC-CRM for the Russian Heritage Cloud Platform (2015)
+#author E Cherny, P Haase, D Mouromtsev, A Andreev et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-23201-0_45
+
+#title Archivi di persona in linked open data: il modello concettuale come strumento di integrazione nei GLAMs (2017)
+#author F Tomasi
+#url http://aibstudi.aib.it/article/view/11647
+
+#title Are scientific data repositories coping with research data publishing? (2016)
+#author M Assante, L Candela, D Castelli et al.
+#url https://datascience.codata.org/articles/10.5334/dsj-2016-006/?toggle_hypothesis=on
+
+#title Assessing and tracing the outcomes and impact of research infrastructures (2017)
+#author MS Mayernik, DL Hart, KE Maull et al.
+#url http://onlinelibrary.wiley.com/doi/10.1002/asi.23721/full
+
+#title Assessment of the relevance of journals in research libraries using bibliometrics (a review) (2015)
+#author VN Gureev, NA Mazov
+#url https://link.springer.com/article/10.3103/S0147688215010050
+
+#title Authorship roles in the biomedical field: defining a new model (2014)
+#author M Panes, S Godel-Spring, P Iriarte
+#url http://liber2014.lnb.lv/wp-content/uploads/sites/9/2014/04/20_Poster.pdf
+
+#title Automated citation sentiment analysis: what can we learn from biomedical researchers (2013)
+#author B Yu
+#url http://onlinelibrary.wiley.com/doi/10.1002/meet.14505001084/full
+
+#title Automatic classification of springer nature proceedings with smart topic miner (2016)
+#author F Osborne, A Salatino, A Birukou, E Motta
+#url https://link.springer.com/10.1007/978-3-319-46547-0_33
+
+#title Automatic construction of a semantic knowledge base from CEUR workshop proceedings (2015)
+#author B Sateli, R Witte
+#url https://link.springer.com/chapter/10.1007/978-3-319-25518-7_11
+
+#title Automatic data acquisition—A major challenge (2017)
+#author NP Challa, RVK Mehta
+#url http://ieeexplore.ieee.org/abstract/document/8117839/
+
+#title Automatically identify and label sections in scientific journals using conditional random fields (2016)
+#author SH Ramesh, A Dhar, RR Kumar, V Anjaly et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-46565-4_21
+
+#title Automating semantic publishing ()
+#author S Peroni
+#url https://content.iospress.com/articles/data-science/ds012
+
+#title BIA-Net: l'interoperabilità delle fonti giuridiche antiche attraverso il Semantic Web (2017)
+#author D Spampinato
+#url http://edizionicafoscari.unive.it/media/pdf/books/978-88-6969-183-6/978-88-6969-183-6-ch-00_fkpGMSA.pdf
+
+#title BIOINFORMATIKA: MOLEKULÁRIS MÉRÉSTECHNIKÁTÓL AZ ORVOSI DÖNTÉSTÁMOGATÁSIG (2014)
+#author APAÁB Bence, GAH Gergely, HGMPM András et al.
+#url https://www.researchgate.net/profile/Laszlo_Poppe/publication/279555618_Bioinformatika_molekularis_merestechnikatol_az_orvosi_dontestamogatasig/links/5596cbe808ae99aa62c8c20a/Bioinformatika-molekularis-merestechnikatol-az-orvosi-doentestamogatasig.pdf
+
+#title BM2LOD: PLATFORM FOR PUBLISHING BIBLIOGRAPHIC DATA AS LINKED OPEN DATA ()
+#author YH Delgado, LR Álvarez, AL Mederos, MMR García et al.
+#url http://softwaredocumental.org/repositorio/Texto-completo/2014%20-%20Hidalgo-Delgado%20et%20al.%20-%20BM2LOD%20Platform%20for%20publishing%20bibliographic%20data%20as%20linked%20open%20data.pdf
+
+#title Bayesian systems-based genetic association analysis with effect strength estimation and omic wide interpretation: a case study in rheumatoid arthritis (2014)
+#author G Hullám, A Gézsi, A Millinghoffer, P Sárközy et al.
+#url https://link.springer.com/protocol/10.1007/978-1-4939-0404-4_14
+
+#title Bex: un ambiente user-friendly per esplorare articoli scientifici e bibliografie ()
+#author R Giannella
+#url http://amslaurea.unibo.it/8306/1/giannella_raffaele_tesi.pdf
+
+#title Beyond bibliometrics: altmetrics reflects information about engagement with more types of scholarly content from more types of consumers (2015)
+#author W Gunn
+#url https://books.google.it/books?hl=en&lr=&id=jQUUDgAAQBAJ&oi=fnd&pg=PA83&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=LTyRlJiV3q&sig=U2DOUshsiIw_X0SwkKArjOT1kQs
+
+#title Big Data in Management Research (2016)
+#author C Lee
+#url https://repub.eur.nl/pub/79818/
+
+#title Biology needs a modern assessment system for professional productivity (2011)
+#author LA McDade, DR Maddison, R Guralnick et al.
+#url https://academic.oup.com/bioscience/article-abstract/61/8/619/337298
+
+#title Biomedical text mining for research rigor and integrity: tasks, challenges, directions (2017)
+#author H Kilicoglu
+#url https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbx057/3867654
+
+#title Biomolecular Relationships Discovered from Biological Labyrinth and Lost in Ocean of Literature: Community Efforts Can Rescue Until Automated Artificial … (2016)
+#author R Gupta, SS Mantri
+#url https://www.frontiersin.org/article/10.3389/fgene.2016.00046/full
+
+#title Biotea: RDFizing PubMed Central in support for the paper as an interface to the Web of Data (2013)
+#author LJG Castro, C McLaughlin et al.
+#url https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-4-S1-S5
+
+#title Biotea: semantics for Pubmed Central (2018)
+#author A Garcia, F Lopez, L Garcia, O Giraldo, V Bucheli et al.
+#url https://peerj.com/articles/4201/
+
+#title BookOnt: A Comprehensive Book Structural Ontology for Book Search and Retrieval (2016)
+#author A Ullah, I Ullah, S Khusro, S Ali
+#url http://ieeexplore.ieee.org/abstract/document/7866755/
+
+#title Brazil Towards Government 2.0: Strategies for Adopting Open Government Data in National and Subnational Governments Ricardo Matheus Manuella Maia … ()
+#author R MATHEUS
+#url http://getip.net.br/wp-content/uploads/2016/03/11-Brazil-Toward-smart-and-participative-government.pdf
+
+#title Bringing Digital Science Deep Inside the Scientific Article: the Elsevier Article of the Future Project (2014)
+#author IJ Aalbersberg, S Atzeni, H Koers, B Specker et al.
+#url https://www.liberquarterly.eu/article/view/URN%3ANBN%3ANL%3AUI%3A10-1-116066/9920/
+
+#title British Library Sounds and Ethnographic Video for Instruction and Analysis by Ruth M. Stone and Lester Monts (2015)
+#author B Tausig
+#url http://jams.ucpress.edu/content/68/2/476.short
+
+#title Building Citation Networks with SPACIN (2016)
+#author S Peroni, D Shotton, F Vitali
+#url https://link.springer.com/chapter/10.1007/978-3-319-58694-6_23
+
+#title CEUR-WS-LOD ()
+#author M Kolchin, E Cherny, F Kozlov, A Shipilo, L Kovriguina
+#url https://www.researchgate.net/profile/Maxim_Kolchin/publication/306231689_CEUR-WS-LOD_Conversion_of_CEUR-WS_Workshops_to_Linked_Data/links/57ee685d08ae280dd0ad584c/CEUR-WS-LOD-Conversion-of-CEUR-WS-Workshops-to-Linked-Data.pdf
+
+#title CEUR-WS-LOD: conversion of CEUR-WS workshops to linked data (2015)
+#author M Kolchin, E Cherny, F Kozlov, A Shipilo et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-25518-7_12
+
+#title Calling International Rescue: knowledge lost in literature and data landslide! (2009)
+#author TK Attwood, DB Kell, P McDermott, J Marsh et al.
+#url http://www.biochemj.org/content/424/3/317.abstract
+
+#title Case-based learning, pedagogical innovation, and semantic web technologies (2012)
+#author A Martinez-Garcia, S Morris, M Tscholl et al.
+#url http://ieeexplore.ieee.org/abstract/document/6095504/
+
+#title Causality and the semantics of provenance (2010)
+#author J Cheney
+#url https://arxiv.org/abs/1004.3241
+
+#title Ceci n'est pas un hamburger: modelling and representing the scholarly article (2011)
+#author S Pettifer, P McDermott, J Marsh, D Thorne et al.
+#url http://www.ingentaconnect.com/contentone/alpsp/lp/2011/00000024/00000003/art00009
+
+#title Challenges as enablers for high quality Linked Data: insights from the Semantic Publishing Challenge (2017)
+#author A Dimou, S Vahdati, A Di Iorio, C Lange et al.
+#url https://peerj.com/articles/cs-105/?utm_source=TrendMD&utm_campaign=PeerJ_TrendMD_0&utm_medium=TrendMD
+
+#title Challenges in data intensive analysis at scientific experimental user facilities (2011)
+#author KK van Dam, D Li, SD Miller, JW Cobb et al.
+#url https://link.springer.com/chapter/10.1007/978-1-4614-1415-5_10
+
+#title Characterising Citations in Scholarly Articles: An Experiment. (2013)
+#author P Ciancarini, A Di Iorio, AG Nuzzolese et al.
+#url https://pdfs.semanticscholar.org/dd01/a47f644367fbb54fbd65990018092ebdf99a.pdf#page=124
+
+#title Chemical datuments as scientific enablers (2013)
+#author HS Rzepa
+#url https://link.springer.com/article/10.1186/1758-2946-5-6
+
+#title Ciencia en abierto en el LHC (CERN): Discursos proclamados y conductas. (2013)
+#author ML Pérez-González
+#url http://eprints.rclis.org/18523/
+
+#title Citation function, polarity and influence classification (2017)
+#author M Hernandez-Alvarez, JMG SORIANO et al.
+#url https://www.cambridge.org/core/journals/natural-language-engineering/article/citation-function-polarity-and-influence-classification/7BB78B55F61B1EAE6F3303462D1A5F92
+
+#title Citation functions for knowledge export-a question of relevance, or, can CiTO do the trick? (2016)
+#author J Philipson
+#url https://link.springer.com/chapter/10.1007/978-3-319-53637-8_11
+
+#title Citation functions revisited: learning from the princes (2016)
+#author J Philipson
+#url https://riojournal.com/article_preview.php?id=9651
+
+#title Citation role labeling via local, pairwise, and global features (2014)
+#author C Guo, Y Yu, A Sanjari, X Liu
+#url http://onlinelibrary.wiley.com/doi/10.1002/meet.2014.14505101065/full
+
+#title Citations and annotations in classics: old problems and new perspectives (2013)
 #author M Romanello, M Pasin
-#url http://dl.acm.org/citation.cfm?id=2517981
+#url https://dl.acm.org/citation.cfm?id=2517981
 
-#title Collaborative Information Management In Scientific Research Processes
-#author S Crompton, C Neylon, B Matthews, et al.
-#url http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6404478
+#title Citeology: visualizing paper genealogy (2012)
+#author J Matejka, T Grossman, G Fitzmaurice
+#url https://dl.acm.org/citation.cfm?id=2212796
 
-#title Conceptual Exploration Of Documents And Digital Libraries In The Biomedical Domain
+#title Classifying Inconsistencies in DBpedia Language Specific Chapters. (2014)
+#author E Cabrio, S Villata, F Gandon
+#url https://pdfs.semanticscholar.org/adb1/32dec454bb3f0b9822d0743665ca1bd8523d.pdf
+
+#title Cloud computing in e-Science: research challenges and opportunities (2014)
+#author X Yang, D Wallom, S Waddington, J Wang et al.
+#url https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s11227-014-1251-5&casa_token=dlEykgkm9XMAAAAA:8HGGa-NAJVmLcT8JnOIiKL_H1B1sN4nbOLLLb2Lnbok9zFFWtvPY81A5tOrmOV9rpGJZ6WCZEdDby-jYvA
+
+#title Coherence of" open" initiatives in higher education and research: Framing a policy agenda (2014)
+#author S Corrall, S Pinfield
+#url https://www.ideals.illinois.edu/handle/2142/47316
+
+#title Colil: a database and search service for citation contexts in the life sciences domain (2015)
+#author T Fujiwara, Y Yamamoto
+#url https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-015-0037-x
+
+#title Collaboration to data curation: Harnessing institutional expertise (2010)
+#author S Macdonald, L Martinez-Uribe
+#url http://www.tandfonline.com/doi/abs/10.1080/13614533.2010.505823
+
+#title Collaborative authoring, evolution, and personalization for a transdisciplinary textbook (2015)
+#author RJ Glushko
+#url https://dl.acm.org/citation.cfm?id=2789867
+
+#title Collaborative development of a common semantic model for interlinking Cancer Chemoprevention linked data sources (2012)
+#author D Zeginis, A Hasnain, N Loutas et al.
+#url http://www.semantic-web-journal.net/sites/default/files/swj263.pdf
+
+#title Collaborative information management in scientific research processes (2012)
+#author S Crompton, C Neylon, B Matthews et al.
+#url http://ieeexplore.ieee.org/abstract/document/6404478/
+
+#title Computational morphometry for detecting changes in brain structure due to development, aging, learning, disease and evolution (2009)
+#author D Mietchen, C Gaser
+#url https://www.frontiersin.org/articles/10.3389/neuro.11.025.2009
+
+#title Computer-Assisted Processing of Intertextuality in Ancient Languages (2016)
+#author M Hedges, A Jordanous, KF Lawrence et al.
+#url https://arxiv.org/abs/1602.00234
+
+#title Concepts and technologies of the semantic Web for academic-scientific cooperation: A study within the Vivo platform (2017)
+#author JES SEGUNDO, CS CONEGLIAN, ERO LUCAS
+#url http://www.scielo.br/scielo.php?pid=S0103-37862017000300297&script=sci_arttext&tlng=pt
+
+#title Conceptual Exploration of Documents and Digital Libraries in the Biomedical Domain ()
 #author LJG Castro, J Gómez, A Garcia
 #url http://ceur-ws.org/Vol-952/paper_40.pdf
 
-#title Creating Linked Data From Relational Databases
+#title Conceptual structures for stem data (2013)
+#author S White
+#url https://link.springer.com/chapter/10.1007/978-3-642-35786-2_1
+
+#title Conceptualización y generación de RDF de los recursos bibliográficos de la Biblioteca “Benjamín Carrión” de UTPL (2016)
+#author MC Cabrera Loayza
+#url http://oa.upm.es/id/eprint/40329
+
+#title Concit-Corpus: Análisis de contexto de citas para detectar Función, Polaridad e Influencia (1989)
+#author M HERNÁNDEZ-ALVAREZ
+#url http://gplsi.dlsi.ua.es/sepln15/sites/gplsi.dlsi.ua.es.sepln15/files/attachments/Art%C3%ADculo%20simposio%20doctoralv2.pdf
+
+#title Concit-Corpus: Context Citation Analysis to learn Function, Polarity and Influence (2015)
+#author M Hernández Álvarez
+#url http://rua.ua.es/dspace/bitstream/10045/50506/1/tesis_myriam_hernandez_alvarez.pdf
+
+#title Conclusions (2014)
+#author S Peroni
+#url https://link.springer.com/chapter/10.1007/978-3-319-04777-5_7
+
+#title Conference linked data: The scholarlydata project (2016)
+#author AG Nuzzolese, AL Gentile, V Presutti et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-46547-0_16
+
+#title Connecting the persistent identifier ecosystem: Building the technical and human infrastructure for open research (2017)
+#author A Dappert, A Farquhar, R Kotarski et al.
+#url https://datascience.codata.org/articles/10.5334/dsj-2017-028/?toggle_hypothesis=on
+
+#title Constitution d'un corpus d'articles scientifiques avec représentation sémantique ()
+#author JC Moissinac
+#url https://egc18.sciencesconf.org/data/actesTextMine18.pdf#page=35
+
+#title Constructing Technical Knowledge Organizations from Document Structures (2017)
+#author S Furth, J Baumeister
+#url https://link.springer.com/chapter/10.1007/978-3-319-59569-6_23
+
+#title Construction of Linked Data with Lightweight Book Bibliography Ontology (2015)
+#author G Zhenying, Z Wenbing et al.
+#url http://manu44.magtech.com.cn/Jwk_infotech_wk3/EN/abstract/abstract4118.shtml
+
+#title Construction of a domain knowledge service system based on the STKOS (2015)
+#author Z Ruixue, X Guojian, KOU Yuantao, Z Xuefu et al.
+#url http://159.226.100.150:8084/cjlis/CN/article/downloadArticleFile.do?attachType=PDF&id=8590
+
+#title Content Ontology Design Patterns: Qualities, Methods, and Tools (2017)
+#author K Hammar
+#url https://books.google.it/books?hl=en&lr=&id=etk0DwAAQBAJ&oi=fnd&pg=PP1&ots=3rS8A-6KaK&sig=83omOskNMFRrIAppTnOQHfV9r6A
+
+#title Contextual information retrieval in research articles: Semantic publishing tools for the research community (2011)
+#author N Stanger, MA Angrosh, S Cranefield
+#url https://ourarchive.otago.ac.nz/handle/10523/1783
+
+#title Core Public Service Vocabulary: The Italian Application Profile (2014)
+#author G Ciasullo, G Lodi, A Rotundo
+#url https://www.w3.org/2013/share-psi/wiki/images/7/73/AgID_BerlinWorkshop.pdf
+
+#title Creating Linked Data from Relational Databases (2015)
 #author N Konstantinou, DE Spanos
-#url http://link.springer.com/chapter/10.1007/978-3-319-16074-0_4
+#url https://link.springer.com/10.1007/978-3-319-16074-0_4
 
-#title Crowdsourced Semantic Annotation Of Scientific Publications
+#title Crowdsourced Semantic Annotation of Scientific Publications (2014)
 #author J Takis, S Auer
-#url http://eis-bonn.github.io/Theses/2014/Jaana_Takis/thesis.pdf
+#url http://purl.net/eis/theses/2014/takis.pdf
 
-#title Deliverable 300.2 Analysis Of Existing Technical Solutions
-#author S Ventouras, S Callaghan, J Blower, JB Lankester, et al.
+#title Crowdsourced semantic annotation of scientific publications and tabular data in PDF (2015)
+#author J Takis, AQM Islam, C Lange, S Auer
+#url https://dl.acm.org/citation.cfm?id=2814887
+
+#title Customised Visualisations of Linked Open Data ()
+#author A Graziosi, A Di Iorio, F Poggi, S Peroni
+#url http://ceur-ws.org/Vol-1947/paper03.pdf
+
+#title DBQuote: A Social Web based System for Collecting and Sharing Wisdom Quotes ()
+#author G Piao, JG Breslin
+#url http://johnbreslin.org/files/publications/20151111_jist2015.pdf
+
+#title DIR—A semantic information resource for healthcare datasets (2017)
+#author J Shi, M Zheng, L Yao, Y Ge
+#url http://ieeexplore.ieee.org/abstract/document/8217758/
+
+#title DSpace, λογισμικό ψηφιακών βιβλιοθηκών: μελέτη και εφαρμογή στα Ελληνικά Ακαδημαϊκά Αποθετήρια (2014)
+#author Σ Βασιλείου
+#url http://dione.lib.unipi.gr/xmlui/handle/unipi/8655
+
+#title DanteSources: a Digital Library for Studying Dante Alighieri's Primary Sources (2017)
+#author V Bartalesi, C Meghini, D Metilli et al.
+#url https://umanisticadigitale.unibo.it/article/view/7250
+
+#title Das Potential von Open-Source-Software für Bibliotheken in ausgewählten Ländern ()
+#author S Büttner, H Neuroth
+#url https://opus4.kobv.de/opus4-fhpotsdam/frontdoor/deliver/index/docId/1138/file/Bachelorarbeit_s11199-ohne+adresse.pdf
+
+#title Data Integration for the Arts and Humanities: A Language Theoretical Concept (2016)
+#author T Gradl, A Henrich
+#url https://link.springer.com/chapter/10.1007/978-3-319-43997-6_22
+
+#title Data Model for the Swiss Performing Arts Platform ()
+#author B Estermann, C Schneeberger
+#url https://datahub.io/dataset/66b679fd-02ad-4fc1-8966-fd0fde7e0f39/resource/e6786d1f-7607-4682-a47e-fc7fd9659aa9/download/spa_data_model_v0-51_20170926.pdf
+
+#title Data publication: towards a database of everything (2009)
+#author VS Smith
+#url https://bmcresnotes.biomedcentral.com/articles/10.1186/1756-0500-2-113
+
+#title Dealing with data: A case study on information and data management literacy (2012)
+#author MA Haendel, NA Vasilevsky, JA Wirz
+#url http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001339
+
+#title Dealing with markup semantics (2011)
+#author S Peroni, A Gangemi, F Vitali
+#url https://dl.acm.org/citation.cfm?id=2063533
+
+#title Dealing with structural patterns of XML documents (2014)
+#author A Di Iorio, S Peroni, F Poggi et al.
+#url http://onlinelibrary.wiley.com/doi/10.1002/asi.23088/full
+
+#title Defining and characterizing open peer review: A review of the literature (2013)
+#author E Ford
+#url http://www.utpjournals.press/doi/abs/10.3138/jsp.44-4-001
+
+#title Deliverable 300.2 Analysis of Existing Technical Solutions ()
+#author S Ventouras, S Callaghan, J Blower, JB Lankester et al.
 #url http://ensembles-eu.metoffice.com/charme/documents/CHARMe_D300.2.pdf
 
-#title Developing Ontology For The University Archives
-#author Ι Κυριάκη
-#url http://hypatia.teiath.gr/xmlui/handle/11400/10442
+#title Describing data processing pipelines in scientific publications for big data injection (2017)
+#author S Mesbah, A Bozzon, C Lofi, GJ Houben
+#url https://dl.acm.org/citation.cfm?id=3057149
 
-#title Developing Ontology For The University Archives: The Domain Of Technological Education
-#author D Kyriaki
-#url http://www.sciencedirect.com/science/article/pii/S1877042814040221
+#title Descrição de recursos da ciência: estudo de aplicação do sistema VIVO no domínio da Fabico (2015)
+#author SB Rathke
+#url http://www.lume.ufrgs.br/handle/10183/134823
 
-#title Dm2E Model V 1.0 Specification
-#author E Dröge, S Hennicke, J Iwanowa, KE Uma
-#url http://assets.dm2e.eu.s3.amazonaws.com/DM2E_Model_V1.0_Specification.pdf
+#title Design of an ontology for the use of social media in emergency management (2016)
+#author M Moi, N Rodehutskors
+#url http://irep.iium.edu.my/56000/2/56000_full%20procedings.pdf#page=154
 
-#title Do Czego Potrzebne Są Nam Ontologie? Charakterystyka Funkcjonalna Ontologii Jako NarzęDzi Reprezentacji Wiedzy
+#title Designing the myth: Tag Clouds-a tool for visualization of garment descriptions in mythological narratives. (2012)
+#author J Purgaj, S Jevšnik
+#url http://www.academia.edu/download/31992555/designing_themyth_jurepurgaj.pdf
+
+#title Developing a 21st century global library for mathematics research (2014)
+#author National Research Council
+#url https://books.google.it/books?hl=en&lr=&id=d82nAwAAQBAJ&oi=fnd&pg=PT11&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=99muy1vF7W&sig=WMMuOSxzfPlGoOTp9ucUzlrewJ8
+
+#title Developing ontology for the university archives: the domain of technological education (2014)
+#author D Kyriaki-Manessi, M Dendrinos
+#url https://www.sciencedirect.com/science/article/pii/S1877042814040221
+
+#title Development of InfoGraphic Services for Journals and Articles (2016)
+#author T Seo
+#url http://www.icsti.org/IMG/pdf/insight_kisti_-_decembre_2016_-_en-2.pdf
+
+#title Development of a publishing framework for living open access textbooks 1 (2011)
+#author A Eppelin, R Böttcher
+#url https://content.iospress.com/articles/information-services-and-use/isu654
+
+#title Dialogue and linking between TEI and other semantic models ()
+#author F Tomasi, F Ciotti, M Lana, F Vitali et al.
+#url http://digilab2.let.uniroma1.it/teiconf2013/wp-content/uploads/2013/09/book-abstracts.pdf#page=153
+
+#title Digital Knowledge Objects and Digital Knowledge Object Clusters: Unit Holdings in a Learning Health System Knowledge Repository (2016)
+#author AJ Flynn, W Shi, R Fischer et al.
+#url http://ieeexplore.ieee.org/abstract/document/7427597/
+
+#title Digital data repositories in chemistry and their integration with journals and electronic notebooks (2014)
+#author MJ Harvey, NJ Mason, HS Rzepa
+#url http://pubs.acs.org/doi/abs/10.1021/ci500302p
+
+#title Digital editions as a new model of conceptual authority data (2013)
+#author F Tomasi
+#url http://search.proquest.com/openview/b337b24d42f3b7b1714dc4e6b31aee12/1?pq-origsite=gscholar&cbl=1596385&casa_token=kXspAGmXuGYAAAAA:sYNxTl_qyCgXX_3R67RKvNgBeknjU2hLLhnTMzTo9TSUhlqWC6pu1ruKKtsbMxO70n5wpC9o9w
+
+#title Digital library interoperability at high level of abstraction (2016)
+#author M Agosti, N Ferro, G Silvello
+#url https://www.sciencedirect.com/science/article/pii/S0167739X15003003
+
+#title Disambiguating descriptions: Mapping digital special collections metadata into linked open data formats (2016)
+#author J Jett, TW Cole, MJ Han
+#url https://www.ideals.illinois.edu/handle/2142/96215
+
+#title Disrupting the dissertation: Linked data, enhanced publication and algorithmic culture (2017)
+#author F Tracy, P Carmichael
+#url http://journals.sagepub.com/doi/abs/10.1177/2042753017731356
+
+#title Dissertations and data (2015)
+#author J Schöpfel, J Primož, H Prost, C Malleret et al.
+#url http://hal.univ-lille3.fr/hal-01285304/document
+
+#title Dizajniranje mita: oblak tagova-instrument za vizualizaciju opisa odječe u mitološkoj naraciji. (2012)
+#author J Purgaj, S Jevšnik
+#url http://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=04925882&AN=87765715&h=doiRTAOi0TcV6SUqjRhwDCU3VYss3wKCf1%2BtcbmElxe6ZY9uhIo2bdrU7xCjGhcV8PiSNzlQ9mTemwol9j91Ug%3D%3D&crl=c
+
+#title Do czego potrzebne są nam ontologie? Charakterystyka funkcjonalna ontologii jako narzędzi reprezentacji wiedzy. ()
 #author M Roszkowski
-#url http://www.researchgate.net/profile/Marcin_Roszkowski/publication/255685965_Do_czego_potrzebne_s_nam_ontologie_Charakterystyka_funkcjonalna_ontologii_jako_narzdzi_reprezentacji_wiedzy/links/00b495202907f2200e000000.pdf
+#url https://www.researchgate.net/profile/Marcin_Roszkowski/publication/255685965_Do_czego_potrzebne_sa_nam_ontologie_Charakterystyka_funkcjonalna_ontologii_jako_narzedzi_reprezentacji_wiedzy/links/00b495202907f2200e000000/Do-czego-potrzebne-sa-nam-ontologie-Charakterystyka-funkcjonalna-ontologii-jako-narzedzi-reprezentacji-wiedzy.pdf
 
-#title Epub3 For Integrated And Customizable Representation Of A Scientific Publication And Its Associated Resources
-#author HG Sigarchian, B De Meester, T De Nies, R Verborgh, et al.
-#url http://linkedscience.org/wp-content/uploads/2014/10/lisc2014_submission_3.pdf
+#title Docudipity: estensione di un ambiente per esplorare tendenze nella scrittura di articoli scientifici ()
+#author S Bonfante
+#url http://amslaurea.unibo.it/id/eprint/11956
 
-#title Estrazione E Annotazione Di Una Rete Citazionale Da Articoli Scientifici
-#author A Di Iorio, A De Troia
-#url http://amslaurea.unibo.it/7438/1/detroia_alessandro_tesi.pdf
+#title Documents as timed abstract objects (2012)
+#author C Huitfeldt, F Vitali, S Peroni
+#url https://www.researchgate.net/profile/Silvio_Peroni/publication/256767147_Documents_as_Timed_Abstract_Objects/links/0c960523c1f10eaaac000000.pdf
 
-#title Expanded Citations And Projections Of Concepts
+#title Dokumentvorlage für Dissertationen u. ä. ()
+#author I Blümel
+#url https://d-nb.info/1097572625/34
+
+#title Détection et classification non supervisées de relations sémantiques dans des articles scientifiques (2016)
+#author K Gábor, I Tellier, T Charnois et al.
+#url https://hal.archives-ouvertes.fr/hal-01360400/
+
+#title EPUB3 for Integrated and Customizable Representation of a Scientific Publication and its Associated Resources. (2014)
+#author HG Sigarchian, B De Meester, T De Nies, R Verborgh et al.
+#url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.663.8105&rep=rep1&type=pdf#page=6
+
+#title Editorial for the Second Workshop on Mining Scientific Papers: Computational Linguistics and Bibliometrics (CLBib2017) ()
+#author I Atanassova, M Bertin, P Mayr
+#url http://ceur-ws.org/Vol-2004/editorial-clbib2017.pdf
+
+#title Editorial for the first workshop on mining scientific papers: Computational linguistics and bibliometrics (2015)
+#author I Atanassova, M Bertin, P Mayr
+#url https://arxiv.org/abs/1506.05402
+
+#title Enfoque semántico para el descubrimiento de recursos sensible al contexto sobre contenidos académicos estructurados con OAI-PMH (2016)
+#author A Becerril Garcia, R Lozano Espinosa et al.
+#url http://www.scielo.org.mx/scielo.php?pid=S1405-55462016000100127&script=sci_arttext
+
+#title Enhanced publications: Data models and information systems (2014)
+#author A Bardi, P Manghi
+#url https://www.liberquarterly.eu/article/view/8445/
+
+#title Enhancing Semantic Metadata of Reliable Hadith with Automated Annotation (2016)
+#author SN Jaafar, S Masrom, SN Mahtar et al.
+#url http://www.ingentaconnect.com/contentone/asp/asl/2016/00000022/00000010/art00073
+
+#title Enhancing scholarly use of digital libraries: A comparative survey and review of bibliographic metadata ontologies (2016)
+#author J Jett, T Nurmikko-Fuller, TW Cole et al.
+#url http://ieeexplore.ieee.org/abstract/document/7559562/
+
+#title Enhancing the Europeana Data Model (EDM) (2015)
+#author V Charles, A Isaac
+#url http://test.pro.eanadev.org/files/Europeana_Professional/Publications/EDM_WhitePaper_17062015.pdf
+
+#title Estrazione e annotazione di una rete citazionale da articoli scientifici ()
+#author A De Troia
+#url http://amslaurea.unibo.it/id/eprint/7438
+
+#title Expanded citations and projections of concepts (2014)
 #author M Skulimowski
-#url http://dl.acm.org/citation.cfm?id=2660537
+#url https://dl.acm.org/citation.cfm?id=2660537
 
-#title Exploring Bibliographies For Research-Related Tasks
+#title Exploring bibliographies for research-related tasks (2015)
 #author A Di Iorio, R Giannella, F Poggi, F Vitali
-#url http://dl.acm.org/citation.cfm?id=2742018
+#url https://dl.acm.org/citation.cfm?id=2742018
 
-#title Exploring The Betrothed Lovers
+#title Exploring characteristics of highly cited authors according to citation location and content (2017)
+#author J An, N Kim, MY Kan et al.
+#url http://onlinelibrary.wiley.com/doi/10.1002/asi.23834/full
+
+#title Exploring the betrothed lovers (2013)
 #author A Bolioli, M Casu, M Lana, R Roda
 #url http://drops.dagstuhl.de/opus/volltexte/2013/4153/
 
-#title Extending Bibliographic Information Using Linked Data
+#title Exploring the potential for mapping Schema. org microdata and the Web of Linked Data (2013)
+#author A Nogales, MA Sicilia, E García-Barriocanal et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-03437-9_27
+
+#title Extending Legacy Metadata with Linked Open Data (2017)
+#author J Jett, TW Cole, A Kinnamen et al.
+#url http://dcpapers.dublincore.org/pubs/article/view/3853
+
+#title Extending bibliographic information using linked data (2012)
 #author ZY Park
 #url http://www.koreascience.or.kr/article/ArticleFullRecord.jsp?cn=JBGRBQ_2012_v29n1_231
 
-#title Extraction And Characterization Of Citations In Scientific Papers
+#title Extracting Evidence Fragments for Distant Supervision of Molecular Interactions (2017)
+#author GA Burns, P Dasigi, EH Hovy
+#url https://www.biorxiv.org/content/early/2017/09/23/192856.abstract
+
+#title Extracting knowledge from text using SHELDON, a Semantic Holistic framEwork for LinkeD ONtology data (2015)
+#author D Reforgiato Recupero, AG Nuzzolese et al.
+#url https://dl.acm.org/citation.cfm?id=2742842
+
+#title Extracting reference text from citation contexts (2017)
+#author A Khalid, F Alam, I Ahmed
+#url https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s10586-017-0954-9&casa_token=Q-9PgIaJGZ4AAAAA:zMCVyW6xr6M_XZk-0EmV7yfMI2c20Dwjzg4z0lC8lGX3mzXevAbe9o0XulXOKXlqWh3aBuaD8-4dl2y9Kg
+
+#title Extraction and characterization of citations in scientific papers (2014)
 #author M Bertin, I Atanassova
-#url http://link.springer.com/chapter/10.1007/978-3-319-12024-9_16
+#url https://link.springer.com/chapter/10.1007/978-3-319-12024-9_16
 
-#title Fabrico/Ciência: Um Ambiente Linked Data Para O Mapeamento Da Ciência
-#author RP da Rocha
-#url http://www.seer.ufrgs.br/EmQuestao/article/view/33279/0
+#title Extraction, analysis and publication of bibliographical references within an institutional repository (2016)
+#author G Hatop
+#url http://www.emeraldinsight.com/doi/abs/10.1108/LHT-01-2016-0003
 
-#title FRBR, Information, And Intertextuality
+#title FRBR, Information, and Intertextuality (2015)
 #author P Rafferty
-#url http://muse.jhu.edu/journals/library_trends/v063/63.3.pauline-rafferty.html
+#url https://muse.jhu.edu/article/579346/summary
 
-#title FRBR, Twenty Years On
+#title FRBR, twenty years on (2015)
 #author K Coyle
 #url http://www.tandfonline.com/doi/abs/10.1080/01639374.2014.943446
 
-#title From Linked Data To Concept Networks
+#title Fabrico/Ciência: um ()
+#author RP da Rocha
+#url http://basessibi.c3sl.ufpr.br/brapci/_repositorio/2015/12/pdf_48a7849566_0000011915.pdf
+
+#title Fabrico/Ciência: um ambiente Linked Data para o mapeamento da ciência (2012)
+#author R Port da Rocha
+#url http://www.redalyc.org/html/4656/465645976018/
+
+#title Facilitating scientometrics in learning analytics and educational data mining–the LAK dataset (2017)
+#author S Dietze, D Taibi, M d'Aquin
+#url https://content.iospress.com/articles/semantic-web/sw201
+
+#title Fast, linked, and open–the future of taxonomic publishing for plants: launching the journal PhytoKeys (2010)
+#author L Penev, WJ Kress, S Knapp, DZ Li, S Renner
+#url https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3174424/
+
+#title For I dipped into the future (2010)
+#author A Rinaldi
+#url http://onlinelibrary.wiley.com/doi/10.1038/embor.2010.57/full
+
+#title For I dipped into the future: The internet and other developments are reshaping the way science is communicated, transforming the traditional scientific article to … (2010)
+#author A Rinaldi
+#url http://embor.embopress.org/content/11/5/345.abstract
+
+#title Forecasting the Spreading of Technologies in Research Communities (2017)
+#author F Osborne, A Mannocci, E Motta
+#url https://dl.acm.org/citation.cfm?id=3148030
+
+#title Formal Ontologies, Linked Data, and TEI Semantics (2016)
+#author F Ciotti, F Tomasi
+#url https://journals.openedition.org/jtei/pdf/1480
+
+#title Formalising uncertainty: An ontology of reasoning, certainty and attribution (ORCA) (2012)
+#author A De Waard, J Schneider
+#url https://dl.acm.org/citation.cfm?id=2887634
+
+#title Formatting Open Science: agilely creating multiple document formats for academic manuscripts with Pandoc Scholar (2017)
+#author A Krewinkel, R Winkler
+#url https://peerj.com/articles/cs-112/?utm_source=TrendMD&utm_campaign=PeerJ_TrendMD_1&utm_medium=TrendMD
+
+#title Forschung präsentieren, fördern, verwalten–die Forschungsdatenbank der Universität Rostock (2012)
+#author A Lubinski
+#url http://www.uni-oldenburg.de/fileadmin/user_upload/praesidium/download/working_paper_10_2012.pdf#page=91
+
+#title Freedom for bibliographic references: OpenCitations arise (2016)
+#author S Peroni, D Shotton, F Vitali
+#url http://ceur-ws.org/Vol-1699/paper-05.pdf
+
+#title From Data Portal to Knowledge Portal: Leveraging Semantic Technologies to Support Interdisciplinary Studies. (2015)
+#author X Ma, P West, JS Erickson, S Zednik et al.
+#url https://pdfs.semanticscholar.org/c8b5/868f88cf200c3ed99978d431854dbe50615b.pdf
+
+#title From MARC silos to Linked Data silos? (2017)
+#author O Suominen, N Hyvönen
+#url https://www.o-bib.de/article/view/5178
+
+#title From Records to Graphs: Linked Data and Libraries (2013)
+#author S Gradmann
+#url https://lirias.kuleuven.be/bitstream/123456789/485619/2/20130711_Records2Graphs_Madrid.pdf
+
+#title From artifacts to aggregations: Modeling scientific life cycles on the semantic web (2010)
+#author A Pepe, M Mayernik, CL Borgman et al.
+#url http://onlinelibrary.wiley.com/doi/10.1002/asi.21263/full
+
+#title From containers to content to context: The changing role of libraries in eScience and eScholarship (2014)
+#author S Gradmann
+#url http://www.emeraldinsight.com/doi/abs/10.1108/JD-05-2013-0058
+
+#title From implicit to explicit knowledge: a tool for preserving and sharing mental links in science (2014)
+#author P Andelfinger, M Keller, H Kühner et al.
+#url https://dl.acm.org/citation.cfm?id=2556476
+
+#title From linked data to concept networks (2013)
 #author M Skulimowski
-#url http://link.springer.com/chapter/10.1007/978-3-319-08425-1_8
+#url https://link.springer.com/chapter/10.1007/978-3-319-08425-1_8
 
-#title Harmonizing Services For Lod Vocabularies: A Case Study
-#author GA Atemezing, B Vatant, R Troncy, PY Vandenbussche
-#url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.403.910&rep=rep1&type=pdf
+#title Functional and semantic roles in a high-level knowledge representation language (2017)
+#author GP Zarri
+#url https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s10462-017-9571-5&casa_token=-F46TtXfoEMAAAAA:kOAmFfjqQRxMzoGLYo4q1wyJXpcPPTzp3UQWdBRMDXBwwZV3FntLdBMj4RnvsUXRraljqEZCdC4HYsGZEA
 
-#title Hybrid Approach For The Semantic Processing Of Scientific Papers
+#title Future Publishing Formats (2016)
+#author M Piotrowski
+#url https://dl.acm.org/citation.cfm?id=2967170
+
+#title GFVO: the Genomic Feature and Variation Ontology (2015)
+#author J Baran, BSB Durgahee, K Eilbeck, E Antezana et al.
+#url https://peerj.com/articles/933/
+
+#title Generating Conference Linked Open Data in One Click. (2016)
+#author AG Nuzzolese, AL Gentile, V Presutti et al.
+#url http://ceur-ws.org/Vol-1690/paper56.pdf
+
+#title Generazione di dataset RDF su articoli scientifici e affiliazioni: un approccio modulare basato su DBPedia ()
+#author R Rossiello
+#url http://amslaurea.unibo.it/id/eprint/8933
+
+#title Genuine semantic publishing ()
+#author T Kuhn, M Dumontier
+#url https://content.iospress.com/articles/data-science/ds010
+
+#title Gestión de fondos de archivos con datos enlazados y consultas federadas (2016)
+#author Y Hidalgo-Delgado, JA Senso et al.
+#url http://redc.revistas.csic.es/index.php/redc/article/view/949
+
+#title Graph databases lifecycle methodology and tool to support index/store versioning (2015)
+#author P Bellini, I Bruno, P Nesi et al.
+#url https://pdfs.semanticscholar.org/9d62/8e54e4d444b7b21d31ad2f715efc6d0fea88.pdf
+
+#title Guidelines for information about therapy experiments: a proposal on best practice for recording experimental data on cancer therapy (2012)
+#author AN González-Beltrán, MY Yong et al.
+#url https://bmcresnotes.biomedcentral.com/articles/10.1186/1756-0500-5-10
+
+#title Harmonizing Services for LOD Vocabularies: A Case Study. (2013)
+#author GA Atemezing, B Vatant, R Troncy et al.
+#url https://pdfs.semanticscholar.org/537a/389da48fa073c33c5b116d734120ebd30c3a.pdf
+
+#title Historical Context Ontology (HiCO): a conceptual model for describing context information of cultural heritage objects (2015)
+#author M Daquino, F Tomasi
+#url https://link.springer.com/chapter/10.1007/978-3-319-24129-6_37
+
+#title Hybrid approach for the semantic processing of scientific papers (2014)
 #author M Bertin, I Atanassova
 #url http://mayor2.dia.fi.upm.es/oeg-upm/files/eswc2014/SemWebEval/SemPubChallenge/eswc2014-challenges_submission_21.pdf
 
-#title Information And Communication Technology
-#author D Spohr, P Cimiano
-#url http://pub.uni-bielefeld.de/publication/2458675
+#title Hydroshare: Sharing diverse environmental data types and models as social objects with application to the hydrology domain (2016)
+#author JS Horsburgh, MM Morsy et al.
+#url http://onlinelibrary.wiley.com/doi/10.1111/1752-1688.12363/full
 
-#title Integración De Contenidos Semánticos En Un Portal Web De Científicos Y Humanistas Valencianos: Vestigium
-#author A García
+#title IJDC| General Article (2017)
+#author T Miksa, A Rauber, R Ganguly et al.
+#url https://www.researchgate.net/profile/Tomasz_Miksa/publication/319865134_Information_Integration_for_Machine_Actionable_Data_Management_Plans/links/59ec8717a6fdccef8b0c7a96/Information-Integration-for-Machine-Actionable-Data-Management-Plans.pdf
+
+#title Identification of Important Citations by Exploiting Research Articles' Metadata (2017)
+#author F Qayyum
+#url https://www.cust.edu.pk/ms_thesis/UploadedFiles/Faiza%20Qayyum-MCS143010.pdf
+
+#title Identifying motifs for evaluating open knowledge extraction on the web (2016)
+#author A Gangemi, DR Recupero, M Mongiovì et al.
+#url https://www.sciencedirect.com/science/article/pii/S0950705116301125
+
+#title Implementation of TaxPub, an NLM DTD extension for domain-specific markup in taxonomy, from the experience of a biodiversity publisher (2012)
+#author L Penev, T Catapano, D Agosti, T Georgiev, G Sautter et al.
+#url https://www.ncbi.nlm.nih.gov/books/NBK100351/
+
+#title In collaboration with in concert: reflecting a digital library as linked data for performance ephemera (2016)
+#author T Nurmikko-Fuller, A Dix, DM Weigl et al.
+#url https://dl.acm.org/citation.cfm?id=2970049
+
+#title Incidental or influential?–A decade of using text-mining for citation function classification. (2017)
+#author D Pride, P Knoth
+#url http://oro.open.ac.uk/id/eprint/51751
+
+#title Indicators in time, space and multiple domains: lessons from applying an integrated assessment tool for agricultural systems (2010)
+#author S JANSSEN, E ANDERSEN, MK VAN
+#url http://www.oecd.org/tad/sustainable-agriculture/44812696.pdf
+
+#title Indización en profundidad y aplicación de metadatos a materiales suplementarios en la edición de revistas (2014)
+#author L Rodríguez-Yunta
+#url http://eprints.rclis.org/23315
+
+#title Informatics for Tandem Mass Spectrometry-based Metabolomics (2014)
+#author DIFHSA Beisken
+#url https://pdfs.semanticscholar.org/3c50/a9ba3b79e6dd53a5abdc06834636deec0c0b.pdf
+
+#title Information Extraction from PDF Sources Based on Rule-Based System Using Integrated Formats (2016)
+#author R Ahmad, MT Afzal, MA Qadir
+#url https://link.springer.com/chapter/10.1007/978-3-319-46565-4_23
+
+#title Information Retrieval and Semantic Annotation of Scientific Corpora ()
+#author I Atanassova
+#url http://infoz.ffzg.hr/infuture/images/INFuture2017_Proceedings.pdf#page=29
+
+#title Information and Communication Technology (2011)
+#author D Spohr, P Cimiano
+#url https://pub.uni-bielefeld.de/publication/2458675
+
+#title Initial models for diversity-rich information (2010)
+#author U Andreas Thalhammer, U Ioan Toma et al.
+#url https://pdfs.semanticscholar.org/47a7/ebb3b400f22fa1619763776cc6ce3684b173.pdf
+
+#title Institutional repositories: exploration of costs and value (2013)
+#author CS Burns, A Lana, JM Budd
+#url http://www.dlib.org/dlib/january13/burns/01burns.html?utm_source=dlvr.it&utm_medium=twitter
+
+#title InteRCom Specification 1.0 (Draft) (2012)
+#author S Crompton, B Matthews, J Casson, A Shaon et al.
+#url https://webtracks.jiscinvolve.org/wp/files/2012/06/Webtracks-1.1-Specification.docx
+
+#title Integración de contenidos semánticos en un portal web de científicos y humanistas valencianos: Vestigium (2015)
+#author A García-García
 #url http://eprints.rclis.org/24649/
 
-#title Integrating Linked Data Into Discovery
+#title Integrating GPCR-specific information with full text articles (2011)
+#author B Vroling, D Thorne, P McDermott et al.
+#url https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-362
+
+#title Integrating Linked Data into Discovery (2013)
 #author G Hatop
 #url http://journal.code4lib.org/articles/8526?utm_source=rss&utm_medium=rss&utm_campaign=integrating-linked-data-into-discovery
 
-#title Integration Of Legal Datasets: From Meta-Model To Implementation
+#title Integrating data management and collaborative sharing with computational science research processes (2012)
+#author KK van Dam, M James, AM Walker
+#url https://www.igi-global.com/chapter/integrating-data-management-collaborative-sharing/60373
+
+#title Integrating text-mining approaches to identify entities and extract events from the biomedical literature (2012)
+#author LMA Gerner
+#url https://pdfs.semanticscholar.org/31b2/5bac3896f889b611263d210f7c7560585a63.pdf
+
+#title Integration of Scholarly Communication Metadata Using Knowledge Graphs (2017)
+#author S Auer
+#url https://books.google.it/books?hl=en&lr=&id=it0zDwAAQBAJ&oi=fnd&pg=PA328&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=UvBr8ng3JV&sig=udlZufZYyzcd18M7nnMZC2cCFZ0
+
+#title Integration of legal datasets: from meta-model to implementation (2013)
 #author G Barabucci, A Di Iorio, F Poggi, F Vitali
-#url http://dl.acm.org/citation.cfm?id=2539180
+#url https://dl.acm.org/citation.cfm?id=2539180
 
-#title Intercom Specification 1.0 (Draft)
-#author S Crompton, B Matthews, J Casson, A Shaon, et al.
-#url http://webtracks.jiscinvolve.org/wp/files/2012/06/Webtracks-1.1-Specification.docx
+#title Interactive publication: the document as a research tool (2010)
+#author GR Thoma, G Ford, S Antani et al.
+#url https://www.sciencedirect.com/science/article/pii/S1570826810000235
 
-#title Knowledge Network Of Scientific Claims Derived From A Semantic Publication System
+#title Interfacing fast-fashion design industries with Semantic Web technologies: The case of Imperial Fashion (2017)
+#author S Peroni, F Vitali
+#url https://www.sciencedirect.com/science/article/pii/S1570826817300288
+
+#title Interoperable Multimedia Annotation and Retrieval for the Tourism Sector (2015)
+#author A Chatzitoulousis, PS Efraimidis et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-24129-6_6
+
+#title Intertextual Pointers in the Text Alignment Network (2017)
+#author J Kalvesmaki
+#url https://jdmdh.episciences.org/4020
+
+#title Investigations as research objects within facilities science (2013)
+#author B Matthews, V Bunakov, C Jones et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-08425-1_12
+
+#title It ROCS!: the RASH online conversion service (2016)
+#author A Di Iorio, A Gonzalez-Beltran, F Osborne et al.
+#url https://dl.acm.org/citation.cfm?id=2889408
+
+#title Jailbreaking your reference lists: OpenCitations strike again ()
+#author S Peroni, D Shotton, F Vitali
+#url https://pdfs.semanticscholar.org/a8f1/304ae4b428f482fa03f2242243b80f3d8c14.pdf
+
+#title KOBPSY, a knowledge base in psychology and behavioral sciences (2015)
+#author A Garcia-Castro, I Barth et al.
+#url https://dl.acm.org/citation.cfm?id=2809604
+
+#title Katalogizacijsko orodje za urejanje in bogatenje zapisov iz sistema COBISS (2017)
+#author V Harej
+#url http://eprints.fri.uni-lj.si/3803/
+
+#title Klink-2: integrating multiple web sources to generate semantic topic networks (2015)
+#author F Osborne, E Motta
+#url https://link.springer.com/chapter/10.1007/978-3-319-25007-6_24
+
+#title Knowledge Acquisition on Dante Alighieri's Works (2018)
+#author EI Locuratolo, VB Lenzi
+#url https://www.igi-global.com/chapter/knowledge-acquisition-on-dante-alighieris-works/184209
+
+#title Knowledge Management of Scholarly Products: Semantic Lancet Project (2015)
+#author A Di Iorio, P Ciancarini, AG Nuzzolese et al.
+#url http://search.proquest.com/openview/dd82218cdc957bbc2e712a92f58cfe00/1?pq-origsite=gscholar&cbl=1796412&casa_token=hpxJqVQeiTEAAAAA:qB8qHufd7Lg65wDqdMtmaRLc_5gV0CwyOTS5oQvC_cZ4EJT_bkSwj5Mm4bfhVaabS513HRaXmA
+
+#title Knowledge Patterns for the Web: extraction, tranformation and reuse (2014)
+#author AG Nuzzolese
+#url http://amsdottorato.unibo.it/6562/
+
+#title Knowledge Representation (2015)
+#author LF Sikos
+#url https://link.springer.com/chapter/10.1007/978-1-4842-1049-9_2
+
+#title Knowledge discovery from biomedical ontologies in cross domains (2016)
+#author F Shen, Y Lee
+#url http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0160005
+
+#title Knowledge extraction and modeling from scientific publications (2016)
+#author F Ronzano, H Saggion
+#url https://link.springer.com/chapter/10.1007/978-3-319-53637-8_2
+
+#title Knowledge network of scientific claims derived from a semantic publication system (2012)
 #author CH Marcondes
-#url https://books.google.it/books?hl=en&lr=&id=mCJ8CXJNPDEC&oi=fnd&pg=PA72&dq=%22purl.org/spar%22+OR+%22sparontologies.net%22&ots=oRqmX5G9Ps&sig=xi9sKmVtFmqXDiZg9F7Daas57P0
+#url https://books.google.it/books?hl=en&lr=&id=mCJ8CXJNPDEC&oi=fnd&pg=PA72&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=oSphYaHbLt&sig=AmVNFEIE2Ze2BEbb1hoPVVG_YRM
 
-#title Legal Datasets Integration: Keep It Simple, Keep It Real
+#title Knowledge sharing and collaboration in translational research, and the DC-THERA Directory (2011)
+#author A Splendiani, M Gündel, JM Austyn et al.
+#url https://academic.oup.com/bib/article-abstract/12/6/562/222181
+
+#title Konzeptstudie: Die informationswissenschaftliche Zeitschrift der Zukunft (2010)
+#author L Heller, H Pampel
+#url http://eprints.rclis.org/14894
+
+#title Künftige technische Rahmenbedingungen der digitalen Medien (unter Berücksichtigung für Wissenschaftsthemen besonders relevanter Kanäle) (2016)
+#author H Lobin
+#url http://www.acatech.de/fileadmin/user_upload/Baumstruktur_nach_Website/Acatech/root/de/Projekte/Laufende_Projekte/WOEM2/Expertise_Lobin_Entwurf.pdf
+
+#title L'enjeu du web de données pour l'édition scientifique (2016)
+#author L Verlaet, H Dillaerts
+#url https://www.cairn.info/revue-i2d-information-donnees-et-documents-2016-2-page-49.htm
+
+#title LDWPO–A Lightweight Ontology for Linked Data Management ()
+#author S Rautenberg, I Ermilov, E Marx, S Auer
+#url https://pdfs.semanticscholar.org/919b/8fb4b8400a11fc85675f0db230bf021f24d2.pdf
+
+#title LINNAEUS: a species name identification system for biomedical literature (2010)
+#author M Gerner, G Nenadic et al.
+#url https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-85
+
+#title LODFlow: a workflow management system for linked data processing (2015)
+#author S Rautenberg, I Ermilov, E Marx, S Auer et al.
+#url https://dl.acm.org/citation.cfm?id=2814882
+
+#title La gestione delle relazioni tra soggetto produttore e risorse archivistiche nel semantic web. Un modello ontologico ()
+#author M Daquino
+#url http://amslaurea.unibo.it/id/eprint/7064
+
+#title Latest developments to LODE (2012)
+#author S Peroni, D Shotton, F Vitali
+#url https://link.springer.com/chapter/10.1007/978-3-642-33876-2_37
+
+#title Le edizioni digitali come nuovo modello per dati di autorità concettuali (2013)
+#author F Tomasi
+#url https://dialnet.unirioja.es/servlet/articulo?codigo=5226770
+
+#title Learning Management System with Semantic Wiki Technologies. Implementing a Learning Management System with Semantic Wiki Technologies in e-learning … (2017)
+#author H Koops
+#url http://dspace.ou.nl/bitstream/1820/9586/1/Koops%20H%20T9232B%20scriptie.pdf
+
+#title Legal datasets integration: keep it simple, keep it real (2013)
 #author G Barabucci, A Di Iorio, F Poggi
 #url http://semantic-web-journal.net/system/files/swj462.pdf
 
-#title Les Référentiels: Typologie Et Interopérabilité
+#title Lens: A Faceted Browser for Research Networking Platforms (2013)
+#author R Whaling, T Malik, I Foster
+#url http://ieeexplore.ieee.org/abstract/document/6683908/
+
+#title Les référentiels: typologie et interopérabilité (2012)
 #author A Isaac
 #url https://hal.inria.fr/hal-00740282/
 
-#title Lessons Learned: The Complexity Of Accurate Identification Of In-Text Citations
-#author A Shahid, M Afzal, MA Qadir
-#url http://www.ccis2k.org/iajit/PDF/vol.12,no.6/7218.pdf
+#title Lessons Learned: The Complexity of Accurate Identification of in-Text Citations. (2015)
+#author A Shahid, MT Afzal, MA Qadir
+#url http://ccis2k.org/iajit/PDF/Vol%2012,%20No.%205/7218.pdf
 
-#title Linked Data E Bibliometriche: Un Indice Di Multidisciplinarieta Nel Semantic Publishing
-#author F Vitali, M Costa, A Bagnacani
-#url http://amslaurea.unibo.it/6722/1/bagnacani_andrea_tesi.pdf
+#title Linked Cultural Objects: dagli standard di catalogazione ai modelli per il web of data. Spunti di riflessione dalla Fototeca Zeri (2017)
+#author M Daquino, F Tomasi
+#url https://umanisticadigitale.unibo.it/article/view/7195
 
-#title Linked Data For Science And Education
+#title Linked Data e bibliometriche: un indice di multidisciplinarieta nel Semantic Publishing ()
+#author A Bagnacani
+#url http://amslaurea.unibo.it/id/eprint/6722
+
+#title Linked Data for science and education. (2013)
 #author C Keßler, M d'Aquin, S Dietze
 #url http://semantic-web-journal.org/system/files/swj326_0.pdf
 
-#title Linked Data Tools: Connecting On The Web
+#title Linked data tools: connecting on the Web (2012)
 #author K Coyle
-#url https://books.google.it/books?hl=en&lr=&id=2kALpInkMtEC&oi=fnd&pg=PA5&dq=%22purl.org/spar%22+OR+%22sparontologies.net%22&ots=9B3ldjh-Lz&sig=Ia4DHQY3UnyAnt3EpRTyYpDLX_E
+#url https://books.google.it/books?hl=en&lr=&id=2kALpInkMtEC&oi=fnd&pg=PA5&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=9C2geoi0Pu&sig=D7GOWBnx2ChXAJgvZOPx_6RG7iY
 
-#title Linked Data-A Paradigm Shift For Geographic Information Science
+#title Linked data workflow project ontology: uma ontologia de domínio para publicação e preservação de dados conectados (2016)
+#author S Rautenberg, E Marx, I Ermilov, S Auer
+#url http://www.ufpb.br/evento/lti/ocs/index.php/enancib2016/enancib2016/paper/view/3593
+
+#title Linked data-a paradigm shift for geographic information science (2014)
 #author W Kuhn, T Kauppinen, K Janowicz
-#url http://link.springer.com/chapter/10.1007/978-3-319-11593-1_12
+#url https://link.springer.com/chapter/10.1007/978-3-319-11593-1_12
 
-#title Linked Open Data
-#author D King
-#url http://oro.open.ac.uk/38411/
-
-#title Linked Open Data Literacy For Librarians
+#title Linked open data literacy for librarians (2014)
 #author J Hügi, R Schneider
-#url http://link.springer.com/chapter/10.1007/978-3-319-14136-7_12
+#url https://link.springer.com/chapter/10.1007/978-3-319-14136-7_12
 
-#title Linkedcj: A Knowledge Base Of Chinese Academic Journals Based On Linked Data
+#title Linked open data university of münster–infrastructure and applications (2012)
+#author C Keßler, T Kauppinen
+#url https://link.springer.com/chapter/10.1007/978-3-662-46641-4_43
+
+#title Linked open science-communicating, sharing and evaluating data, methods and results for executable papers (2011)
+#author T Kauppinen, GM de Espindola
+#url https://www.sciencedirect.com/science/article/pii/S1877050911001347
+
+#title LinkedCJ: A Knowledge Base of Chinese Academic Journals Based on Linked Data. (2014)
 #author P Xu, X Wang, H Wang
-#url http://ceur-ws.org/Vol-1312/jist2014pd_paper8.pdf
+#url https://pdfs.semanticscholar.org/0a15/ce8a3e3a28ffbcefc6ea1a03c8182f72ad4c.pdf
 
-#title Measuring Academic Influence: Not All Citations Are Equal
-#author X Zhu, P Turney, D Lemire, et al.
+#title Linking publications and data: Challenges, trends, and opportunities (2016)
+#author MS Mayernik, J Phillips, E Nienhouse
+#url http://www.dlib.org/dlib/may16/mayernik/05mayernik.html
+
+#title MACJa: metadata and citations jailbreaker (2015)
+#author AG Nuzzolese, S Peroni, DR Recupero
+#url https://link.springer.com/chapter/10.1007/978-3-319-25518-7_10
+
+#title MEMBERSHIP AND TYPICALITY IN CONCEPT REPRESENTATION: FROM COGNITIVE PSYCHOLOGY TO INFORMATION TECHNOLOGY (2017)
+#author F Zarl
+#url https://arts.units.it/handle/11368/2908215
+
+#title Making open access work: The “state-of-the-art” in providing open access to scholarly literature (2015)
+#author S Pinfield
+#url http://www.emeraldinsight.com/doi/abs/10.1108/OIR-05-2015-0167
+
+#title Mapping und Erweiterung der Ontologie des Forschungsinformationssystems VIVO (2016)
+#author E Liventsova
+#url https://serwiss.bib.hs-hannover.de/frontdoor/deliver/index/docId/803/file/Erweiterung+VIVO-Ontology_A.pdf
+
+#title Markup Semantics and Quality Evaluation of Legal Drafting (2014)
+#author S Peroni
+#url https://link.springer.com/chapter/10.1007/978-3-319-04777-5_4
+
+#title Mastering structured data on the Semantic Web: From HTML5 microdata to linked open data (2015)
+#author L Sikos
+#url https://books.google.it/books?hl=en&lr=&id=mGYnCgAAQBAJ&oi=fnd&pg=PP3&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=x6bBJ6rqq1&sig=AxKeUoaK78CQd1O2TC3yo6vCe2U
+
+#title Measuring academic influence: Not all citations are equal (2015)
+#author X Zhu, P Turney, D Lemire et al.
 #url http://onlinelibrary.wiley.com/doi/10.1002/asi.23179/full
 
-#title Metadata Elements
+#title MemoPIM: управление личной информацией и знаниями с использованием семантических технологий (2015)
+#author АА Бездушный, АН Бездушный, ВА Серебряков
+#url https://pdfs.semanticscholar.org/3efc/7a5165fc8563143279dddc6f51a39ad45ac0.pdf
+
+#title Metadata elements (2012)
 #author K Coyle
-#url http://journals.ala.org/ltr/article/view/4665/5531
+#url https://journals.ala.org/ltr/article/view/4665
 
-#title Metadata Issues In Digital Libraries: Key Concepts And Perspectives
+#title Metadata issues in Digital Libraries: key concepts and perspectives (2011)
 #author I Solodovnik
-#url http://leo.cineca.it/index.php/jlis/article/view/4663
+#url http://search.proquest.com/openview/5322b0f42fc13a3702bdaa76d6d27e76/1?pq-origsite=gscholar&cbl=1596385&casa_token=CoSWYUpYUGcAAAAA:H6uUl1NZPt1xb1JWQryrKxLPeNjjH-9IqvSZDPV9AVWwKb1AYsRtVKUjL5PnY4f571hEKg1qng
 
-#title Metodologia De Organização Da Informação De Participação Social
-#author PRM Meirelles
-#url http://biblioteca.participa.br/jspui/handle/11451/1117
+#title Metadata: From Records to Graphs (2013)
+#author S Gradmann
+#url http://www.academia.edu/download/37622468/20130619_Metadata_OAI8.pdf
 
-#title Micropublications: A Semantic Model For Claims, Evidence, Arguments And Annotations In Biomedical Communications
-#author T Clark, P Ciccarese, C Goble
-#url http://www.biomedcentral.com/content/pdf/2041-1480-5-28.pdf
+#title Metodologia de Organização da Informação de Participação Social (2014)
+#author PRM MEIRELLES
+#url https://biblioteca.juventude.gov.br/jspui/handle/11451/1117
 
-#title Mining Scientific Papers For Bibliometrics: A (Very) Brief Survey Of Methods And Tools
+#title Metrics for openness (2017)
+#author DM Nichols, MB Twidale
+#url http://onlinelibrary.wiley.com/doi/10.1002/asi.23741/full
+
+#title Micropublications: a semantic model for claims, evidence, arguments and annotations in biomedical communications (2014)
+#author T Clark, PN Ciccarese et al.
+#url https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-28
+
+#title Mining Scientific Papers for Bibliometrics: a (very) Brief Survey of Methods and Tools (2015)
 #author I Atanassova, M Bertin, P Mayr
-#url http://arxiv.org/abs/1505.01393
+#url https://arxiv.org/abs/1505.01393
 
-#title Multi-Entity Models Of Resource Description In The Semantic Web: A Comparison Of FRBR, RDA And Bibframe
+#title Mining scholarly articles for citation contexts–A pilot study in information science domain (2017)
+#author KR Valencia, K Lu
+#url https://www.ideals.illinois.edu/handle/2142/96694
+
+#title Modeling Events on the Semantic Web (2015)
+#author T Hanzal, V Svátek, M Vacura
+#url http://www.itspy.cz/wp-content/uploads/2016/11/IT_SPY_2016_paper_37.pdf
+
+#title Modellare ontologicamente il dominio archivistico in una prospettiva di integrazione disciplinare (2015)
+#author F Tomasi, M Daquino
+#url https://dialnet.unirioja.es/servlet/articulo?codigo=5226793
+
+#title Multi-entity models of resource description in the semantic web: A comparison of FRBR, RDA and BIBFRAME (2014)
 #author T Baker, K Coyle, S Petiya
 #url http://www.emeraldinsight.com/doi/abs/10.1108/LHT-08-2014-0081
 
-#title New Artifacts For The Knowledge Discovery Via Data Analytics (Kdda) Process
+#title Munnelly, Gary ()
+#author C Hampson, N Ferro, O Conlan
+#url http://www.dei.unipd.it/~ferro/papers/2013/DH2013.pdf
+
+#title Navigazione di articoli scientifici e citazioni: un ambiente scalabile e flessibile ()
+#author A Graziosi
+#url http://amslaurea.unibo.it/id/eprint/10889
+
+#title New Forms of Scholarship and a Serials (R) evolution (2015)
+#author J Borie
+#url http://www.tandfonline.com/doi/abs/10.1080/00987913.2015.1069782
+
+#title New artifacts for the knowledge discovery via data analytics (KDDA) process (2014)
 #author Y Li
-#url http://scholarscompass.vcu.edu/etd/3609/
+#url http://search.proquest.com/openview/9ccb28273e4af5146ebd3d3d748a5112/1?pq-origsite=gscholar&cbl=18750&diss=y
 
-#title Odin: The Orcid And Datacite Interoperability Network
-#author M Fenner, LL Haak, GA Thorisson, et al.
-#url http://www.inderscienceonline.com/doi/abs/10.1504/IJKL.2014.069537
+#title New directions in scholarly publishing: journal articles beyond the present (2014)
+#author J Stojanovski
+#url http://septentrio.uit.no/index.php/SCS/article/view/3228
 
-#title On Expanded Citations
-#author M Skulimowski
-#url http://dl.acm.org/citation.cfm?id=2638444
+#title New experiences for presenting, accessing, and reading digital scientific articles on the Web (2013)
+#author DM Ambinder, CH Marcondes
+#url http://www.scielo.br/scielo.php?pid=S0103-37862013000300002&script=sci_arttext&tlng=es
 
-#title On Managing Prefixes For Vocabularies Published In Lod
+#title New perspectives for electronic government in Brazil: the adoption of open government data in national and subnational governments of Brazil (2012)
+#author R Matheus, MM Ribeiro, JC Vaz
+#url https://dl.acm.org/citation.cfm?id=2463734
+
+#title New trends for reading scientific documents (2011)
+#author H de Ribaupierre, G Falquet
+#url https://dl.acm.org/citation.cfm?id=2064064
+
+#title Next generation scientific publishing and the web of data (2014)
+#author T Clark
+#url https://content.iospress.com/articles/semantic-web/sw139
+
+#title Novas experiências para apresentação, acesso e leitura de artigos científicos digitais na web (2013)
+#author D Motta Ambinder, CH Marcondes
+#url http://www.redalyc.org/html/3843/384334897002/
+
+#title ODIN: the ORCID and DataCite interoperability network (2014)
+#author M Fenner, LL Haak, GA Thorisson et al.
+#url https://www.inderscienceonline.com/doi/abs/10.1504/IJKL.2014.069537
+
+#title ONTOLOGY ENGINEERING WITH RACERPRO (2014)
+#author A Groza
+#url http://www.academia.edu/download/39186927/OntologyEngineeringWithRacer.pdf
+
+#title Odruba-Ontology-driven Rule-based Visualisation. (2016)
+#author A Nareike, J Schmidt
+#url http://ceur-ws.org/Vol-1695/paper24.pdf
+
+#title On Managing Prefixes For Vocabularies Published in LOD ()
 #author GA Atemezing, B Vatant, PY Vanderbussche, R Troncy
 #url http://www.eurecom.fr/~atemezin/iswc2013/rebuttal/review_1_comments.pdf
 
-#title Ontologias Para A Descoberta De Recursos Na Ciência: AnáLise De Vivo-Isf
+#title On expanded citations (2014)
+#author M Skulimowski
+#url https://dl.acm.org/citation.cfm?id=2638444
+
+#title On the automated generation of scholarly publishing linked datasets: the case of CEUR-WS proceedings (2015)
+#author F Ronzano, B Fisas, GC del Bosque et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-25518-7_15
+
+#title On the formulation of performant sparql queries (2015)
+#author A Loizou, R Angles, P Groth
+#url https://www.sciencedirect.com/science/article/pii/S1570826814001061
+
+#title On the role of thematic roles in a historical event ontology ()
+#author A Goy, D Magro, M Rovera
+#url https://content.iospress.com/articles/applied-ontology/ao192
+
+#title One year of the OpenCitations Corpus (2017)
+#author S Peroni, D Shotton, F Vitali
+#url https://iswc2017.semanticweb.org/wp-content/uploads/papers/MainProceedings/178.pdf
+
+#title Online folyóiratcikkek ötcsillagos értékelési keretrendszere (2012)
+#author D László
+#url http://www.tmt.omikk.bme.hu/tmt/article/download/681/685
+
+#title Ontologias para a descoberta de recursos na ciência: análise de Vivo-ISF (2014)
 #author IO Turcatel
 #url http://www.lume.ufrgs.br/handle/10183/112165
 
-#title Ontologies And Languages For Representing Mathematical Knowledge On The Semantic Web
+#title Ontological approaches to information description and extraction in the cultural heritage domain (2014)
+#author M Daquino, F Tomasi
+#url https://dl.acm.org/citation.cfm?id=2802633
+
+#title Ontologies and historical archives: A way to tell new stories (2015)
+#author A Goy, D Magro, M Rovera
+#url https://content.iospress.com/articles/applied-ontology/ao152
+
+#title Ontologies and languages for representing mathematical knowledge on the semantic web (2013)
 #author C Lange
-#url http://www.researchgate.net/profile/Christoph_Lange2/publication/216796984_Ontologies_and_Languages_for_Representing_Mathematical_Knowledge_on_the_Semantic_Web/links/53ea3bfa0cf2dc24b3cb1807.pdf
+#url https://content.iospress.com/articles/semantic-web/sw059
 
-#title Ontology Engineering With Racerpro
-#author A Groza
-#url http://cs-gw.utcluj.ro/~adrian/kbs/OntologyEngineeringWithRacer.pdf
+#title Ontologies for software engineering: Past, present and future (2016)
+#author MPS Bhatia, A Kumar, R Beniwal
+#url http://www.indjst.org/index.php/indjst/article/view/71384
 
-#title Open Repository Of Semantic Linkages
+#title Ontologies in Cheminformatics (2016)
+#author J Hastings, C Steinbeck
+#url https://link.springer.com/content/pdf/10.1007/978-94-007-6169-8_55-1.pdf
+
+#title Ontology Based Information Extraction in the License Domain (2015)
+#author KT Nilsen
+#url http://bora.uib.no/handle/1956/10258
+
+#title Ontology testing based on requirements formalization in collaborative development environments ()
+#author A Fernández-Izquierdo
+#url http://ceur-ws.org/Vol-1962/paper_8.pdf
+
+#title Ontology-Based Approach for Academic Evaluation System (2017)
+#author S Aminah, I Afriyanti, A Krisnadhi
+#url http://ieeexplore.ieee.org/abstract/document/7930126/
+
+#title Ontology-based data mining model management for self-service knowledge discovery (2017)
+#author Y Li, MA Thomas, KM Osei-Bryson
+#url https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s10796-016-9637-y&casa_token=Yo_DwTX5R2sAAAAA:TlhqnJ272PC80OsHMyJrwROGLlIbbKVMng0ajtinaolTDG3fS967xgX31nz0W1q-Sn54e5dT9H2xkdhz5w
+
+#title Ontology-based representation and generation of workflows for micro-task human-machine computation (2015)
+#author NMA Luz
+#url http://search.proquest.com/openview/5b265380562c4b02f96b5ea3fcf22879/1?pq-origsite=gscholar&cbl=2026366&diss=y
+
+#title Open Access: Wissenschaft, Verlage und Bibliotheken in der digitalen Transformation des Publikationswesens (2017)
+#author E Mittler
+#url https://edoc.hu-berlin.de/handle/18452/19353
+
+#title Open Access–Von der Zugänglichkeit zur Nachnutzung ()
+#author H Pampel
+#url http://www.academia.edu/download/8945943/tagung_digitale_wissenschaft.pdf#page=183
+
+#title Open PHACTS OPS Deliverables D 1.6. Deliver OPS domain vocabularies for version 1 and Phase 2 pilots D 1.7. Deliver OPS Commons vocabularies for ()
+#author N UM, CD SIB
+#url http://www.openphactsfoundation.org/wp/wp-content/uploads/2015/07/Open-PHACTS-Deliverable-1.7.pdf
+
+#title Open access to research data in electronic theses and dissertations: an overview (2014)
+#author J Schopfel, S Chaudiron, B Jacquemin, H Prost et al.
+#url http://www.emeraldinsight.com/doi/abs/10.1108/LHT-06-2014-0058
+
+#title Open bibliography for science, technology, and medicine (2011)
+#author R Jones, M MacGillivray, P Murray-Rust, J Pitman et al.
+#url https://www.repository.cam.ac.uk/handle/1810/238394
+
+#title Open data and higher education: future gains and current practice (2014)
+#author S White
+#url https://eprints.soton.ac.uk/370441/
+
+#title Open repository of semantic linkages (2012)
 #author S Parinov
-#url http://dspacecris.eurocris.org/handle/11366/108
+#url https://dspacecris.eurocris.org/handle/11366/108
 
-#title Ore User Guide-Resource Map Implementation In Json-Ld
-#author S Warner, OAIO Reuse
-#url http://stain.github.io/ore/jsonld.html
+#title Open science and the role of publishers in reproducible research (2014)
+#author I Hrynaszkiewicz, P Li, S Edmunds
+#url https://books.google.it/books?hl=en&lr=&id=JcmSAwAAQBAJ&oi=fnd&pg=PA383&ots=ymX9vWyPLD&sig=pAHLAUkztoYxI60-IYvnz56eP80
 
-#title Out Of Cite, Out Of Mind: The Current State Of Practice, Policy, And Technology For The Citation Of Data
-#author CI Task Group on Data Citation Standards
+#title OpenBiodiv Computer Demo: an Implementation of a Semantic System Running on top of the Biodiversity Knowledge Graph (2017)
+#author V Senderov, T Georgiev, D Agosti et al.
+#url https://biss.pensoft.net/article_preview.php?id=20193
+
+#title OpenBiodiv Poster: an Implementation of a Semantic System Running on top of the Biodiversity Knowledge Graph (2017)
+#author V Senderov, T Georgiev, D Agosti, T Catapano et al.
+#url https://biss.pensoft.net/article/20246/download/pdf/
+
+#title OpenBiodiv-O: ontology of the OpenBiodiv knowledge management system (2018)
+#author V Senderov, K Simov, N Franz et al.
+#url https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-017-0174-5
+
+#title OpenBiodiv: an implementaion of a semantic system running on top of the biodiversity knowledge graph (2017)
+#author V Senderov, T Georgiev, D Agosti, T Catapano et al.
+#url https://biss.pensoft.net/article/20084/download/pdf/
+
+#title OpenResearch: collaborative management of scholarly communication metadata (2016)
+#author S Vahdati, N Arndt, S Auer, C Lange
+#url https://link.springer.com/chapter/10.1007/978-3-319-49004-5_50
+
+#title Out of Cite, Out of Mind: The Current State of Practice, Policy, and Technology for the Citation of Data (2013)
+#author CI Task Group on Data Citation Standards and  et al.
 #url http://jlc.jst.go.jp/DN/JST.JSTAGE/dsj/OSOM13-043?from=Google
 
-#title Parlbench: A Sparql Benchmark For Electronic Publishing Applications
-#author T Tarasova, M Marx
-#url http://link.springer.com/chapter/10.1007/978-3-642-41242-4_2
+#title Overlapproaches in documents: a definitive classification (in OWL, 2!) (2014)
+#author S Peroni, F Poggi, F Vitali
+#url http://www.balisage.net/Proceedings/vol13/print/Peroni01/BalisageVol13-Peroni01.html
 
-#title PAV Ontology: Provenance, Authoring And Versioning
-#author P Ciccarese, S Soiland
-#url http://www.biomedcentral.com/content/pdf/2041-1480-4-37.pdf
+#title PAV ontology: provenance, authoring and versioning (2013)
+#author P Ciccarese, S Soiland-Reyes et al.
+#url https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-4-37
 
-#title Pdfx: Fully-Automated Pdf-To-Xml Conversion Of Scientific Literature
+#title PDFJailbreak-a communal architecture for making biomedical PDFs semantic (2013)
+#author A Garcia, P Murray-Rust, GA Burns et al.
+#url https://www.researchgate.net/profile/Silvio_Peroni/publication/256769762_PDF_Jailbreak_-_a_communal_architecture_for_making_biomedical_PDFs_semantic/links/0deec523c2bfc9c029000000.pdf
+
+#title PDFX: fully-automated PDF-to-XML conversion of scientific literature (2013)
 #author A Constantin, S Pettifer, A Voronkov
-#url http://dl.acm.org/citation.cfm?id=2494271
+#url https://dl.acm.org/citation.cfm?id=2494271
 
-#title Precise Information Retrieval In Semantic Scientific Digital Libraries
+#title PLOMaR: An ontology framework for context modeling and reasoning on crowd-sensing platform (2016)
+#author Y Jagadeesan, P Hu, CR Rivero
+#url http://ieeexplore.ieee.org/abstract/document/7457108/
+
+#title PLOS ONE–studium przypadku analizy cytowań prac naukowych na podstawie danych otwartego indeksu cytowań (OpenCitations Corpus) (2017)
+#author AM Kamińska
+#url http://open.ebib.pl/ojs/index.php/ebib/article/view/564
+
+#title ParlBench: a SPARQL benchmark for electronic publishing applications (2013)
+#author T Tarasova, M Marx
+#url https://link.springer.com/chapter/10.1007/978-3-642-41242-4_2
+
+#title Pattern Analysis of Citation-Anchors in Citing Documents for Accurate Identification of In-Text Citations (2017)
+#author R Ahmad, MT Afzal, MA Qadir
+#url http://ieeexplore.ieee.org/abstract/document/7891553/
+
+#title Pattern-based extraction of argumentation from the scientific literature (2010)
+#author EK White
+#url http://search.proquest.com/openview/827158e3e82db76fb0d5b33182af82fc/1?pq-origsite=gscholar&cbl=18750&diss=y
+
+#title Patterns for constructing scientific citation index (2017)
+#author PA Kalachikhin
+#url https://link.springer.com/article/10.3103/S0005105517040021
+
+#title Peripleo: a Tool for Exploring Heterogeneous Data through the Dimensions of Space and Time (2016)
+#author R Simon, L Isaksen, E Barker et al.
+#url http://journal.code4lib.org/articles/11144
+
+#title Personal Research Agents on the Web of Linked Open Data (2017)
+#author B Sateli, R Witte
+#url https://link.springer.com/chapter/10.1007/978-3-319-59888-8_2
+
+#title Photo Archives in Linked Open Data–The Federico Zeri's Archive Case Study (2016)
+#author M Daquino
+#url https://link.springer.com/chapter/10.1007/978-3-319-58694-6_34
+
+#title Pleiades Gazetteer Exports (2015)
+#author R Bagnall, R Talbert, T Elliott, G Moss, J Becker et al.
+#url https://archive.nyu.edu/bitstream/2451/34306/20/void.ttl
+
+#title Potenziale von Linked Open Data in Öffentlichen Bibliotheken (2016)
+#author K Rother
+#url https://d-nb.info/1100396993/34
+
+#title Practical ontologies for information professionals (2016)
+#author D Stuart
+#url https://books.google.it/books?hl=en&lr=&id=awYUDgAAQBAJ&oi=fnd&pg=PA1&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=JaNldQwHP2&sig=GQJS70tj_pSXHT2NQK2OFW91u04
+
+#title Precise information retrieval in semantic scientific digital libraries (2014)
 #author H de Ribaupierre
-#url http://archive-ouverte.unige.ch/unige:43165
+#url https://archive-ouverte.unige.ch/unige:43165
 
-#title Pundit: Augmenting Web Contents With Semantics
-#author M Grassi, C Morbidoni, M Nucci, S Fonda, et al.
-#url http://llc.oxfordjournals.org/content/early/2013/09/18/llc.fqt060.short
+#title Precise information retrieval in semantic scientiﬁc digital libraries: CEUR doctoral symposium proceedings (2012)
+#author H de Ribaupierre
+#url https://archive-ouverte.unige.ch/unige:27232
 
-#title Pundit: Creating, Exploring And Consuming Semantic Annotations
+#title Presentación de la tesis doctoral “Visibilidad e impacto de la literatura gris científica en repositorios institucionales de acceso abierto. Estudio de caso bibliométrico … (2016)
+#author MT Ferreras-Fernández
+#url https://repositorio.grial.eu/handle/grial/783
+
+#title Preserving cultural heritage objects: provenance formalization (2017)
+#author F Tomasi
+#url https://bibliothecae.unibo.it/article/view/7531
+
+#title Privacy in Online Social Networks: An Ontological Model for Self-Presentation (2016)
+#author J Ahmed
+#url https://link.springer.com/chapter/10.1007/978-3-319-45880-9_5
+
+#title Production and consumption of university linked data (2015)
+#author F Zablith, M Fernandez, M Rowe
+#url http://www.tandfonline.com/doi/abs/10.1080/10494820.2012.745428
+
+#title Propuesta de un vocabulario de microdatos basado en Schema. org para la descripción semántica de publicaciones científicas y la mejora de su visibilidad en … (2015)
+#author MER Lucas
+#url http://revistas.um.es/gesinfo/article/view/232761
+
+#title Provenance-based data traceability model and policy enforcement framework for cloud services (2016)
+#author M Ali
+#url https://eprints.soton.ac.uk/393423/
+
+#title PubChemRDF: towards the semantic annotation of PubChem compound and substance databases (2015)
+#author G Fu, C Batchelor, M Dumontier, J Hastings et al.
+#url https://link.springer.com/article/10.1186/s13321-015-0084-4
+
+#title Publication and dissemination of datasets in taxonomy: ZooKeys working example (2009)
+#author L Penev, T Erwin, J Miller, V Chavan, T Moritz et al.
+#url http://repository.naturalis.nl/document/463859
+
+#title Publikationen: Funktion und Repräsentation (2013)
+#author J Oltersdorf
+#url https://edoc.hu-berlin.de/handle/18452/17443
+
+#title Publikationen: Funktion und Repräsentation–Präsenz von Kommunikationskanälen der deutschen Kunstgeschichte in bibliographischen … (2013)
+#author J Oltersdorf
+#url https://d-nb.info/1041284462/34
+
+#title Publikowanie semantyczne (2011)
+#author M Nahotko
+#url http://yadda.icm.edu.pl/yadda/element/bwmeta1.element.ekon-element-000171206923
+
+#title Publishing privacy logs to facilitate transparency and accountability (2018)
+#author R Samavi, MP Consens
+#url https://www.sciencedirect.com/science/article/pii/S1570826818300088
+
+#title Pundit: Creating, Exploring and Consuming Semantic Annotations. (2013)
 #author M Grassi, C Morbidoni, M Nucci, S Fonda, F Di Donato
 #url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.402.9294&rep=rep1&type=pdf#page=74
 
-#title RDF 化した MESH とライフサイエンス辞書を利用した生命科学概念に基づく日本語レビュー記事の絞り込み検索
+#title Pundit: augmenting web contents with semantics (2013)
+#author M Grassi, C Morbidoni, M Nucci et al.
+#url https://academic.oup.com/dsh/article-abstract/28/4/640/1747092
+
+#title Quale futuro per i dati di biblioteche e musei? Linked Open Data e Open Data protagonisti al Pubblico dominio# open festival di Torino (2017)
+#author O Bozzarelli, V Mandrile, E Marangoni
+#url http://www.aib.it/aib/sezioni/emr/bibtime/num-xx-1-2-3/bozzarelli.htm
+
+#title Querying (2015)
+#author LF Sikos
+#url https://link.springer.com/chapter/10.1007/978-1-4842-1049-9_7
+
+#title RDF 化した MeSH とライフサイエンス辞書を利用した生命科学概念に基づく日本語レビュー記事の絞り込み検索 (2014)
 #author 山本泰智
-#url http://sigswo.org/papers/SIG-SWO-A1401/SIG-SWO-A1401-05.pdf
+#url http://www.ei.sanken.osaka-u.ac.jp/sigswo/papers/SIG-SWO-A1401/SIG-SWO-A1401-05.pdf
 
-#title Rdfising Pubmed Central
-#author A Garcia, LJ Garcia, C McLaughlin, et al.
-#url http://www.researchgate.net/profile/Alexander_Garcia/publication/268369624_RDFising_PubMed_Central/links/54b90db30cf269d8cbf72c64.pdf
+#title RDFising PubMed Central (2012)
+#author A Garcia, LJ Garcia, C McLaughlin et al.
+#url https://www.researchgate.net/profile/Alexander_Garcia/publication/268369624_RDFising_PubMed_Central/links/54b90db30cf269d8cbf72c64.pdf
 
-#title Recommending Research Articles Using Citation Data
+#title Recommending Relevant Papers Using In-Text Citation Frequencies and Patterns (2015)
+#author A SHAHID
+#url https://www.cust.edu.pk/downloads/phd_thesis/Abdul%20Shahid.pdf
+
+#title Recommending research articles using citation data (2015)
 #author A Vellino
-#url http://web.ncf.ca/andre/publications/jucs-bx-sarkanto-final.pdf
+#url http://www.emeraldinsight.com/doi/abs/10.1108/LHT-06-2015-0063
 
-#title Remember, Restructure, Reuse-Adding Value To Compound Scholarly Publications In A Digital Networked Environment
+#title Records in contexts: the road of archives to semantic interoperability (2017)
+#author D Llanes-Padrón, JA Pastor-Sánchez
+#url http://www.emeraldinsight.com/doi/abs/10.1108/PROG-03-2017-0021
+
+#title Reference Extraction using Conditional Random Fields ()
+#author K Zaporojets
+#url https://pdfs.semanticscholar.org/f708/ccbaf099cb544af70a939f593e0d9e8ce4a1.pdf
+
+#title Reference terms identification of cited articles as topics from citation contexts (2018)
+#author A Khalid, FA Khan, M Imran, M Alharbi, M Khan et al.
+#url https://www.sciencedirect.com/science/article/pii/S0045790617324345
+
+#title Refining business process ontology model with invisible prime tasks using SWRL rules (2017)
+#author KR Sungkono, R Sarno et al.
+#url http://ieeexplore.ieee.org/abstract/document/8265673/
+
+#title Reflections of a novice academic writer (2015)
+#author K Moodley
+#url http://search.proquest.com/openview/1e23172d34f0d722eda0fde367fdf2e1/1?pq-origsite=gscholar&cbl=2037364&casa_token=zFGh46L1OJEAAAAA:KDgZdCR81bpHOvawTRC6JVBGZNdNx6DLgpa1Z3MGKviigdUagLNu_mY4sMUlfzklWUODFZM-uw
+
+#title Relations for Research (R4R): A Conceptual Model for Publishing Research Articles, Data, and Code ()
+#author AWC Huang, TR Chuang
+#url https://www.researchgate.net/profile/Andrea_Huang/publication/260267798_Relations_for_Research_R4R_A_Conceptual_Model_for_Publishing_Research_Articles_Data_and_Code/links/0deec5306d9cc45f23000000/Relations-for-Research-R4R-A-Conceptual-Model-for-Publishing-Research-Articles-Data-and-Code.pdf
+
+#title Remember, Restructure, Reuse-Adding value to compound scholarly publications in a digital networked environment (2012)
 #author A Boulal, M Iordanidis, A Quast
 #url http://www.eco4r.org/presentations/POCOS_RememberRestructureReUse_2011.pdf
 
-#title Report On Task Force On Edm Mappings, Refinements And Extensions
-#author H Vanstappen, P Bellini, ER Bailly, MR Stein, S Gehrke, et al.
-#url http://pro.europeana.eu/files/Europeana_Professional/EuropeanaTech/EuropeanaTech_taskforces/Mapping_Refinement_Extension/EDM%20%20Mapping%20refinement%20extension%20Report.pdf
+#title Report on Task force on EDM mappings, refinements and extensions ()
+#author H Vanstappen, P Bellini, ER Bailly, MR Stein, P Plus et al.
+#url http://pro-beta.europeana.eu/files/Europeana_Professional/EuropeanaTech/EuropeanaTech_taskforces/Mapping_Refinement_Extension/EDM%20%20Mapping%20refinement%20extension%20Report.pdf
 
-#title Representing And Organizing Scientific Knowledge In Biomedical Articles With Semantic Web Technologies
-#author H Marcondes
-#url http://eprints.rclis.org/23856/
+#title Representation of historical sources on the Semantic Web by means of Attempto Controlled English (2013)
+#author A Varfolomeyev, A Ivanovs
+#url https://link.springer.com/chapter/10.1007/978-3-642-41360-5_14
 
-#title Scientific Discourse On The Semantic Web: A Survey Of Models And Enabling Technologies
-#author SB Shum, T Clark, A de Waard, et al.
-#url http://semantic-web-journal.net/sites/default/files/swj127.pdf
+#title Representation of science publications in open linked data from ORCID codes using ontologies to support a portal of scientific publications (2017)
+#author A Lozano-Tello, J Acedo, Á Prieto
+#url http://ieeexplore.ieee.org/abstract/document/7975764/
 
-#title See: Structured Representation Of Scientific Evidence In The Biomedical Domain Using Semantic Web Techniques
-#author C Bölling, M Weidlich, et al.
-#url http://www.biomedcentral.com/content/pdf/2041-1480-5-S1-S1.pdf
+#title Representação de Contexto em Acervos Digitais ()
+#author D Mota, NY Kobashi
+#url http://www.iskoiberico.org/wp-content/uploads/2015/11/209_Mota.pdf
 
-#title Semantic Annotation Of Pubchem Database
-#author G Fu, C Batchelor, M Dumontier, J Hastings, H Küçük, et al.
-#url ftp://ftp.ebi.edu.au/pub/databases/pubchem/presentations/pubchem_rdf_details.pdf.gz
+#title Representação e recuperação de informação em acervos digitais nos contextos da web semântica e web pragmática: um estudo crítico (2015)
+#author DAR Mota
+#url http://www.teses.usp.br/teses/disponiveis/27/27151/tde-27012016-135403/en.php
 
-#title Semantic Human-Machine Computation Workflows
-#author N Luza, N Silvaa, P Novaisb
-#url http://semantic-web-journal.org/system/files/swj1063.pdf
+#title Representing and organizing scientific knowledge in biomedical articles with Semantic Web technologies (2014)
+#author CH Marcondes
+#url http://eprints.rclis.org/29626/
 
-#title Semantic Linkages In Research Information Systems As A New Data Source For Scientometric Studies
+#title Research 3.0: Use of Semantic Web Technology in a Qualitative Research Process (2016)
+#author R Schneider
+#url https://books.google.it/books?hl=en&lr=&id=hzWeDAAAQBAJ&oi=fnd&pg=PA241&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=7RAWhcOA-j&sig=Fn-XBmJ9owsXqyOnaQYFOxYKV5c
+
+#title Research Articles in Simplified HTML: a Web-first format for HTML-based scholarly articles (2017)
+#author S Peroni, F Osborne, A Di Iorio, AG Nuzzolese et al.
+#url https://peerj.com/articles/cs-132/?utm_source=TrendMD&utm_campaign=PeerJ_TrendMD_1&utm_medium=TrendMD
+
+#title SEE: structured representation of scientific evidence in the biomedical domain using Semantic Web techniques (2014)
+#author C Bölling, M Weidlich et al.
+#url https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-S1-S1
+
+#title SOFTWARE ENGINEERING APPROACH FOR DOMAIN ONTOLOGY DEVELOPMENT: A CASE STUDY OF ISLAMIC BANKING PRODUCT ()
+#author ASA Latiff, H Haron, M Annamalai
+#url https://www.researchgate.net/profile/Ahmad_Abdul_Latiff/publication/322694491_SOFTWARE_ENGINEERING_APPROACH_FOR_DOMAIN_ONTOLOGY_DEVELOPMENT_A_CASE_STUDY_OF_ISLAMIC_BANKING_PRODUCT/links/5a692df30f7e9b2a828c4e49/SOFTWARE-ENGINEERING-APPROACH-FOR-DOMAIN-ONTOLOGY-DEVELOPMENT-A-CASE-STUDY-OF-ISLAMIC-BANKING-PRODUCT.pdf
+
+#title STM 报告 (2015)
+#author M Ware, M Mabe
+#url https://www.stm-assoc.org/2018_01_18_STM20151208.pdf
+
+#title SWRL rules for identifying short loops in business process ontology model (2017)
+#author YA Effendi, R Sarno
+#url http://ieeexplore.ieee.org/abstract/document/8265672/
+
+#title SYNAT system ontology: design patterns applied to modeling of scientific community, preliminary model evaluation (2013)
+#author A Wróblewska, T Podsiadły-Marczykowska et al.
+#url https://link.springer.com/chapter/10.1007/978-3-642-35647-6_21
+
+#title Scholar Metadata and Knowledge Generation with Human plus Artificial Intelligence ()
+#author X Liu, L Zhang, C Guo
+#url https://pdfs.semanticscholar.org/899f/7a6cff16d52a9759538f531d40aa74d8b003.pdf
+
+#title Scholar metadata and knowledge generation with human and artificial intelligence (2014)
+#author X Liu, C Guo, L Zhang
+#url http://onlinelibrary.wiley.com/doi/10.1002/asi.23013/full
+
+#title Scholarly Communication (2007)
+#author C Lagoze
+#url http://delosw.isti.cnr.it/files/pdf/DELOS_NSDL_sschool_07/Presentations/Lagoze.pdf
+
+#title Scholarly Data Mining: Making Sense of Scientific Literature (2017)
+#author H Saggion, F Ronzano
+#url http://ieeexplore.ieee.org/abstract/document/7991622/
+
+#title Scholarly Ontology: modelling scholarly practices (2017)
+#author V Pertsas, P Constantopoulos
+#url https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s00799-016-0169-3&casa_token=iNirZhXpPFYAAAAA:ZQ73zuawo6fcHwzyTc2sYQnKGowMhxLdjDZ6jpHMUI05iwl6CM3JvB9g4J0Qft8VlarrlWNODvJFotbfqw
+
+#title Scientific Portal of University Department-Shaping Research Area of Users through their Behavior (2016)
+#author M Navrotskiy, N Zhukova
+#url https://mpra.ub.uni-muenchen.de/id/eprint/82870
+
+#title Scientific and technical data sharing: a trading perspective (2014)
+#author JG Frey, CL Bird
+#url https://link.springer.com/article/10.1007/s10822-014-9785-4
+
+#title Scientific discourse on the semantic web: A survey of models and enabling technologies (2010)
+#author SB Shum, T Clark, A De Waard, T Groza et al.
+#url https://www.researchgate.net/profile/Agnes_Sandor/publication/268422724_Scientific_Discourse_on_the_Semantic_Web_A_Survey_of_Models_and_Enabling_Technologies/links/5472edf20cf2d67fc035d29c/Scientific-Discourse-on-the-Semantic-Web-A-Survey-of-Models-and-Enabling-Technologies.pdf
+
+#title Scientific documents ontologies for semantic representation of digital libraries (2017)
+#author A Elizarov, S Khaydarov et al.
+#url http://ieeexplore.ieee.org/abstract/document/8168064/
+
+#title Section-wise indexing and retrieval of research articles (2017)
+#author A Shahid, MT Afzal
+#url https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s10586-017-0914-4&casa_token=LGhMU5gtDDoAAAAA:FZPZSxA0wPFZWjxPz-5UNf1f55o5tVa1G5L9I_Jr_VS_byLIz97kBgzK0xvetgF6o4yKdGJdDVV9JMdpoQ
+
+#title Selected papers from the 12 th annual Bio-Ontologies meeting (2010)
+#author LN Soldatova, P Lord et al.
+#url https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-1-S1-I1
+
+#title SemSur: A Core Ontology for the Semantic Representation of Research Findings (2018)
+#author S Fathalla, S Auer, C Lange
+#url https://2018.eswc-conferences.org/wp-content/uploads/2018/02/ESWC2018_paper_97.pdf
+
+#title Semantic Annotation of Data Processing Pipelines in Scientific Publications (2017)
+#author S Mesbah, K Fragkeskos, C Lofi, A Bozzon et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-58068-5_20
+
+#title Semantic Approach to Context-Aware Resource Discovery over Scholarly Content Structured with OAI-PMH (2016)
+#author A Becerril García, R Lozano Espinosa et al.
+#url http://www.cys.cic.ipn.mx/ojs/index.php/CyS/article/view/2189
+
+#title Semantic Attributes for Citation Relationships: Creation and Visualization (2017)
+#author S Parinov
+#url https://link.springer.com/chapter/10.1007/978-3-319-70863-8_28
+
+#title Semantic Data Interfaces for the Masses (2014)
+#author S Peroni
+#url https://link.springer.com/chapter/10.1007/978-3-319-04777-5_6
+
+#title Semantic Enrichment of Scientific Documents with Semantic Lenses–Developing methodologies, tools and prototypes for their concrete use ()
+#author J Zingoni
+#url http://amslaurea.unibo.it/id/eprint/4476
+
+#title Semantic Publishing Challenge–Assessing the Quality of Scientific Output in Its Ecosystem (2016)
+#author A Dimou, A Di Iorio, C Lange, S Vahdati
+#url https://link.springer.com/chapter/10.1007/978-3-319-46565-4_19
+
+#title Semantic Publishing in the Humanities: Enhancing the reader's experience (2016)
+#author O Volundarson
+#url https://openaccess.leidenuniv.nl/handle/1887/43330
+
+#title Semantic Run-Time Models for Self-Adaptive Systems: A Case Study (2016)
+#author F Poggi, D Rossi, P Ciancarini et al.
+#url http://ieeexplore.ieee.org/abstract/document/7536429/
+
+#title Semantic Web for cultural heritage Valorisation (2017)
+#author G Lodi, L Asprino, AG Nuzzolese, V Presutti et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-54499-1_1
+
+#title Semantic Web in Enterprise ()
+#author J Broekstra
+#url http://karlhammar.com/pdfs/coppens2013wasabi.pdf
+
+#title Semantic linkages in research information systems as a new data source for scientometric studies (2014)
 #author S Parinov, M Kogalovsky
-#url http://link.springer.com/article/10.1007/s11192-013-1108-3
+#url https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s11192-013-1108-3&casa_token=3PpQg9-w-EgAAAAA:J6jurNQ3j88CUSbJWwXFCdvZCzsYx3SxfWb6V6AMqEZs3ocv8R7Iz9FZQBk6ejJgHn1x3gL5Kw3-9zaZ3g
 
-#title Semantic Publishing Challenge–Assessing The Quality Of Scientific Output
+#title Semantic publishing as a tool in smart, self-protective critical infrastructure (2016)
+#author A Girka
+#url https://jyx.jyu.fi/dspace/handle/123456789/56368
+
+#title Semantic publishing challenge–assessing the quality of scientific output (2014)
 #author C Lange, A Di Iorio
-#url http://link.springer.com/chapter/10.1007/978-3-319-12024-9_8
+#url https://link.springer.com/chapter/10.1007/978-3-319-12024-9_8
 
-#title Semantic Web Research On Music And Humanities: Project Report
-#author M Mora
-#url http://semanticmedia.org.uk/downloads/FinalReport_MUSIC.pdf
+#title Semantic publishing: analisi di Linked Open Dataset ()
+#author R Giorgi
+#url http://amslaurea.unibo.it/id/eprint/7238
 
-#title Semantically Enabling A Genome-Wide Association Study Database
-#author T Beck, RC Free, GA Thorisson…
-#url http://www.biomedcentral.com/content/pdf/2041-1480-3-9.pdf
+#title Semantic publishing: the coming revolution in scientific journal publishing (2009)
+#author D Shotton
+#url http://onlinelibrary.wiley.com/doi/10.1087/2009202/full
 
-#title Semantically Enriched Owl-S Files For Mathematical Web Services
-#author A Sheeba, A Chandrasekar, P Veerasingam
-#url http://ijcseonline.org/pub_paper/IJCSE-00017.pdf
+#title Semantic representation of scientific literature: bringing claims, contributions and named entities onto the Linked Open Data cloud (2015)
+#author B Sateli, R Witte
+#url https://peerj.com/articles/cs-37
 
-#title Semantically Linking Humanities Research Articles And Music Artists
-#author M Mora
+#title Semantic tagging of and semantic enhancements to systematics papers: ZooKeys working examples (2010)
+#author L Penev, D Agosti, T Georgiev, T Catapano, J Miller et al.
+#url https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3088020/
+
+#title Semantic tuple spaces for constrained devices: a web-compliant vision (2014)
+#author AG Goiri
+#url http://search.proquest.com/openview/879ef530b33d1ac79bfd3eebcfad707e/1?pq-origsite=gscholar&cbl=2026366&diss=y
+
+#title Semantic typing of linked geoprocessing workflows (2018)
+#author S Scheider, A Ballatore
+#url http://www.tandfonline.com/doi/abs/10.1080/17538947.2017.1305457
+
+#title Semantic web and social web heading towards living documents in the life sciences (2010)
+#author A Garcia-Castro, A Labarga, L Garcia, O Giraldo et al.
+#url https://www.sciencedirect.com/science/article/pii/S1570826810000223
+
+#title Semantic web based organization of scientific bibliography references ()
+#author V Cvjetkovic, M Djokic
+#url https://www.researchgate.net/profile/Marija_Djokic_Petrovic/publication/281281067_Semantic_Web_based_organization_of_scientific_bibliography_references/links/55e2c9d108ae2fac471f99fb/Semantic-Web-based-organization-of-scientific-bibliography-references.pdf
+
+#title Semantic web conference ontology-a refactoring solution (2016)
+#author AG Nuzzolese, AL Gentile, V Presutti et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-47602-5_18
+
+#title Semantic web for the legal domain: the next step (2016)
+#author P Casanovas, M Palmirani, S Peroni et al.
+#url https://content.iospress.com/articles/semantic-web/sw224
+
+#title Semantic web machine reading with FRED (2017)
+#author A Gangemi, V Presutti, D Reforgiato Recupero et al.
+#url https://content.iospress.com/articles/semantic-web/sw240
+
+#title Semantic web technologies and legal scholarly publishing (2014)
+#author S Peroni
+#url https://books.google.it/books?hl=en&lr=&id=sZ4pBAAAQBAJ&oi=fnd&pg=PR5&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=Ax0e1_liJm&sig=v_iomFm4NbCZfNutEi5plk5-8AU
+
+#title Semantically Linking Humanities Research Articles and Music Artists ()
+#author M Mora-McGinity, G Ogilvie, G Fazekas
 #url https://svn.spraakdata.gu.se/kbc/public/web/workshop/papers/8.pdf
 
-#title Semantically Representing Informal Argumentation From The Social Web
+#title Semantically Representing Informal Argumentation from the Social Web (2014)
 #author T Blount
 #url http://wais-demo.ecs.soton.ac.uk/phdreports/Blount%202014%20-%209%20month%20Progress%20Report%202014-07-10.pdf
 
-#title Semantify Ceur-Ws Proceedings: Towards The Automatic Generation Of Highly Descriptive Scholarly Publishing Linked Datasets
+#title Semantically annotating CEUR-WS workshop proceedings with RML (2015)
+#author P Heyvaert, A Dimou, R Verborgh, E Mannens et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-25518-7_14
+
+#title Semantically enabling a genome-wide association study database (2012)
+#author T Beck, RC Free, GA Thorisson et al.
+#url https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-3-9
+
+#title Semantically enriched OWL-S Files for Mathematical Web Services (2013)
+#author A Sheeba, A Chandrasekar, P Veerasingam
+#url http://ijcseonline.org/pub_paper/IJCSE-00017.pdf
+
+#title Semantics, Analytics, Visualization ()
+#author A González-Beltrán, F Osborne, S Peroni
+#url https://link.springer.com/content/pdf/10.1007/978-3-319-53637-8.pdf
+
+#title Semantics, Analytics, Visualization. Enhancing Scholarly Data: Second International Workshop, SAVE-SD 2016, Montreal, QC, Canada, April 11, 2016 … (2017)
+#author A González-Beltrán, F Osborne, S Peroni
+#url https://books.google.it/books?hl=en&lr=&id=HWHTDgAAQBAJ&oi=fnd&pg=PR5&ots=9bnFnFu0hA&sig=1XiktvqoAJkcCDLVyyjZPxseVRY
+
+#title Semantify CEUR-WS proceedings: towards the automatic generation of highly descriptive scholarly publishing linked datasets (2014)
 #author F Ronzano, GC del Bosque, H Saggion
-#url http://link.springer.com/chapter/10.1007/978-3-319-12024-9_10
+#url https://link.springer.com/chapter/10.1007/978-3-319-12024-9_10
 
-#title Sentiment, Polarity And Function Analysis In Bibliometrics: A Review
+#title Semantische Metadaten für den Webauftritt einer Bibliothek Semantic metadata for a library website ()
+#author A Bohne-Lang
+#url https://www.egms.de/static/de/journals/mbi/2017-16/mbi000372.shtml
+
+#title Semantische Metadaten für den Webauftritt einer Bibliothek. (2016)
+#author A Bohne-Lang
+#url http://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=1865066X&AN=120904725&h=6NLmQJFRmjHf5AHR812MXCFPbLWDDaCCViwcVZak27RhcYy%2BNm5Mj87UIvDoDJVfFF44HW9B5RqRfSCGCN8%2F7g%3D%3D&crl=c
+
+#title Semantisches Publizieren im interdisziplinären Wissenschaftsnetzwerk (2014)
+#author N Schmidt
+#url https://edoc.hu-berlin.de/handle/18452/2773
+
+#title Semantisches Publizieren im interdisziplinären Wissenschaftsnetzwerk. Theoretische Grundlagen und Anforderungen (2014)
+#author N Schmidt
+#url http://eprints.rclis.org/24215/
+
+#title Sentiment, Polarity and Function Analysis in Bibliometrics: A Review (2015)
 #author M Hernández, JM Gómez
-#url https://books.google.it/books?hl=en&lr=&id=FPFeCAAAQBAJ&oi=fnd&pg=PA149&ots=VQnHIhwfrz&sig=AhAoQLjU_35JaGWBrWQt3DkmZaE
+#url https://books.google.it/books?hl=en&lr=&id=FPFeCAAAQBAJ&oi=fnd&pg=PA149&ots=VRmCJky9ty&sig=47RvMLiYHDqPNeghBxoW5H6sR7E
 
-#title Sheldon: Semantic Holistic Framework For Linked Ontology Data
-#author DR Recupero, AG Nuzzolese, S Consoli, et al.
-#url http://link.springer.com/chapter/10.1007/978-3-319-17966-7_17
+#title Setting our bibliographic references free: towards open citation data (2015)
+#author S Peroni, A Dutton, T Gray et al.
+#url http://www.emeraldinsight.com/doi/abs/10.1108/JD-12-2013-0166
 
-#title Social Network Technologies For Semantic Linking Of Information Objects In Scientific Digital Library
+#title Sharing and re-use of phylogenetic trees (and associated data) to facilitate synthesis (2012)
+#author A Stoltzfus, B O'meara, J Whitacre et al.
+#url https://bmcresnotes.biomedcentral.com/articles/10.1186/1756-0500-5-574
+
+#title Sheldon: Semantic holistic framework for linked ontology data (2014)
+#author DR Recupero, AG Nuzzolese, S Consoli et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-17966-7_17
+
+#title Sistema multiagente en un modelo ontológico para la búsqueda de objetos de aprendizaje. (2016)
+#author GP Guamán Morocho, JCM Pacheco
+#url http://dspace.unl.edu.ec/handle/123456789/11683
+
+#title Situating Word Senses in their Historical Context with Linked Data (2017)
+#author F Khan, J Bowers, F Frontini
+#url http://www.aclweb.org/anthology/W17-6916
+
+#title Smart city artifacts web portal (2016)
+#author N Bakerally, O Boissier, A Zimmermann
+#url https://link.springer.com/chapter/10.1007/978-3-319-47602-5_34
+
+#title Social network technologies for semantic linking of information objects in scientific digital library (2014)
 #author MR Kogalovsky, SI Parinov
-#url http://link.springer.com/article/10.1134/S0361768814060139
+#url https://link.springer.com/article/10.1134/S0361768814060139
 
-#title Special Issue On Alternative Metrics
-#author VP Guerrero
-#url http://www.researchtrends.com/wp-content/uploads/2014/05/Research_Trends_Issue_37.pdf
+#title Special issue on alternative metrics ()
+#author VP Guerrero-Bote, F Moya-Anegón
+#url http://www.gilsonvolpato.com.br/pdf/Research_Trends_Issue_37%20-%20ALTMETRICS.pdf
 
-#title Supporting Information Sharing For Reuse And Analysis Of Scientific Research Publication Data
-#author FJ Ekaputra, M Sabou, E Serral, et al.
+#title Standardising Public Policy Documentation to Foster Collaboration Across Government Agencies (2017)
+#author MA Rezk, MH Aliyu, H Bensta, A Ojo
+#url https://link.springer.com/chapter/10.1007/978-3-319-65151-4_42
+
+#title Stretching the boundaries of publishing: The Open Web Platform and the alternatives ()
+#author N Constantinescu
+#url https://www.ceeol.com/content-files/document-586752.pdf
+
+#title Structural patterns for document engineering: from an empirical bottom-up analysis to an ontological theory (2015)
+#author F Poggi
+#url http://amsdottorato.unibo.it/id/eprint/7123
+
+#title Structured digital tables on the Semantic Web: toward a structured digital literature (2010)
+#author KH Cheung, M Samwald, RK Auerbach et al.
+#url http://msb.embopress.org/content/6/1/403.short
+
+#title Supporting Information Sharing for Re-Use and Analysis of Scientific Research Publication Data. (2014)
+#author FJ Ekaputra, M Sabou, E Serral, S Biffl
 #url http://mayor2.dia.fi.upm.es/oeg-upm/files/eswc2014/Workshops/SePublica2014/SePublica_paper_6.pdf
 
-#title Technical Specification
+#title Supporting Structured Browsing for Full-Text Scientific Research Reports (2012)
+#author RB Allen
+#url https://arxiv.org/abs/1209.0036
+
+#title Supporting browsing-specific information needs: introducing the Citation-Sensitive In-Browser Summariser (2010)
+#author S Wan, C Paris, R Dale
+#url https://www.sciencedirect.com/science/article/pii/S1570826810000181
+
+#title Survey about citation context analysis: Tasks, techniques, and resources (2016)
+#author M Hernández-Alvarez, JM Gómez
+#url https://www.cambridge.org/core/journals/natural-language-engineering/article/survey-about-citation-context-analysis-tasks-techniques-and-resources/E344A2682BC351F413925ADF23D131FE
+
+#title Sustainability of scholarly information (2014)
+#author GG Chowdhury
+#url https://books.google.it/books?hl=en&lr=&id=RXsWDgAAQBAJ&oi=fnd&pg=PA57&ots=eHPcVc_bLn&sig=61mNLy3uzEB8cJBegYXjZbVsxcA
+
+#title TECHNICAL SPECIFICATION ()
 #author E Dröge, J Iwanowa, KE UMA, S Hennicke, KB EL
-#url http://dm2e.eu/files/DM2E_Model_V1.1_Specification.pdf
+#url https://it-dev.mpiwg-berlin.mpg.de/svn/ismi-richfaces/docs/dm2e/DM2E_Model_V1.1_Specification.pdf
 
-#title Text Encoding Initiative Semantic Modeling. A Conceptual Workflow Proposal
+#title TEI Conference 2013 ()
+#author M Beißwenger, L Lemnitzer
+#url http://digilab2.let.uniroma1.it/teiconf2013/panelsround-tables/abstracts-panel/
+
+#title TEI, ontologies, linked open data: Geolat and beyond (2014)
+#author F Ciotti, M Lana, F Tomasi
+#url https://journals.openedition.org/jtei/1365
+
+#title Tackling complexity in an interdisciplinary scholarly network: Requirements for semantic publishing (2016)
+#author N Schmidt
+#url https://uncommonculture.org/ojs/index.php/fm/article/view/6102
+
+#title TechMiner: extracting technologies from academic publications (2016)
+#author F Osborne, H de Ribaupierre, E Motta
+#url https://link.springer.com/chapter/10.1007/978-3-319-49004-5_30
+
+#title Technical implementation of the semantic enhancements applied to Reis et al.(2008) Impact of environment and social gradient on Leptospira infection in urban slums … (2009)
+#author D Shotton, K Portwin
+#url https://ora.ox.ac.uk/objects/uuid:a02e2c4b-5ac3-4da3-83d6-defd4a6b6b21
+
+#title Technology to Represent Scientific Practice: Data, Life Cycles, and Value Chains (2009)
+#author A Pepe, M Mayernik, CL Borgman et al.
+#url https://arxiv.org/vc/arxiv/papers/0906/0906.2549v1.pdf
+
+#title Templating the semantic web via RSLT (2015)
+#author S Peroni, F Vitali
+#url https://link.springer.com/chapter/10.1007/978-3-319-25639-9_35
+
+#title Temporal and semantic analysis of richly typed social networks from user-generated content sites on the web (2016)
+#author Z Meng
+#url https://hal.inria.fr/tel-01402612/
+
+#title Text Encoding Initiative semantic modeling. A conceptual workflow proposal (2015)
 #author F Ciotti, M Daquino, F Tomasi
-#url http://ircdl2015.unibz.it/papers/paper-10.pdf
+#url https://link.springer.com/chapter/10.1007/978-3-319-41938-1_5
 
-#title The Chembl Database As Linked Open Data
-#author EL Willighagen, A Waagmeester, O Spjuth, et al.
-#url http://link.springer.com/article/10.1186/1758-2946-5-23
+#title Text S1 Technical implementation of the semantic enhancements applied to Reis et al.(2008) Impact of environment and social gradient on Leptospira infection … ()
+#author D Shotton, K Portwin
+#url http://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1000361.s001&type=supplementary
 
-#title The Linked TEI: Text Encoding In The Web
+#title Text in a data-centric world. (2009)
+#author P GinsParG
+#url https://www.researchgate.net/profile/Valerio_Pascucci2/publication/229529541_The_Fourth_Paradigm_Data-Intensive_Scientific_Discovery/links/5489bb3b0cf214269f1ab9f7/The-Fourth-Paradigm-Data-Intensive-Scientific-Discovery.pdf#page=219
+
+#title The Centrality of Data: Data Lifecycle and Data Pipelines (2017)
+#author B Plale, I Kouper
+#url https://www.sciencedirect.com/science/article/pii/B9780128097151000043
+
+#title The ChEMBL database as linked open data (2013)
+#author EL Willighagen, A Waagmeester, O Spjuth et al.
+#url https://link.springer.com/article/10.1186/1758-2946-5-23
+
+#title The Collections Ontology: creating and handling collections in OWL 2 DL frameworks (2014)
+#author P Ciccarese, S Peroni
+#url https://content.iospress.com/articles/semantic-web/sw121
+
+#title The Combined Use of EAD and METS for Archival Material (2017)
+#author R Eito-Brun
+#url https://link.springer.com/chapter/10.1007/978-3-319-70863-8_22
+
+#title The Evolvement of Worldwide RDF Vocabularies for Bibliographic Description (2015)
+#author H Xiaojing
+#url http://www.libraryjournal.com.cn/EN/abstract/abstract641.shtml
+
+#title The Five Stars of Online Journal Articles–an article evaluation framework (2011)
+#author D Shotton
+#url https://www.researchgate.net/profile/David_Shotton2/publication/266089112_The_Five_Stars_of_Online_Journal_Articles_-_an_article_evaluation_framework/links/59eb7863aca272cddddef898/The-Five-Stars-of-Online-Journal-Articles-an-article-evaluation-framework.pdf
+
+#title The Full Mont (olog) y: Using Ontologies to Optimize the CS ()
+#author K Dahlgren
+#url http://tinytocs.ece.utexas.edu/papers/tinytocs4_paper_dahlgren.pdf
+
+#title The Information Realization Pattern (2016)
+#author P Hitzler
+#url https://books.google.it/books?hl=en&lr=&id=9hChDQAAQBAJ&oi=fnd&pg=PA299&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=mcCxVqa6CU&sig=9lx5hRy8tURFfTvLWJSeqA7MBPk
+
+#title The Linked TEI: Text Encoding in the Web ()
 #author M Beißwenger, L Lemnitzer
 #url http://www.tei-c.org/Vault/MembersMeetings/2013/panelsround-tables/abstracts-panel/
 
-#title The Second British Library Datacite Workshop
+#title The Live OWL Documentation Environment: a tool for the automatic generation of ontology documentation (2012)
+#author S Peroni, D Shotton, F Vitali
+#url https://link.springer.com/chapter/10.1007/978-3-642-33876-2_35
+
+#title The Ontogenesis Knowledgeblog: Lightweight publishing about semantics, with lightweight semantic publishing (2011)
+#author P Lord, S Cockell, DC Swan, R Stevens
+#url https://pdfs.semanticscholar.org/8249/4fba8e4e3b947afede946e06cdbc7e852195.pdf
+
+#title The RASH Framework: enabling HTML+ RDF submissions in scholarly venues (2015)
+#author A Di Iorio, AG Nuzzolese, F Osborne, S Peroni, F Poggi et al.
+#url http://oro.open.ac.uk/44373/
+
+#title The RASH JavaScript Editor (RAJE): A Wordprocessor for Writing Web-first Scholarly Articles (2017)
+#author G Spinaci, S Peroni, A Di Iorio, F Poggi et al.
+#url https://dl.acm.org/citation.cfm?id=3103018
+
+#title The STM report: An overview of scientific and scholarly journal publishing (2015)
+#author M Ware, M Mabe
+#url http://digitalcommons.unl.edu/scholcom/9/?utm
+
+#title The Second British Library DataCite Workshop (2012)
 #author A Ball
-#url https://www.ariadne.ac.uk/issue69/datacite-2012-rpt
+#url http://www.ariadne.ac.uk/issue69/datacite-2012-rpt
 
-#title The Wider Landscape
-#author D Morse, D King
-#url http://oro.open.ac.uk/38410/
+#title The Semantic Web-ISWC 2015 (2015)
+#author M Arenas, J Heflin, P Groth, K Thirunarayan, M d'Aquin et al.
+#url https://link.springer.com/content/pdf/10.1007/978-3-319-25007-6.pdf
 
-#title Towards Facilitating Scientific Publishing And Knowledge Exchange Through Linked Data
+#title The Study on the Semantic Publishing based on the Tagging and LOD Inter-liking (2015)
+#author H Lee, M Hyun, S Jeong
+#url http://dev02.dbpia.co.kr/2/85/93/2859368.pdf?article=3831434
+
+#title The Virtual Learning Commons (VLC): Enabling Sharing and Innovation for Flexible, Responsive Solutions (2014)
+#author DD Pennington, A Gándara, ND Rio, O Ochoa
+#url https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=1043&context=iemssconference
+
+#title The archival domain in a disciplinary-integrated ontological perspective (2015)
+#author F Tomasi, M Daquino
+#url http://search.proquest.com/openview/3474a55d850e4dc40eb5990f33b96ca7/1?pq-origsite=gscholar&cbl=1596385&casa_token=AOXevpiy_EMAAAAA:RFybMupX_Ldaav578kfHr1ibO-tmC3jfK1rRx-Lz1Z85C-JFV7T6clwmAwafq2MyLmgFOlmo9w
+
+#title The cognitive atlas: toward a knowledge foundation for cognitive neuroscience (2011)
+#author RA Poldrack, A Kittur, D Kalar, E Miller et al.
+#url https://www.frontiersin.org/article/10.3389/fninf.2011.00017/full
+
+#title The data industry: the business and economics of information and big data (2016)
+#author C Tang
+#url https://books.google.it/books?hl=en&lr=&id=y4ogCwAAQBAJ&oi=fnd&pg=PR19&ots=BzKkY46ptu&sig=S8axzGQPEBTaJjS2NeQk5GsLqZQ
+
+#title The deconstruction of the scientific article ()
+#author AK Weilenmann
+#url https://www.researchgate.net/profile/Anne-Katharina_Weilenmann/publication/264672720_The_deconstruction_of_the_scientific_article/links/53eab1300cf2fb1b9b6ac948/The-deconstruction-of-the-scientific-article.pdf
+
+#title The digital publishing revolution (2014)
+#author S Peroni
+#url https://link.springer.com/chapter/10.1007/978-3-319-04777-5_2
+
+#title The evolution of myexperiment (2010)
+#author D De Roure, C Goble, S Aleksejevs et al.
+#url http://ieeexplore.ieee.org/abstract/document/5693912/
+
+#title The linguistic patterns and rhetorical structure of citation context: an approach using  (2016)
+#author M Bertin, I Atanassova, CR Sugimoto, V Lariviere
+#url https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s11192-016-2134-8&casa_token=RriYKtx_bXgAAAAA:8VV0eYVjdLAF8CKClij32oGo9ukth7FqMyoq2eYL_zmNmM9X1s_iPqsK5gyQ-D_8ELeL8SBgkn-fpT5uuw
+
+#title The quest for research information (2014)
+#author I Blümel, S Dietze, L Heller, R Jäschke et al.
+#url https://www.sciencedirect.com/science/article/pii/S1877050914008308
+
+#title The role of new information and communication technologies (ICTs) in information and communication in science. A conceptual framework and empirical study (2016)
+#author CK Pikas
+#url http://search.proquest.com/openview/a5d2f44c3a4efe4428d209815e89667d/1?pq-origsite=gscholar&cbl=18750&diss=y
+
+#title The scholarly communication in the science 2.0 era (2012)
+#author NB Molina
+#url https://www.researchgate.net/profile/Nora_Molina/publication/255949802_The_Scholarly_Communication_in_the_Science_20_Era/links/0deec520e83b090456000000.pdf
+
+#title The stm report (2012)
+#author M Ware, M Mabe
+#url http://www.stm-assoc.org/2015_02_20_STM_Report_2015.pdf
+
+#title Thoughtful Artificial Intelligence: Forging A New Partnership for Data Science and Scientific ()
+#author Y Gil
+#url https://datasciencehub.net/system/files/ds-paper-509.pdf
+
+#title Three Steps to Heaven: Semantic Publishing in a Real World Workflow (2012)
+#author P Lord, S Cockell, R Stevens
+#url http://www.mdpi.com/1999-5903/4/4/1004htm
+
+#title TiNYARM: Awareness of Research Papers in a Community of Practice (2013)
+#author G Parra, J Klerkx, E Duval
+#url https://dl.acm.org/citation.cfm?id=2494207
+
+#title Tools for the automatic generation of ontology documentation: A task-based evaluation (2013)
+#author S Peroni, D Shotton, F Vitali
+#url https://www.igi-global.com/article/content/77823
+
+#title Topic Modeling for Linked Open Vocabularies ()
+#author D Vila-Suero, J Gracia, A Gómez-Pérez
+#url https://pdfs.semanticscholar.org/690c/1883c482e5b0e566e50e6292021d90e88197.pdf
+
+#title Toward a new paradigm for user interaction on the Semantic Web to support life sciences investigation (2009)
+#author A Splendiani, M Kuiper, CJ Rawlings
+#url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.664.5124&rep=rep1&type=pdf
+
+#title Toward an Ontopedia for historical hebrew Manuscripts (2016)
+#author M Zhitomirsky-Geffet, G Prebor
+#url https://www.frontiersin.org/articles/10.3389/fdigh.2016.00003
+
+#title Towards Interactive Gathering of DUV-Based Dataset Usage Information (2016)
+#author X Xia, Z Xu, Z Liu
+#url http://ieeexplore.ieee.org/abstract/document/7878251/
+
+#title Towards Publishing Secure Capsule-Based Analysis (2017)
+#author J Murdock, J Jett, T Cole, Y Ma et al.
+#url http://ieeexplore.ieee.org/abstract/document/7991585/
+
+#title Towards Systematic Analysis and Summary of DUV-Based Dataset Usage Information (2016)
+#author Z Liu, Z Xu, X Xia
+#url http://ieeexplore.ieee.org/abstract/document/7878252/
+
+#title Towards a Knowledge Graph Representing Research Findings by Semantifying Survey Articles (2017)
+#author S Fathalla, S Vahdati, S Auer, C Lange
+#url https://link.springer.com/chapter/10.1007/978-3-319-67008-9_25
+
+#title Towards a Knowledge Graph for a Research Group with Focus on Qualitative Analysis of Scholarly Papers ()
+#author VG Meister
+#url https://pdfs.semanticscholar.org/6138/96d9a5ff8d5e2f50d9adf11ee69c1ae8a3bf.pdf
+
+#title Towards a Linked Open Dataset for Scholarly Publishing: Semantic Lancet Project ()
+#author A Bagnacani, P Ciancarini, A Di Iorio, A Giovanni et al.
+#url https://pdfs.semanticscholar.org/d5af/628eb0ed0e5fdb4da176c7561e5b3645914b.pdf
+
+#title Towards a Semantic Documentation of Heritage Objects through Visual and Iconographical Representations (2017)
+#author N Carboni, L de Luca
+#url http://www.tandfonline.com/doi/abs/10.1080/10572317.2017.1353374
+
+#title Towards a Semantic Network of Dante's Works and Their Contextual Knowledge (2015)
+#author V Bartalesi, C Meghini, P Andriani et al.
+#url https://academic.oup.com/dsh/article-abstract/30/suppl_1/i28/364160
+
+#title Towards a Vocabulary for Open Public Policies (2017)
+#author MA Rezk, MH Aliyu, H Bensta, A Ojo
+#url https://dl.acm.org/citation.cfm?id=3047366
+
+#title Towards a semantic book search engine (2016)
+#author S Khusro, I Ullah
+#url http://ieeexplore.ieee.org/abstract/document/7838586/
+
+#title Towards accessible graphs in HTML-based scientific articles (2017)
+#author S Mirri, S Peroni, P Salomoni, F Vitali et al.
+#url http://ieeexplore.ieee.org/abstract/document/7983287/
+
+#title Towards facilitating scientific publishing and knowledge exchange through linked data (2013)
 #author S Auer, C Lange, T Ermilov
-#url http://link.springer.com/chapter/10.1007/978-3-319-08425-1_2
+#url https://link.springer.com/chapter/10.1007/978-3-319-08425-1_2
 
-#title Towards The Interoperable Data Environment For Facilities Science
+#title Towards the interoperable data environment for Facilities Science (2014)
 #author V Bunakov, C Jones, B Matthews
-#url https://books.google.it/books?hl=en&lr=&id=HSOXBQAAQBAJ&oi=fnd&pg=PA127&dq=%22purl.org/spar%22+OR+%22sparontologies.net%22&ots=5MHuJUu6be&sig=3HoVQoal8z3ubeU4kWbdyrIUzqg
+#url https://books.google.it/books?hl=en&lr=&id=HSOXBQAAQBAJ&oi=fnd&pg=PA127&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=5NGpKZv7ef&sig=m1lLQwN0gkq0nSDmtpag31bzFes
 
-#title Towards Vagueness-Oriented Quality Assessment Of Ontologies
+#title Towards vagueness-oriented quality assessment of ontologies (2014)
 #author P Alexopoulos, P Mylonas
-#url http://link.springer.com/chapter/10.1007/978-3-319-07064-3_38
+#url https://link.springer.com/chapter/10.1007/978-3-319-07064-3_38
 
-#title Twitter In The Cross Fire—The Use Of Social Media In The Westgate Mall Terror Attack In Kenya
-#author T Simon, A Goldberg, L Aharonson
-#url http://dx.plos.org/10.1371/journal.pone.0104136
+#title Towards virtual knowledge broker services for semantic integration of life science literature and data sources (2013)
+#author I Harrow, W Filsell, P Woollard, I Dix, M Braxenthaler et al.
+#url https://www.sciencedirect.com/science/article/pii/S1359644612004011
 
-#title Un Ambiente User-Friendly Per Esplorare Articoli Scientifici E Bibliografie
-#author F Vitali, A Di Iorio, R Giannella
-#url http://amslaurea.unibo.it/8306/1/giannella_raffaele_tesi.pdf
+#title Tracking Changes through EARMARK: a Theoretical Perspective and an Implementation. (2013)
+#author S Peroni, F Poggi, F Vitali
+#url https://www.researchgate.net/profile/Silvio_Peroni/publication/256793222_Tracking_changes_through_EARMARK_A_theoretical_perspective_and_an_implementation/links/00b49523c485135601000000/Tracking-changes-through-EARMARK-A-theoretical-perspective-and-an-implementation.pdf
 
-#title Un Modèle D'Annotation Sémantique Centré Sur Les Utilisateurs De Documents Scientifiques: Cas D'Utilisation Dans Les Études Genre
+#title Transforming peer review bibliography (2014)
+#author CW Bailey Jr
+#url http://www.digital-scholarship.org/tpr/tpr.htm
+
+#title Twenty-Five Shades of Greycite: Semantics for referencing and preservation (2013)
+#author P Lord, L Marshall
+#url https://arxiv.org/abs/1304.7151
+
+#title Twitter in the cross fire—the use of social media in the Westgate Mall terror attack in Kenya (2014)
+#author T Simon, A Goldberg, L Aharonson-Daniel, D Leykin et al.
+#url http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0104136
+
+#title Typisierung intertextueller Referenzen in RDF (2010)
+#author A Pohl
+#url https://hbz.opus.hbz-nrw.de/files/206/PDFA_Tagung_Digitale_Wissenschaft_hbz_2011_7.pdf#page=73
+
+#title UNDO: The United Nations System Document Ontology (2017)
+#author S Peroni, M Palmirani, F Vitali
+#url https://link.springer.com/chapter/10.1007/978-3-319-68204-4_18
+
+#title Un approccio per la disambiguazione di autori di articoli scientifici: algoritmo e implementazione ()
+#author L Montecchiari
+#url http://amslaurea.unibo.it/id/eprint/8370
+
+#title Un modèle d'annotation sémantique centré sur les utilisateurs de documents scientifiques: cas d'utilisation dans les études genre (2014)
 #author H De Ribaupierre, G Falquet
-#url https://hal.inria.fr/hal-01015226/
+#url https://hal.archives-ouvertes.fr/hal-01015226/
 
-#title Understanding Climate Data Through Commentary Metadata: The Charme Project
-#author JD Blower, R Alegre, VL Bennett, DJ Clifford, et al.
-#url http://link.springer.com/chapter/10.1007/978-3-319-08425-1_4
+#title Un'esperienza di rappresentazione di dati di cataloghi digitali in Linked Open Data: il caso della Fondazione Zeri ()
+#author CM Gonano
+#url http://amslaurea.unibo.it/id/eprint/7257
 
-#title Using Linked Data Traversal To Label Academic Communities
+#title Understanding climate data through commentary metadata: The CHARMe project (2013)
+#author JD Blower, R Alegre, VL Bennett, DJ Clifford et al.
+#url https://link.springer.com/chapter/10.1007/978-3-319-08425-1_4
+
+#title Unleashing the power of data through organization: Structure and connections for meaning, learning and discovery. (2015)
+#author D Soergel
+#url https://www.researchgate.net/profile/Dagobert_Soergel/publication/293027204_Unleashing_the_Power_of_Data_Through_Organization_Structure_and_Connections_for_Meaning_Learning_and_Discovery/links/57c5e28208ae0a6b0dc8d81f/Unleashing-the-Power-of-Data-Through-Organization-Structure-and-Connections-for-Meaning-Learning-and-Discovery.pdf
+
+#title Usage trends of open access and local journals: a Korean case study (2016)
+#author JW Seo, H Chung, J Yun, JY Park, E Park, Y Ahn
+#url http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0155843
+
+#title Using Data Mining on Linked Data ()
+#author Y GÜLTEPE
+#url http://www.academia.edu/download/42680731/GAU_Journal.pdf#page=155
+
+#title Using FRED for Named Entity Resolution, Linking and Typing for Knowledge Base Population (2015)
+#author STLICN Delle Ricerche
+#url https://link.springer.com/content/pdf/10.1007/978-3-319-25518-7.pdf#page=53
+
+#title Using Linked Open Data to Bootstrap a Knowledge Base of Classical Texts (2017)
+#author M Romanello, M Pasin
+#url https://infoscience.epfl.ch/record/232930
+
+#title Using Nonexperts for Annotating Pharmacokinetic Drug-Drug Interaction Mentions in Product Labeling: A Feasibility Study ()
+#author RD Boyce
+#url https://pdfs.semanticscholar.org/c249/069bf055645615e571bd98725e8fa56da600.pdf
+
+#title Using Ontologies as a Faceted Browsing for Heterogeneous Cultural Heritage Collections. (2015)
+#author F Tomasi, F Ciotti, M Daquino, M Lana
+#url http://italia2015.dei.unipd.it/papers/ITALIA_2015_submission_5.pdf
+
+#title Using Tag Clouds as a Tool for Patients' Medical History Visualization and Record Retrieval (2015)
+#author D Foldes
+#url https://spectrum.library.concordia.ca/980670/
+
+#title Using an ontology for representing the knowledge on literary texts: the Dante Alighieri case study (2017)
+#author V Bartalesi, C Meghini
+#url https://content.iospress.com/articles/semantic-web/sw198
+
+#title Using linked data traversal to label academic communities (2015)
 #author I Tiddi, M d'Aquin, E Motta
-#url http://dl.acm.org/citation.cfm?id=2742019
+#url https://dl.acm.org/citation.cfm?id=2742019
 
-#title Vokabulare FüR Bibliographische Daten
+#title Using noun phrases for navigating biomedical literature on Pubmed: how many updates are we losing track of? (2011)
+#author D Srikrishna, MA Coram
+#url http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0024920
+
+#title Using the Annotation Ontology in semantic digital libraries (2010)
+#author LJG Castro, OX Giraldo, AG Castro
+#url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.231.4262&rep=rep1&type=pdf#page=163
+
+#title Utilisation des citations pour le résumé automatique de la contribution d'articles scientifiques (2017)
+#author B Malenfant
+#url http://rali.iro.umontreal.ca/rali/sites/default/files/publis/Malenfant-These.pdf
+
+#title Utopia Documents and The Semantic Biochemical Journal experiment (2010)
+#author TK Attwood
+#url http://journal.embnet.org/index.php/embnetnews/article/view/45
+
+#title Utopia documents: linking scholarly literature with research data (2010)
+#author TK Attwood, DB Kell, P McDermott, J Marsh et al.
+#url https://academic.oup.com/bioinformatics/article-abstract/26/18/i568/206102
+
+#title ViBRANT ()
+#author D King
+#url http://core.ac.uk/download/pdf/17172974.pdf
+
+#title Visualization Service Platform for Journal and Article Information (2015)
+#author SN Cho, TS Seo
+#url http://www.dbpia.co.kr/Journal/ArticleDetail/NODE06572365
+
+#title Vokabulare für bibliographische Daten (2013)
 #author C Klee
-#url http://www.degruyter.com/dg/viewbooktoc.chapterlist.resultlinks.fullcontentlink:pdfeventlink/$002fbooks$002f9783110278736$002f9783110278736.45$002f9783110278736.45.pdf?t:ac=product/181080
+#url https://www.degruyter.com/dg/viewbooktoc.chapterlist.resultlinks.fullcontentlink:pdfeventlink/$002fbooks$002f9783110278736$002f9783110278736.45$002f9783110278736.45.pdf/9783110278736.45.pdf?t:ac=product/181080
 
-#title Webtracks Demontrators
+#title WARNING CRITERION ONTOLOGY FOR MEASURING OF COMPLIANCE IN STANDARD OPERATING PROCEDURE IMPLEMENTATION. (2017)
+#author HA HARTANTO, R SARNO et al.
+#url http://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=19928645&AN=127123319&h=vJqHy3ppwVz3eFHsBdwXlmkANuj6wlnxPDKCgE%2BeN79ef7ot0eNAcgvc53PBf1pBnpyE%2Fdp1zPHU0VxVOqr34Q%3D%3D&crl=c
+
+#title WOP 2014 (2014)
+#author SW Patterns
+#url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.664.6488&rep=rep1&type=pdf
+
+#title Webtracks Demontrators (2012)
 #author S Crompton, B Matthews
-#url http://webtracks.jiscinvolve.org/wp/files/2012/06/Webtracks-2.2-Demonstrators.docx
+#url https://webtracks.jiscinvolve.org/wp/files/2012/06/Webtracks-2.2-Demonstrators.docx
 
-#title What Can The Ontology Describe? Visualizing Local Coverage In Puro Modeler
+#title What Does Giving Primacy to a Certain Entity Cause in a Conceptual Model for Cataloging?: Expression-Entity Dominant Model Revisited (2017)
+#author S Taniguchi
+#url http://search.proquest.com/openview/7b5cdde06475b4311a9f49191ceab93c/1?pq-origsite=gscholar&cbl=40702&casa_token=n2G0fqGNS_cAAAAA:WxEs9GlC44j3s5Fj_d6Rcsw0jXy4D7UFwYhHX-IzP9zw5Re1ZXLNfDhtjevepqIh0dPb7Wa6Gw
+
+#title What Sentence are you Referring to and Why? Identifying Cited Sentences in Scientific Literature (2017)
+#author L Chiruzzo, H Saggion
+#url https://pdfs.semanticscholar.org/1b28/3ab966cb35f685179cd31ab4d151475dc9b8.pdf
+
+#title What are we measuring? Refocusing on some fundamentals in the age of desktop bibliometrics (2018)
+#author I Rowlands
+#url https://academic.oup.com/femsle/advance-article-pdf/doi/10.1093/femsle/fny059/24320590/fny059.pdf
+
+#title What can the ontology describe? Visualizing local coverage in PURO modeler (2014)
 #author M Dudáš, T Hanzal, V Svátek
-#url http://ceur-ws.org/Vol-1299/paper3.pdf
+#url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.663.5625&rep=rep1&type=pdf#page=34
 
-#title What's In This Paper?: Combining Rhetorical Entities With Linked Open Data For Semantic Literature Querying
+#title What's in this paper?: Combining Rhetorical Entities with Linked Open Data for Semantic Literature Querying (2015)
 #author B Sateli, R Witte
-#url http://dl.acm.org/citation.cfm?id=2742022
+#url https://dl.acm.org/citation.cfm?id=2742022
 
-#title Why And Where Wikipedia Is Cited In Journal Articles?
-#author F Tohidinasab, HR Jamali
-#url http://jscires.org/article.asp?issn=2320-0057;year=2013;volume=2;issue=3;spage=231;epage=238;aulast=Tohidinasab
+#title Why Linked Data is Not Enough for Scientists ()
+#author DN Owena, S Sufia, C Goblea
+#url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.383.2714&rep=rep1&type=pdf
 
-#title Wissenschaftliche Dokumente Mit Domänenspezifischen Inhalten
+#title Why and where Wikipedia is cited in journal articles? (2013)
+#author F Tohidinasab, H Jamali
+#url http://go.galegroup.com/ps/i.do?id=GALE%7CA394585293&sid=googleScholar&v=2.1&it=r&linkaccess=fulltext&issn=23216654&p=AONE&sw=w
+
+#title Wiki technologies for semantic publication of old russian charters (2012)
+#author A Varfolomeyev, A Ivanovs
+#url http://www.dh2012.uni-hamburg.de/conference/programme/abstracts/wiki-technologies-for-semantic-publication-of-old-russian-charters.1.html
+
+#title Wissenschaftliche Dokumente mit domänenspezifischen Inhalten: Entwicklung eines allgemeinen Modells für wissenschaftliche Dokumente umgesetzt als … ()
 #author S Hodapp
-#url https://zenodo.org/record/11466/files/S.Hodapp_2014_Masterarbei.pdf
+#url https://www.researchgate.net/profile/Sven_Hodapp/publication/306110313_Wissenschaftliche_Dokumente_mit_domanenspezifischen_Inhalten_Entwicklung_eines_allgemeinen_Modells_fur_wissenschaftliche_Dokumente_umgesetzt_als_browserbasierter_Editor/links/5880d37292851c086bc9c81d/Wissenschaftliche-Dokumente-mit-domaenenspezifischen-Inhalten-Entwicklung-eines-allgemeinen-Modells-fuer-wissenschaftliche-Dokumente-umgesetzt-als-browserbasierter-Editor.pdf
 
-#title Zadarski Slon I Komarac—Polemika Nardina Celineja I Paladija Fuska Iz 1513.
+#title Wohin geht die Reise?–Bibliothekspolitik am Anfang des 21. Jahrhunderts (2017)
+#author E Mittler
+#url https://www.degruyter.com/view/j/bfup.2017.41.issue-2/bfp-2017-0034/bfp-2017-0034.xml
+
+#title Word add-in for ontology recognition: semantic enrichment of scientific literature (2010)
+#author JL Fink, P Fernicola, R Chandran et al.
+#url https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-103
+
+#title XML in der Chemie und die Chemical Markup Language Literaturarbeit im Rahmen des OCII/B-Praktikum Johann Wolfgang Goethe-Universität Frankfurt/M. (2012)
+#author S Habermehl
+#url https://www.researchgate.net/profile/Stefan_Habermehl/publication/272786240_XML_in_der_Chemie_und_die_Chemical_Markup_Language_CML/links/54eddd6b0cf2e55866f18744.pdf
+
+#title Zadarski slon i komarac—polemika Nardina Celineja i Paladija Fuska iz 1513. (2014)
 #author N Jovanović
-#url http://hrcak.srce.hr/index.php?show=clanak&id_clanak_jezik=178035
+#url https://hrcak.srce.hr/index.php?show=clanak&id_clanak_jezik=178035
 
-#title Концептуальна модель наукових інформаційних ресурсів нан україни
+#title communication protocol ()
+#author S Capadisli, A Guy, C Lange, S Auer
+#url https://www.researchgate.net/profile/Soeren_Auer/publication/311767879_Linked_Data_Notifications_a_resource-centric_communication_protocol/links/5859aa0408ae3852d2559bde/Linked-Data-Notifications-a-resource-centric-communication-protocol.pdf
+
+#title eBooks in the cloud: desirable features and current challenges for a cloud-based academic ebook infrastructure (2011)
+#author W Shen, U Koch
+#url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.475.4953&rep=rep1&type=pdf#page=90
+
+#title eScience (2011)
+#author J Zhao, O Corcho, P Missier, K Belhajjame et al.
+#url https://link.springer.com/content/pdf/10.1007/978-3-540-92913-0_17.pdf
+
+#title iLastic: Linked data generation workflow and user interface for iMinds scholarly data (2017)
+#author A Dimou, G Haesendonck, M Vanbrabant et al.
+#url https://biblio.ugent.be/publication/8541508/file/8541512.pdf
+
+#title innovations in peer review [version 1; referees: awaiting peer ()
+#author JP Tennant, JM Dugan, D Graziotin, DC Jacques et al.
+#url http://d-scholarship.pitt.edu/id/document/156022
+
+#title n Matejka ()
+#author T Gross
+#url https://pdfs.semanticscholar.org/ee7c/f2ff9ce48120be8332e8b3271274d17864ff.pdf
+
+#title spatial@ linkedscience–Exploring the research field of GIScience with linked data (2012)
+#author C Keßler, K Janowicz, T Kauppinen
+#url https://link.springer.com/chapter/10.1007/978-3-642-33024-7_8
+
+#title Τεκμηρίωση και οπτικοποίηση ερευνητικών δεδομένων συντήρησης πολιτιστικών μνημείων μέσω οντολογιών (2017)
+#author Ι Σαμικού, I Samikou
+#url http://hypatia.teiath.gr/xmlui/handle/11400/20168
+
+#title Альтернативные подходы к оценке научных результатов (2015)
+#author НА Мазов, ВН Гуреев
+#url http://www.ipgg.sbras.ru/ru/files/publications/ibc/vran-2015-02-115.pdf
+
+#title ББК 32.973. 1 В187 ()
+#author АГ Варфоломеев, АС Иванов
+#url https://www.researchgate.net/profile/Aleksey_Varfolomeyev/publication/292394907_Varfolomeev_A_G_Ivanov_A_S_Komputernoe_istocnikovedenie_semanticeskoe_svazyvanie_informacii_v_reprezentacii_i_kritike_istoriceskih_istocnikov_-_Petrozavodsk_Izd-vo_PetrGU_2013_-_204_s/links/56ae28dc08ae19a38515fda9/Varfolomeev-A-G-Ivanov-A-S-Komputernoe-istocnikovedenie-semanticeskoe-svazyvanie-informacii-v-reprezentacii-i-kritike-istoriceskih-istocnikov-Petrozavodsk-Izd-vo-PetrGU-2013-204-s.pdf
+
+#title Библиометрический анализ как основа формирования библиотечного фонда научных периодических изданий ()
+#author ЯЛ Шрайберг
+#url https://www.researchgate.net/profile/Vadim_Gureyev2/publication/317426778_Bibliometric_analysis_as_a_base_for_forming_a_journal_stock_in_scientific_library/links/593a533ba6fdcc58aea7b767/Bibliometric-analysis-as-a-base-for-forming-a-journal-stock-in-scientific-library.pdf
+
+#title Все на борт! Вперед, к автоматизированной системе научного взаимодействия! ()
+#author К ЛАГОЗЕ
+#url http://download.microsoft.com/documents/rus/devcenter/fourthparadigm/Part%204_4_All%20aboard%20toward%20a%20machine-friendly%20scholarly%20communication%20system_RU.pdf
+
+#title Использование библиометрии для оценки значимости журналов в научных библиотеках (2015)
+#author ВН Гуреев, НА Мазов
+#url http://www.ipgg.sbras.ru/ru/files/publications/ibc/nti-2015-2-8.pdf
+
+#title КОНЦЕПТУАЛЬНА МОДЕЛЬ НАУКОВИХ ІНФОРМАЦІЙНИХ РЕСУРСІВ НАН УКРАЇНИ (2013)
 #author ГЮ Проскудіна, ВА Резніченко
 #url http://jrnl.nau.edu.ua/index.php/IPZ/article/viewFile/6021/6756
 
-#title Концептуальная модель научной публикации
-#author ВА Резниченко, ГЮ Проскудина, ОМ Овдий
-#url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.417.20&rep=rep1&type=pdf
+#title Классификацияи использование семантических связей между информационными объектами в научных электронных библиотеках (2012)
+#author МР Когаловский, СИ Паринов
+#url http://www.mathnet.ru/rus/ia213
 
-#title Концептуальная модель научных информационных ресурсов НАН Украины
+#title Концептуальная модель научной публикации (2012)
+#author ОМ Овдий, ГЮ Проскудина, ВА Резниченко
+#url http://w2.ict.nsc.ru/jspui/bitstream/ICT/1355/1/reznichenro.pdf
+
+#title Концептуальная модель научных информационных ресурсов НАН Украины (2013)
 #author ГЮ Проскудина, ВА Резниченко
 #url http://www.irbis-nbuv.gov.ua/cgi-bin/irbis_nbuv/cgiirbis_64.exe?C21COM=2&I21DBN=UJRN&P21DBN=UJRN&IMAGE_FILE_DOWNLOAD=1&Image_file_name=PDF/Ipz_2013_2_6.pdf
 
-#title Научные коммуникации на базе электронных библиотек с онлайновой декларацией семантических связей
+#title Научные коммуникации в среде семантически обогащаемых электронных библиотек (2015)
 #author МР Когаловский, СИ Паринов
-#url http://ceur-ws.org/Vol-1297/081-89_paper-14.pdf
+#url http://www.ipr-ras.ru/articles/koga-pari15-01.pdf
 
-#title Новый источник данных для наукометрических исследований
+#title Новый источник данных для наукометрических исследований (2013)
 #author МР Когаловский, СИ Паринов
 #url http://ceur-ws.org/Vol-1108/paper4.pdf
 
-#title Онтологическое аннотирование библиографических ссылок в научных публикациях
-#author МР Когаловский
-#url http://www.ipr-ras.ru/articles/kogalov13-05.pdf
+#title Паттерны конструирования показателей научного цитирования (2017)
+#author ПА Калачихин
+#url https://elibrary.ru/item.asp?id=29822980
 
-#title Семантическое структурирование контента научных электронных библиотек на основе онтологий
+#title Пять звезд электронных журнальных статей: подход к оценке статей (2012)
+#author Д ШОТТОН
+#url https://elibrary.ru/item.asp?id=18255441
+
+#title Репрезентация содержания исторических источников в семантических сетях: Attempto Controlled English (ACE) (2012)
+#author АС Иванов, АГ Варфоломеев
+#url https://elibrary.ru/item.asp?id=18917460
+
+#title Связь публикаций и данных: проблемы, тенденции и возможности (2016)
+#author МС МЕЙЕРНИК, Д ФИЛЛИПС et al.
+#url https://elibrary.ru/item.asp?id=26678955
+
+#title Семантические публикации комплексов исторических источников (2010)
+#author АГ Варфоломеев, АС Иванов
+#url https://elibrary.ru/item.asp?id=22399624
+
+#title Семантический подход к организации и управлению личными знаниями ()
+#author АА Бездушный
+#url http://conf58.mipt.ru/static/reports_pdf/1062.pdf
+
+#title Семантическое аннотирование информационных ресурсов в научной электронной библиотеке средствами таксономий ()
 #author МР Когаловский, СИ Паринов
-#url http://www.cemi.rssi.ru/mei/articles/kogalov11-04.pdf
+#url http://ceur-ws.org/Vol-2022/paper47.pdf
 
-#title Технология семантического структурирования контента научных электронных библиотек
+#title Семантическое структурирование контента научных электронных библиотек на основе онтологий (2015)
 #author СИ Паринов, МР Когаловский
-#url http://dspace.nsu.ru:8080/jspui/bitstream/nsu/140/1/Report.6.1.pdf
+#url http://lib.nsu.ru:8081/xmlui/bitstream/handle/nsu/8931/kogalov11-04.pdf?sequence=1
 
-#title Формальная модель научной публикации
-#author ВА Резниченко, ГЮ Проскудина…
-#url http://www.irbis-nbuv.gov.ua/cgi-bin/irbis_nbuv/cgiirbis_64.exe?C21COM=2&I21DBN=UJRN&P21DBN=UJRN&IMAGE_FILE_DOWNLOAD=1&Image_file_name=PDF/Progr_2012_2-3_41.pdf
+#title Технология семантического структурирования контента научных электронных библиотек (2015)
+#author СИ Паринов, МР Когаловский
+#url http://lib.nsu.ru:8081/xmlui/handle/nsu/8914
 
-#title 링크드 데이터 방식을 통한 서지 정보의 확장에 관한 연구
-#author 박지영
-#url http://www.dbpia.co.kr/Journal/ArticleDetail/1663587
+#title Формальная модель научной публикации (2015)
+#author ВА Резниченко, ГЮ Проскудина et al.
+#url http://pp.isofts.kiev.ua/ojs1/article/download/88/87
 
-#title 基于科研人员本体的知识产出自动获取方法与技术研究
-#author 卢利农, 祝忠明, 张旺强, 李慧佳
-#url http://ir.csdl.ac.cn/handle/12502/6529
+#title “Faster, smarter and richer. Reshaping the library catalogue”. La conferenza internazionale FSR in Vaticano (2014)
+#author G Vullo
+#url http://digitalia.sbn.it/article/view/1059
 
-#title 生命科学分野の学術文献情報からなるリンクトデータの構築
-#author 藤原豊史, 松宮遼, 山本泰智
-#url http://hhhuang.homelinux.com/proceedings/Domestic/JSAI%202013/program/pdf/852.pdf
+#title 中国科技期刊语义出版中编辑活动变化趋势 (2016)
+#author 闻丽， 周光睿， 谢荣秀
+#url http://www.cqvip.com/qk/97176x/201612/671053631.html
 
-#title 科研过程知识产出语义关联组织模型构建研究
-#author M Yumeng, Z Zhongming
-#url http://124.16.154.130:8080/lis/CN/article/downloadArticleFile.do?attachType=PDF&id=13492
+#title 从关联科学国际研讨会看关联科学的研究与实践 (2015)
+#author 刘磊， 郭诗云
+#url http://www.cqvip.com/qk/88471x/201509/666267413.html
 
-#title 面向引用关系的引文内容标注框架研究
-#author 陆伟, 孟睿, 刘兴帮
-#url http://ir.whu.edu.cn/wp-content/uploads/2014/10/%E9%9D%A2%E5%90%91%E5%BC%95%E7%94%A8%E5%85%B3%E7%B3%BB%E7%9A%84%E5%BC%95%E6%96%87%E5%86%85%E5%AE%B9%E6%A0%87%E6%B3%A8%E6%A1%86%E6%9E%B6%E7%A0%94%E7%A9%B6_%E9%99%86%E4%BC%9F_%E5%AD%9F%E7%9D%BF_%E5%88%98%E5%85%B4%E5%B8%AE.pdf
+#title 国内外语义出版理论研究述评 (2017)
+#author 苏静， 曾建勋
+#url http://www.airitilibrary.com/Publication/alDetailedMesh?docid=zgkjqkyj201701008
+
+#title 国外书目 RDF 词表的进展与趋势 (2015)
+#author 胡小菁
+#url http://www.libraryjournal.com.cn/CN/abstract/abstract641.shtml
+
+#title 国外科技期刊开放式同行评议中参与者积极性研究 (2015)
+#author 张劼圻
+#url http://www.cqvip.com/qk/96908x/201504/665737708.html
+
+#title 国际科技与医学出版者协会报告 (2015)
+#author M Mabe
+#url http://www.cessp.org.cn/uploads/1/file/public/201607/20160708142914_8mavcf2x3n.pdf
+
+#title 基于 LDA 的科技创新主题语义识别研究 (2015)
+#author 祝娜， 王效岳， 杨京， 白如江
+#url http://www.lis.ac.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=20329
+
+#title 基于 Logistic 回归模型的信息传递意愿影响因素研究 (2013)
+#author 李阳， 朱立涛， 谢阳群
+#url http://www.cqvip.com/qk/95770x/201308/46668200.html
+
+#title 基于 Nanopublication 框架的数字档案资源语义描述研究 (2015)
+#author 吕元智
+#url http://www.cqvip.com/qk/96484x/201503/664685220.html
+
+#title 基于 RelFinder 的图情学科关联数据语义关系发现实践 (2017)
+#author 石泽顺， 肖明
+#url http://www.lis.ac.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=21844
+
+#title 基于关联开放数据的数字文化资源语义融合方法研究——欧洲数字图书馆案例分析 (2016)
+#author 王萍， 黄新平
+#url http://www.lis.ac.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=20994
+
+#title 基于相似网页文本演化的数据溯源 (2016)
+#author 倪静， 孟宪学
+#url http://www.cqvip.com/qk/92987x/201613/669641951.html
+
+#title 基于科研人员本体的知识产出自动获取方法与技术研究 (2014)
+#author 卢利农， 祝忠明， 张旺强， 李慧佳
+#url http://159.226.100.14/handle/12502/6529
+
+#title 基于科研人员本体的知识产出自动获取方法与技术研究结题报告 (2013)
+#author 卢利农
+#url http://ir.nsl.ac.cn/handle/12502/6539
+
+#title 学術文献における引用分類の観点 (2016)
+#author 柴田大輔， 芳鐘冬樹
+#url https://www.jstage.jst.go.jp/article/jsik/26/3/26_2016_031/_article/-char/ja/
+
+#title 実体 「表現形」 優先モデル再論: 特定の実体を優先することの帰結とは何か (2016)
+#author 谷口祥一
+#url http://user.keio.ac.jp/~taniguchi/taniguchi201605.pdf
+
+#title 开放审稿的必要性及可行性探讨 (2014)
+#author 汪挺， 阮星星， 陈小宇， 王静
+#url http://www.cqvip.com/qk/96908x/201401/48618338.html
+
+#title 开放获取期刊的评价与遴选: 质量水平, 开放程度和服务能力 (2013)
+#author 顾立平， 张晓林， 初景利， 李麟， 曾燕
+#url http://www.lis.ac.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=12794
+
+#title 开放获取资源评价模式的研究: 基于单篇论文质量评价 (2015)
+#author 刘菊红， 黄凯文
+#url http://www.cssn.cn/xspj/201608/W020160819499936556753.pdf
+
+#title 开放评议与双盲评议在国际科技期刊质量控制中的价值 (2016)
+#author 常唯， 李自乐， 王成， 郭宸孜， 李耀彪， 马健， 王淑平 et al.
+#url http://www.cqvip.com/qk/97176x/201601/667712320.html
+
+#title 开船了: 走向机器友好的学术信息交流体系 (2012)
+#author 李麟
+#url http://ir.csdl.ac.cn/bitstream/12502/6007/1/%E7%AC%AC%E5%9B%9B%E8%8C%83%E5%BC%8F-%E7%AC%AC%E5%9B%9B%E7%AB%A0%E7%AC%AC%E5%9B%9B%E8%8A%82_split_1.pdf
+
+#title 引文内容分析方法研究综述 (2013)
+#author 祝清松， 冷伏海
+#url http://ir.csdl.ac.cn/bitstream/12502/6627
+
+#title 引文文本分类与实现方法研究综述 (2016)
+#author 王文娟， 马建霞， 陈春， 张凌波
+#url http://www.lis.ac.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=20847
+
+#title 引文类型识别研究进展 (2013)
+#author 祝清松， 冷伏海
+#url http://www.airitilibrary.com/Publication/alDetailedMesh?docid=tsqbzs201306010
+
+#title 引用内容分析与引文著录分析的比较研究 (2017)
+#author 赵蓉英， 王建品
+#url http://www.lis.ac.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=21640
+
+#title 数字出版时代的科学论文综合评价研究 (2014)
+#author 王贤文， 刘趁， 毛文莉
+#url http://www.cqvip.com/qk/97176x/201411/663204418.html
+
+#title 数字环境下的语义出版研究 (2013)
+#author 周杰， 曾建勋
+#url http://www.cqvip.com/qk/95770x/201308/46668199.html
+
+#title 数据密集, 语义, 可视化与互动出版: 全球科技出版发展趋势研究 (2012)
+#author 徐丽芳， 丛挺
+#url http://www.cqvip.com/qk/86642x/201204/42803194.html
+
+#title 数据密集型科学交流研究与发展趋势 (2016)
+#author 黄鑫， 邓仲华
+#url http://www.airitilibrary.com/Publication/alDetailedMesh?docid=sztsglt201605004
+
+#title 新技术环境下 STM 出版发展趋势探析 (2014)
+#author 汪庆， 任慧玲
+#url http://www.cqvip.com/qk/92078a/201409/662551587.html
+
+#title 期刊影响力指标的时间异质性及其重构研究——基于多属性评价的视角 (2016)
+#author 俞立平
+#url http://www.cqvip.com/qk/92987x/201612/669557663.html
+
+#title 期刊评价中两类效用函数合成方法的本质研究 (2014)
+#author 俞立平， 张全
+#url http://www.cqvip.com/qk/95888x/201410/663531957.html
+
+#title 生命科学分野の学術文献情報からなるリンクトデータの構築 (2013)
+#author 藤原豊史， 松宮遼， 山本泰智
+#url https://kaigi.org/jsai/webprogram/2013/pdf/852.pdf
+
+#title 生物医学文献的知识发现与数据整合 (2015)
+#author 康宏宇， 李姣
+#url http://www.cqvip.com/qk/97867b/201502/663873425.html
+
+#title 知识资源的语义表示和出版模式研究——以 Nanopublication 为例 (2013)
+#author 吴思竹， 李峰， 张智雄
+#url http://www.cqvip.com/qk/93480a/201304/46390686.html
+
+#title 科学篇章修辞块本体标准及其应用分析 (2012)
+#author 马雨萌， 祝忠明
+#url http://ir.csdl.ac.cn/bitstream/12502/5654/1/%E7%A7%91%E5%AD%A6%E7%AF%87%E7%AB%A0%E4%BF%AE%E8%BE%9E%E5%9D%97%E6%9C%AC%E4%BD%93%E6%A0%87%E5%87%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90.pdf
+
+#title 科技出版资源组织方式及其创新 (2015)
+#author 李弘
+#url http://www.cqvip.com/qk/72034x/201506/666044138.html
+
+#title 科研过程知识产出语义关联组织模型构建研究 (2013)
+#author 马雨萌， 祝忠明
+#url http://www.lis.ac.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=13492
+
+#title 语义出版: 数字时代科学交流系统新模型 (2012)
+#author 王晓光， 陈孝禹
+#url http://www.cqvip.com/qk/86642x/201204/42803195.html
+
+#title 语义出版应用与研究进展 (2016)
+#author 徐雷
+#url http://manu03.magtech.com.cn:81/Jweb_cbkx/CN/article/downloadArticleFile.do?attachType=PDF&id=475
+
+#title 语义出版物的内容组织架构研究——基于纳米出版物和微型出版物的比较分析 (2017)
+#author 王晓光， 宋宁远
+#url http://manu03.magtech.com.cn:81/Jweb_cbkx/CN/article/downloadArticleFile.do?attachType=PDF&id=670
+
+#title 语义出版的概念与形式 (2011)
+#author 王晓光， 陈孝禹
+#url http://www.cqvip.com/qk/97105x/201111/40183747.html
+
+#title 轻量级书目本体关联数据建设实践 (2015)
+#author 郭振英， 赵文兵， 魏育辉
+#url http://manu44.magtech.com.cn/Jwk_infotech_wk3/CN/abstract/abstract4118.shtml
+
+#title 面向学术文献的语义出版技术研究 (2015)
+#author 李楠， 孙济庆， 马卓
+#url http://manu03.magtech.com.cn:81/Jweb_cbkx/CN/article/downloadArticleFile.do?attachType=PDF&id=401
+
+#title 面向引用关系的引文内容标注框架研究 (2014)
+#author 陆伟， 孟睿， 刘兴帮
+#url http://www.cqvip.com/qk/93480a/201406/662848611.html
+
+#title 面向语义出版的学术期刊数字资源聚合研究 (2016)
+#author 许鑫， 江燕青， 翟姗姗
+#url http://www.lis.ac.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=21156
+
+#title 정보 전달 효율 향상을 위한 학술정보 시각화에 관한 연구 (2015)
+#author 서태설， 조성남
+#url http://dev02.dbpia.co.kr/2/66/33/2663384.pdf?article=3669806
+
+#title 헌법상 경제질서조항에 근거한 경제정책에대한 사법심사 ()
+#author 김종세
+#url http://dev02.dbpia.co.kr/1/82/96/1829627.pdf?article=1663587
 
