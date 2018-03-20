@@ -6,6 +6,10 @@
 #author 박지영
 #url http://dev02.dbpia.co.kr/2/90/37/2903714.pdf?article=3868204
 
+#title 2 novembre 2017 Affiliation: Dipartimento di Informatica-Universita di Bologna Alma Mater Mail Address: Mura Anteo Zamboni, 7-40127 Bologna E-mail: paolo … (2017)
+#author P Ciancarini
+#url http://www.cs.unibo.it/cianca/wwwpages/curr.pdf
+
 #title 2015 Colloquium Booklet Complete Papers (2015)
 #author GR Bown
 #url http://eprints.glos.ac.uk/3485/7/2015%20Colloquium%20Booklet%20Program%20and%20Complete%20Papers%20Proofread.pdf
@@ -62,7 +66,7 @@
 #author D Zeginis, A Hasnain, N Loutas, HF Deus et al.
 #url https://content.iospress.com/articles/semantic-web/sw112
 
-#title A document-inspired way for tracking changes of RDF data ()
+#title A document-inspired way for tracking changes of RDF data
 #author S Peroni, D Shotton, F Vitali
 #url https://pdfs.semanticscholar.org/faec/0ac63ad2cfaf0251111cea3851338f4ec55a.pdf
 
@@ -162,7 +166,7 @@
 #author V Bartalesi, C Meghini, D Metilli et al.
 #url https://academic.oup.com/dsh/advance-article/doi/10.1093/llc/fqy002/4850504
 
-#title A web-based system for connecting undergraduate students and researchers via textbooks for multi-disciplinary, research-oriented education ()
+#title A web-based system for connecting undergraduate students and researchers via textbooks for multi-disciplinary, research-oriented education
 #author SB Kraines, W Guo, T Makino
 #url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.217.8761&rep=rep1&type=pdf
 
@@ -210,7 +214,7 @@
 #author AG Nuzzolese, V Presutti, A Gangemi, S Peroni et al.
 #url https://content.iospress.com/articles/semantic-web/sw222
 
-#title All Aboard: Toward a Machine-Friendly Scholarly Communication System ()
+#title All Aboard: Toward a Machine-Friendly Scholarly Communication System
 #author MF Scholarly
 #url http://www.academia.edu/download/46564252/The_Fourth_Paradigm_Data-Intensive_Scien20160617-24510-1knicnx.pdf#page=227
 
@@ -262,7 +266,7 @@
 #author L Zemmouchi-Ghomari, D Ferhat et al.
 #url http://ieeexplore.ieee.org/abstract/document/7929111/
 
-#title Analisi di riferimenti bibliografici in documenti XML ()
+#title Analisi di riferimenti bibliografici in documenti XML
 #author A Demian
 #url http://amslaurea.unibo.it/id/eprint/6622
 
@@ -286,7 +290,7 @@
 #author AG Castro, LJ García-Castro, A Labarga et al.
 #url https://link.springer.com/chapter/10.1007/978-3-642-03573-9_24
 
-#title Annotating Evidence Based Clinical Guidelines ()
+#title Annotating Evidence Based Clinical Guidelines
 #author AL Ontology
 #url https://pure.uva.nl/ws/files/7587201/163275_paper_13.pdf
 
@@ -342,7 +346,7 @@
 #author SH Ramesh, A Dhar, RR Kumar, V Anjaly et al.
 #url https://link.springer.com/chapter/10.1007/978-3-319-46565-4_21
 
-#title Automating semantic publishing ()
+#title Automating semantic publishing
 #author S Peroni
 #url https://content.iospress.com/articles/data-science/ds012
 
@@ -354,7 +358,7 @@
 #author APAÁB Bence, GAH Gergely, HGMPM András et al.
 #url https://www.researchgate.net/profile/Laszlo_Poppe/publication/279555618_Bioinformatika_molekularis_merestechnikatol_az_orvosi_dontestamogatasig/links/5596cbe808ae99aa62c8c20a/Bioinformatika-molekularis-merestechnikatol-az-orvosi-doentestamogatasig.pdf
 
-#title BM2LOD: PLATFORM FOR PUBLISHING BIBLIOGRAPHIC DATA AS LINKED OPEN DATA ()
+#title BM2LOD: PLATFORM FOR PUBLISHING BIBLIOGRAPHIC DATA AS LINKED OPEN DATA
 #author YH Delgado, LR Álvarez, AL Mederos, MMR García et al.
 #url http://softwaredocumental.org/repositorio/Texto-completo/2014%20-%20Hidalgo-Delgado%20et%20al.%20-%20BM2LOD%20Platform%20for%20publishing%20bibliographic%20data%20as%20linked%20open%20data.pdf
 
@@ -362,7 +366,7 @@
 #author G Hullám, A Gézsi, A Millinghoffer, P Sárközy et al.
 #url https://link.springer.com/protocol/10.1007/978-1-4939-0404-4_14
 
-#title Bex: un ambiente user-friendly per esplorare articoli scientifici e bibliografie ()
+#title Bex: un ambiente user-friendly per esplorare articoli scientifici e bibliografie
 #author R Giannella
 #url http://amslaurea.unibo.it/8306/1/giannella_raffaele_tesi.pdf
 
@@ -398,7 +402,7 @@
 #author A Ullah, I Ullah, S Khusro, S Ali
 #url http://ieeexplore.ieee.org/abstract/document/7866755/
 
-#title Brazil Towards Government 2.0: Strategies for Adopting Open Government Data in National and Subnational Governments Ricardo Matheus Manuella Maia … ()
+#title Brazil Towards Government 2.0: Strategies for Adopting Open Government Data in National and Subnational Governments Ricardo Matheus Manuella Maia …
 #author R MATHEUS
 #url http://getip.net.br/wp-content/uploads/2016/03/11-Brazil-Toward-smart-and-participative-government.pdf
 
@@ -414,7 +418,7 @@
 #author S Peroni, D Shotton, F Vitali
 #url https://link.springer.com/chapter/10.1007/978-3-319-58694-6_23
 
-#title CEUR-WS-LOD ()
+#title CEUR-WS-LOD
 #author M Kolchin, E Cherny, F Kozlov, A Shipilo, L Kovriguina
 #url https://www.researchgate.net/profile/Maxim_Kolchin/publication/306231689_CEUR-WS-LOD_Conversion_of_CEUR-WS_Workshops_to_Linked_Data/links/57ee685d08ae280dd0ad584c/CEUR-WS-LOD-Conversion-of-CEUR-WS-Workshops-to-Linked-Data.pdf
 
@@ -526,7 +530,7 @@
 #author JES SEGUNDO, CS CONEGLIAN, ERO LUCAS
 #url http://www.scielo.br/scielo.php?pid=S0103-37862017000300297&script=sci_arttext&tlng=pt
 
-#title Conceptual Exploration of Documents and Digital Libraries in the Biomedical Domain ()
+#title Conceptual Exploration of Documents and Digital Libraries in the Biomedical Domain
 #author LJG Castro, J Gómez, A Garcia
 #url http://ceur-ws.org/Vol-952/paper_40.pdf
 
@@ -558,7 +562,7 @@
 #author A Dappert, A Farquhar, R Kotarski et al.
 #url https://datascience.codata.org/articles/10.5334/dsj-2017-028/?toggle_hypothesis=on
 
-#title Constitution d'un corpus d'articles scientifiques avec représentation sémantique ()
+#title Constitution d'un corpus d'articles scientifiques avec représentation sémantique
 #author JC Moissinac
 #url https://egc18.sciencesconf.org/data/actesTextMine18.pdf#page=35
 
@@ -598,11 +602,11 @@
 #author J Takis, AQM Islam, C Lange, S Auer
 #url https://dl.acm.org/citation.cfm?id=2814887
 
-#title Customised Visualisations of Linked Open Data ()
+#title Customised Visualisations of Linked Open Data
 #author A Graziosi, A Di Iorio, F Poggi, S Peroni
 #url http://ceur-ws.org/Vol-1947/paper03.pdf
 
-#title DBQuote: A Social Web based System for Collecting and Sharing Wisdom Quotes ()
+#title DBQuote: A Social Web based System for Collecting and Sharing Wisdom Quotes
 #author G Piao, JG Breslin
 #url http://johnbreslin.org/files/publications/20151111_jist2015.pdf
 
@@ -618,7 +622,7 @@
 #author V Bartalesi, C Meghini, D Metilli et al.
 #url https://umanisticadigitale.unibo.it/article/view/7250
 
-#title Das Potential von Open-Source-Software für Bibliotheken in ausgewählten Ländern ()
+#title Das Potential von Open-Source-Software für Bibliotheken in ausgewählten Ländern
 #author S Büttner, H Neuroth
 #url https://opus4.kobv.de/opus4-fhpotsdam/frontdoor/deliver/index/docId/1138/file/Bachelorarbeit_s11199-ohne+adresse.pdf
 
@@ -626,7 +630,7 @@
 #author T Gradl, A Henrich
 #url https://link.springer.com/chapter/10.1007/978-3-319-43997-6_22
 
-#title Data Model for the Swiss Performing Arts Platform ()
+#title Data Model for the Swiss Performing Arts Platform
 #author B Estermann, C Schneeberger
 #url https://datahub.io/dataset/66b679fd-02ad-4fc1-8966-fd0fde7e0f39/resource/e6786d1f-7607-4682-a47e-fc7fd9659aa9/download/spa_data_model_v0-51_20170926.pdf
 
@@ -650,7 +654,7 @@
 #author E Ford
 #url http://www.utpjournals.press/doi/abs/10.3138/jsp.44-4-001
 
-#title Deliverable 300.2 Analysis of Existing Technical Solutions ()
+#title Deliverable 300.2 Analysis of Existing Technical Solutions
 #author S Ventouras, S Callaghan, J Blower, JB Lankester et al.
 #url http://ensembles-eu.metoffice.com/charme/documents/CHARMe_D300.2.pdf
 
@@ -686,7 +690,7 @@
 #author A Eppelin, R Böttcher
 #url https://content.iospress.com/articles/information-services-and-use/isu654
 
-#title Dialogue and linking between TEI and other semantic models ()
+#title Dialogue and linking between TEI and other semantic models
 #author F Tomasi, F Ciotti, M Lana, F Vitali et al.
 #url http://digilab2.let.uniroma1.it/teiconf2013/wp-content/uploads/2013/09/book-abstracts.pdf#page=153
 
@@ -722,11 +726,11 @@
 #author J Purgaj, S Jevšnik
 #url http://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=04925882&AN=87765715&h=doiRTAOi0TcV6SUqjRhwDCU3VYss3wKCf1%2BtcbmElxe6ZY9uhIo2bdrU7xCjGhcV8PiSNzlQ9mTemwol9j91Ug%3D%3D&crl=c
 
-#title Do czego potrzebne są nam ontologie? Charakterystyka funkcjonalna ontologii jako narzędzi reprezentacji wiedzy. ()
+#title Do czego potrzebne są nam ontologie? Charakterystyka funkcjonalna ontologii jako narzędzi reprezentacji wiedzy.
 #author M Roszkowski
 #url https://www.researchgate.net/profile/Marcin_Roszkowski/publication/255685965_Do_czego_potrzebne_sa_nam_ontologie_Charakterystyka_funkcjonalna_ontologii_jako_narzedzi_reprezentacji_wiedzy/links/00b495202907f2200e000000/Do-czego-potrzebne-sa-nam-ontologie-Charakterystyka-funkcjonalna-ontologii-jako-narzedzi-reprezentacji-wiedzy.pdf
 
-#title Docudipity: estensione di un ambiente per esplorare tendenze nella scrittura di articoli scientifici ()
+#title Docudipity: estensione di un ambiente per esplorare tendenze nella scrittura di articoli scientifici
 #author S Bonfante
 #url http://amslaurea.unibo.it/id/eprint/11956
 
@@ -734,7 +738,7 @@
 #author C Huitfeldt, F Vitali, S Peroni
 #url https://www.researchgate.net/profile/Silvio_Peroni/publication/256767147_Documents_as_Timed_Abstract_Objects/links/0c960523c1f10eaaac000000.pdf
 
-#title Dokumentvorlage für Dissertationen u. ä. ()
+#title Dokumentvorlage für Dissertationen u. ä.
 #author I Blümel
 #url https://d-nb.info/1097572625/34
 
@@ -746,7 +750,7 @@
 #author HG Sigarchian, B De Meester, T De Nies, R Verborgh et al.
 #url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.663.8105&rep=rep1&type=pdf#page=6
 
-#title Editorial for the Second Workshop on Mining Scientific Papers: Computational Linguistics and Bibliometrics (CLBib2017) ()
+#title Editorial for the Second Workshop on Mining Scientific Papers: Computational Linguistics and Bibliometrics (CLBib2017)
 #author I Atanassova, M Bertin, P Mayr
 #url http://ceur-ws.org/Vol-2004/editorial-clbib2017.pdf
 
@@ -774,7 +778,7 @@
 #author V Charles, A Isaac
 #url http://test.pro.eanadev.org/files/Europeana_Professional/Publications/EDM_WhitePaper_17062015.pdf
 
-#title Estrazione e annotazione di una rete citazionale da articoli scientifici ()
+#title Estrazione e annotazione di una rete citazionale da articoli scientifici
 #author A De Troia
 #url http://amslaurea.unibo.it/id/eprint/7438
 
@@ -834,7 +838,7 @@
 #author K Coyle
 #url http://www.tandfonline.com/doi/abs/10.1080/01639374.2014.943446
 
-#title Fabrico/Ciência: um ()
+#title Fabrico/Ciência: um
 #author RP da Rocha
 #url http://basessibi.c3sl.ufpr.br/brapci/_repositorio/2015/12/pdf_48a7849566_0000011915.pdf
 
@@ -926,11 +930,11 @@
 #author AG Nuzzolese, AL Gentile, V Presutti et al.
 #url http://ceur-ws.org/Vol-1690/paper56.pdf
 
-#title Generazione di dataset RDF su articoli scientifici e affiliazioni: un approccio modulare basato su DBPedia ()
+#title Generazione di dataset RDF su articoli scientifici e affiliazioni: un approccio modulare basato su DBPedia
 #author R Rossiello
 #url http://amslaurea.unibo.it/id/eprint/8933
 
-#title Genuine semantic publishing ()
+#title Genuine semantic publishing
 #author T Kuhn, M Dumontier
 #url https://content.iospress.com/articles/data-science/ds010
 
@@ -1002,7 +1006,7 @@
 #author R Ahmad, MT Afzal, MA Qadir
 #url https://link.springer.com/chapter/10.1007/978-3-319-46565-4_23
 
-#title Information Retrieval and Semantic Annotation of Scientific Corpora ()
+#title Information Retrieval and Semantic Annotation of Scientific Corpora
 #author I Atanassova
 #url http://infoz.ffzg.hr/infuture/images/INFuture2017_Proceedings.pdf#page=29
 
@@ -1074,7 +1078,7 @@
 #author A Di Iorio, A Gonzalez-Beltran, F Osborne et al.
 #url https://dl.acm.org/citation.cfm?id=2889408
 
-#title Jailbreaking your reference lists: OpenCitations strike again ()
+#title Jailbreaking your reference lists: OpenCitations strike again
 #author S Peroni, D Shotton, F Vitali
 #url https://pdfs.semanticscholar.org/a8f1/304ae4b428f482fa03f2242243b80f3d8c14.pdf
 
@@ -1134,7 +1138,7 @@
 #author L Verlaet, H Dillaerts
 #url https://www.cairn.info/revue-i2d-information-donnees-et-documents-2016-2-page-49.htm
 
-#title LDWPO–A Lightweight Ontology for Linked Data Management ()
+#title LDWPO–A Lightweight Ontology for Linked Data Management
 #author S Rautenberg, I Ermilov, E Marx, S Auer
 #url https://pdfs.semanticscholar.org/919b/8fb4b8400a11fc85675f0db230bf021f24d2.pdf
 
@@ -1146,7 +1150,7 @@
 #author S Rautenberg, I Ermilov, E Marx, S Auer et al.
 #url https://dl.acm.org/citation.cfm?id=2814882
 
-#title La gestione delle relazioni tra soggetto produttore e risorse archivistiche nel semantic web. Un modello ontologico ()
+#title La gestione delle relazioni tra soggetto produttore e risorse archivistiche nel semantic web. Un modello ontologico
 #author M Daquino
 #url http://amslaurea.unibo.it/id/eprint/7064
 
@@ -1182,7 +1186,7 @@
 #author M Daquino, F Tomasi
 #url https://umanisticadigitale.unibo.it/article/view/7195
 
-#title Linked Data e bibliometriche: un indice di multidisciplinarieta nel Semantic Publishing ()
+#title Linked Data e bibliometriche: un indice di multidisciplinarieta nel Semantic Publishing
 #author A Bagnacani
 #url http://amslaurea.unibo.it/id/eprint/6722
 
@@ -1298,11 +1302,11 @@
 #author T Baker, K Coyle, S Petiya
 #url http://www.emeraldinsight.com/doi/abs/10.1108/LHT-08-2014-0081
 
-#title Munnelly, Gary ()
+#title Munnelly, Gary
 #author C Hampson, N Ferro, O Conlan
 #url http://www.dei.unipd.it/~ferro/papers/2013/DH2013.pdf
 
-#title Navigazione di articoli scientifici e citazioni: un ambiente scalabile e flessibile ()
+#title Navigazione di articoli scientifici e citazioni: un ambiente scalabile e flessibile
 #author A Graziosi
 #url http://amslaurea.unibo.it/id/eprint/10889
 
@@ -1350,7 +1354,7 @@
 #author A Nareike, J Schmidt
 #url http://ceur-ws.org/Vol-1695/paper24.pdf
 
-#title On Managing Prefixes For Vocabularies Published in LOD ()
+#title On Managing Prefixes For Vocabularies Published in LOD
 #author GA Atemezing, B Vatant, PY Vanderbussche, R Troncy
 #url http://www.eurecom.fr/~atemezin/iswc2013/rebuttal/review_1_comments.pdf
 
@@ -1366,7 +1370,7 @@
 #author A Loizou, R Angles, P Groth
 #url https://www.sciencedirect.com/science/article/pii/S1570826814001061
 
-#title On the role of thematic roles in a historical event ontology ()
+#title On the role of thematic roles in a historical event ontology
 #author A Goy, D Magro, M Rovera
 #url https://content.iospress.com/articles/applied-ontology/ao192
 
@@ -1406,7 +1410,7 @@
 #author KT Nilsen
 #url http://bora.uib.no/handle/1956/10258
 
-#title Ontology testing based on requirements formalization in collaborative development environments ()
+#title Ontology testing based on requirements formalization in collaborative development environments
 #author A Fernández-Izquierdo
 #url http://ceur-ws.org/Vol-1962/paper_8.pdf
 
@@ -1426,11 +1430,11 @@
 #author E Mittler
 #url https://edoc.hu-berlin.de/handle/18452/19353
 
-#title Open Access–Von der Zugänglichkeit zur Nachnutzung ()
+#title Open Access–Von der Zugänglichkeit zur Nachnutzung
 #author H Pampel
 #url http://www.academia.edu/download/8945943/tagung_digitale_wissenschaft.pdf#page=183
 
-#title Open PHACTS OPS Deliverables D 1.6. Deliver OPS domain vocabularies for version 1 and Phase 2 pilots D 1.7. Deliver OPS Commons vocabularies for ()
+#title Open PHACTS OPS Deliverables D 1.6. Deliver OPS domain vocabularies for version 1 and Phase 2 pilots D 1.7. Deliver OPS Commons vocabularies for
 #author N UM, CD SIB
 #url http://www.openphactsfoundation.org/wp/wp-content/uploads/2015/07/Open-PHACTS-Deliverable-1.7.pdf
 
@@ -1634,7 +1638,7 @@
 #author D Llanes-Padrón, JA Pastor-Sánchez
 #url http://www.emeraldinsight.com/doi/abs/10.1108/PROG-03-2017-0021
 
-#title Reference Extraction using Conditional Random Fields ()
+#title Reference Extraction using Conditional Random Fields
 #author K Zaporojets
 #url https://pdfs.semanticscholar.org/f708/ccbaf099cb544af70a939f593e0d9e8ce4a1.pdf
 
@@ -1650,7 +1654,7 @@
 #author K Moodley
 #url http://search.proquest.com/openview/1e23172d34f0d722eda0fde367fdf2e1/1?pq-origsite=gscholar&cbl=2037364&casa_token=zFGh46L1OJEAAAAA:KDgZdCR81bpHOvawTRC6JVBGZNdNx6DLgpa1Z3MGKviigdUagLNu_mY4sMUlfzklWUODFZM-uw
 
-#title Relations for Research (R4R): A Conceptual Model for Publishing Research Articles, Data, and Code ()
+#title Relations for Research (R4R): A Conceptual Model for Publishing Research Articles, Data, and Code
 #author AWC Huang, TR Chuang
 #url https://www.researchgate.net/profile/Andrea_Huang/publication/260267798_Relations_for_Research_R4R_A_Conceptual_Model_for_Publishing_Research_Articles_Data_and_Code/links/0deec5306d9cc45f23000000/Relations-for-Research-R4R-A-Conceptual-Model-for-Publishing-Research-Articles-Data-and-Code.pdf
 
@@ -1658,7 +1662,7 @@
 #author A Boulal, M Iordanidis, A Quast
 #url http://www.eco4r.org/presentations/POCOS_RememberRestructureReUse_2011.pdf
 
-#title Report on Task force on EDM mappings, refinements and extensions ()
+#title Report on Task force on EDM mappings, refinements and extensions
 #author H Vanstappen, P Bellini, ER Bailly, MR Stein, P Plus et al.
 #url http://pro-beta.europeana.eu/files/Europeana_Professional/EuropeanaTech/EuropeanaTech_taskforces/Mapping_Refinement_Extension/EDM%20%20Mapping%20refinement%20extension%20Report.pdf
 
@@ -1670,7 +1674,7 @@
 #author A Lozano-Tello, J Acedo, Á Prieto
 #url http://ieeexplore.ieee.org/abstract/document/7975764/
 
-#title Representação de Contexto em Acervos Digitais ()
+#title Representação de Contexto em Acervos Digitais
 #author D Mota, NY Kobashi
 #url http://www.iskoiberico.org/wp-content/uploads/2015/11/209_Mota.pdf
 
@@ -1694,7 +1698,7 @@
 #author C Bölling, M Weidlich et al.
 #url https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-S1-S1
 
-#title SOFTWARE ENGINEERING APPROACH FOR DOMAIN ONTOLOGY DEVELOPMENT: A CASE STUDY OF ISLAMIC BANKING PRODUCT ()
+#title SOFTWARE ENGINEERING APPROACH FOR DOMAIN ONTOLOGY DEVELOPMENT: A CASE STUDY OF ISLAMIC BANKING PRODUCT
 #author ASA Latiff, H Haron, M Annamalai
 #url https://www.researchgate.net/profile/Ahmad_Abdul_Latiff/publication/322694491_SOFTWARE_ENGINEERING_APPROACH_FOR_DOMAIN_ONTOLOGY_DEVELOPMENT_A_CASE_STUDY_OF_ISLAMIC_BANKING_PRODUCT/links/5a692df30f7e9b2a828c4e49/SOFTWARE-ENGINEERING-APPROACH-FOR-DOMAIN-ONTOLOGY-DEVELOPMENT-A-CASE-STUDY-OF-ISLAMIC-BANKING-PRODUCT.pdf
 
@@ -1710,7 +1714,7 @@
 #author A Wróblewska, T Podsiadły-Marczykowska et al.
 #url https://link.springer.com/chapter/10.1007/978-3-642-35647-6_21
 
-#title Scholar Metadata and Knowledge Generation with Human plus Artificial Intelligence ()
+#title Scholar Metadata and Knowledge Generation with Human plus Artificial Intelligence
 #author X Liu, L Zhang, C Guo
 #url https://pdfs.semanticscholar.org/899f/7a6cff16d52a9759538f531d40aa74d8b003.pdf
 
@@ -1774,7 +1778,7 @@
 #author S Peroni
 #url https://link.springer.com/chapter/10.1007/978-3-319-04777-5_6
 
-#title Semantic Enrichment of Scientific Documents with Semantic Lenses–Developing methodologies, tools and prototypes for their concrete use ()
+#title Semantic Enrichment of Scientific Documents with Semantic Lenses–Developing methodologies, tools and prototypes for their concrete use
 #author J Zingoni
 #url http://amslaurea.unibo.it/id/eprint/4476
 
@@ -1794,7 +1798,7 @@
 #author G Lodi, L Asprino, AG Nuzzolese, V Presutti et al.
 #url https://link.springer.com/chapter/10.1007/978-3-319-54499-1_1
 
-#title Semantic Web in Enterprise ()
+#title Semantic Web in Enterprise
 #author J Broekstra
 #url http://karlhammar.com/pdfs/coppens2013wasabi.pdf
 
@@ -1810,7 +1814,7 @@
 #author C Lange, A Di Iorio
 #url https://link.springer.com/chapter/10.1007/978-3-319-12024-9_8
 
-#title Semantic publishing: analisi di Linked Open Dataset ()
+#title Semantic publishing: analisi di Linked Open Dataset
 #author R Giorgi
 #url http://amslaurea.unibo.it/id/eprint/7238
 
@@ -1838,7 +1842,7 @@
 #author A Garcia-Castro, A Labarga, L Garcia, O Giraldo et al.
 #url https://www.sciencedirect.com/science/article/pii/S1570826810000223
 
-#title Semantic web based organization of scientific bibliography references ()
+#title Semantic web based organization of scientific bibliography references
 #author V Cvjetkovic, M Djokic
 #url https://www.researchgate.net/profile/Marija_Djokic_Petrovic/publication/281281067_Semantic_Web_based_organization_of_scientific_bibliography_references/links/55e2c9d108ae2fac471f99fb/Semantic-Web-based-organization-of-scientific-bibliography-references.pdf
 
@@ -1858,7 +1862,7 @@
 #author S Peroni
 #url https://books.google.it/books?hl=en&lr=&id=sZ4pBAAAQBAJ&oi=fnd&pg=PR5&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=Ax0e1_liJm&sig=v_iomFm4NbCZfNutEi5plk5-8AU
 
-#title Semantically Linking Humanities Research Articles and Music Artists ()
+#title Semantically Linking Humanities Research Articles and Music Artists
 #author M Mora-McGinity, G Ogilvie, G Fazekas
 #url https://svn.spraakdata.gu.se/kbc/public/web/workshop/papers/8.pdf
 
@@ -1878,7 +1882,7 @@
 #author A Sheeba, A Chandrasekar, P Veerasingam
 #url http://ijcseonline.org/pub_paper/IJCSE-00017.pdf
 
-#title Semantics, Analytics, Visualization ()
+#title Semantics, Analytics, Visualization
 #author A González-Beltrán, F Osborne, S Peroni
 #url https://link.springer.com/content/pdf/10.1007/978-3-319-53637-8.pdf
 
@@ -1890,7 +1894,7 @@
 #author F Ronzano, GC del Bosque, H Saggion
 #url https://link.springer.com/chapter/10.1007/978-3-319-12024-9_10
 
-#title Semantische Metadaten für den Webauftritt einer Bibliothek Semantic metadata for a library website ()
+#title Semantische Metadaten für den Webauftritt einer Bibliothek Semantic metadata for a library website
 #author A Bohne-Lang
 #url https://www.egms.de/static/de/journals/mbi/2017-16/mbi000372.shtml
 
@@ -1938,7 +1942,7 @@
 #author MR Kogalovsky, SI Parinov
 #url https://link.springer.com/article/10.1134/S0361768814060139
 
-#title Special issue on alternative metrics ()
+#title Special issue on alternative metrics
 #author VP Guerrero-Bote, F Moya-Anegón
 #url http://www.gilsonvolpato.com.br/pdf/Research_Trends_Issue_37%20-%20ALTMETRICS.pdf
 
@@ -1946,7 +1950,7 @@
 #author MA Rezk, MH Aliyu, H Bensta, A Ojo
 #url https://link.springer.com/chapter/10.1007/978-3-319-65151-4_42
 
-#title Stretching the boundaries of publishing: The Open Web Platform and the alternatives ()
+#title Stretching the boundaries of publishing: The Open Web Platform and the alternatives
 #author N Constantinescu
 #url https://www.ceeol.com/content-files/document-586752.pdf
 
@@ -1978,11 +1982,11 @@
 #author GG Chowdhury
 #url https://books.google.it/books?hl=en&lr=&id=RXsWDgAAQBAJ&oi=fnd&pg=PA57&ots=eHPcVc_bLn&sig=61mNLy3uzEB8cJBegYXjZbVsxcA
 
-#title TECHNICAL SPECIFICATION ()
+#title TECHNICAL SPECIFICATION
 #author E Dröge, J Iwanowa, KE UMA, S Hennicke, KB EL
 #url https://it-dev.mpiwg-berlin.mpg.de/svn/ismi-richfaces/docs/dm2e/DM2E_Model_V1.1_Specification.pdf
 
-#title TEI Conference 2013 ()
+#title TEI Conference 2013
 #author M Beißwenger, L Lemnitzer
 #url http://digilab2.let.uniroma1.it/teiconf2013/panelsround-tables/abstracts-panel/
 
@@ -2018,7 +2022,7 @@
 #author F Ciotti, M Daquino, F Tomasi
 #url https://link.springer.com/chapter/10.1007/978-3-319-41938-1_5
 
-#title Text S1 Technical implementation of the semantic enhancements applied to Reis et al.(2008) Impact of environment and social gradient on Leptospira infection … ()
+#title Text S1 Technical implementation of the semantic enhancements applied to Reis et al.(2008) Impact of environment and social gradient on Leptospira infection …
 #author D Shotton, K Portwin
 #url http://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1000361.s001&type=supplementary
 
@@ -2050,7 +2054,7 @@
 #author D Shotton
 #url https://www.researchgate.net/profile/David_Shotton2/publication/266089112_The_Five_Stars_of_Online_Journal_Articles_-_an_article_evaluation_framework/links/59eb7863aca272cddddef898/The-Five-Stars-of-Online-Journal-Articles-an-article-evaluation-framework.pdf
 
-#title The Full Mont (olog) y: Using Ontologies to Optimize the CS ()
+#title The Full Mont (olog) y: Using Ontologies to Optimize the CS
 #author K Dahlgren
 #url http://tinytocs.ece.utexas.edu/papers/tinytocs4_paper_dahlgren.pdf
 
@@ -2058,7 +2062,7 @@
 #author P Hitzler
 #url https://books.google.it/books?hl=en&lr=&id=9hChDQAAQBAJ&oi=fnd&pg=PA299&dq=%22sparontologies.net%22+OR+%22purl.org/spar%22+OR+%22purl.org/cerif%22+OR+%22w3id.org/spar%22&ots=mcCxVqa6CU&sig=9lx5hRy8tURFfTvLWJSeqA7MBPk
 
-#title The Linked TEI: Text Encoding in the Web ()
+#title The Linked TEI: Text Encoding in the Web
 #author M Beißwenger, L Lemnitzer
 #url http://www.tei-c.org/Vault/MembersMeetings/2013/panelsround-tables/abstracts-panel/
 
@@ -2110,7 +2114,7 @@
 #author C Tang
 #url https://books.google.it/books?hl=en&lr=&id=y4ogCwAAQBAJ&oi=fnd&pg=PR19&ots=BzKkY46ptu&sig=S8axzGQPEBTaJjS2NeQk5GsLqZQ
 
-#title The deconstruction of the scientific article ()
+#title The deconstruction of the scientific article
 #author AK Weilenmann
 #url https://www.researchgate.net/profile/Anne-Katharina_Weilenmann/publication/264672720_The_deconstruction_of_the_scientific_article/links/53eab1300cf2fb1b9b6ac948/The-deconstruction-of-the-scientific-article.pdf
 
@@ -2142,7 +2146,7 @@
 #author M Ware, M Mabe
 #url http://www.stm-assoc.org/2015_02_20_STM_Report_2015.pdf
 
-#title Thoughtful Artificial Intelligence: Forging A New Partnership for Data Science and Scientific ()
+#title Thoughtful Artificial Intelligence: Forging A New Partnership for Data Science and Scientific
 #author Y Gil
 #url https://datasciencehub.net/system/files/ds-paper-509.pdf
 
@@ -2158,7 +2162,7 @@
 #author S Peroni, D Shotton, F Vitali
 #url https://www.igi-global.com/article/content/77823
 
-#title Topic Modeling for Linked Open Vocabularies ()
+#title Topic Modeling for Linked Open Vocabularies
 #author D Vila-Suero, J Gracia, A Gómez-Pérez
 #url https://pdfs.semanticscholar.org/690c/1883c482e5b0e566e50e6292021d90e88197.pdf
 
@@ -2186,11 +2190,11 @@
 #author S Fathalla, S Vahdati, S Auer, C Lange
 #url https://link.springer.com/chapter/10.1007/978-3-319-67008-9_25
 
-#title Towards a Knowledge Graph for a Research Group with Focus on Qualitative Analysis of Scholarly Papers ()
+#title Towards a Knowledge Graph for a Research Group with Focus on Qualitative Analysis of Scholarly Papers
 #author VG Meister
 #url https://pdfs.semanticscholar.org/6138/96d9a5ff8d5e2f50d9adf11ee69c1ae8a3bf.pdf
 
-#title Towards a Linked Open Dataset for Scholarly Publishing: Semantic Lancet Project ()
+#title Towards a Linked Open Dataset for Scholarly Publishing: Semantic Lancet Project
 #author A Bagnacani, P Ciancarini, A Di Iorio, A Giovanni et al.
 #url https://pdfs.semanticscholar.org/d5af/628eb0ed0e5fdb4da176c7561e5b3645914b.pdf
 
@@ -2254,7 +2258,7 @@
 #author S Peroni, M Palmirani, F Vitali
 #url https://link.springer.com/chapter/10.1007/978-3-319-68204-4_18
 
-#title Un approccio per la disambiguazione di autori di articoli scientifici: algoritmo e implementazione ()
+#title Un approccio per la disambiguazione di autori di articoli scientifici: algoritmo e implementazione
 #author L Montecchiari
 #url http://amslaurea.unibo.it/id/eprint/8370
 
@@ -2262,7 +2266,7 @@
 #author H De Ribaupierre, G Falquet
 #url https://hal.archives-ouvertes.fr/hal-01015226/
 
-#title Un'esperienza di rappresentazione di dati di cataloghi digitali in Linked Open Data: il caso della Fondazione Zeri ()
+#title Un'esperienza di rappresentazione di dati di cataloghi digitali in Linked Open Data: il caso della Fondazione Zeri
 #author CM Gonano
 #url http://amslaurea.unibo.it/id/eprint/7257
 
@@ -2278,7 +2282,7 @@
 #author JW Seo, H Chung, J Yun, JY Park, E Park, Y Ahn
 #url http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0155843
 
-#title Using Data Mining on Linked Data ()
+#title Using Data Mining on Linked Data
 #author Y GÜLTEPE
 #url http://www.academia.edu/download/42680731/GAU_Journal.pdf#page=155
 
@@ -2290,7 +2294,7 @@
 #author M Romanello, M Pasin
 #url https://infoscience.epfl.ch/record/232930
 
-#title Using Nonexperts for Annotating Pharmacokinetic Drug-Drug Interaction Mentions in Product Labeling: A Feasibility Study ()
+#title Using Nonexperts for Annotating Pharmacokinetic Drug-Drug Interaction Mentions in Product Labeling: A Feasibility Study
 #author RD Boyce
 #url https://pdfs.semanticscholar.org/c249/069bf055645615e571bd98725e8fa56da600.pdf
 
@@ -2330,7 +2334,7 @@
 #author TK Attwood, DB Kell, P McDermott, J Marsh et al.
 #url https://academic.oup.com/bioinformatics/article-abstract/26/18/i568/206102
 
-#title ViBRANT ()
+#title ViBRANT
 #author D King
 #url http://core.ac.uk/download/pdf/17172974.pdf
 
@@ -2374,7 +2378,7 @@
 #author B Sateli, R Witte
 #url https://dl.acm.org/citation.cfm?id=2742022
 
-#title Why Linked Data is Not Enough for Scientists ()
+#title Why Linked Data is Not Enough for Scientists
 #author DN Owena, S Sufia, C Goblea
 #url http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.383.2714&rep=rep1&type=pdf
 
@@ -2386,7 +2390,7 @@
 #author A Varfolomeyev, A Ivanovs
 #url http://www.dh2012.uni-hamburg.de/conference/programme/abstracts/wiki-technologies-for-semantic-publication-of-old-russian-charters.1.html
 
-#title Wissenschaftliche Dokumente mit domänenspezifischen Inhalten: Entwicklung eines allgemeinen Modells für wissenschaftliche Dokumente umgesetzt als … ()
+#title Wissenschaftliche Dokumente mit domänenspezifischen Inhalten: Entwicklung eines allgemeinen Modells für wissenschaftliche Dokumente umgesetzt als …
 #author S Hodapp
 #url https://www.researchgate.net/profile/Sven_Hodapp/publication/306110313_Wissenschaftliche_Dokumente_mit_domanenspezifischen_Inhalten_Entwicklung_eines_allgemeinen_Modells_fur_wissenschaftliche_Dokumente_umgesetzt_als_browserbasierter_Editor/links/5880d37292851c086bc9c81d/Wissenschaftliche-Dokumente-mit-domaenenspezifischen-Inhalten-Entwicklung-eines-allgemeinen-Modells-fuer-wissenschaftliche-Dokumente-umgesetzt-als-browserbasierter-Editor.pdf
 
@@ -2406,7 +2410,7 @@
 #author N Jovanović
 #url https://hrcak.srce.hr/index.php?show=clanak&id_clanak_jezik=178035
 
-#title communication protocol ()
+#title communication protocol
 #author S Capadisli, A Guy, C Lange, S Auer
 #url https://www.researchgate.net/profile/Soeren_Auer/publication/311767879_Linked_Data_Notifications_a_resource-centric_communication_protocol/links/5859aa0408ae3852d2559bde/Linked-Data-Notifications-a-resource-centric-communication-protocol.pdf
 
@@ -2422,11 +2426,11 @@
 #author A Dimou, G Haesendonck, M Vanbrabant et al.
 #url https://biblio.ugent.be/publication/8541508/file/8541512.pdf
 
-#title innovations in peer review [version 1; referees: awaiting peer ()
+#title innovations in peer review [version 1; referees: awaiting peer
 #author JP Tennant, JM Dugan, D Graziotin, DC Jacques et al.
 #url http://d-scholarship.pitt.edu/id/document/156022
 
-#title n Matejka ()
+#title n Matejka
 #author T Gross
 #url https://pdfs.semanticscholar.org/ee7c/f2ff9ce48120be8332e8b3271274d17864ff.pdf
 
@@ -2442,15 +2446,15 @@
 #author НА Мазов, ВН Гуреев
 #url http://www.ipgg.sbras.ru/ru/files/publications/ibc/vran-2015-02-115.pdf
 
-#title ББК 32.973. 1 В187 ()
+#title ББК 32.973. 1 В187
 #author АГ Варфоломеев, АС Иванов
 #url https://www.researchgate.net/profile/Aleksey_Varfolomeyev/publication/292394907_Varfolomeev_A_G_Ivanov_A_S_Komputernoe_istocnikovedenie_semanticeskoe_svazyvanie_informacii_v_reprezentacii_i_kritike_istoriceskih_istocnikov_-_Petrozavodsk_Izd-vo_PetrGU_2013_-_204_s/links/56ae28dc08ae19a38515fda9/Varfolomeev-A-G-Ivanov-A-S-Komputernoe-istocnikovedenie-semanticeskoe-svazyvanie-informacii-v-reprezentacii-i-kritike-istoriceskih-istocnikov-Petrozavodsk-Izd-vo-PetrGU-2013-204-s.pdf
 
-#title Библиометрический анализ как основа формирования библиотечного фонда научных периодических изданий ()
+#title Библиометрический анализ как основа формирования библиотечного фонда научных периодических изданий
 #author ЯЛ Шрайберг
 #url https://www.researchgate.net/profile/Vadim_Gureyev2/publication/317426778_Bibliometric_analysis_as_a_base_for_forming_a_journal_stock_in_scientific_library/links/593a533ba6fdcc58aea7b767/Bibliometric-analysis-as-a-base-for-forming-a-journal-stock-in-scientific-library.pdf
 
-#title Все на борт! Вперед, к автоматизированной системе научного взаимодействия! ()
+#title Все на борт! Вперед, к автоматизированной системе научного взаимодействия!
 #author К ЛАГОЗЕ
 #url http://download.microsoft.com/documents/rus/devcenter/fourthparadigm/Part%204_4_All%20aboard%20toward%20a%20machine-friendly%20scholarly%20communication%20system_RU.pdf
 
@@ -2502,11 +2506,11 @@
 #author АГ Варфоломеев, АС Иванов
 #url https://elibrary.ru/item.asp?id=22399624
 
-#title Семантический подход к организации и управлению личными знаниями ()
+#title Семантический подход к организации и управлению личными знаниями
 #author АА Бездушный
 #url http://conf58.mipt.ru/static/reports_pdf/1062.pdf
 
-#title Семантическое аннотирование информационных ресурсов в научной электронной библиотеке средствами таксономий ()
+#title Семантическое аннотирование информационных ресурсов в научной электронной библиотеке средствами таксономий
 #author МР Когаловский, СИ Паринов
 #url http://ceur-ws.org/Vol-2022/paper47.pdf
 
@@ -2714,7 +2718,7 @@
 #author 서태설， 조성남
 #url http://dev02.dbpia.co.kr/2/66/33/2663384.pdf?article=3669806
 
-#title 헌법상 경제질서조항에 근거한 경제정책에대한 사법심사 ()
+#title 헌법상 경제질서조항에 근거한 경제정책에대한 사법심사
 #author 김종세
 #url http://dev02.dbpia.co.kr/1/82/96/1829627.pdf?article=1663587
 
