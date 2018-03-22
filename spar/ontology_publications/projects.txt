@@ -148,3 +148,8 @@
 #name United Nations System Document Ontology (UNDO)
 #url https://w3id.org/un/ontology/undo
 #description The United Nations System Document Ontology (UNDO) provides a framework for the formal description of all entities and the relations that can exist among them in UN Documents. The idea behind the development of this model is to have a mechanism for sharing data about documents and their content in RDF format and, eventually, extended by the various agencies of the United Nations to meet their own domain specific requirements.
+
+#id culturalon
+#name Cultural-ON
+#url http://dati.beniculturali.it/cultural-ON/ENG.html
+#description This ontology models cultural institutes or sites and other contextual information, such as the agents that play a specific role on cultural institutes or sites, the sites themselves, the contact points, all multimedia files which describe the cultural institute or site and any other information useful to the public in order to access the institute or site. It reuses (via alignement) several entities defined in external ontologies, including SPAR Ontologies such as [PRO](/ontologies/pro).
