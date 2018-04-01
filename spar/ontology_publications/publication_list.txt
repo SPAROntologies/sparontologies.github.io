@@ -1,10 +1,17 @@
-#bibref Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (201). The Document Components Ontology (DoCO). In Semantic Web – Interoperability, Usability, Applicability, 7 (2): 167-181. Amsterdam, The Netherlands: IOS Press. https://doi.org/10.3233/SW-150177
+#bibref Peroni, S., Shotton, D. (2018). The SPAR Ontologies. Submitted to the 17th International Semantic Web Conference. https://w3id.org/spar/article/spar-iswc2018/
+
+#main spar
+
+#description This article is the first to present a bird-eye view of the whole suite of [SPAR Ontologies](/ontologies), and will be used from now on as the canonical way for citing the SPAR Ontologies.
+
+
+#bibref Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web – Interoperability, Usability, Applicability, 7 (2): 167-181. Amsterdam, The Netherlands: IOS Press. https://doi.org/10.3233/SW-150177
 
 #scholar 8900270310245937917
 
 #main doco, deo
 
-#description This journal article introduces [DoCO](/ontoloties/doco) and [DEO](/ontologies/deo) with details about the main part of their classes, and several examples of use.
+#description This journal article introduces [DoCO](/ontologies/doco) and [DEO](/ontologies/deo) with details about the main part of their classes, and several examples of use.
 
 
 #bibref Di Iorio, A., Peroni, S., Poggi, F., Vitali, F., Shotton, D. (2013). Recognising document components in XML-based academic articles. In Proceedings of the 2013 ACM symposium on Document Engineering (DocEng 2013): 181-184. New York, New York, USA: ACM. https://doi.org/10.1145/2494266.2494319
@@ -77,7 +84,7 @@
 
 #scholar 12327521260690259537
 
-#main spar
+#secondary spar
 
 #oa http://speroni.web.cs.unibo.it/publications/peroni-2014-semantic-publishing-referencing.pdf
 
