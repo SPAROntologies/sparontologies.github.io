@@ -1,0 +1,677 @@
+﻿@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cito: <http://purl.org/spar/cito/>.
+@prefix doco: <http://purl.org/spar/doco/>.
+@prefix fabio: <http://purl.org/spar/fabio/>.
+@prefix pro: <http://purl.org/spar/pro/>.
+@prefix pso: <http://purl.org/spar/pso/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+@prefix talis: <http://schemas.talis.com/2005/address/schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+## This document has filename BIBO2SPAR.ttl, is written as validated RDF in Turtle format (http://www.w3.org/TeamSubmission/turtle/), and is available from http://sempublishing.svn.sourceforge.net/viewvc/sempublishing/SPAR/BIBO2SPAR.ttl.
+
+## This document lists, in alphabetized sections, a SKOS mapping between all classes, object properties and data properties from BIBO, the Bibliographic Ontology (version 1.3, undated, downloaded from http://purl.org/ontology/bibo/) and 
+
+## terms from some of the SPAR (Semantic Publishing and Referencing) Ontologies (http://purl.org/spar/), specifically:
+
+# FaBiO, the FRBR-aligned Bibliographic Ontology (version 1.1, dated 23-06-2011, downloadable from http://purl.org/spar/fabio/),
+
+# CiTO, the Citation Typing Ontology (version 2.0, dated 05-05-2011, downloadable from http://purl.org/spar/cito/),
+
+# DoCO, the Document Components Ontology (version 1.0, dated 05-05-2011, downloadable from http://purl.org/spar/doco/), and
+
+# PRO, the Publication Roles Ontology (version 1.2, dated 05-05-2011, downloadable from http://purl.org/spar/pro/),
+
+# PSO, the Publication Status Ontology (version 1.1, dated 05-05-2011, downloadable from http://purl.org/spar/pso/),
+
+# and relevant terms in FRBR (http://purl.org/spar/frbr/), PRISM (http://prismstandard.org/namespaces/basic/2.0/), FOAF (http://xmlns.com/foaf/0.1/), SKOS (http://www.w3.org/2004/02/skos/) and Dublin Core Metadata Terms (http://purl.org/dc/terms/).
+
+## Most of the classes in FaBiO are arranged according to the FRBR data model into fabio:Works (69 sub-classes), fabio:Expressions (92 sub-classes), fabio:Manifestations (10 sub-classes) and fabio:Items (4 sub-classes).  38 of the BIBO classes are sub-classes of bibo:Document, which corresponds to fabio:Expression.
+
+## In the following mappings, the BIBO class or property name is given on the left of each line, followed by the SKOS mapping relationship and the equivalent class or property name used in the SPAR ontologies, e.g. "bibo:AudioDocument            skos:exactMatch            fabio:AudioDocument ."
+
+## Note that, because of the ambiguity and multiplicity of meanings of the word “document”, FaBiO intentionally lacks the class fabio:Document, using instead the generic term fabio:Expression and more specific sub-classes.  In contrast, BIBO classifies things as diverse as films, slideshows and web pages as sub-classes of bibo:Document.
+
+## Note that BIBO contains classes that describe social events, such as bibo:Interview and bibo:Performance, and that describe specific legal documents such as bibo:LegalDecision and bibo:Legislation. These have no equivalents in the SPAR Ontologies.
+
+## This mapping document has been prepared by and is copyright © David Shotton, University of Oxford, and Silvio Peroni, University of Bologna, 23 June 2011.  
+
+## Contact <david.shotton@zoo.ox.ac.uk> or <speroni@cs.unibo.it> for further information.
+
+## This mapping document is published as open data under a Creative Commons 2.5 attribution license.
+
+<http://sempublishing.svn.sourceforge.net/viewvc/sempublishing/SPAR/BIBO2SPAR.ttl> 
+	dcterms:creator 
+		  [ a foaf:Person ; foaf:name "David Shotton" 
+    		; foaf:mbox <mailto:david.shotton@zoo.ox.ac.uk> ] 
+		, [ a foaf:Person ; foaf:name "Silvio Peroni" 
+			; foaf:mbox <mailto:speroni@cs.unibo.it> ]
+	; rdf:type fabio:ComputerFile # item
+	; frbr:exemplarOf [ a fabio:DigitalManifestation # manifestation
+		; dcterms:format <http://purl.org/NET/mediatypes/text/turtle>
+		; prism:publicationDate "2011-06-23"^^xsd:date 
+		; frbr:embodimentOf [ a fabio:VocabularyMappingDocument # expression
+			; dcterms:license <http://creativecommons.org/licenses/by/2.5/> 
+			; frbr:realizationOf [ a fabio:VocabularyMapping ] ] ] # work
+	; dc:subject 
+		  <http://purl.org/ontology/bibo/> 
+		, <http://purl.org/spar/fabio/>
+		, <http://purl.org/spar/cito/>
+		, <http://purl.org/spar/doco/>
+		, <http://purl.org/spar/pro/>
+		, <http://purl.org/spar/pso/>
+		, <http://purl.org/spar/frbr/>
+		, <http://prismstandard.org/namespaces/basic/2.0/>
+		, <http://xmlns.com/foaf/0.1/>
+		, <http://www.w3.org/2004/02/skos/>
+		, <http://purl.org/dc/terms/> .
+
+
+### SECTION ONE – BIBO CLASSES (start) ####################
+
+## This section lists in alphabetical order all 68 classes in BIBO to classes in FaBiO, DoCO and PSO, and where appropriate also to classes in dcterms, FRBR and FOAF.  
+
+## Note: In the mapping entry for the class bibo:Document, sub-classes of fabio:Expression are only shown immediately following the entry for fabio:Expression if they are not shown elsewhere in this document as more direct mappings of sub-classes of bibo:Document.
+
+
+bibo:AcademicArticle          skos:narrowMatch           fabio:JournalArticle ,
+                                                         fabio:ConferencePaper .
+
+bibo:Article                  skos:exactMatch            fabio:Article ;
+                              skos:narrowMatch           fabio:MagazineArticle ,
+                                                         fabio:NewspaperArticle ,
+                                                         fabio:ReviewArticle .
+
+bibo:AudioDocument            skos:exactMatch            fabio:AudioDocument .
+
+bibo:AudioVisualDocument      skos:narrowMatch           fabio:Movie .
+bibo:Bill                     skos:broadMatch            fabio:Endeavour .
+
+bibo:Book                     skos:exactMatch            fabio:Book  ;
+                              skos:narrowMatch           fabio:Diary , 
+                                                         fabio:LaboratoryNotebook , 
+                                                         fabio:Notebook , 
+                                                         fabio:Textbook .
+
+bibo:BookSection              skos:broadMatch            fabio:Document ,
+                                                         doco:Section ,
+                                                         doco:Chapter.
+# bibo:BookSection                                       See Note 1.1 
+
+## Note 1.1: Component parts and rhetorical elements of documents are covered in DoCO, the Document Components Ontology.
+
+bibo:Brief                    skos:relatedMatch          frbr:LegalWork .
+
+bibo:Chapter                  skos:exactMatch            fabio:BookChapter ;
+                              skos:broadMatch            fabio:Chapter ,
+                                                         doco:Chapter .
+
+bibo:Code                     skos:relatedMatch          frbr:LegalWork .
+
+bibo:CollectedDocument        skos:broadMatch            fabio:ExpressionCollection ;
+                              skos:narrowMatch           fabio:Anthology ,
+                                                         fabio:CollectedWorks ,
+                                                         fabio:CompleteWorks .
+# bibo:CollectedDocument                                 See Note 1.2
+
+bibo:Collection               skos:relatedMatch          fabio:ExpressionCollection .
+# bibo:Collection                                        See Note 1.2
+
+## Note 1.2:  The classes bibo:CollectedDocument ("A document that simultaneously contains other documents") and bibo:Collection ("A collection of Documents or Collections") seem at first glance to be very similar, but while the former is a sub-class of bibo:Document, the latter is not, but rather represents a collection which is not itself a document, for example a book series or a library.
+
+# bibo:Conference             No equivalent class
+
+bibo:CourtReporter            skos:relatedMatch          frbr:LegalWork .
+
+bibo:Document                 skos:exactMatch            foaf:Document ;
+                              skos:broadMatch            fabio:Expression ;
+                              skos:narrowMatch           fabio:Abstract ,
+                                                         fabio:ApplicationProgrammingInterface ,
+                                                         fabio:BlogPost ,
+                                                         fabio:CaseForSupportDocument ,
+                                                         fabio:ComputerApplication ,
+                                                         fabio:ComputerProgram ,
+                                                         fabio:ConferencePoster ,
+                                                         fabio:Cover ,
+                                                         fabio:Database ,
+                                                         fabio:DatabaseManagementSystem ,
+                                                         fabio:DataFile ,
+                                                         fabio:DataRepository ,
+                                                         fabio:Directory ,
+                                                         fabio:DocumentRepository ,
+                                                         fabio:DustJacket ,
+                                                         fabio:Editorial ,
+                                                         fabio:GrantApplicationDocument ,
+                                                         fabio:Index ,
+                                                         fabio:JournalEditorial ,
+                                                         fabio:JournalNewsItem ,
+                                                         fabio:JournalVolume ,
+                                                         fabio:LectureNotes ,
+                                                         fabio:MagazineEditorial ,
+                                                         fabio:MagazineNewsItem ,
+                                                         fabio:MetadataDocument ,
+                                                         fabio:NewsItem ,
+                                                         fabio:NewspaperEditorial ,
+                                                         fabio:NewspaperNewsItem ,
+                                                         fabio:OntologyDocument ,
+                                                         fabio:PatentApplicationDocument ,
+                                                         fabio:PeriodicalItem ,
+                                                         fabio:PeriodicalVolume ,
+                                                         fabio:Postprint ,
+                                                         fabio:Preprint ,
+                                                         fabio:PressRelease ,
+                                                         fabio:ProjectPlan ,
+                                                         fabio:Proof ,
+                                                         fabio:RelationalDatabase ,
+                                                         fabio:Repository ,
+                                                         fabio:Script ,
+                                                         fabio:Spreadsheet ,
+                                                         fabio:SupplementaryInformationFile ,
+                                                         fabio:Table ,
+                                                         fabio:Triplestore ,
+                                                         fabio:VocabularyDocument ,
+                                                         fabio:VocabularyMappingDocument ,
+                                                         fabio:WebArchive ,
+                                                         fabio:WebContent ,
+                                                         fabio:WikiEntry . 
+
+bibo:DocumentPart             skos:narrowMatch           fabio:Excerpt ; 
+                              skos:broadMatch            doco:Part .
+# bibo:DocumentPart                                      See Note 1.3 
+
+## Note 1.3: Document parts are fully covered in DoCO, the Document Components Ontology
+
+bibo:DocumentStatus           skos:exactMatch            pso:Status .
+
+bibo:EditedBook               skos:broadMatch            fabio:Book .
+
+bibo:Email                    skos:exactMath             fabio:Email .
+
+# bibo:Event                  No equivalent class
+
+bibo:Excerpt                  skos:exactMatch            fabio:Excerpt .
+
+bibo:Film                     skos:exactMatch            fabio:Film .
+
+# bibo:Hearing                No equivalent class 
+
+bibo:Image                    skos:exactMatch            foaf:Image ,
+                                                         fabio:Figure .
+
+# bibo:Interview              No equivalent class
+
+bibo:Issue                    skos:exactMatch            fabio:PeriodicalIssue  ;
+                              skos:narrowMatch           fabio:JournalIssue ,
+                                                         fabio:MagazineIssue ,
+                                                         fabio:NewspaperIssue .
+
+bibo:Journal                  skos:exactMatch            fabio:Journal .
+
+bibo:LegalCaseDocument        skos:broadMatch            frbr:LegalWork .
+
+bibo:LegalDecision            skos:broadMatch            frbr:LegalWork .
+
+bibo:LegalDocument            skos:broadMatch            frbr:LegalWork .
+
+bibo:Legislation              skos:broadMatch            frbr:LegalWork .
+
+bibo:Letter                   skos:exactMatch            fabio:Letter .
+
+bibo:Magazine                 skos:exactMatch            fabio:Magazine .
+
+bibo:Manual                   skos:exactMatch            fabio:InstructionManual .
+
+bibo:Manuscript               skos:exactMatch            fabio:Manuscript .
+
+bibo:Map                      skos:broadMatch            fabio:Figure ;
+                              skos:broadMatch            	
+                              [ a owl:Class ;
+                                  owl:intersectionOf ( fabio:Expression
+                                  [ a owl:Restriction ;
+                                      owl:onProperty frbr:realizationOf ;
+                                      owl:someValuesFrom fabio:StillImage ] ) ] .
+# bibo:Map                                               see Note 1.4
+
+## Note 1.4: This set of triples asserts that a bibo:Map is an exact match to a fabio:Expression that is the realization of a fabio:StillImage, a sub-class of fabio:Work that includes maps.
+
+bibo:MultiVolumeBook          skos:broadMatch            fabio:ExpressionCollection .
+
+bibo:Newspaper                skos:exactMatch            fabio:Newspaper .
+
+bibo:Note                     skos:broadMatch            fabio:Comment .
+
+bibo:Patent                   skos:exactMatch            fabio:PatentDocument .
+
+# bibo:Performance            No equivalent class
+
+bibo:Periodical               skos:exactMatch            fabio:Periodical .
+
+# bibo:PersonalCommunication  No equivalent class        See Note 1.5
+
+## Note 1.5: In FaBiO, fabio:PersonalCommunication is an expression of the information that has been personally communicated, related to bibo:PersonalCommunicationDocument, and is not the **event** of communication itself. 
+
+bibo:PersonalCommunicationDocument  skos:broadMatch      fabio:PersonalCommunication .
+
+bibo:Proceedings              skos:exactMatch            fabio:ConferenceProceedings .
+
+bibo:Quote                    skos:exactMatch            fabio:Quotation .
+
+bibo:ReferenceSource          skos:exactMatch            	
+                              [ a owl:Class ;
+                                  owl:intersectionOf ( fabio:Expression
+                                  [ a owl:Restriction ;
+                                      owl:onProperty frbr:realizationOf ;
+                                      owl:someValuesFrom fabio:ReferenceWork ] ) ] .
+# bibo:ReferenceSource                                   see Note 1.6
+
+## Note 1.6: This set of triples asserts that a bibo:ReferenceSource is an exact match to a fabio:Expression that is the realization of a fabio:ReferenceWork, a sub-class of fabio:Work.
+
+bibo:Report                   skos:exactMatch            fabio:ReportDocument ;
+                              skos:narrowMatch           fabio:ProjectReportDocument ,
+                                                         fabio:WhitePaper .
+
+bibo:Series                   skos:narrowMatch           fabio:BookSeries .
+
+bibo:Slide                    skos:broadMatch            fabio:Figure .
+
+bibo:Slideshow                skos:exactMatch            fabio:Presentation .
+
+bibo:Standard                 skos:exactMatch
+                              [ a owl:Class ;
+                                  owl:intersectionOf (fabio:Expression
+                                  [ a owl:Restriction; 
+                                      owl:onProperty frbr:realizationOf ;
+                                      owl:someValuesFrom fabio:TechnicalStandard ] ) ] .
+# bibo:Standard                                          see Note 1.7
+
+## Note 1.7: This set of triples asserts that a bibo:Standard is an exact match to a fabio:Expression that is the realization of a fabio:TechnicalStandard, a sub-class of fabio:Specification, itself a sub-class of fabio:Work.
+
+bibo:Statute                  skos:broadMatch            frbr:LegalWork .
+
+bibo:Thesis                   skos:exactMatch            fabio:Thesis ;
+                              skos:narrowMatch           fabio:BachelorsThesis ,
+                                                         fabio:MastersThesis ,
+                                                         fabio:DoctoralThesis .
+
+# bibo:ThesisDegree           No equivalent class        See Note 1.8
+
+## Note 1.8: The subclasses of fabio:Thesis (fabio:BachelorsThesis, fabio:MastersThesis and fabio:PhDThesis) provide descriptions equivalent to those provided by the individual members of the class bibo:ThesisDegree.
+
+bibo:WebPage                  skos:exactMatch            
+                              [ a owl:Class ;
+                                  owl:intersectionOf (fabio:Expression
+                                  [ a owl:Restriction; 
+                                      owl:onProperty frbr:embodiment ;
+                                      owl:someValuesFrom fabio:WebPage ] ) ] .
+# bibo:WebPage                                           See note 1.9       
+
+## Note 1.9: This set of triples asserts that a bibo:WebPage is an exact match to a fabio:Expression that is embodied in a fabio:WebPage, a sub-class of fabio:WebManifestation, itself a sub-class of fabio:Manifestation.
+
+bibo:Website                  skos:exactMatch
+                              [ a owl:Class ;
+                                  owl:intersectionOf (fabio:Expression
+                                  [ a owl:Restriction; 
+                                      owl:onProperty frbr:embodiment ;
+                                      owl:someValuesFrom fabio:WebSite ] ) ] .
+# bibo:WebSite                                           See note 1.10       
+
+## Note 1.10: This set of triples asserts that a bibo:WebSite is an exact match to a fabio:Expression that is embodied in a fabio:WebSite, a sub-class of fabio:WebManifestation, itself a sub-class of fabio:Manifestation.
+
+# bibo:Workshop               No equivalent class
+
+# c4dm:Event                  No equivalent class
+
+dcterms:Agent                 skos:exactMatch            foaf:Agent ,  
+                                                         frbr:ResponsibleEntity ; 
+                              skos:narrowMatch           frbr:Person ,
+                                                         frbr:CorporateBody .
+
+foaf:Organization             skos:exactMatch            frbr:CorporateBody ;  
+                              skos:broadMatch            dcterms:Agent ,
+                                                         frbr:ResponsibleEntity .
+# foaf:Organization                                      See Note 1.11
+
+foaf:Person                   skos:exactMatch            frbr:Person ;
+                              skos:broadMatch            dcterms:Agent ,
+                                                         frbr:ResponsibleEntity .
+# foaf:Person                                            See Note 1.11
+
+## Note 1.11: In the FOAF specification, foaf:organization and foaf:Person as sub-classes of foaf:Agent.  However, in BIBO these classes lack this sub-classing, and are presented as unrelated to foaf:Agent.
+
+# rdf:List                    No equivalent class        See Note 1.12
+
+# rdf:Seq                     No equivalent class        See Note 1.12
+
+# rdfs:Resource               No equivalent class        See Note 1.12
+
+## Note 1.12: The RDF resources rdf:List, rdf:Seq and rdfs:Resource cannot be included in OWL2 DL as proper classes.
+
+#################### SECTION ONE – BIBO CLASSES (end) #####
+
+
+
+### SECTION 2: BIBO OBJECT PROPERTIES (start)  ####################
+
+## This section lists in alphabetical order all 52 object properties in BIBO to object properties in FaBiO, CiTO and PSO, and where appropriate also to object properties in dcterms and FRBR.  
+
+bibo:affirmedBy               skos:broadMatch             cito:obtainsSupportFrom .
+# bibo:affirmedBy                                         See Note 2.1
+	
+## Note 2.1:  bibo:affirmedBy has domain and range restrictions to bibo:LegalDecision, while  cito:obtainsSupportFrom has no domain and range restrictions.
+
+# bibo:annotates              No equivalent property      Related to FaBiO class fabio:Comment
+
+# bibo:authorList             sub-property of bibo:contributorList  See Note 2.3
+
+bibo:citedBy                  skos:broaderMatch           cito:citedBy .	
+# bibo:citedBy                                            See Note 2.2
+
+bibo:cites                    skos:broaderMatch           cito:cites .
+# bibo:cites                                              See Note 2.2
+
+## Note 2.2: CiTO, the Citation Typing Ontology, has 32 sub-properties of cito:cites and 32 sub-properties of its inverse property cito:isCitedBy, which can be used to characterise the nature of citations.  These are not shown in this mapping document.  The domain and range of bibo:cites and bibo:citedBy are restricted to bibo:document, while the domain and range of cito:cites and cito:isCitedBy are intentionally left unrestricted, so that these properties and their sub-properties can be used in a wide range of circumstances.
+
+# bibo:contributorList            	                    See Note 2.3		
+
+# bibo:editorList             sub-property of bibo:contributorList  See Note 2.3
+
+## Note 2.3: bibo:authorList, bibo:contributorList and bibo:editorList all have as their range the RDF resources rdf:List or rdf:Seq.  Those cannot be included in OWL2 DL as proper classes. To handle lists of this kind, FaBiO used instead the Collections Ontology - http://purl.org/co
+
+# bibo:court                  No equivalent property in the SPAR ontologies
+
+# bibo:degree                 No equivalent property in the SPAR ontologies      See Note 2.4
+
+## Note 2.4: There is no equivalent property to bibo:degree. In FaBiO, theses for different academic degrees are specified by subclasses of fabio:Thesis, namely fabio:BachelorsThesis, fabio:MastersThesis and fabio:DoctoralThesis.
+
+bibo:director                 skos:broadMatch            frbr:responsibleEntity .
+
+bibo:distributor              skos:broadMatch            frbr:responsibleEntity .
+
+bibo:editor                   skos:broadMatch            frbr:responsibleEntity .
+# bibo:editor                                            See Note 2.5
+
+## Note 2.5:  PRO, the Publishing Roles Ontology, has pro:editor as a named individual member of the class pro:Role, indicating that a person may hold the role of editor for a defined period of time.  The duration of this role can be defined using the object properties pro:holdsRoleInTime and pro:withRole, and the classes pro:RoleInTime and pro:Role, as illustrated at http://sempublishing.svn.sourceforge.net/viewvc/sempublishing/PRO/pro.png.
+
+bibo:interviewee              skos:broadMatch            frbr:responsibleEntity .
+
+bibo:interviewer              skos:broadMatch            frbr:responsibleEntity .
+
+bibo:issuer                   skos:broadMatch            frbr:responsibleEntity .
+
+bibo:organizer                skos:broadMatch            frbr:responsibleEntity .		
+
+bibo:owner                    skos:closeMatch            frbr:owner .
+# bibo:owner                                             See Note 2.6
+
+## Note 2.6: bibo:owner is related to frbr:owner, but while bibo:owner is applied to documents (i.e. FRBR expressions), frbr:owner is applied, as specified in the FRBR specification, to individual FRBR items.  This is because a member of the public may own a particular copy of "Alice's Adventures in Wonderland" by Lewis Carroll, but can never own the publisher's expression of the work that Lewis Carroll wrote.
+
+bibo:performer                skos:broadMatch            frbr:responsibleEntity .
+
+# bibo:presentedAt            No equivalent property	 in the SPAR ontologies
+
+# bibo:presents               No equivalent property	 in the SPAR ontologies
+
+bibo:producer 	              skos:closeMatch             frbr:producer .
+# bibo:producer                                          See Note 2.7
+
+## Note 2.7: The domain of bibo:producer is bibo:Collection or bibo:Document (which in FRBR terms are Expressions), but the domain of frbr:producer, as specified in the FRBR specification, is frbr:manifestation.  
+
+bibo:recipient	               skos:broadMatch            frbr:responsibleEntity .	
+
+bibo:reproducedIn             skos:exactMatch            frbr:reproduction .
+
+# bibo:reversedBy             No equivalent property in the SPAR ontologies
+		
+bibo:reviewOf                 skos:closeMatch            cito:reviews .
+
+bibo:status                   skos:closeMatch            pso:withStatus .
+# bibo:status                                            See Note 2.8
+
+## Note 2.8: In PSO, the Publishing Status Ontology, the status assigned to a document (e.g. pso:under-review) is acknowledged to be time-dependent.  The duration of a status can be defined using the object properties pso:holdsStatusInTime and pso:withStatus, and the classes pso:StatusInTime and pso:Status, as illustrated at http://sempublishing.svn.sourceforge.net/viewvc/sempublishing/PSO/pso.png.
+
+# bibo:subsequentLegalDecision  No equivalent property in the SPAR ontologies
+
+# bibo:transcriptOf             No equivalent property in the SPAR ontologies
+
+bibo:translationOf              skos:exactMatch          frbr:translationOf .
+
+bibo:translator                 skos:broadMatch          frbr:responsibleEntity .
+
+dcterms:contributor             skos:broadMatch          frbr:responsibleEntity .
+
+dcterms:format                  skos:exactMatch          dcterms:format .
+# dcterms:format                                         See note 2.9
+
+dcterms:hasPart                 skos:exactMatch          frbr:part .
+
+dcterms:isPartOf                skos:exactMatch          frbr:partOf .
+
+dcterms:isReferencedBy          skos:closeMatch          cito:isCitedBy .
+
+dcterms:isVersionOf             skos:broadMatch          frbr:relatedEndeavour .
+
+dcterms:language                skos:exactMatch          dcterms:language .
+# dcterms:language                                       See note 2.9
+
+dcterms:publisher               skos:exactMatch          dcterms:publisher .
+# dcterms:publisher                                      See note 2.9
+
+# dcterms:relation              Not used in the SPAR	 ontologies
+
+dcterms:rights                  skos:exactMatch          dcterms:rights .
+# dcterms:rights                                         See note 2.9
+
+## Note 2.9: dcterms:format, dcterms:language, dcterms:publisher and dcterms:rights are used in both BIBO and FaBiO:
+
+dcterms:subject                 skos:narrowMatch         frbr:subject ;
+                                skos:narrowMatch         fabio:hasSubjectTerm ;
+                                skos:narrowMatch         fabio:hasDiscipline .
+# dcterms:subject                                        See Note 2.10
+
+## Note 2.10: dcterms:subject is a broader term than the others, since frbr:subject has a domain restriction to frbr:Work; fabio:hasSubjectTerm has a domain restriction to frbr:Endeavour and a range restriction to fabio:SubjectTerm, which is a term from a fabio:ControlledVocabulary; and fabio:hasDiscipline has a domain restriction to frbr:Endeavour and a range restriction to fabio:SubjectDiscipline, identifying the discipline to which a fabio:ControlledVocabulary belongs.
+
+dcterms:title 	                  skos:closeMatch         dcterms:title ;
+                                 skos:narrowMatch        fabio:hasShortTitle .
+# dcterms:title                                          See Note 2.11
+
+## Note 2.11: The "dcterms:title" property is used both in BIBO and in FaBiO.  However, in BIBO "dcterms:title" is specified as an object property, even though the Max Planck Digital Library specification of how to use DCMI Metadata as linked data (http://colab.mpdl.mpg.de/mediawiki/PublishingMetadata) states it should be used only with literal values, i.e. as a data property. In FaBiO, "dcterms:title" is used as a data property, with the range "string", for use with literal values.  For this reason, these terms are not an exact match.
+
+## The following 6 object properties from the Centre for Digital Music's Event Ontology (purl.org/net/c4dm/event.owl) that relates to social events, and that are used in BIBO, have no equivalent in FaBiO:
+
+# event:agent                   No equivalent property in the SPAR ontologies
+
+# event:place                   No equivalent property in the SPAR ontologies
+
+# event:producedIn              No equivalent property in the SPAR ontologies
+
+# event:product                 No equivalent property in the SPAR ontologies
+
+# event:sub-event               No equivalent property in the SPAR ontologies
+
+# event:time                    No equivalent property in the SPAR ontologies
+
+# foaf:based_near               Not used in the SPAR ontologies
+
+# foaf:depiction                Not used in the SPAR ontologies
+
+# foaf:homepage                 Not used in the SPAR ontologies
+
+# rdf:value                     Not used in the SPAR ontologies  See Note 2.12
+
+## Note 2.12: The RDF resource rdf:value cannot be included in OWL2 DL as a proper property.
+
+#################### OBJECT PROPERTIES (end) #####
+
+
+
+
+### SECTION 3 - BIBO DATA PROPERTIES (start) ####################
+
+## This section lists in alphabetical order all 45 data properties in BIBO to the FaBiO, PRISM and dcterms data properties used in FaBiO.  
+
+# bibo:abstract               No equivalent property in FaBiO.  FaBiO has class fabio:Abstract.
+
+bibo:argued                   skos:broadMatch            dcterms:date .
+
+bibo:asin                     skos:broadMatch            dcterms:identifier .
+
+bibo:chapter  	               skos:broadMatch            fabio:hasNumber . 
+# bibo:chapter                                           See Note 3.1
+
+## Note 3.1:  bibo:chapter is specific, having domain bibo:BookSection.  The data property fabio:hasNumber is broader, having domain frbr:Endeavour, and thus can be used to specify the number of any work within a particular context, for example the number of a book in a book series, of a chapter in a document, or of a volume in a journal.
+
+bibo:coden                    skos:broadMatch            dcterms:identifier .
+
+# bibo:content                No equivalent property in FaBiO   See Note 3.2
+	
+## Note 3.2: Note in BIBO: bibo:content has been deprecated in favour of rdf:value.  However, the RDF resource rdf:value cannot be included in OWL2 DL as a data property. 
+
+bibo:doi                      skos:exactMatch            prism:doi ;
+                              skos:broadMatch            dcterms:identifier .
+
+bibo:eanucc13                 skos:broadMatch            dcterms:identifier .
+
+bibo:edition                  skos:exactMatch            prism:edition .
+
+bibo:eissn                    skos:exactMatch            prism:eIssn ;
+                              skos:broadMatch            dcterms:identifier.
+
+bibo:gtin14                   skos:broadMatch            dcterms:identifier .
+
+bibo:handle                   skos:exactMatch            fabio:hasHandle ;
+                              skos:broadMatch            dcterms:identifier. 
+
+bibo:identifier               skos:exactMatch            dcterms:identifier ;
+                              skos:narrowMatch           fabio:hasArticleIdentifier ,
+                                                         fabio:hasHandle ,
+                                                         fabio:hasNationalLibraryOfMedicineJournalId ,
+                                                         fabio:hasNumber ,
+                                                         fabio:hasPubMedCentralId ,
+                                                         fabio:hasPubMedId ,
+                                                         fabio:hasSICI ,
+                                                         fabio:hasURL ,
+                                                         prism:doi ,
+                                                         prism:edition ,
+                                                         prism:eIssn ,
+                                                         prism:isbn ,
+                                                         prism:issn ,
+                                                         prism:issueIdentifier ,
+                                                         prism:versionIdentifier ,
+                                                         prism:volume .
+
+bibo:isbn                     skos:exactMatch            prism:isbn ;
+                              skos:broadMatch            dcterms:identifier . 
+
+bibo:isbn10                   skos:broadMatch            prism:isbn ; 
+                              skos:broadMatch            dcterms:identifier . 
+
+bibo:isbn13                   skos:broadMatch            prism:isbn ;
+                              skos:broadMatch            dcterms:identifier . 
+
+bibo:issn                     skos:exactMatch            prism:issn ;
+                              skos:broadMatch            dcterms:identifier . 
+
+bibo:issue                    skos:exactMatch            prism:issueIdentifier ;
+                              skos:broadMatch            dcterms:identifier . 
+
+bibo:lccn                     skos:broadMatch            dcterms:identifier .
+
+bibo:locator                  skos:exactMatch            prism:number .
+
+bibo:number                   skos:exactMatch            fabio:hasNumber ;
+                              skos:relatedMatch          fabio:hasCharacterCount ,
+                                                         fabio:hasWordCount .
+
+bibo:numPages                 skos:exactMatch            fabio:hasPageCount .  
+
+bibo:numVolumes               skos:exactMatch            fabio:hasVolumeCount .  
+
+bibo:oclcnum                  skos:broadMatch            dcterms:identifier .
+
+bibo:pageEnd                  skos:exactMatch            prism:endingPage .
+
+bibo:pageStart                skos:exactMatch            prism:startingPage .
+
+bibo:pages                    skos:exactMatch            prism:pageRange ;
+                              skos:relatedMatch          fabio:hasPageCount ,
+                                                         prism:startingPage ,
+                                                         prism:endingPage .
+
+bibo:pmid                     skos:exactMatch            fabio:hasPubMedId ;
+                              skos:broadMatch            dcterms:identifier .
+
+# bibo:prefixName             No equivalent property in FaBiO.  See Note 3.3  
+
+bibo:section                  skos:exactMatch            prism:section . 
+
+bibo:shortDescription         skos:relatedMatch          prism:keyword .
+
+bibo:shortTitle               skos:exactMatch            fabio:hasShortTitle ;
+                              skos:broadMatch            dcterms:Title ;
+                              skos:relatedMatch          fabio:hasSubtitle .
+
+bibo:sici                     skos:exactMatch            fabio:hasSici ;
+                              skos:broadMatch            dcterms:identifier . 
+
+# bibo:suffixName             No equivalent property in FaBiO.  See Note 3.3
+
+## Note 3.3:  FaBiO does not handle personal names.  PRO, the Publishing Roles Ontology imports FOAF terms to do so – see Note 3.4.
+
+bibo:upc                      skos:broadMatch            dcterms:identifier .
+
+bibo:uri                      skos:narrowMatch           fabio:hasURL ;
+                              skos:broadMatch            dcterms:identifier .
+
+bibo:volume                   skos:exactMatch            prism:volume ;
+                              skos:broadMatch            dcterms:identifier .
+
+dcterms:created               skos:exactMatch            dcterms:created ; 
+                              skos:broadMatch            dcterms:date .
+
+dcterms:date                  skos:exactMatch            dcterms:date ;
+                              skos:narrowMatch           dcterms:created ,
+                                                         dcterms:dateCopyrighted ,
+                                                         dcterms:dateSubmitted ,
+                                                         dcterms:issued ,
+                                                         dcterms:modified ,
+                                                         dcterms:valid ,
+                                                         fabio:dateAccepted ,
+                                                         fabio:hasAccessDate ,
+                                                         fabio:hasCopyrightYear ,
+                                                         fabio:hasDepositDate ,
+                                                         fabio:hasEmbargoDate ,
+                                                         fabio:hasPublicationYear ,
+                                                         prism:publicationDate .
+
+# dcterms:description 		No equivalent property in FaBiO  
+
+dcterms:issued                skos:exactMatch            dcterms:issued ;
+                              skos:broadMatch            dcterms:date ;
+                              skos:narrowMatch           fabio:hasPublicationYear ,
+                                                         prism:publicationDate .
+
+# foaf:familyName             No equivalent property in FaBiO  See Note 3.4
+
+# foaf:givenName              No equivalent property in FaBiO  See Note 3.4
+
+# foaf:name                   No equivalent property in FaBiO  See Note 3.4
+
+##    Note 3.4: These same FOAF data properties are used to name individuals in PRO, the Publishing Roles Ontology, but are not used in FaBiO, which does not describe individuals.
+
+# talis:localityName          No equivalent property in FaBiO  
+
+#################### DATA PROPERTIES (end) #####
+
+
+
+
+
