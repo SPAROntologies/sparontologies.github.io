@@ -1,3 +1,4 @@
 #!/bin/bash
-ps -ef | grep "[p]ython spar.py" | awk '{print $2}' | xargs kill
+
+/etc/init.d/lighttpd stop
 exit 0
