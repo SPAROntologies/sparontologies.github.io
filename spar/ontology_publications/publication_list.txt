@@ -1,4 +1,4 @@
-#bibref Peroni, S., Shotton, D. (2018). The SPAR Ontologies. Submitted to the 17th International Semantic Web Conference. https://w3id.org/spar/article/spar-iswc2018/
+#bibref Peroni, S., Shotton, D. (2018). The SPAR Ontologies. To appear in Proceedings of the 17th International Semantic Web Conference. https://w3id.org/spar/article/spar-iswc2018/
 
 #main spar
 
