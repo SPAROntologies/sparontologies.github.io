@@ -1,3 +1,4 @@
 *.pyc
 sparontologies_log.txt
 nohup.out
+private/

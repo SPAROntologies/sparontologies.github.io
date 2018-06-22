@@ -29,7 +29,9 @@ The *Citation Counting and Context Characterization Ontology* (*C4O*) has been d
 
 * class ``c4o:InTextReferencePointerList`` - a list containing (through the chain co:item and co:itemContent) only in-text reference pointers denoting the specific bibliographic references to which the list pertains (property c4o:pertains). Such a list cannot contain more than one item containing the same in-text reference pointer;
 
-* class ``c4o:SingleReferencePointerList`` - defined as subclass of the previous class, it is an in-text reference pointer list that pertains to exactly one bibliographic reference;
+* class ``c4o:SingleReferencePointerList`` - defined as subclass of ``c4o:InTextReferencePointerList``, it is an in-text reference pointer list that pertains to exactly one bibliographic reference;
+
+* class ``c4o:SingleReferencePointerList`` - defined as subclass of ``c4o:InTextReferencePointerList``, it is an in-text reference pointer list that pertains to all the in-text reference pointers to two or more references occurring at a single location in the text of the citing work;
 
 * class ``c4o:GlobalCitationCount`` - the number of times a work has been cited globally (property ``c4o:hasGlobalCountValue``), as determined from a particular bibliographic information source (property ``c4o:hasGlobalCountSource``) on a particular date (property ``c4o:hasGlobalCountDate``).
 
