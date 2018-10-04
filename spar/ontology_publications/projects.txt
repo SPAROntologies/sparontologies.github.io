@@ -26,8 +26,8 @@
 
 #id dokieli
 #name Dokieli
-#url http://dokie.li/
-#description *Dokieli* is a general purpose client-side application for [document authoring, publication and interaction](http://csarven.ca/dokieli), which allows users to enable its capabilities according to their needs and technical resources. The editor is built on open Web standards and the documents are compliant with Linked Data best practices.
+#url https://dokie.li/
+#description *Dokieli* is a general purpose client-side application for [document authoring, publication and interaction](http://csarven.ca/dokieli-rww), which allows users to enable its capabilities according to their needs and technical resources. The editor is built on open Web standards and the documents are compliant with Linked Data best practices.
 
 #id w3c-duv
 #name Data on the Web Best Practices: Dataset Usage Vocabulary
