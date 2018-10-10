@@ -1,0 +1,47 @@
+#id rev_1
+
+#title Describing a workshop review. 
+
+#description [FR](/ontologies/fr) is used to describe a workshop review. More precisely the example represents the instantiation of the model for an existing review issued for the SemSci2017 workshop. The original review is [available](https://semsci.github.io/semSci2017/openReview/Paper2Reviews.txt) as plain text online.
+
+
+#code @prefix fr: <http://purl.org/spar/fr/> .
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+
+###  https://w3id.org/fr/resource/paper/1
+<https://w3id.org/fr/resource/paper/1> rdf:type fabio:ConferencePaper ;
+                                     fabio:hasURL "http://ceur-ws.org/Vol-1931/paper-01.pdf"^^xsd:anyURI .
+
+
+###  https://w3id.org/fr/resource/pid/1
+<https://w3id.org/fr/resource/pid/1> rdf:type <http://purl.org/spar/datacite/PersonalIdentifier> ;
+                                     <http://purl.org/spar/datacite/usesIdentifierScheme> <http://purl.org/spar/datacite/orcid> ;
+                                     <http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> "0000-0001-8296-8629" .
+
+###  https://w3id.org/fr/resource/review/1
+<https://w3id.org/fr/resource/review/1> a fabio:Review ;
+    frbr:realization <https://w3id.org/fr/resource/rev/1> .
+
+###  https://w3id.org/fr/resource/rev/1
+<https://w3id.org/fr/resource/rev/1> rdf:type fr:ReviewVersion ;
+                                     frbr:creator <http://w3id.org/people/idafensp> ;
+                                     terms:language <http://www.lexvo.org/page/iso639-3/eng> ;
+                                     terms:license <https://creativecommons.org/licenses/by-sa/4.0> ;
+                                     fr:hasRating bido:SA-SR-BL-WACC ;
+                                     fr:hasReviewerConfidence bido:ACL-1-5-ACL4 ;
+                                     cito:reviews <https://w3id.org/fr/resource/paper/1> ;
+                                     fr:issuedAt <https://easychair.org> ;
+                                     fr:issuedFor <https://semsci.github.io/semSci2017> ;
+                                     fr:releasedBy <https://semsci.github.io/semSci2017> ;
+                                     terms:issued "2017-08-22"^^xsd:date ;
+                                     c4o:hasContent """The paper introduces SMS, a platform for for data integration in the context of STI. The paper is general well written, proposing an interesting contribution as well as sufficient evidences, in the form of pointers to online resources, to support its claims. 
+
+It is not clear though which is the research question being targeted in this paper. The paper elaborates on the features of the SMS platform, including its models and its applications, but lacks to provide insights on the novelty of the approach and how it compares to others. 
+
+Also, authors could consider adding some narrative to section 3, or even better, try to include those use cases as part of the descriptions of the SMS platform along section 2.
+
+As a minor comment, the abstract and the first paragraph of section 1 are almost identical. Authors should consider removing or rephrasing them."""^^rdfs:Literal .
+º
