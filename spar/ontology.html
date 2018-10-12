@@ -119,11 +119,12 @@ $def with (title, pages, name, acronym, url, documentation, repository, descript
                 </h4>
                 <p class="desc">$example["description"]</p>
                 <pre><code>$example["code"]</code></pre>
-                <div class="cite bg-info">
-                    <p><strong>Please cite the source above with the following reference:</strong></p>
-                    <span>$example["cite"]</span>
-                </p>
-            </div>
+                $if "cite" in example:
+                    <div class="cite bg-info">
+                        <p><strong>Please cite the source above with the following reference:</strong></p>
+                        <span>$example["cite"]</span>
+                        </p>
+                    </div>
       </div>
 
       <hr class="featurette-divider" />

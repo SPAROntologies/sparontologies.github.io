@@ -6,9 +6,8 @@
 
 #source https://sparontologies.github.io/fr/current/fr.owl
 
-#documentation http://purl.org/spar/fr.html  >>>>CHECK THIS<<<<
+#documentation http://purl.org/spar/fr.html
 
 #repository https://github.com/sparontologies/fr
 
 #description The FAIR* Reviews Ontology (FR) defines a set of classes, properties and axioms, for describing research reviews as semantic objects, reusing standard existing vocabularies using ontology engineering techniques.
-
