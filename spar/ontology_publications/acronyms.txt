@@ -9,3 +9,4 @@
 #pwo PWO: Publishing Workflow Ontology
 #bido BiDO: Bibliometric Data Ontology
 #fivestars Five*: Five Stars of Online Research Articles Ontology 
+#fr FR: FAIR* Reviews Ontology
