@@ -1,3 +1,8 @@
+#id scholarmarkdown
+#name ScholarMarkdown
+#url https://github.com/rubensworks/ScholarMarkdown
+#description ScholarMarkdown is Ruby gem for writing scholarly articles in Markdown/HTML, so as they can be viewed in your browser with rich HTML annotations, and they can be printed to PDF into traditional scientific templates via your browser. It uses several SPAR Ontologies for marking up the various part of scholarly documents - [several examples](https://github.com/rubensworks/ScholarMarkdown/wiki/Examples) are available in the GitHub repository of the tool.
+
 #id pandocscholar
 #name Pandoc Scholar
 #url https://pandoc-scholar.github.io/
@@ -17,7 +22,6 @@
 #name Zeri&LODE
 #url http://data.fondazionezeri.unibo.it/
 #description The Zeri&LODE project released the Zeri Photo Archive Linked Open Data dataset, which describes about 19,000 artworks of Renaissance Art (15th-16th centuries) and more than 30,000 photographs depicting such works are accurately described by means of like 11 million of RDF statements. The datamodel used for describing these data is strongly based on the SPAR Ontologies, in particular FaBiO, PRO, and CiTO.
-
 
 #id wikidata
 #name Wikidata
