@@ -1,7 +1,7 @@
 #id scholarmarkdown
 #name ScholarMarkdown
 #url https://github.com/rubensworks/ScholarMarkdown
-#description ScholarMarkdown is Ruby gem for writing scholarly articles in Markdown/HTML, so as they can be viewed in your browser with rich HTML annotations, and they can be printed to PDF into traditional scientific templates via your browser. It uses several SPAR Ontologies for marking up the various part of scholarly documents - [several examples](https://github.com/rubensworks/ScholarMarkdown/wiki/Examples) are available in the GitHub repository of the tool.
+#description ScholarMarkdown is a framework for writing scholarly articles in the easy-to-use Markdown syntax, where articles can be compiled live to HTML and PDF. Articles are automatically annotated with RDFa using several SPAR ontologies, such as CiTO.
 
 #id pandocscholar
 #name Pandoc Scholar
