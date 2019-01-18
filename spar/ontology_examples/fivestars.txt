@@ -4,12 +4,12 @@
 
 #description The [Five Stars of Online Journal Articles Ontology](/ontologies/fivestars) allows to encode ratings machine-readable form according to five different criteria, i.e., peer review, open access, enhanced content, available datasets, and machine-readable metadata. This example shows the Five Stars ratings for the following article (from which the example is extracted):
 
-<p class="cite bg-info">Shotton, D. (2012). The Five Stars of Online Journal Articles - a Framework for Article Evaluation. In D-Lib Magazine, 18 (1/2). http://dx.doi.org/10.1045/january2012-shotton</p>
+<p class="cite bg-info">Shotton, D. (2012). The Five Stars of Online Journal Articles - a Framework for Article Evaluation. In D-Lib Magazine, 18 (1/2). https://doi.org/10.1045/january2012-shotton</p>
 
 #code @prefix fivestars: <http://purl.org/spar/fivestars/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://dx.doi.org/10.1045/january2012-shotton>
+<https://doi.org/10.1045/january2012-shotton>
     fivestars:hasPeerReviewRating
         "3"^^xsd:nonNegativeInteger ;
     fivestars:peerReviewRatingComment
@@ -41,4 +41,4 @@
         than a research paper with primary research data, has
         influenced the overall rating obtained." .
 
-#cite Peroni, Silvio (2015): Example of use of FiveStars #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1560007
+#cite Peroni, Silvio (2015): Example of use of FiveStars #1. figshare. https://doi.org/10.6084/m9.figshare.1560007

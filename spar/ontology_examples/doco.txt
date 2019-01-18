@@ -98,7 +98,7 @@
 
 # ...
 
-#cite Peroni, Silvio (2015): Example of use of DoCO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1513725
+#cite Peroni, Silvio (2015): Example of use of DoCO #1. figshare. https://doi.org/10.6084/m9.figshare.1513725
 
 
 
@@ -132,6 +132,6 @@
         Journal Articles. In Proceedings of the International
         Symposium on XML for the Long Haul: Issues in the Long-term
         Preservation of XML.
-        OA at http://dx.doi.org/10.4242/BalisageVol6.Beck01." .
+        OA at https://doi.org/10.4242/BalisageVol6.Beck01." .
 
-#cite Peroni, Silvio (2015): Example of use of DoCO #2. figshare. http://dx.doi.org/10.6084/m9.figshare.1513733
+#cite Peroni, Silvio (2015): Example of use of DoCO #2. figshare. https://doi.org/10.6084/m9.figshare.1513733

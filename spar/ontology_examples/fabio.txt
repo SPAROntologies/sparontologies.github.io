@@ -109,7 +109,7 @@ By using FaBiO entities, which also include part of the <a href="http://www.ifla
 :springer a foaf:Organization ;
     foaf:name "Springer" .
 
-#cite Peroni, Silvio (2015): Example of use of FaBiO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1512819
+#cite Peroni, Silvio (2015): Example of use of FaBiO #1. figshare. https://doi.org/10.6084/m9.figshare.1512819
 
 
 #id fabio_2
@@ -118,7 +118,7 @@ By using FaBiO entities, which also include part of the <a href="http://www.ifla
 
 #description Sometimes, it is important to keep track of the actual order the authors of a paper as they appear in the author list. The usual approach is to use RDF collections for handling it. However, this choice can have several drawbacks, first of all that it is not a fully OWL 2 DL compliant way of modelling ordered items – and this could result in having reasoners running with unexpected behaviour or not running at all.
 
-Even if FaBiO does not handle author ordering directly, it is possible to use it in combination with other pure OWL 2 DL compliant ontologies, such as the [Collections Ontology (CO)](http://purl.org/co) – that is fully described in the paper "[The Collections Ontology: creating and handling collections in OWL 2 DL frameworks](http://dx.doi.org/10.3233/SW-130121)" by Ciccarese and Peroni – which was specifically designed for defining orders among items. This ontology allows us to link a ``co:List`` of authors through the ``dcterms:creator`` property.
+Even if FaBiO does not handle author ordering directly, it is possible to use it in combination with other pure OWL 2 DL compliant ontologies, such as the [Collections Ontology (CO)](http://purl.org/co) – that is fully described in the paper "[The Collections Ontology: creating and handling collections in OWL 2 DL frameworks](https://doi.org/10.3233/SW-130121)" by Ciccarese and Peroni – which was specifically designed for defining orders among items. This ontology allows us to link a ``co:List`` of authors through the ``dcterms:creator`` property.
 
 #code @prefix : <http://www.sparontologies.net/example/> .
 @prefix co: <http://purl.org/co/> .
@@ -185,7 +185,7 @@ Even if FaBiO does not handle author ordering directly, it is possible to use it
     foaf:givenName "Richard" ;
     foaf:familyName "Benjamins" .
 
-#cite Peroni, Silvio (2015): Example of use of FaBiO #2. figshare. http://dx.doi.org/10.6084/m9.figshare.1512820
+#cite Peroni, Silvio (2015): Example of use of FaBiO #2. figshare. https://doi.org/10.6084/m9.figshare.1512820
 
 
 #id fabio_3
@@ -243,4 +243,4 @@ facet:artificial-intelligence-incl-robotics a fabio:SubjectTerm ;
     skos:prefLabel "Artificial Intelligence (incl. Robotics)" ;
     skos:inScheme <http://link.springer.com/facet> .
 
-#cite Peroni, Silvio (2015): Example of use of FaBiO #3. figshare. http://dx.doi.org/10.6084/m9.figshare.1512821
+#cite Peroni, Silvio (2015): Example of use of FaBiO #3. figshare. https://doi.org/10.6084/m9.figshare.1512821

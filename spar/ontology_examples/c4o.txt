@@ -2,7 +2,7 @@
 
 #title Describing citation contexts
 
-#description In a particular sentence of the paper entitled "[Intertextual semantics: A semantics for information design](http://dx.doi.org/10.1002/asi.21134)" there is a citation to the paper "[Towards a semantics for XML markup](http://dx.doi.org/10.1145/585058.585081)" made through a in-text reference pointer to a specific bibliographic reference.
+#description In a particular sentence of the paper entitled "[Intertextual semantics: A semantics for information design](https://doi.org/10.1002/asi.21134)" there is a citation to the paper "[Towards a semantics for XML markup](http://dx.doi.org/10.1145/585058.585081)" made through a in-text reference pointer to a specific bibliographic reference.
 
 [C4O](/ontologies/c4o) enables ontological descriptions of the citation context where an in-text reference pointer appears in the citing document, and allows one to relate that context to relevant textual passages in the cited document.
 
@@ -13,7 +13,7 @@
 @prefix doco: <http://purl.org/spar/doco/> .
 @prefix frbr: <http://purl.org/vocab/frbr/core#> .
 
-<http://dx.doi.org/10.1002/asi.21134>
+<https://doi.org/10.1002/asi.21134>
     frbr:part :in-text-renear02 , :renear02 .
 
 :in-text-renear02 a c4o:InTextReferencePointer ;
@@ -26,14 +26,14 @@
         Towards a semantics for XML markup. In E. Mudson (Chair),
         Proceedings of the ACM Symposium on Document Engineering,
         (pp. 119-126). New York: ACM Press." ;
-    biro:references <http://dx.doi.org/10.1145/585058.585081> .
+    biro:references <https://doi.org/10.1145/585058.585081> .
 
 :citation-sentence a doco:Sentence ;
     c4o:hasContent
         "Renear, Dubin, and Sperberg-McQueen (2002, pp. 121-122)
         proposed a formal semantic approach for structured documents." .
 
-<http://dx.doi.org/10.1145/585058.585081>
+<https://doi.org/10.1145/585058.585081>
     frbr:part :cited-sentence .
 
 :cited-sentence a doco:Sentence ;
@@ -43,7 +43,7 @@
         those structures, relationships, and properties explicit." ;
 	c4o:isRelevantTo :citation-sentence .
 
-#cite Peroni, Silvio (2015): Example of use of C4O #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1536253
+#cite Peroni, Silvio (2015): Example of use of C4O #1. figshare. https://doi.org/10.6084/m9.figshare.1536253
 
 
 #id c4o_2
@@ -52,7 +52,7 @@
 
 #description [C4O](/ontologies/c4o) allows one to record the number of citations a cited entity has received globally (property ``c4o:hasGlobalCitationCount``), as determined by a bibliographic information resource (property ``c4o:hasGlobalCountSource``) such as [Google Scholar](http://scholar.google.com), [Scopus](http://www.scopus.com) or [Web of Knowledge](http://apps.isiknowledge.com) on a particular date (property ``c4o:hasGlobalCountDate``).
 
-For instance we can write a set of assertions according to C4O that describe how many times the reference - contained in the paper "[Intertextual semantics: A semantics for information design](http://dx.doi.org/10.1002/asi.21134)" and referring to the paper "[Towards a semantics for XML markup](http://dx.doi.org/10.1145/585058.585081)" - is used within the citing article and how much the cited article is globally cited according to Google Scholar.
+For instance we can write a set of assertions according to C4O that describe how many times the reference - contained in the paper "[Intertextual semantics: A semantics for information design](https://doi.org/10.1002/asi.21134)" and referring to the paper "[Towards a semantics for XML markup](http://dx.doi.org/10.1145/585058.585081)" - is used within the citing article and how much the cited article is globally cited according to Google Scholar.
 
 #code @prefix : <http://www.sparontologies.net/example/> .
 @prefix biro: <http://purl.org/spar/biro/> .
@@ -63,7 +63,7 @@ For instance we can write a set of assertions according to C4O that describe how
 @prefix frbr: <http://purl.org/vocab/frbr/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://dx.doi.org/10.1002/asi.21134>
+<https://doi.org/10.1002/asi.21134>
     frbr:part :renear02 .
 
 :renear02 a biro:BibliographicReference ;
@@ -72,10 +72,10 @@ For instance we can write a set of assertions according to C4O that describe how
         Towards a semantics for XML markup. In E. Mudson (Chair),
         Proceedings of the ACM Symposium on Document Engineering,
         (pp. 119-126). New York: ACM Press." ;
-    biro:references <http://dx.doi.org/10.1145/585058.585081> ;
+    biro:references <https://doi.org/10.1145/585058.585081> ;
     c4o:hasInTextCitationFrequency "1"^^xsd:nonNegativeInteger .
 
-<http://dx.doi.org/10.1145/585058.585081>
+<https://doi.org/10.1145/585058.585081>
     c4o:hasGlobalCitationFrequency :g-citation-2014-03-17 .
 
 :g-citation-2014-03-17 a c4o:GlobalCitationCount ;
@@ -86,4 +86,4 @@ For instance we can write a set of assertions according to C4O that describe how
 :google-scholar a c4o:BibliographicInformationSource ;
     foaf:homepage <http://scholar.google.com> .
 
-#cite Peroni, Silvio (2015): Example of use of C4O #2. figshare. http://dx.doi.org/10.6084/m9.figshare.1536254
+#cite Peroni, Silvio (2015): Example of use of C4O #2. figshare. https://doi.org/10.6084/m9.figshare.1536254

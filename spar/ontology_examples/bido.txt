@@ -32,7 +32,7 @@ journal:journal-of-web-semantics a fabio:Journal ;
 :thomson-reuters a foaf:Organization ;
     foaf:homepace <http://thomsonreuters.com> .
 
-#cite Peroni, Silvio (2015): Example of use of BiDO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1559974
+#cite Peroni, Silvio (2015): Example of use of BiDO #1. figshare. https://doi.org/10.6084/m9.figshare.1559974
 
 
 #id bido_2
@@ -87,7 +87,7 @@ For instance, in the example we assign a particular research category (defined m
     bido:hasStrength bido:low ;
     bido:hasGrowth bido:logarithmic .
 
-#cite Peroni, Silvio (2015): Example of use of BiDO #2. figshare. http://dx.doi.org/10.6084/m9.figshare.1559973
+#cite Peroni, Silvio (2015): Example of use of BiDO #2. figshare. https://doi.org/10.6084/m9.figshare.1559973
 
 
 #id bido_3
@@ -146,4 +146,4 @@ conf:cade1980-cff-rank a bido:BibliometricDataInTime ;
         "Computing Research and Education Association of Australasia" ;
     foaf:homepage <http://www.core.edu.au> .
 
-#cite Peroni, Silvio (2015): Example of use of BiDO #3. figshare. http://dx.doi.org/10.6084/m9.figshare.1559979
+#cite Peroni, Silvio (2015): Example of use of BiDO #3. figshare. https://doi.org/10.6084/m9.figshare.1559979

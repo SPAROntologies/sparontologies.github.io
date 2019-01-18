@@ -2,7 +2,7 @@
 
 #title Defining bibliographic references and reference lists
 
-#description The paper entitled "[Intertextual semantics: A semantics for information design](http://dx.doi.org/10.1002/asi.21134)" contains a list of references, each of them referring to a particular published article. For instance, the content of a particular bibliographic reference contained in that list, and referring to the paper "[Towards a semantics for XML markup](http://dx.doi.org/10.1145/585058.585081)", is:
+#description The paper entitled "[Intertextual semantics: A semantics for information design](https://doi.org/10.1002/asi.21134)" contains a list of references, each of them referring to a particular published article. For instance, the content of a particular bibliographic reference contained in that list, and referring to the paper "[Towards a semantics for XML markup](http://dx.doi.org/10.1145/585058.585081)", is:
 
 > Renear, A., Dubin, D. & Sperberg-McQueen, C.M. (2002). Towards a semantics for XML markup. In E. Mudson (Chair), Proceedings of the ACM Symposium on Document Engineering, (pp. 119-126). New York: ACM Press.
 
@@ -14,7 +14,7 @@ A first necessary step to release bibliographic references like the above one in
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix frbr: <http://purl.org/vocab/frbr/core#> .
 
-<http://dx.doi.org/10.1002/asi.21134>
+<https://doi.org/10.1002/asi.21134>
     frbr:part :reference-list .
 
 :reference-list a biro:ReferenceList ;
@@ -54,9 +54,9 @@ A first necessary step to release bibliographic references like the above one in
         In E. Mudson (Chair), Proceedings of the ACM
         Symposium on Document Engineering, (pp. 119-126).
         New York: ACM Press." ;
-    biro:references <http://dx.doi.org/10.1145/585058.585081> .
+    biro:references <https://doi.org/10.1145/585058.585081> .
 
-#cite Peroni, Silvio (2015): Example of use of BiRO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1534592
+#cite Peroni, Silvio (2015): Example of use of BiRO #1. figshare. https://doi.org/10.6084/m9.figshare.1534592
 
 
 #id biro_2
@@ -110,7 +110,7 @@ This pattern allows one to describe each string of a bibliographic reference as 
     foaf:givenName "Allen" ;
     foaf:familyName "Renear" .
 
-#cite Peroni, Silvio (2015): Example of use of BiRO #2. figshare. http://dx.doi.org/10.6084/m9.figshare.1534651
+#cite Peroni, Silvio (2015): Example of use of BiRO #2. figshare. https://doi.org/10.6084/m9.figshare.1534651
 
 
 #id biro_3
@@ -119,13 +119,13 @@ This pattern allows one to describe each string of a bibliographic reference as 
 
 #description Another approach, alternative to the one presented in the [second BiRO example](#biro_2), to deal with the semantic enhancement of bibliographic references is to use [EARMARK](http://www.essepuntato.it/2008/12/earmark) ranges for associating appropriate semantic statements to textual fragments, as illustrated in the following paper:
 
-<p class="cite bg-info">Peroni, S., Gangemi, A., & Vitali, F. (2011). Dealing with markup semantics. In Proceedings the 7th International Conference on Semantic Systems (i-Semantics 2011): 111–118. http://dx.doi.org/10.1145/2063518.2063533</p>
+<p class="cite bg-info">Peroni, S., Gangemi, A., & Vitali, F. (2011). Dealing with markup semantics. In Proceedings the 7th International Conference on Semantic Systems (i-Semantics 2011): 111–118. https://doi.org/10.1145/2063518.2063533</p>
 
 For instance, the reference introduced in the [first BiRO example](#biro_1) can be encoded as an EARMARK document. We first need a particular string container called docuverse in EARMARK (corresponding to the class ``earmark:StringDocuverse``). This entity allows one to define the text of the reference. Then, we can define ranges (the class ``earmark:PointerRange``) for each string we want to use in order to describe the bibliographic reference according to [BiRO](/ontologies/biro).
 
 Furthermore, using the [LA-EARMARK](http://www.essepuntato.it/2013/06/la-earmark), and extension of EARMARK for expressing markup semantics, it is possible to link EARMARK ranges to their formal meaning and to the particular object referenced by such strings, as described in the following work:
 
-<p class="cite bg-info">Barabucci, G., Di Iorio, A., Peroni, S., Poggi, F., & Vitali, F. (2013). Annotations with EARMARK in practice: a fairy tale. In Proceedings of DH-CASE 2013. http://dx.doi.org/10.1145/2517978.2517990</p>
+<p class="cite bg-info">Barabucci, G., Di Iorio, A., Peroni, S., Poggi, F., & Vitali, F. (2013). Annotations with EARMARK in practice: a fairy tale. In Proceedings of DH-CASE 2013. https://doi.org/10.1145/2517978.2517990</p>
 
 We can say that a certain range (i.e., a string) actually denotes (``la:denotes``) a particular concrete object, i.e., a particular person identified by a certain IRI. Specifically, that range expresses (``la:expresses``) a particular meaning (``la:Meaning``), i.e., the fact that the string (as well as the denoted object) refers to something being an author of that paper.
 
@@ -203,4 +203,4 @@ We can say that a certain range (i.e., a string) actually denotes (``la:denotes`
     foaf:givenName "Allen" ;
     foaf:familyName "Renear" .
 
-#cite Peroni, Silvio (2015): Example of use of BiRO #3. figshare. http://dx.doi.org/10.6084/m9.figshare.1535530
+#cite Peroni, Silvio (2015): Example of use of BiRO #3. figshare. https://doi.org/10.6084/m9.figshare.1535530

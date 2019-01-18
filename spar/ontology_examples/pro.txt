@@ -25,13 +25,13 @@ In order to address this issue, [PRO](/ontologies/pro) provides a convenient way
 :silvio-peroni-author a pro:RoleInTime ;
     pro:withRole pro:author ;
     pro:relatesToDocument
-        <http://dx.doi.org/10.1007/978-3-540-89704-0_17> ,
-        <http://dx.doi.org/10.1145/1600193.1600232> .
+        <https://doi.org/10.1007/978-3-540-89704-0_17> ,
+        <https://doi.org/10.1145/1600193.1600232> .
 
 :silvio-peroni-at-unibo a pro:RoleInTime ;
     pro:withRole scoro:affiliate ;
     pro:relatesToDocument
-        <http://dx.doi.org/10.1145/1600193.1600232> ;
+        <https://doi.org/10.1145/1600193.1600232> ;
     pro:relatesToOrganization
         dogfood:university-of-bologna ;
     tvc:atTime :unibo-affiliation-time .
@@ -43,7 +43,7 @@ In order to address this issue, [PRO](/ontologies/pro) provides a convenient way
 :silvio-peroni-at-kmi a pro:RoleInTime ;
     pro:withRole scoro:affiliate ;
     pro:relatesToDocument
-        <http://dx.doi.org/10.1007/978-3-540-89704-0_17> ;
+        <https://doi.org/10.1007/978-3-540-89704-0_17> ;
     pro:relatesToOrganization
         dogfood:kmi-the-open-university-uk ;
     tvc:atTime :kmi-affiliation-time .
@@ -54,4 +54,4 @@ In order to address this issue, [PRO](/ontologies/pro) provides a convenient way
     ti:hasIntervalEndDate
         "2008-09-30T23:59:59Z"^^xsd:dateTime .
 
-#cite Peroni, Silvio (2015): Example of use of PRO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1538655
+#cite Peroni, Silvio (2015): Example of use of PRO #1. figshare. https://doi.org/10.6084/m9.figshare.1538655

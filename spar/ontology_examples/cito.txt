@@ -17,7 +17,7 @@
     cito:hasCitationCharacterization cito:extends ;
     cito:hasCitedEntity :paper-b .
 
-#cite Peroni, Silvio (2015): Example of use of CiTO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1512816
+#cite Peroni, Silvio (2015): Example of use of CiTO #1. figshare. https://doi.org/10.6084/m9.figshare.1512816
 
 
 #id cito_2
@@ -51,7 +51,7 @@ The whole example has been extracted from the blog post ["Extending CiTO to enab
     cito:hasCitationCharacterization cito:cites ;
     cito:hasCitedEntity :paper-b .
 
-#cite Peroni, Silvio (2015): Example of use of CiTO #2. figshare. http://dx.doi.org/10.6084/m9.figshare.1512817
+#cite Peroni, Silvio (2015): Example of use of CiTO #2. figshare. https://doi.org/10.6084/m9.figshare.1512817
 
 
 #id cito_3
@@ -81,4 +81,4 @@ The [Open Annotation Data Model Ontology](http://www.w3.org/ns/oa) can be used t
 :in-text-ref-pointer a c4o:InTextReferencePointer ;
     c4o:hasContent "[6]" .
 
-#cite Peroni, Silvio (2015): Example of use of CiTO #3. figshare. http://dx.doi.org/10.6084/m9.figshare.1512818
+#cite Peroni, Silvio (2015): Example of use of CiTO #3. figshare. https://doi.org/10.6084/m9.figshare.1512818
