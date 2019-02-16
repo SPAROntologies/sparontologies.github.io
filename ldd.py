@@ -170,7 +170,9 @@ class LinkedDataDirector(object):
                                     else:
                                         cur_data[str_p] += [str_o]
 
-                                    cur_data[str_p].sort()
+                                    if "__entityiri" in cur_data[str_p][0]:
+                                        cur_data[str_p] = sorted(cur_data[str_p], key=lambda k: k['__entityiri'])
+
                         return self.render.ldd(cur_data)
 
     def load_graph(self, file_path, temp_dir_for_rdf_loading=None):
