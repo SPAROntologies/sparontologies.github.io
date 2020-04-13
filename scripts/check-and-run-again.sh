@@ -1,5 +1,5 @@
 #!/bin/bash
-myv=`curl -s http://www.sparontologies.net`
+myv=`timeout 180s curl -s http://www.sparontologies.net`
 
 if [[ -z "$myv" ]] || [[ $myv = "Traceback"*  ]]; then
     /etc/init.d/lighttpd stop
