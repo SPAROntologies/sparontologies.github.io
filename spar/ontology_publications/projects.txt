@@ -1,3 +1,8 @@
+#id bisticciletters
+#name Vespasiano da Bisticci's Letters
+#url https://dharc-org.github.io/vespasiano-da-bisticci-letters-de/documentation/index.html
+#description Vespasiano da Bisticci's Letters are a series of manuscript letters that were sent to and received by Vespasiano da Bisticci (1421–1498), an Italian humanist and librarian, over a time period spanning from 1444 to 1497. It uses several SPAR Ontologies for describing the letters and the entities that are mentioned in the letters.
+
 #id scholarmarkdown
 #name ScholarMarkdown
 #url https://github.com/rubensworks/ScholarMarkdown
