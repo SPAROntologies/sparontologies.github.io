@@ -250,4 +250,4 @@ The whole publishing workflow we have just described can be formally represented
     ti:hasIntervalStartDate
         "2013-06-10T17:47:53"^^xsd:dateTime .
 
-#cite Peroni, Silvio (2015): Example of use of PWO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1540728
+#cite Peroni, Silvio (2015): Example of use of PWO #1. figshare. https://doi.org/10.6084/m9.figshare.1540728

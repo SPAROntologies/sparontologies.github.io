@@ -72,4 +72,4 @@ By means of RDFa, [DEO](/ontologies/deo) can be used in RASH documents in order 
     </body>
 </html>
 
-#cite Peroni, Silvio (2015): Example of use of DEO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1540796
+#cite Peroni, Silvio (2015): Example of use of DEO #1. figshare. https://doi.org/10.6084/m9.figshare.1540796

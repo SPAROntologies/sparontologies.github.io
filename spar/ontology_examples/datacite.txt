@@ -12,15 +12,15 @@
 @prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
 @prefix orcid: <http://orcid.org/> .
 
-<http://dx.doi.org/10.5061/dryad.15v26> a fabio:Dataset ;
+<https://doi.org/10.5061/dryad.15v26> a fabio:Dataset ;
     datacite:hasIdentifier :dataset-doi ;
     dcterms:creator
         orcid:0000-0002-5159-9717 ,
         orcid:0000-0002-7811-3617 ;
     datacite:hasDescription
-        <http://dx.doi.org/10.1098/rsbl.2015.0486> .
+        <https://doi.org/10.1098/rsbl.2015.0486> .
 
-<http://dx.doi.org/10.1098/rsbl.2015.0486>
+<https://doi.org/10.1098/rsbl.2015.0486>
     a fabio:JournalArticle ;
     datacite:hasIdentifier :paper-doi ;
     dcterms:creator
@@ -52,7 +52,7 @@ orcid:0000-0002-7811-3617 a foaf:Person ;
     literal:hasLiteralValue "0000-0002-7811-3617" ;
     datacite:usesIdentifierScheme datacite:orcid .
 
-#cite Peroni, Silvio (2015): Example of use of DataCite #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1554708
+#cite Peroni, Silvio (2015): Example of use of DataCite #1. figshare. https://doi.org/10.6084/m9.figshare.1554708
 
 
 #id datacite_2
@@ -61,7 +61,7 @@ orcid:0000-0002-7811-3617 a foaf:Person ;
 
 #description This Turtle file is the RDF converted version of the exemplar DataCite XML document available at http://schema.datacite.org/meta/kernel-3.1/example/datacite-example-full-v3.1.xml. The conversion has been made by taking into account the guidelines available at the following document:
 
-<p class="cite bg-info">Peroni, S., Shotton, D., Ashton, J., Barton, A. J., Gramsbergen, E., Jacquemot, M.-C. (2016). DataCite2RDF: Mapping DataCite Metadata Schema 3.1 Terms to RDF. Version 3.2. http://dx.doi.org/10.6084/m9.figshare.2075356</p>
+<p class="cite bg-info">Peroni, S., Shotton, D., Ashton, J., Barton, A. J., Gramsbergen, E., Jacquemot, M.-C. (2016). DataCite2RDF: Mapping DataCite Metadata Schema 3.1 Terms to RDF. Version 3.2. https://doi.org/10.6084/m9.figshare.2075356</p>
 
 #code @prefix : <http://schema.datacite.org/meta/kernel-3.1/example/> .
 @prefix cito: <http://purl.org/spar/cito/> .
@@ -211,4 +211,4 @@ orcid:0000-0002-7811-3617 a foaf:Person ;
     geo:asWKT 
     	"POLYGON(41.090 -71.032, 41.090 -68.211, 42.893 -68.211, 42.893 -71.032, 41.090 -71.032)"^^geo:wktLiteral .
 
-#cite Peroni, Silvio (2016): Example of use of DataCite #2. figshare. https://dx.doi.org/10.6084/m9.figshare.2075353
+#cite Peroni, Silvio (2016): Example of use of DataCite #2. figshare. https://doi.org/10.6084/m9.figshare.2075353

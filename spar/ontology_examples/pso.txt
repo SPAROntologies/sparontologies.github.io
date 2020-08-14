@@ -4,7 +4,7 @@
 
 #description Using PSO, it is possible to describe the statuses of a document and how they change over time. For instance, consider the following description:
 
-> The paper entitled "[Annotations with EARMARK for arbitrary, overlapping and out-of order markup](http://dx.doi.org/10.1145/1600193.1600232)" was submitted to [DocEng 2009](http://www.documentengineering.org/) on 24 April 2009 at 13:18. At noon on 26 April, when the authors received acknowledgement of safe receipt of the paper from the conference editorial committee, the paper was considered "under review" until 27 May at 17:38.
+> The paper entitled "[Annotations with EARMARK for arbitrary, overlapping and out-of order markup](https://doi.org/10.1145/1600193.1600232)" was submitted to [DocEng 2009](http://www.documentengineering.org/) on 24 April 2009 at 13:18. At noon on 26 April, when the authors received acknowledgement of safe receipt of the paper from the conference editorial committee, the paper was considered "under review" until 27 May at 17:38.
 
 In this example there are at least two different status assigned to the document. A permanent status, i.e., "submitted", that started on 24 April 2009 at 13:18 and that holds forever (unless a withdrawn  is requested), and a temporary status, i.e. "under review", that started at noon on 26 April and finished on 27 May at 17:38.
 
@@ -16,7 +16,7 @@ In this example there are at least two different status assigned to the document
 @prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://dx.doi.org/10.1145/1600193.1600232>
+<https://doi.org/10.1145/1600193.1600232>
     pso:holdsStatusInTime
         :submitted-to-doceng ,
         :under-revision-by-doceng-pc .
@@ -59,4 +59,4 @@ In this example there are at least two different status assigned to the document
         "The reviewers completed their reviews
         of the paper." .
 
-#cite Peroni, Silvio (2015): Example of use of PSO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1536426
+#cite Peroni, Silvio (2015): Example of use of PSO #1. figshare. https://doi.org/10.6084/m9.figshare.1536426

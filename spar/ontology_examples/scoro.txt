@@ -4,7 +4,7 @@
 
 #description Providing a description of how a certain research is described in a published paper, highlighting the various roles of the people who were involved and indicating explicitly their contribution, is crucial in research communications. Here we show how to provide an RDF description of all these information related to a particular article, i.e., "[Adventures
 in semantic publishing: exemplar semantic enhancement of
-a research article](http://dx.doi.org/10.1371/journal.pcbi.1000361)", by means of [SCoRO](/ontologies/scoro). While SCoRO is used for describing person's roles and contributions, in the example it is used in combination with [FaBiO](/ontologies/fabio), that provides structured vocabulary terms to characterize scholarly publications, and with [FRAPO](/ontologies/frapo), that provides structured vocabulary terms to describe research administration, research funding, and the projects and investigations that such funding supports.
+a research article](https://doi.org/10.1371/journal.pcbi.1000361)", by means of [SCoRO](/ontologies/scoro). While SCoRO is used for describing person's roles and contributions, in the example it is used in combination with [FaBiO](/ontologies/fabio), that provides structured vocabulary terms to characterize scholarly publications, and with [FRAPO](/ontologies/frapo), that provides structured vocabulary terms to describe research administration, research funding, and the projects and investigations that such funding supports.
 
 #code @prefix : <http://www.sparontologies.net/example/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -21,9 +21,9 @@ a research article](http://dx.doi.org/10.1371/journal.pcbi.1000361)", by means o
 :shotton-et-al-investigation a frapo:Investigation ;
     dcterms:title "Experiments in Semantic Publishing" ;
     frapo:hasOutput
-        <http://dx.doi.org/10.1371/journal.pcbi.1000361> .
+        <https://doi.org/10.1371/journal.pcbi.1000361> .
 
-<http://dx.doi.org/10.1371/journal.pcbi.1000361>
+<https://doi.org/10.1371/journal.pcbi.1000361>
     a fabio:JournalArticle ;
     dcterms:bibliographicCitation
         "Shotton D, Portwin K, Klyne G, Miles A (2009). Adventures
@@ -45,7 +45,7 @@ a research article](http://dx.doi.org/10.1371/journal.pcbi.1000361)", by means o
         pro:author ,
         scoro:senior-author ;
     pro:relatesToDocument
-        <http://dx.doi.org/10.1371/journal.pcbi.1000361> .
+        <https://doi.org/10.1371/journal.pcbi.1000361> .
 
 :shotton-pi a pro:RoleInTime ;
     pro:withRole scoro:principal-investigator ;
@@ -63,7 +63,7 @@ a research article](http://dx.doi.org/10.1371/journal.pcbi.1000361)", by means o
 
 # ...
 
-#cite Peroni, Silvio (2015): Example of use of SCoRO #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1543378
+#cite Peroni, Silvio (2015): Example of use of SCoRO #1. figshare. https://doi.org/10.6084/m9.figshare.1543378
 
 
 #id scoro_2
@@ -89,7 +89,7 @@ a research article](http://dx.doi.org/10.1371/journal.pcbi.1000361)", by means o
 :sp-principal-author  a pro:RoleInTime ;
     pro:withRole scoro:principal-author ;
     pro:relatesToDocument
-        <http://dx.doi.org/10.1016/j.websem.2012.08.001> .
+        <https://doi.org/10.1016/j.websem.2012.08.001> .
 
 :david-shotton a foaf:Person ;
     foaf:givenName "David" ;
@@ -99,14 +99,14 @@ a research article](http://dx.doi.org/10.1371/journal.pcbi.1000361)", by means o
 :ds-principal-author  a pro:RoleInTime ;
     pro:withRole scoro:principal-author ;
     pro:relatesToDocument
-        <http://dx.doi.org/10.1016/j.websem.2012.08.001> ;
+        <https://doi.org/10.1016/j.websem.2012.08.001> ;
     scoro:isEqualToRoleInTime :sp-principal-author .
 
-<http://dx.doi.org/10.1016/j.websem.2012.08.001>
+<https://doi.org/10.1016/j.websem.2012.08.001>
     a fabio:JournalArticle ;
     dcterms:title
         "FaBiO and CiTO: ontologies for describing
         bibliographic resources and citations" ;
     dcterms:creator :silvio-peroni , :david-shotton .
 
-#cite Peroni, Silvio (2015): Example of use of SCoRO #2. figshare. http://dx.doi.org/10.6084/m9.figshare.1549669
+#cite Peroni, Silvio (2015): Example of use of SCoRO #2. figshare. https://doi.org/10.6084/m9.figshare.1549669

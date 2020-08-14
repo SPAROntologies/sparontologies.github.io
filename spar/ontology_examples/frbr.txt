@@ -104,4 +104,4 @@ Although it is possible to use FRBR (in combination with [DC Terms](http://dubli
 :springer a frbr:CorporateBody ;
     dcterms:description "Springer" .
 
-#cite Peroni, Silvio (2015): Example of use of FRBR DL #1. figshare. http://dx.doi.org/10.6084/m9.figshare.1540739
+#cite Peroni, Silvio (2015): Example of use of FRBR DL #1. figshare. https://doi.org/10.6084/m9.figshare.1540739
