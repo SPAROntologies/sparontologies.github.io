@@ -4,6 +4,8 @@
 
 #url http://purl.org/spar/pso
 
+#doi 10.25504/FAIRsharing.093230
+
 #source https://sparontologies.github.io/pso/current/pso.owl
 
 #documentation http://purl.org/spar/pso.html

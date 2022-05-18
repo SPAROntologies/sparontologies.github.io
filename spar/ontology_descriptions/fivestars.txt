@@ -4,6 +4,8 @@
 
 #url http://purl.org/spar/fivestars
 
+#doi 10.25504/FAIRsharing.6dfe9b
+
 #source https://sparontologies.github.io/fivestars/current/fivestars.owl
 
 #documentation http://purl.org/spar/fivestars.html

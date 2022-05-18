@@ -4,6 +4,8 @@
 
 #url http://purl.org/spar/deo
 
+#doi 10.25504/FAIRsharing.39fd58
+
 #source https://sparontologies.github.io/deo/current/deo.owl
 
 #documentation http://purl.org/spar/deo.html

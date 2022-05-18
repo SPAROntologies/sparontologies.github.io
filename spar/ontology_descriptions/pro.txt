@@ -4,6 +4,8 @@
 
 #url http://purl.org/spar/pro
 
+#doi 10.25504/FAIRsharing.3e88d6
+
 #source https://sparontologies.github.io/pro/current/pro.owl
 
 #documentation http://purl.org/spar/pro.html

@@ -4,6 +4,8 @@
 
 #url http://purl.org/spar/fabio
 
+#doi 10.25504/FAIRsharing.2f3180
+
 #source https://sparontologies.github.io/fabio/current/fabio.owl
 
 #documentation http://purl.org/spar/fabio.html

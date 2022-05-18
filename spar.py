@@ -178,6 +178,7 @@ class Ontologies:
                                            cur_ontology_dict["name"],
                                            cur_ontology_dict["acronym"],
                                            cur_ontology_dict["url"],
+                                           cur_ontology_dict["doi"],
                                            cur_ontology_dict["documentation"],
                                            cur_ontology_dict["repository"],
                                            cur_ontology_dict["description"],

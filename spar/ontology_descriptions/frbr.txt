@@ -4,6 +4,8 @@
 
 #url http://purl.org/spar/frbr
 
+#doi 10.25504/FAIRsharing.b34b43
+
 #source https://sparontologies.github.io/frbr/current/frbr.owl
 
 #documentation http://purl.org/spar/frbr.html

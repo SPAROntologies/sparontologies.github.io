@@ -1,4 +1,4 @@
-$def with (title, pages, name, acronym, url, documentation, repository, description, examples, pub_list, lowercase_acronym)
+$def with (title, pages, name, acronym, url, doi, documentation, repository, description, examples, pub_list, lowercase_acronym)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -73,6 +73,8 @@ $def with (title, pages, name, acronym, url, documentation, repository, descript
           <dl class="dl-horizontal lead">
               <dt>URL</dt>
               <dd><a href="$url">$url</a> (alternative at <a href="$url.replace('http://purl.org', 'https://w3id.org').replace('/cerif', '/spar')">w3id.org</a>)</dd>
+              <dt>DOI</dt>
+              <dd><a href="https://doi.org/$doi">$doi</a></dd>
               <dt>Documentation</dt>
               <dd><a href="$documentation">$documentation</a></dd>
               <dt>Source</dt>

@@ -4,6 +4,8 @@
 
 #url http://purl.org/spar/datacite
 
+#doi 10.25504/FAIRsharing.c06f1e
+
 #source https://sparontologies.github.io/datacite/current/datacite.owl
 
 #documentation http://purl.org/spar/datacite.html

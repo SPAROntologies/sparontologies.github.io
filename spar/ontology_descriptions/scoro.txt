@@ -4,6 +4,8 @@
 
 #url http://purl.org/spar/scoro
 
+#doi 10.25504/FAIRsharing.c86b48
+
 #source https://sparontologies.github.io/scoro/current/scoro.owl
 
 #documentation http://purl.org/spar/scoro.html

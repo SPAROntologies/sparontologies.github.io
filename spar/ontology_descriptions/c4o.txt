@@ -4,6 +4,8 @@
 
 #url http://purl.org/spar/c4o
 
+#doi 10.25504/FAIRsharing.beb855
+
 #source https://sparontologies.github.io/c4o/current/c4o.owl
 
 #documentation http://purl.org/spar/c4o.html

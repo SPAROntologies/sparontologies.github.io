@@ -4,6 +4,8 @@
 
 #url http://purl.org/spar/biro
 
+#doi 10.25504/FAIRsharing.99da5f
+
 #source https://sparontologies.github.io/biro/current/biro.owl
 
 #documentation http://purl.org/spar/biro.html

@@ -4,6 +4,8 @@
 
 #url http://purl.org/cerif/frapo
 
+#doi 10.25504/FAIRsharing.0a2576
+
 #source https://sparontologies.github.io/frapo/current/frapo.owl
 
 #documentation http://purl.org/cerif/frapo.html

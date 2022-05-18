@@ -4,6 +4,8 @@
 
 #url http://purl.org/spar/doco
 
+#doi 10.25504/FAIRsharing.162003
+
 #source https://sparontologies.github.io/doco/current/doco.owl
 
 #documentation http://purl.org/spar/doco.html
