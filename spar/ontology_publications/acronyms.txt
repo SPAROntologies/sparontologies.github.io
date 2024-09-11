@@ -10,3 +10,4 @@
 #bido BiDO: Bibliometric Data Ontology
 #fivestars Five*: Five Stars of Online Research Articles Ontology 
 #fr FR: FAIR* Reviews Ontology
+#mito MiTO: Mention Typing Ontology

@@ -1,0 +1,47 @@
+#id mito_1
+
+#title Using MiTO for describing software mentions in a research article
+
+#description MiTO enables the formalization of mentions in a structured manner. The following is an example of a bibliographic reference and the software mentions it contains:
+
+> Jane Doe, John Smith (2023). The role of open-source tools in modern data analysis. Journal of Data Science, 12(4): 56-78. DOI: 10.1234/jds.2023.7890.
+
+From the reference above, the following mentions can be extracted:
+
+1. The document is an academic research article, identifiable from the journal where it is published.
+2. Jane Doe and John Smith are the authors of the article.
+3. The article was published in 2023.
+4. The article explicitly mentions the software "TensorFlow".
+5. The article explicitly mentions the software "Pandas".
+6. The article implicitly refers to "Scikit-learn" as a well-known machine learning library.
+7. The DOI of the article is "10.1234/jds.2023.7890".
+
+@prefix mito: <http://purl.org/spar/mito#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:article-1 a mito:Article ;
+    dcterms:title "The role of open-source tools in modern data analysis" ;
+    dcterms:creator :jane-doe, :john-smith ;
+    dcterms:issued "2023"^^xsd:gYear ;
+    mito:mentions :tensorflow, :pandas, :scikit-learn ;
+    dcterms:identifier "doi:10.1234/jds.2023.7890" .
+
+:tensorflow a mito:Software ;
+    rdfs:label "TensorFlow" ;
+    dcterms:description "An open-source machine learning framework." .
+
+:pandas a mito:Software ;
+    rdfs:label "Pandas" ;
+    dcterms:description "An open-source data manipulation library for Python." .
+
+:scikit-learn a mito:Software ;
+    rdfs:label "Scikit-learn" ;
+    dcterms:description "A widely used open-source machine learning library in Python." ;
+    mito:hasMentionType mito:implicit-mention .
+
+:jane-doe a mito:Person ;
+    dcterms:description "Jane Doe" .
+
+:john-smith a mito:Person ;
+    dcterms:description "John Smith" .
