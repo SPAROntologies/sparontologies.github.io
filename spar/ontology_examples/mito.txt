@@ -2,19 +2,23 @@
 
 #title Using MiTO for describing software mentions in a research article
 
-#description MiTO enables the formalization of mentions in a structured manner. The following is an example of a bibliographic reference and the software mentions it contains:
+#description MiTO enables the formalization of software mentions within academic research articles. The following is an example of a bibliographic reference, highlighting explicit and implicit software mentions within the article:
 
 > Jane Doe, John Smith (2023). The role of open-source tools in modern data analysis. Journal of Data Science, 12(4): 56-78. DOI: 10.1234/jds.2023.7890.
 
+This article explores the impact and utility of open-source software tools in modern data analysis. The authors discuss the practical benefits of using various tools for data manipulation and machine learning within data science workflows. The text includes detailed examples of how specific software packages have contributed to advances in the field.
+
 From the reference above, the following mentions can be extracted:
 
-1. The document is an academic research article, identifiable from the journal where it is published.
-2. Jane Doe and John Smith are the authors of the article.
-3. The article was published in 2023.
-4. The article explicitly mentions the software "TensorFlow".
-5. The article explicitly mentions the software "Pandas".
-6. The article implicitly refers to "Scikit-learn" as a well-known machine learning library.
-7. The DOI of the article is "10.1234/jds.2023.7890".
+1. **The document is an academic research article**, identifiable from its structure and the journal in which it is published.
+2. **Jane Doe and John Smith are the authors** of the article, contributing to the research on open-source tools in data analysis.
+3. **The article was published in 2023**, indicating its relevance to current trends in the use of open-source software.
+4. **The article explicitly mentions the software "TensorFlow"**, a widely used machine learning framework, highlighting its utility in training and deploying machine learning models.
+5. **The article explicitly mentions the software "Pandas"**, a data manipulation library in Python that plays a key role in cleaning and transforming datasets before analysis.
+6. **The article implicitly refers to "Scikit-learn"**, a machine learning library in Python, as a well-known tool for building models, although it is not explicitly mentioned in the text. The reference suggests that Scikit-learn is a foundational tool in this context, recognized by the broader data science community.
+7. **The DOI of the article is "10.1234/jds.2023.7890"**, which provides a permanent identifier for the document, making it easy to locate and reference.
+
+The formalization of these mentions using MiTO helps to capture both explicit and implicit references, enabling better interoperability with other ontologies and improving the understanding of the relationships between academic works and the software tools they mention.
 
 @prefix mito: <http://purl.org/spar/mito#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
