@@ -1,0 +1,148 @@
+#id mito_1
+
+#title Defining mention links and their types (direct vs reified)
+
+#description **MiTO** lets you connect two resources where one (the *mentioning entity*, e.g., a paper) mentions another (the *mentioned entity*, e.g., a software, dataset, method), optionally qualifying the mention with a **mention type** (e.g., explicit/implicit). As with CiTO, you can use a **direct** triple (`mito:mentions`) *or* a **reified** mention (`mito:Mention`) to which you can attach further metadata such as the mention type.
+
+## Example 1: Software Mention in Machine Learning Paper
+
+### Description
+This example demonstrates how to use **MiTO** to capture a software mention in a machine learning research paper. The paper explicitly mentions TensorFlow as the deep learning framework used for model implementation.
+
+@prefix : <http://www.sparontologies.net/example/> .
+@prefix mito: <http://purl.org/spar/mito/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+# The research paper
+:ml-paper-2024 a fabio:JournalArticle ;
+    dcterms:title "Deep Learning Approaches for Medical Image Segmentation" ;
+    mito:mentions :tensorflow .
+
+# The mentioned software  
+:tensorflow a fabio:ComputerProgram ;
+    foaf:name "TensorFlow" ;
+    mito:isMentionedBy :ml-paper-2024 .
+
+# Reified mention with explicit type
+:mention-tensorflow a mito:Mention ;
+    mito:hasMentioningEntity :ml-paper-2024 ;
+    mito:hasMentionedEntity :tensorflow ;
+    mito:hasMentionType mito:ExplicitMention .
+
+## Example 2: Dataset Mention with Open Annotation
+
+### Description
+This example shows how to use **MiTO** with **Open Annotation** to provide additional context about a dataset mention. The paper mentions ImageNet dataset but uses it only for pre-training, which is captured through an annotation.
+
+@prefix : <http://www.sparontologies.net/example/> .
+@prefix mito: <http://purl.org/spar/mito/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+
+# The research entities
+:vision-paper a fabio:JournalArticle ;
+    dcterms:title "Novel Architectures for Biomedical Image Classification" .
+
+:imagenet a fabio:Dataset ;
+    dcterms:title "ImageNet Large Scale Visual Recognition Challenge Dataset" .
+
+# Direct mention relationship
+:vision-paper mito:mentions :imagenet .
+:imagenet mito:isMentionedBy :vision-paper .
+
+# Reified mention for detailed characterization
+:dataset-mention a mito:Mention ;
+    mito:hasMentioningEntity :vision-paper ;
+    mito:hasMentionedEntity :imagenet ;
+    mito:hasMentionType mito:ExplicitMention .
+
+# Open Annotation providing context about the mention
+:mention-annotation a oa:Annotation ;
+    oa:motivatedBy oa:commenting ;
+    oa:hasTarget :dataset-mention ;
+    oa:hasBody :usage-context .
+
+:usage-context a cnt:ContentAsText ;
+    cnt:chars "ImageNet is used exclusively for pre-training the backbone network, not for final model evaluation." .
+
+## Example 3: Method Mention with In-Text Pointer
+
+### Description
+This example illustrates how to connect specific **in-text reference pointers** to **MiTO mentions** using **C4O** and **Open Annotation**. A paper mentions BERT methodology through a specific textual pointer "[BERT]" in the methods section.
+
+@prefix : <http://www.sparontologies.net/example/> .
+@prefix mito: <http://purl.org/spar/mito/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix per: <http://data.semanticweb.org/person/> .
+
+# Research entities
+:nlp-paper a fabio:JournalArticle ;
+    dcterms:title "Contextual Embeddings for Scientific Text Classification" .
+
+:bert-method a fabio:ResearchPaper ;
+    dcterms:title "Bidirectional Encoder Representations from Transformers" .
+
+# Reified mention
+:bert-mention a mito:Mention ;
+    mito:hasMentioningEntity :nlp-paper ;
+    mito:hasMentionedEntity :bert-method ;
+    mito:hasMentionType mito:ExplicitMention .
+
+# In-text pointer in the methods section
+:bert-pointer a c4o:InTextReferencePointer ;
+    c4o:hasContent "[BERT]" .
+
+# Annotation linking pointer to mention
+:pointer-annotation a oa:Annotation ;
+    oa:hasTarget :bert-pointer ;
+    oa:hasBody :bert-mention ;
+    oa:annotatedBy per:research-team .
+
+# Direct relationships for convenience
+:nlp-paper mito:mentions :bert-method .
+:bert-method mito:isMentionedBy :nlp-paper .
+
+## Example 4: Implicit Theory Mention
+
+### Description
+This example demonstrates capturing an **implicit mention** where a paper references a theoretical framework without explicitly naming it. The mention is inferred from the methodology description rather than direct citation.
+
+@prefix : <http://www.sparontologies.net/example/> .
+@prefix mito: <http://purl.org/spar/mito/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+
+# Research entities
+:stats-paper a fabio:JournalArticle ;
+    dcterms:title "Bayesian Approaches to Uncertainty Quantification in Deep Learning" .
+
+:bayesian-theory a fabio:ResearchPaper ;
+    dcterms:title "Bayesian Statistical Inference" .
+
+# Direct mention (implicit)
+:stats-paper mito:mentions :bayesian-theory .
+:bayesian-theory mito:isMentionedBy :stats-paper .
+
+# Reified implicit mention
+:implicit-theory-mention a mito:Mention ;
+    mito:hasMentioningEntity :stats-paper ;
+    mito:hasMentionedEntity :bayesian-theory ;
+    mito:hasMentionType mito:ImplicitMention .
+
+# Annotation explaining the implicit nature
+:implicit-annotation a oa:Annotation ;
+    oa:motivatedBy oa:commenting ;
+    oa:hasTarget :implicit-theory-mention ;
+    oa:hasBody :implicit-explanation .
+
+:implicit-explanation a cnt:ContentAsText ;
+    cnt:chars "Bayesian theory is applied throughout the methodology but never explicitly referenced by name." .
