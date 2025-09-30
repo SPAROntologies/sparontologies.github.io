@@ -1,0 +1,13 @@
+#name  Mention Typing Ontology
+
+#acronym MiTO
+
+#url http://purl.org/spar/mito
+
+#source https://sparontologies.github.io/mito/current/mito.owl
+
+#documentation http://purl.org/spar/mito.html
+
+#repository https://github.com/sparontologies/mito
+
+#description MiTO, the Mention Typing Ontology, is an ontology developed using OWL 2 DL (Web Ontology Language 2 Description Logic), a W3C standard for creating formal ontologies. Its primary aim is to provide a framework for the formalization of the concept of mentions, which are explicit or implicit references to entities, concepts, or other information within a text or discourse. Through MiTO, it becomes possible to define the type of mention in a precise and standardized way, thereby facilitating semantic analysis and the processing of information
