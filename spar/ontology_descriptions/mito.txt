@@ -1,10 +1,10 @@
-#name Mention Typing Ontology
+#name  Mention Typing Ontology
 
 #acronym MiTO
 
 #url http://purl.org/spar/mito
 
-#source http://purl.org/spar/mito/2024-05-09
+#source https://sparontologies.github.io/mito/current/mito.owl
 
 #documentation http://purl.org/spar/mito.html
 
