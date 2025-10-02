@@ -1,51 +1,148 @@
 #id mito_1
 
-#title Using MiTO for describing software mentions in a research article
+#title Defining mention links and their types (direct vs reified)
 
-#description MiTO enables the formalization of software mentions within academic research articles. The following is an example of a bibliographic reference, highlighting explicit and implicit software mentions within the article:
+#description **MiTO** lets you connect two resources where one (the *mentioning entity*, e.g., a paper) mentions another (the *mentioned entity*, e.g., a software, dataset, method), optionally qualifying the mention with a **mention type** (e.g., explicit/implicit). As with CiTO, you can use a **direct** triple (`mito:mentions`) *or* a **reified** mention (`mito:Mention`) to which you can attach further metadata such as the mention type.
 
-> Jane Doe, John Smith (2023). The role of open-source tools in modern data analysis. Journal of Data Science, 12(4): 56-78. DOI: 10.1234/jds.2023.7890.
+## Example 1: Software Mention in Machine Learning Paper
 
-This article explores the impact and utility of open-source software tools in modern data analysis. The authors discuss the practical benefits of using various tools for data manipulation and machine learning within data science workflows. The text includes detailed examples of how specific software packages have contributed to advances in the field.
+### Description
+This example demonstrates how to use **MiTO** to capture a software mention in a machine learning research paper. The paper explicitly mentions TensorFlow as the deep learning framework used for model implementation.
 
-From the reference above, the following mentions can be extracted:
-
-1. **The document is an academic research article**, identifiable from its structure and the journal in which it is published.
-2. **Jane Doe and John Smith are the authors** of the article, contributing to the research on open-source tools in data analysis.
-3. **The article was published in 2023**, indicating its relevance to current trends in the use of open-source software.
-4. **The article explicitly mentions the software "TensorFlow"**, a widely used machine learning framework, highlighting its utility in training and deploying machine learning models.
-5. **The article explicitly mentions the software "Pandas"**, a data manipulation library in Python that plays a key role in cleaning and transforming datasets before analysis.
-6. **The article implicitly refers to "Scikit-learn"**, a machine learning library in Python, as a well-known tool for building models, although it is not explicitly mentioned in the text. The reference suggests that Scikit-learn is a foundational tool in this context, recognized by the broader data science community.
-7. **The DOI of the article is "10.1234/jds.2023.7890"**, which provides a permanent identifier for the document, making it easy to locate and reference.
-
-The formalization of these mentions using MiTO helps to capture both explicit and implicit references, enabling better interoperability with other ontologies and improving the understanding of the relationships between academic works and the software tools they mention.
-
-@prefix mito: <http://purl.org/spar/mito#> .
+@prefix : <http://www.sparontologies.net/example/> .
+@prefix mito: <http://purl.org/spar/mito/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-:article-1 a mito:Article ;
-    dcterms:title "The role of open-source tools in modern data analysis" ;
-    dcterms:creator :jane-doe, :john-smith ;
-    dcterms:issued "2023"^^xsd:gYear ;
-    mito:mentions :tensorflow, :pandas, :scikit-learn ;
-    dcterms:identifier "doi:10.1234/jds.2023.7890" .
+# The research paper
+:ml-paper-2024 a fabio:JournalArticle ;
+    dcterms:title "Deep Learning Approaches for Medical Image Segmentation" ;
+    mito:mentions :tensorflow .
 
-:tensorflow a mito:Software ;
-    rdfs:label "TensorFlow" ;
-    dcterms:description "An open-source machine learning framework." .
+# The mentioned software  
+:tensorflow a fabio:ComputerProgram ;
+    foaf:name "TensorFlow" ;
+    mito:isMentionedBy :ml-paper-2024 .
 
-:pandas a mito:Software ;
-    rdfs:label "Pandas" ;
-    dcterms:description "An open-source data manipulation library for Python." .
+# Reified mention with explicit type
+:mention-tensorflow a mito:Mention ;
+    mito:hasMentioningEntity :ml-paper-2024 ;
+    mito:hasMentionedEntity :tensorflow ;
+    mito:hasMentionType mito:ExplicitMention .
 
-:scikit-learn a mito:Software ;
-    rdfs:label "Scikit-learn" ;
-    dcterms:description "A widely used open-source machine learning library in Python." ;
-    mito:hasMentionType mito:implicit-mention .
+## Example 2: Dataset Mention with Open Annotation
 
-:jane-doe a mito:Person ;
-    dcterms:description "Jane Doe" .
+### Description
+This example shows how to use **MiTO** with **Open Annotation** to provide additional context about a dataset mention. The paper mentions ImageNet dataset but uses it only for pre-training, which is captured through an annotation.
 
-:john-smith a mito:Person ;
-    dcterms:description "John Smith" .
+@prefix : <http://www.sparontologies.net/example/> .
+@prefix mito: <http://purl.org/spar/mito/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+
+# The research entities
+:vision-paper a fabio:JournalArticle ;
+    dcterms:title "Novel Architectures for Biomedical Image Classification" .
+
+:imagenet a fabio:Dataset ;
+    dcterms:title "ImageNet Large Scale Visual Recognition Challenge Dataset" .
+
+# Direct mention relationship
+:vision-paper mito:mentions :imagenet .
+:imagenet mito:isMentionedBy :vision-paper .
+
+# Reified mention for detailed characterization
+:dataset-mention a mito:Mention ;
+    mito:hasMentioningEntity :vision-paper ;
+    mito:hasMentionedEntity :imagenet ;
+    mito:hasMentionType mito:ExplicitMention .
+
+# Open Annotation providing context about the mention
+:mention-annotation a oa:Annotation ;
+    oa:motivatedBy oa:commenting ;
+    oa:hasTarget :dataset-mention ;
+    oa:hasBody :usage-context .
+
+:usage-context a cnt:ContentAsText ;
+    cnt:chars "ImageNet is used exclusively for pre-training the backbone network, not for final model evaluation." .
+
+## Example 3: Method Mention with In-Text Pointer
+
+### Description
+This example illustrates how to connect specific **in-text reference pointers** to **MiTO mentions** using **C4O** and **Open Annotation**. A paper mentions BERT methodology through a specific textual pointer "[BERT]" in the methods section.
+
+@prefix : <http://www.sparontologies.net/example/> .
+@prefix mito: <http://purl.org/spar/mito/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix per: <http://data.semanticweb.org/person/> .
+
+# Research entities
+:nlp-paper a fabio:JournalArticle ;
+    dcterms:title "Contextual Embeddings for Scientific Text Classification" .
+
+:bert-method a fabio:ResearchPaper ;
+    dcterms:title "Bidirectional Encoder Representations from Transformers" .
+
+# Reified mention
+:bert-mention a mito:Mention ;
+    mito:hasMentioningEntity :nlp-paper ;
+    mito:hasMentionedEntity :bert-method ;
+    mito:hasMentionType mito:ExplicitMention .
+
+# In-text pointer in the methods section
+:bert-pointer a c4o:InTextReferencePointer ;
+    c4o:hasContent "[BERT]" .
+
+# Annotation linking pointer to mention
+:pointer-annotation a oa:Annotation ;
+    oa:hasTarget :bert-pointer ;
+    oa:hasBody :bert-mention ;
+    oa:annotatedBy per:research-team .
+
+# Direct relationships for convenience
+:nlp-paper mito:mentions :bert-method .
+:bert-method mito:isMentionedBy :nlp-paper .
+
+## Example 4: Implicit Theory Mention
+
+### Description
+This example demonstrates capturing an **implicit mention** where a paper references a theoretical framework without explicitly naming it. The mention is inferred from the methodology description rather than direct citation.
+
+@prefix : <http://www.sparontologies.net/example/> .
+@prefix mito: <http://purl.org/spar/mito/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+
+# Research entities
+:stats-paper a fabio:JournalArticle ;
+    dcterms:title "Bayesian Approaches to Uncertainty Quantification in Deep Learning" .
+
+:bayesian-theory a fabio:ResearchPaper ;
+    dcterms:title "Bayesian Statistical Inference" .
+
+# Direct mention (implicit)
+:stats-paper mito:mentions :bayesian-theory .
+:bayesian-theory mito:isMentionedBy :stats-paper .
+
+# Reified implicit mention
+:implicit-theory-mention a mito:Mention ;
+    mito:hasMentioningEntity :stats-paper ;
+    mito:hasMentionedEntity :bayesian-theory ;
+    mito:hasMentionType mito:ImplicitMention .
+
+# Annotation explaining the implicit nature
+:implicit-annotation a oa:Annotation ;
+    oa:motivatedBy oa:commenting ;
+    oa:hasTarget :implicit-theory-mention ;
+    oa:hasBody :implicit-explanation .
+
+:implicit-explanation a cnt:ContentAsText ;
+    cnt:chars "Bayesian theory is applied throughout the methodology but never explicitly referenced by name." .

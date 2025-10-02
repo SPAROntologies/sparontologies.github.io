@@ -10,4 +10,30 @@
 
 #repository https://github.com/sparontologies/mito
 
-#description MiTO, the Mention Typing Ontology, is an ontology developed using OWL 2 DL (Web Ontology Language 2 Description Logic), a W3C standard for creating formal ontologies. Its primary aim is to provide a framework for the formalization of the concept of mentions, which are explicit or implicit references to entities, concepts, or other information within a text or discourse. Through MiTO, it becomes possible to define the type of mention in a precise and standardized way, thereby facilitating semantic analysis and the processing of information
+#description MiTO, the Mention Typing Ontology, is an OWL 2 DL ontology designed to formalize the concept of mentions. Mentions can be explicit (e.g., directly stated references in text) or implicit (e.g., indirect references to entities or concepts). This ontology aims to enhance interoperability with other SPAR ontologies by providing a flexible framework for describing mentions and their characteristics.
+
+Mentions are crucial for bibliometric analysis, as they allow researchers to track references to entities (e.g., software) in scholarly communication. 
+
+MiTO introduces the following key concepts:
+
+* **Mention**: Represents the act of referring to or introducing the name of a person, entity, or concept in discourse. This class is defined with minimal restrictions to maximize usability across different contexts.
+
+* **MentionType**: Reifies the implicit or explicit nature of a mention, enabling users to classify mentions based on their characteristics.
+
+MiTO also defines several object properties to describe relationships between mentions and entities:
+
+* `mito:mentions` and its inverse `mito:isMentionedBy`: Connect the two sides involved in the act of mentioning.
+
+* `mito:hasMentionedEntity`: Relates a mention to the entity being mentioned.
+
+* `mito:hasMentioningEntity`: Relates a mention to the entity performing the act of mentioning.
+
+* `mito:hasMentionType`: Defines the implicit or explicit character of the mention.
+
+MiTO is designed to integrate seamlessly with other SPAR ontologies, which provides a modular framework for describing crucial aspects of bibliographic entities and their metadata. 
+
+The ontology is distributed under a Creative Commons Attribution 4.0 International license (https://creativecommons.org/licenses/by/4.0/legalcode).
+
+<img class="img-responsive center-block" src="/static/img/spar/mito-core-diagram.png" alt="A Graffoo diagram introducing the Mention Typing Ontology." />
+
+MiTO is a valuable tool for researchers, publishers, and institutions seeking to analyze and understand the role of mentions in scholarly discourse.
