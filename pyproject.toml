@@ -1,0 +1,12 @@
+[project]
+name = "sparontologies-github-io"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "gevent>=25.9.1",
+    "gunicorn>=23.0.0",
+    "rdflib>=7.4.0",
+    "web-py>=0.62",
+]

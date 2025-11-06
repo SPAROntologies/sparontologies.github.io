@@ -96,7 +96,10 @@ $def with (title, pages, examples)
                     </span>
                 </h4>
                 <p class="desc">$example["description"]</p>
-                <pre><code>$example["code"]</code></pre>
+                $if "code" in example:
+                    <pre><code>$example["code"]</code></pre>
+                $else:
+                    <pre><code># Code example not available</code></pre>
                 $if "cite" in example:
                     <div class="cite bg-info">
                         <p><strong>Please cite the source above with the following reference:</strong></p>
