@@ -209,18 +209,24 @@ class Ontologies:
                 if os.path.exists(ontology_path) and os.path.exists(example_path):
                     cur_ontology_dict = process_hashformat(ontology_path)[0]
                     cur_example_list = process_hashformat(example_path)
+                    
+                    # handle empty DOI
+                    doi_value = cur_ontology_dict["doi"]
+                    if doi_value.lower() == "not defined":
+                        doi_value = "It will be soon available"
+                    
                     web_logger.mes()
                     return render.ontology("SPAR Ontologies - ", pages,
-                                           cur_ontology_dict["name"],
-                                           cur_ontology_dict["acronym"],
-                                           cur_ontology_dict["url"],
-                                           cur_ontology_dict["doi"],
-                                           cur_ontology_dict["documentation"],
-                                           cur_ontology_dict["repository"],
-                                           cur_ontology_dict["description"],
-                                           cur_example_list,
-                                           process_hashformat(publication_list_path),
-                                           onto_acronym)
+                                        cur_ontology_dict["name"],
+                                        cur_ontology_dict["acronym"],
+                                        cur_ontology_dict["url"],
+                                        doi_value,
+                                        cur_ontology_dict["documentation"],
+                                        cur_ontology_dict["repository"],
+                                        cur_ontology_dict["description"],
+                                        cur_example_list,
+                                        process_hashformat(publication_list_path),
+                                        onto_acronym)
                 else:
                     raise web.notfound()
         else:  # Load home

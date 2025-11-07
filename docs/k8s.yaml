@@ -1,0 +1,568 @@
+# this file contains the Kubernetes manifests for deploying sparonontologies onto a kubernetes cluster
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: varnish-external-services-config
+  namespace: default
+data:
+  default.vcl: |
+    vcl 4.0;
+
+    import vsthrottle;
+    import std;
+
+    # Backend: SPAR Ontologies service
+    backend sparontologies {
+        .host = "spar-ontologies-service.default.svc.cluster.local";
+        .port = "80";
+        .first_byte_timeout = 120s;
+        .between_bytes_timeout = 120s;
+    }
+
+    # Rate limiting subroutine
+    sub rate_limit {
+        # Check if host is sparontologies.net domain
+        if (req.http.host ~ "sparontologies\.net$") {
+            # Use real IP if available, otherwise fallback to client.ip
+            if (req.http.X-Real-IP) {
+                # Apply rate limit: 300 requests per 60 seconds
+                if (vsthrottle.is_denied(req.http.X-Real-IP, 300, 60s)) {
+                    set req.http.X-Rate-Limit-Exceeded = "true";
+                    set req.http.X-Rate-Limit = "300";
+                    set req.http.X-Rate-Window = "60";
+                    return (synth(429, "Too Many Requests"));
+                }
+            } else {
+                # Fallback to client.ip
+                if (vsthrottle.is_denied(client.ip, 300, 60s)) {
+                    set req.http.X-Rate-Limit-Exceeded = "true";
+                    set req.http.X-Rate-Limit = "300";
+                    set req.http.X-Rate-Window = "60";
+                    return (synth(429, "Too Many Requests"));
+                }
+            }
+        }
+    }
+
+    # Handle incoming requests
+    sub vcl_recv {
+        # Handle real IP from upstream proxy (Traefik)
+        if (req.http.X-Forwarded-For) {
+            # Get the first IP from X-Forwarded-For list (the real user IP)
+            set req.http.X-Real-IP = regsub(req.http.X-Forwarded-For, ",.*", "");
+            # Pass the real IP to the backend
+            set req.http.X-Forwarded-For = req.http.X-Real-IP;
+        }
+
+        # Redirect sparontologies.net to www.sparontologies.net
+        if (req.http.host == "sparontologies.net") {
+            return (synth(750, "Redirect to www"));
+        }
+
+        # Only accept www.sparontologies.net
+        if (req.http.host != "www.sparontologies.net") {
+            return (synth(404, "Not Found"));
+        }
+
+        # Set backend
+        set req.backend_hint = sparontologies;
+
+        # Handle CORS preflight requests
+        if (req.method == "OPTIONS") {
+            set req.http.X-CORS-Preflight = "true";
+            return (synth(200, "OK"));
+        }
+
+        # Apply rate limiting
+        call rate_limit;
+
+        # Bypass cache if preview parameter is present
+        if (req.url ~ "\?preview=true" || req.url ~ "&preview=true") {
+            set req.http.X-Cache-Skip = "bypass-preview";
+            return (pass);
+        }
+
+        # Handle GET and HEAD requests with caching
+        if (req.method == "GET" || req.method == "HEAD") {
+            # Remove cookies and other varying headers for better cache hits
+            unset req.http.Cookie;
+            return (hash);
+        } else {
+            # Don't cache POST, PUT, DELETE, etc.
+            set req.http.X-Cache-Skip = "non-get-method";
+            return (pass);
+        }
+    }
+
+    # Generate hash key for cache
+    sub vcl_hash {
+        hash_data(req.url);
+        hash_data(req.http.host);
+        return (lookup);
+    }
+
+    # Handle backend responses
+    sub vcl_backend_response {
+        # Handle 4xx and 5xx responses - short cache
+        if (beresp.status >= 400) {
+            set beresp.ttl = 60s;
+            set beresp.grace = 10s;
+            set beresp.keep = 0s;
+            return (deliver);
+        }
+
+        # Cache everything for 30 days (static content)
+        set beresp.ttl = 30d;
+        set beresp.grace = 7d;
+        set beresp.keep = 14d;
+
+        # Remove Set-Cookie from backend responses
+        unset beresp.http.Set-Cookie;
+
+        # Add informative headers
+        set beresp.http.X-Cache-TTL = "30 days";
+
+        return (deliver);
+    }
+
+    # Handle backend errors
+    sub vcl_backend_error {
+        set beresp.http.Content-Type = "text/html; charset=utf-8";
+        set beresp.http.Retry-After = "5";
+        synthetic({"<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <title>Service Temporarily Unavailable</title>
+        <style>
+          body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+          }
+          .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            color: #333;
+          }
+          h1 { 
+            color: #e74c3c;
+            font-size: 32px;
+            margin-bottom: 20px;
+          }
+          p { 
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+          }
+          .icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+          }
+          .error-code {
+            font-family: monospace;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+            color: #e74c3c;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="icon">⚠️</div>
+          <h1>Service Temporarily Unavailable</h1>
+          <p>The SPAR Ontologies service is currently experiencing technical difficulties.</p>
+          <p>We are working to resolve the issue as quickly as possible.</p>
+          <div class="error-code">Error: "} + beresp.status + " " + beresp.reason + {"</div>
+          <p>Please try again in a few moments.</p>
+        </div>
+      </body>
+    </html>"});
+        return (deliver);
+    }
+
+    # Deliver responses to client
+    sub vcl_deliver {
+        # Add CORS headers for all requests
+        if (req.http.Origin) {
+            set resp.http.Access-Control-Allow-Origin = req.http.Origin;
+            set resp.http.Access-Control-Allow-Credentials = "true";
+        } else {
+            set resp.http.Access-Control-Allow-Origin = "*";
+        }
+        set resp.http.Access-Control-Allow-Methods = "GET, POST, OPTIONS, HEAD";
+        set resp.http.Access-Control-Allow-Headers = "Content-Type, Authorization, X-Requested-With, Accept, Origin, DNT, User-Agent";
+        set resp.http.Access-Control-Expose-Headers = "Content-Length, Content-Range, X-Total-Count, X-Cache";
+        set resp.http.Access-Control-Max-Age = "86400";
+
+        # Set X-Cache header based on response type
+        if (obj.hits > 0) {
+            set resp.http.X-Cache = "HIT";
+            set resp.http.X-Cache-Hits = obj.hits;
+        } elsif (req.http.X-Cache-Skip) {
+            set resp.http.X-Cache = "SKIP (" + req.http.X-Cache-Skip + ")";
+        } else {
+            set resp.http.X-Cache = "MISS";
+        }
+
+        # Add cache age
+        if (obj.hits > 0) {
+            set resp.http.Age = obj.age;
+        }
+
+        # Change Server header (keeps the existing easter egg)
+        set resp.http.Server = "Apache/2.4.10 (Win32)";
+
+        # Remove unnecessary headers for clients
+        unset resp.http.Via;
+        unset resp.http.X-Powered-By;
+        unset resp.http.X-Varnish;
+
+        return (deliver);
+    }
+
+    # Handle synthetic responses
+    sub vcl_synth {
+        # Redirect to www subdomain
+        if (resp.status == 750) {
+            set resp.http.Location = "https://www." + req.http.host + req.url;
+            set resp.status = 301;
+            return (deliver);
+        }
+
+        # Handle CORS preflight responses
+        if (req.http.X-CORS-Preflight == "true") {
+            set resp.http.Content-Type = "text/plain";
+            if (req.http.Origin) {
+                set resp.http.Access-Control-Allow-Origin = req.http.Origin;
+                set resp.http.Access-Control-Allow-Credentials = "true";
+            } else {
+                set resp.http.Access-Control-Allow-Origin = "*";
+            }
+            set resp.http.Access-Control-Allow-Methods = "GET, POST, OPTIONS, HEAD";
+            set resp.http.Access-Control-Allow-Headers = "Content-Type, Authorization, X-Requested-With, Accept, Origin, DNT, User-Agent";
+            set resp.http.Access-Control-Max-Age = "86400";
+            set resp.status = 200;
+            set resp.reason = "OK";
+            return (deliver);
+        }
+
+        # Handle 429 Rate Limit Exceeded
+        if (resp.status == 429) {
+            set resp.http.Content-Type = "text/html; charset=utf-8";
+            set resp.http.Retry-After = "60";
+            synthetic({"<!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Rate Limit Exceeded - SPAR Ontologies</title>
+                    <style>
+                        body {
+                            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                            color: #333;
+                            text-align: center;
+                            padding: 50px 20px;
+                            margin: 0;
+                        }
+                        .container {
+                            max-width: 600px;
+                            margin: 0 auto;
+                            background-color: #fff;
+                            padding: 40px;
+                            border-radius: 10px;
+                            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+                        }
+                        h1 {
+                            color: #dc3545;
+                            font-size: 36px;
+                            margin-bottom: 20px;
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 1.6;
+                            margin-bottom: 15px;
+                        }
+                        .icon {
+                            font-size: 60px;
+                            color: #dc3545;
+                            margin-bottom: 20px;
+                        }
+                        .info-box {
+                            background-color: #f8f9fa;
+                            border-left: 4px solid #dc3545;
+                            padding: 15px;
+                            margin: 20px 0;
+                            text-align: left;
+                        }
+                        .info-box strong {
+                            color: #dc3545;
+                        }
+                        .btn {
+                            display: inline-block;
+                            background-color: #007bff;
+                            color: #fff;
+                            padding: 12px 24px;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            margin-top: 20px;
+                            transition: background-color 0.3s;
+                            font-weight: 500;
+                        }
+                        .btn:hover {
+                            background-color: #0056b3;
+                        }
+                        code {
+                            background-color: #f8f9fa;
+                            padding: 2px 6px;
+                            border-radius: 3px;
+                            font-family: monospace;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <div class="icon">⚠️</div>
+                        <h1>Rate Limit Exceeded</h1>
+                        <p>You have exceeded the allowed number of requests to the SPAR Ontologies service.</p>
+                        
+                        <div class="info-box">
+                            <strong>Rate Limit Details:</strong><br>
+                            • Maximum: <code>300 requests per minute</code><br>
+                            • Your IP: Making too many requests<br>
+                            • Retry After: <code>60 seconds</code>
+                        </div>
+                        
+                        <p>Please wait a moment before making additional requests.</p>
+                        <p>If you need higher rate limits for your application, please contact the SPAR Ontologies team.</p>
+                        
+                        <a href="/" class="btn">Return to Homepage</a>
+                    </div>
+                </body>
+                </html>"});
+            return (deliver);
+        }
+
+        # Default synthetic response
+        set resp.http.Content-Type = "text/html; charset=utf-8";
+        return (deliver);
+    }
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: varnish-external-services
+ namespace: default
+ labels:
+   app: varnish-external-services
+spec:
+ replicas: 1
+ revisionHistoryLimit: 30
+ progressDeadlineSeconds: 600
+ selector:
+   matchLabels:
+     app: varnish-external-services
+ strategy:
+   type: RollingUpdate
+ template:
+   metadata:
+     labels:
+       app: varnish-external-services 
+   spec:
+     containers:
+       - name: varnish-external-services
+         image: varnish:7.6.0
+         imagePullPolicy: Always
+         securityContext:
+           capabilities:
+             add: ["IPC_LOCK"]
+         args:
+           - varnishd
+           - '-F'
+           - '-a'
+           - ':80'
+           - '-f'
+           - /etc/varnish/default.vcl
+           - '-s'
+           - malloc,4g
+         ports:
+           - containerPort: 80
+             protocol: TCP
+         resources:
+           limits:
+             memory: 5Gi
+             cpu: 1
+           requests:
+             memory: 4Gi
+             cpu: 1
+         volumeMounts:
+           - name: varnish-external-services-config
+             mountPath: /etc/varnish
+     volumes:
+       - name: varnish-external-services-config
+         configMap:
+           name: varnish-external-services-config
+           defaultMode: 420
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: varnish-external-services-service
+  namespace: default
+  labels:
+    app: varnish-external-services
+spec:
+  selector:
+    app: varnish-external-services
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      name: http
+  type: ClusterIP
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spar-ontologies
+  namespace: default
+  labels:
+    app: spar-ontologies
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: spar-ontologies
+  template:
+    metadata:
+      labels:
+        app: spar-ontologies
+    spec:
+      containers:
+        - name: spar-ontologies
+          image: opencitations/sparontologies:1.0.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+              name: http
+              protocol: TCP
+          env:
+            - name: BASE_URL
+              value: "www.sparontologies.net"
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "1Gi"
+            requests:
+              memory: 1Gi
+              cpu: 200m
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+ name: spar-ontologies-service
+ namespace: default
+ labels:
+   app: spar-ontologies
+spec:
+ selector:
+   app: spar-ontologies
+ ports:
+   - name: http
+     port: 80
+     protocol: TCP
+     targetPort: 8080
+ type: ClusterIP
+---
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: spar-ontologies-https
+  namespace: default
+  labels:
+    app: spar-ontologies
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`www.sparontologies.net`)
+      services:
+        - name: varnish-external-services-service
+          port: 80
+  tls:
+    certResolver: myresolver
+---
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: spar-ontologies-http
+  namespace: default
+  labels:
+    app: spar-ontologies
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`www.sparontologies.net`)
+      middlewares:
+        - name: redirect-to-https
+      services:
+        - name: varnish-external-services-service
+          port: 80
+---
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: spar-ontologies-nowww-https
+  namespace: default
+  labels:
+    app: spar-ontologies
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`sparontologies.net`)
+      services:
+        - name: varnish-external-services-service
+          port: 80
+  tls:
+    certResolver: myresolver
+---
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: spar-ontologies-nowww-http
+  namespace: default
+  labels:
+    app: spar-ontologies
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`sparontologies.net`)
+      middlewares:
+        - name: redirect-to-https
+      services:
+        - name: varnish-external-services-service
+          port: 80
