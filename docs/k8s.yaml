@@ -1,4 +1,7 @@
-# this file contains the Kubernetes manifests for deploying sparonontologies onto a kubernetes cluster
+###
+#   This file contains Kubernetes manifests for deploying SPAR Ontologies, Varnish caching, 
+#   and Traefik IngressRoutes on a Kubernetes cluster.
+###
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -334,19 +337,9 @@ data:
                     <div class="container">
                         <div class="icon">⚠️</div>
                         <h1>Rate Limit Exceeded</h1>
-                        <p>You have exceeded the allowed number of requests to the SPAR Ontologies service.</p>
+                        <p>You have exceeded the allowed number of requests to the website.</p>
                         
-                        <div class="info-box">
-                            <strong>Rate Limit Details:</strong><br>
-                            • Maximum: <code>300 requests per minute</code><br>
-                            • Your IP: Making too many requests<br>
-                            • Retry After: <code>60 seconds</code>
-                        </div>
-                        
-                        <p>Please wait a moment before making additional requests.</p>
-                        <p>If you need higher rate limits for your application, please contact the SPAR Ontologies team.</p>
-                        
-                        <a href="/" class="btn">Return to Homepage</a>
+                        <p>Please wait a moment before making additional requests.</p>                        
                     </div>
                 </body>
                 </html>"});
