@@ -24,8 +24,8 @@ acronyms_path = publications_base_path + "acronyms.txt"
 mediatype_base_path = "mediatype" + os.sep
 mediatype_base_url = "https://w3id.org/spar/mediatype/"
 ontologies_base_url = "http://www.sparontologies.net/ontologies/"
-#ontologies_base_url = "http://localhost:8181/ontologies/" 
-#mediatype_base_url = "http://localhost:8080/mediatype/" 
+# ontologies_base_url = "http://localhost:8181/ontologies/" 
+# mediatype_base_url = "http://localhost:8080/mediatype/" 
 tmp_dir_for_copying_rdf = os.path.expanduser("~")
 src_fragment = "/source"
 
