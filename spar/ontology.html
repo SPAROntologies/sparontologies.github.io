@@ -74,7 +74,12 @@ $def with (title, pages, name, acronym, url, doi, documentation, repository, des
               <dt>URL</dt>
               <dd><a href="$url">$url</a> (alternative at <a href="$url.replace('http://purl.org', 'https://w3id.org').replace('/cerif', '/spar')">w3id.org</a>)</dd>
               <dt>DOI</dt>
-              <dd><a href="https://doi.org/$doi">$doi</a></dd>
+              <dd>
+                  $if doi == "It will be soon available":
+                      $doi
+                  $else:
+                      <a href="https://doi.org/$doi">$doi</a>
+              </dd>
               <dt>Documentation</dt>
               <dd><a href="$documentation">$documentation</a></dd>
               <dt>Source</dt>

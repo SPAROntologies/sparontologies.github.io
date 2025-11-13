@@ -6,7 +6,7 @@ import re
 def process_hashformat(file_path):
     result = []
 
-    with open(file_path, "rU") as f:
+    with open(file_path, "r") as f:
         first_field_name = None
         cur_object = None
         cur_field_name = None
