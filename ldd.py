@@ -7,7 +7,7 @@ import rdflib
 import os
 import shutil
 import re
-import urllib
+import urllib.parse
 from rdflib import RDFS
 
 class LinkedDataDirector(object):
@@ -145,7 +145,7 @@ class LinkedDataDirector(object):
                                                 # (comment the above one if needed)
                                                 external_graph = self.load_graph(
                                                     self.basepath + os.sep +
-                                                    urllib.unquote_plus(
+                                                    urllib.parse.unquote_plus(
                                                         str_o.replace(self.baseurl, "")) +
                                                     # The following line is for internal testing
                                                     # (comment the above one if needed)
@@ -201,8 +201,8 @@ class LinkedDataDirector(object):
         current_graph = rdflib.Graph()
 
         try:
-            current_graph.load(file_path)
+            current_graph.parse(file_path)
         except SAXParseException:
-            current_graph.load(file_path, format="turtle")
+            current_graph.parse(file_path, format="turtle")
 
         return current_graph
