@@ -70,10 +70,10 @@ class OntologyHandler(object):
         current_graph = rdflib.Graph()
 
         try:
-            current_graph.load(ontology_url)
+            current_graph.parse(ontology_url)
         except SAXParseException:
             try:
-                current_graph.load(ontology_url, format="turtle")
+                current_graph.parse(ontology_url, format="turtle")
             except Exception as e:
                 raise e
         except Exception as e:
