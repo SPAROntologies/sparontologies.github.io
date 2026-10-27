@@ -1,0 +1,17 @@
+#name Pattern Ontology
+
+#acronym PO
+
+#url http://purl.org/spar/po
+
+#doi TBA
+
+#source https://sparontologies.github.io/po/current/po.ttl
+
+#documentation http://purl.org/spar/po.html
+
+#repository https://github.com/sparontologies/po
+
+#description The **_Pattern Ontology (PO)_** is an OWL 2 DL ontology that formally defines patterns for segmenting a document into atomic components, in order to be manipulated independently and re-flowed in different contexts.
+
+Structural patterns allow representing document elements (such as sections, paragraphs, lists, metadata, and tables) through abstract, reusable primitives independent of specific markup syntaxes.

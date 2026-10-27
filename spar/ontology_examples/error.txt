@@ -1,0 +1,43 @@
+#id error_1
+
+#title Flagging an erroneous resource
+
+#description A resource can be directly marked as erroneous by asserting a description of its error. 
+Since no resource can have any `error:hasError` assertion, a reasoner will classify it as a member of `owl:Nothing`, making the model inconsistent.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix error: <http://www.essepuntato.it/2009/10/error#> .
+@prefix fabio: <http://purl.org/spar/fabio/>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:my-article a fabio:Article ;
+    error:hasError "The article has two different publication dates."^^xsd:string .
+
+#cite TBA
+
+
+#id error_2
+
+#title Defining a forbidden situation through a class axiom
+
+#description An incorrect situation can be modelled as a class whose members are automatically associated with an error description. 
+Any individual that falls in such a class makes the model inconsistent, and the error description explains why.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix error: <http://www.essepuntato.it/2009/10/error#> .
+@prefix fabio: <http://purl.org/spar/fabio/>
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:DraftAndPublishedDocument
+    owl:equivalentClass [ a owl:Class ;
+        owl:intersectionOf ( fabio:Manuscript fabio:JournalArticle ) ] ;
+    rdfs:subClassOf [ a owl:Restriction ;
+        owl:onProperty error:hasError ;
+        owl:hasValue "A document cannot be a draft and published at the same time."^^xsd:string ] .
+
+:my-document a fabio:Manuscript , 
+    fabio:JournalArticle .
+
+#cite TBA

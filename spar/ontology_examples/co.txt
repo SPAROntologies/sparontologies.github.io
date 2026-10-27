@@ -1,0 +1,83 @@
+#id co_1
+
+#title A reading list as a set
+
+#description A reading list contains two papers. 
+The order of the papers is not relevant and each paper is in the reading list only once. 
+Thus, the reading list is a `co:Set` that is linked to its members with `co:element`.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix co: <http://purl.org/co/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:reading-list a co:Set ;
+    co:element :paper-1 , :paper-2 ;
+    co:size "2"^^xsd:nonNegativeInteger .
+
+#cite TBA
+
+
+#id co_2
+
+#title In-text citations as a bag
+
+#description The text of an article cites `:paper-1` twice and `:paper-2` once. 
+The order of the citations is not relevant, but the number of times each paper is cited is. 
+Thus, the citations are a `co:Bag` of three `co:Item`s: each item is one occurrence, and `co:itemContent` links the item to the cited paper. 
+The statements `:citations co:element :paper-1 , :paper-2` are inferred by means of the property chain `co:item o co:itemContent`.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix co: <http://purl.org/co/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:citations a co:Bag ;
+    co:item :citation-1 , 
+        :citation-2 , 
+        :citation-3 ;
+    co:size "3"^^xsd:nonNegativeInteger .
+
+:citation-1 a co:Item ; 
+        co:itemContent :paper-1 .
+
+:citation-2 a co:Item ; 
+        co:itemContent :paper-2 .
+
+:citation-3 a co:Item ; 
+        co:itemContent :paper-1 .
+
+#cite TBA
+
+
+#id co_3
+
+#title The authors of a paper as a list
+
+#description A paper has three authors, and their order is relevant. 
+Thus, the authors are a `co:List` of three `co:ListItem`s. 
+Each list item has a position (`co:index`), refers to one author (`co:itemContent`) and is linked to the list item that follows it (`co:nextItem`).
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix co: <http://purl.org/co/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:authors a co:List ;
+    co:firstItem :author-1 ;
+    co:item :author-1 , :author-2 , :author-3 ;
+    co:lastItem :author-3 ;
+    co:size "3"^^xsd:nonNegativeInteger .
+
+:author-1 a co:ListItem ;
+    co:index "1"^^xsd:positiveInteger ;
+    co:itemContent :alice ;
+    co:nextItem :author-2 .
+
+:author-2 a co:ListItem ;
+    co:index "2"^^xsd:positiveInteger ;
+    co:itemContent :bob ;
+    co:nextItem :author-3 .
+
+:author-3 a co:ListItem ;
+    co:index "3"^^xsd:positiveInteger ;
+    co:itemContent :carol .
+
+#cite TBA

@@ -1,0 +1,34 @@
+#id po_1
+
+#title Making assertions on values
+
+#description A reified literal can be enriched with metadata, such as provenance, which cannot be attached directly to plain RDF literals.
+
+#code @prefix : <http://sparontologies.net/example/> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:section-1 a po:HeadedContainer ;
+    po:hasName "section" ;
+    po:containsAsHeader :heading-1 ;
+    po:contains :paragraph-1 .
+
+:heading-1 a po:Block ;
+    po:hasName "h1" ;
+    po:contains :text-heading .
+
+:paragraph-1 a po:Block ;
+    po:hasName "p" ;
+    po:contains :text-span .
+
+:text-span a po:Inline ;
+    po:hasName "span" ;
+    po:contains :atom-text .
+
+:text-heading a po:Atom ;
+    po:hasName "text" .
+
+:atom-text a po:Atom ;
+    po:hasName "text" .
+
+#cite TBA
