@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Propose a new ontology
+    url: https://github.com/sparontologies/sparontologies.github.io/issues
+    about: New ontologies are proposed in the sparontologies.github.io repository, with an issue titled "NEW <ontology name>" and labelled "new ontology".
+  - name: Questions and support
+    url: https://github.com/sparontologies/.github/blob/main/SUPPORT.md
+    about: Where to ask questions about the SPAR Ontologies.
