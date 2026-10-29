@@ -1,0 +1,17 @@
+#name Literal Reification pattern
+
+#acronym literal
+
+#url http://purl.org/spar/literal
+
+#doi TBA
+
+#source https://sparontologies.github.io/literal/current/literal.ttl
+
+#documentation http://purl.org/spar/literal.html
+
+#repository https://github.com/sparontologies/literal
+
+#description The **_Literal Reification pattern_** is an Ontology Design Pattern that addresses scenarios in which it is needed to bless particular literals, usually when applying data properties, in order to use them as subjects and/or full-fledged objects of semantic assertions.
+
+More specifically, this pattern promotes any literal as “first class object” in OWL by reifying it as a proper individual of the class `literal:Literal`.

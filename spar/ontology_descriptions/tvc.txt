@@ -1,0 +1,25 @@
+#name Time-indexed Value in Context pattern
+
+#acronym TVC
+
+#url http://purl.org/spar/tvc
+
+#doi TBA
+
+#source https://sparontologies.github.io/tvc/current/tvc.ttl
+
+#documentation http://purl.org/spar/tvc.html
+
+#repository https://github.com/sparontologies/tvc
+
+#description The **_Time-indexed Value in Context pattern (TVC)_** is an Ontology Design Pattern for the description of scenarios that involve entities having some value during a particular time and within a particular context.
+
+Sometimes, we need to describe scenarios in which someone (e.g., a person) has a value (e.g., a particular role) during a particular time and for a particular context. 
+Four different things are involved in these kinds of scenarios:
+
+1. the _entity_ having some value, e.g. a person or a document possessing a role or a status;
+2. the _value_ had by someone, e.g. a role or a status;
+3. the _time period_ during which the entity has that value, e.g. from April 2008 to September 2008;
+4. the particular _context_ that characterises the act of having that value, e.g. being a member of an institution or an editor of a particular journal.
+
+Thought as a natural extension of the [_Time-indexed Situation pattern_](http://ontologydesignpatterns.org/wiki/Submissions:TimeIndexedSituation), TVC is able to describe these kinds of scenarios.

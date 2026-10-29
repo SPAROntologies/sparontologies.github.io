@@ -1,0 +1,31 @@
+name: Ontology Validation
+
+on:
+  workflow_call:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout ontology repository
+        uses: actions/checkout@v4
+
+      - name: Checkout validation tools
+        uses: actions/checkout@v4
+        with:
+          repository: SPAROntologies/sparontologies.github.io
+          path: .tools
+          sparse-checkout: scripts/test_ontology.py
+          sparse-checkout-cone-mode: false
+
+      - name: Install uv and Python
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: "latest"
+
+      - name: Run ontology tests
+        run: >-
+          uvx --python 3.13 --with rdflib --with owlrl --with requests --with codespell pytest
+          .tools/scripts/test_ontology.py -p no:cacheprovider -rs --junitxml=validation_report.xml
+        continue-on-error: true

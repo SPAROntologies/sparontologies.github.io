@@ -1,0 +1,28 @@
+#id tvc_1
+
+#title Making assertions on values
+
+#description TVC easily allows one to model people's roles within certain contexts (e.g., organisations) and how these change through time, while keeping track of the fact that they all refer to the same entities. The following example shows how to model the fact that a researcher holds the role of editor-in-chief for a scientific journal for a specific time interval.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:john-doe a foaf:Person ;
+    tvc:hasValue :editorial-role-situation .
+
+:editorial-role-situation a tvc:ValueInTime ;
+    tvc:withValue :editor-in-chief ;
+    tvc:withinContext :journal-of-semantics ;
+    tvc:atTime :tenure-interval .
+
+:tenure-interval a ti:TimeInterval ;
+    ti:hasIntervalStartDate "2020-01-01"^^xsd:date ;
+    ti:hasIntervalEndDate "2024-12-31"^^xsd:date .
+
+:journal-of-semantics a foaf:Organization .
+
+#cite TBA

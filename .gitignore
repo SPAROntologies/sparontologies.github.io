@@ -2,6 +2,7 @@
 sparontologies_log.txt
 nohup.out
 private/
+.pytest_cache/
 
 
 #log folder

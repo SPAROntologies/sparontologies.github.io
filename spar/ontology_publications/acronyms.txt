@@ -11,3 +11,9 @@
 #fivestars Five*: Five Stars of Online Research Articles Ontology 
 #fr FR: FAIR* Reviews Ontology
 #mito MiTO: Mention Typing Ontology
+#literal literal: Literal Reification pattern
+#po PO: Pattern Ontology
+#tvc TVC: Time-indexed Value in Context pattern
+#co CO: Collections Ontology
+#error error: Error Ontology
+#amo AMO: Argument Model Ontology

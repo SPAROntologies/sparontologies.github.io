@@ -1,0 +1,45 @@
+#id literal_1
+
+#title Making assertions on values
+
+#description A reified literal can be enriched with metadata, such as provenance, which cannot be attached directly to plain RDF literals.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+:paper-title-en a literal:Literal ;
+    literal:hasLiteralValue "Literal Reification in OWL"@en ;
+    dcterms:creator <https://orcid.org/0000-0003-0530-4305> ;
+    dcterms:issued "2026-09-16"^^xsd:date .
+
+:paper literal:hasLiteral :paper-title-en .
+
+#cite TBA
+
+
+#id literal_2
+
+#title Modelling domains concerning descriptive tags
+
+#description Literal reification allows linking synonyms, shared values, or contextual tagging without duplicating string logic.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+:tag-ai a literal:Literal ;
+    literal:hasLiteralValue "Artificial Intelligence" ;
+    literal:hasSameLiteralValueAs :tag-ai-alias .
+
+:tag-ai-alias a literal:Literal ;
+    literal:hasLiteralValue "Artificial Intelligence" .
+
+:paper-1 literal:hasLiteral :tag-ai .
+:paper-2 literal:hasLiteral :tag-ai-alias .
+
+#cite TBA

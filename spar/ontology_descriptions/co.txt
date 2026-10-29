@@ -1,0 +1,57 @@
+#name Collections Ontology
+
+#acronym CO
+
+#url http://purl.org/co
+
+#doi TBA
+
+#source https://sparontologies.github.io/co/current/co.ttl
+
+#documentation http://purl.org/co.html
+
+#repository https://github.com/sparontologies/co
+
+#description The **_Collections Ontology (CO)_** is an ontology for defining unordered collections (sets and bags) and ordered collections (or lists).
+
+The main class of CO is `co:Collection`, i.e. a group of objects that can be considered as a whole. 
+Each collection is linked to the objects it contains by means of the property `co:element` (with `co:elementOf` as its inverse), and to the number of objects it contains by means of the property `co:size`. 
+A collection has exactly one size.
+
+CO defines three kinds of collections:
+
+- `co:Set`, an unordered collection that cannot contain duplicate elements;
+- `co:Bag`, an unordered collection that can contain the same element more than once;
+- `co:List`, a bag in which the elements are ordered.
+
+Since the same object can be in a bag more than once, a bag is not only linked to its elements. 
+Each occurrence of an object in a bag is a `co:Item`, and each list item in a list is a `co:ListItem`, which is a subclass of `co:Item`. 
+
+A `co:Set` is the simplest collection of CO. 
+A set is directly linked to each of its members by means of `co:element`. 
+No item is necessary, since each object can be in a set only once. 
+The size of a set is the number of its elements.
+
+A `co:Bag` is linked to its items by means of `co:item`. 
+Each `co:Item` is one occurrence of an object in the bag, and it is linked to that object by means of the functional property `co:itemContent`. 
+An item cannot be the content of another item. 
+Two items of the same bag can have the same content: this is how a bag contains duplicates.
+
+The property chain `co:item o co:itemContent` is a subproperty of `co:element`. 
+Thus, the elements of a bag are inferred from its items. 
+The size of a bag is the number of its items, not the number of its distinct elements.
+
+A `co:List` is a bag in which all the items are `co:ListItem`s.
+A list has at most one first item (`co:firstItem`) and at most one last item (`co:lastItem`). 
+
+Each list item has exactly one position in the list, starting from 1, specified by means of `co:index`. 
+Each list item is linked to the list item that immediately follows it by means of `co:nextItem`, and to the list item that immediately precedes it by means of `co:previousItem`. 
+The property chain `co:item o co:nextItem` is a subproperty of `co:item`. Thus, it is sufficient to specify the first item of a list and the chain of `co:nextItem` relations: all the other items of the list are inferred.
+
+CO also includes some SWRL rules that complete the description of a list:
+
+- the index of a list item is the index of its previous item plus one;
+- two items of the same list with consecutive indexes are linked by `co:nextItem`;
+- the item of a list with index 1 is the first item of the list;
+- the size of a list is the index of its last item, and the item whose index is equal to the size of the list is the last item of the list;
+- a list item that is preceded or followed by itself raises an error (`error:hasError`).
