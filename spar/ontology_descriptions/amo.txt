@@ -1,0 +1,31 @@
+#name Argument Model Ontology
+
+#acronym AMO
+
+#url http://purl.org/spar/amo
+
+#doi TBA
+
+#source https://sparontologies.github.io/amo/current/amo.ttl
+
+#documentation http://purl.org/spar/amo.html
+
+#repository https://github.com/sparontologies/amo
+
+#description The **_Argument Model Ontology (AMO)_** is an OWL 2 DL ontology that aims to encode the [Toulmin's theory](https://doi.org/10.1017/CBO9780511840005) through OWL classes and properties, in order to describe a web of inter-linked entities that participate, with a specific role, in one or more arguments.
+
+Toulmin's model of argument focuses on the justificatory function of argumentation: rather than evaluating arguments through formal logic, it describes how people, in practice, put forward a claim and then justify it. 
+According to this model, every practical argument can be analysed in terms of six interrelated components. 
+Three of them are essential: the claim to be established, the evidence (or data) on which it is founded, and the warrant that bridges from the evidence to the claim. 
+The other three may be omitted in some arguments: the backing that certifies the warrant, the qualifier that expresses the degree of certainty of the claim, and the rebuttal that states the conditions under which the claim would not hold.
+
+<img class="img-responsive center-block" src="/static/img/spar/amo-diagram.png" alt="A Graffoo diagram introducing the Argument Model Ontology." />
+
+AMO models an argument through the class `amo:Argument`, whose components are instances of `amo:Claim`, `amo:Evidence`, `amo:Warrant`, `amo:Backing` and `amo:Rebuttal`, all grouped under the class `amo:ArgumentationEntity`, and of `amo:Qualifier`. 
+An argument is linked to its components through the sub-properties of `amo:involves` (i.e., `amo:hasClaim`, `amo:hasEvidence`, `amo:hasWarrant`, `amo:hasBacking`, `amo:hasQualifier` and `amo:hasRebuttal`), and each argument must have exactly one claim and at least one evidence and one warrant. 
+The components are, in turn, linked to one another: an evidence proves a claim (`amo:proves`) and supports a warrant (`amo:supports`), a warrant leads to a claim (`amo:leadsTo`), a backing backs a warrant (`amo:backs`), a qualifier forces a claim (`amo:forces`), and a claim is valid unless a rebuttal holds (`amo:isValidUnless`). 
+Several of these relations are automatically inferred, by means of property chains, from the description of the roles that the components hold within the argument.
+
+<img class="img-responsive center-block" src="/static/img/spar/amo-argument-diagram.png" alt="How an argument is modelled using AMO." />
+
+AMO is aligned with the [Citation Typing Ontology (CiTO)](http://purl.org/spar/cito), an ontology for the characterization of citations, both factually and rhetorically that forms part of [SPAR, a suite of Semantic Publishing and Referencing Ontologies](http://sparontologies.net).

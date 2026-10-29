@@ -16,3 +16,4 @@
 #tvc TVC: Time-indexed Value in Context pattern
 #co CO: Collections Ontology
 #error error: Error Ontology
+#amo AMO: Argument Model Ontology

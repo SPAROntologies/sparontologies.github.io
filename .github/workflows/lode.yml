@@ -1,0 +1,56 @@
+name: LODE documentation
+
+on:
+  workflow_call:
+    inputs:
+      ontology:
+        description: Path to the ontology file, e.g. docs/current/mito.ttl
+        required: true
+        type: string
+      read-as:
+        description: How LODE reads the input (owl, rdf or skos)
+        default: owl
+        type: string
+      keep:
+        description: Space-separated patterns in the output folder that LODE must not touch
+        default: "*.png *.graphml"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  lode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install LODE
+        run: pip install oc-lode
+
+      - name: Generate documentation
+        env:
+          ONTOLOGY: ${{ inputs.ontology }}
+          READ_AS: ${{ inputs.read-as }}
+          KEEP: ${{ inputs.keep }}
+        run: |
+          out=$(dirname "$ONTOLOGY")
+          file=$(basename "$ONTOLOGY")
+          excludes=(--exclude "$file")
+          set -f
+          for p in $KEEP; do excludes+=(--exclude "$p"); done
+          set +f
+          lode build --file "$ONTOLOGY" --read-as "$READ_AS" --out "$RUNNER_TEMP/lode" --artefact-name "${file%.*}"
+          rsync -a --delete "${excludes[@]}" "$RUNNER_TEMP/lode/" "$out/"
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add -A "$(dirname "${{ inputs.ontology }}")"
+          git diff --cached --quiet || git commit -m "DOCS: regenerate documentation with LODE"
+          git push

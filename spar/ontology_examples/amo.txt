@@ -1,0 +1,51 @@
+#id amo_1
+
+#title Describing the components of an argument
+
+#description Consider the argument "This ontology was developed in OWL, and since an ontology developed in OWL is a consistent OWL ontology, as stated by the OWL 2 specifications, this is presumably a consistent OWL ontology, unless a reasoner for OWL 2 proves that it is not consistent". 
+The argument can be described from a high-level perspective by stating which argumentation entities it involves and which role each of them holds.
+
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix amo: <http://purl.org/spar/amo/> .
+
+:argument a amo:Argument ;
+    amo:hasClaim :consistency-claim ;
+    amo:hasEvidence :developed-in-owl ;
+    amo:hasWarrant :owl-warrant ;
+    amo:hasBacking :owl2-spec ;
+    amo:hasQualifier :presumably ;
+    amo:hasRebuttal :reasoner-rebuttal .
+
+:consistency-claim a amo:Claim .
+:developed-in-owl a amo:Evidence .
+:owl-warrant a amo:Warrant .
+:owl2-spec a amo:Backing .
+:presumably a amo:Qualifier .
+:reasoner-rebuttal a amo:Rebuttal .
+
+#cite TBA
+
+
+#id amo_2
+
+#title Describing the relations between argumentation entities
+
+#description The same argument can be described from a factual perspective, by stating how its argumentation entities are linked to one another. 
+The relations between evidence and claim, warrant and claim, qualifier and claim, and claim and rebuttal can also be inferred from the high-level description through the property chains defined in AMO.
+
+#code @prefix : <http://www.sparontologies.net/example/> .
+@prefix amo: <http://purl.org/spar/amo/> .
+
+:developed-in-owl amo:proves :consistency-claim ;
+    amo:supports :owl-warrant .
+
+:owl-warrant amo:leadsTo :consistency-claim .
+
+:owl2-spec amo:backs :owl-warrant .
+
+:presumably amo:forces :consistency-claim .
+
+:consistency-claim amo:isValidUnless :reasoner-rebuttal .
+
+#cite TBA

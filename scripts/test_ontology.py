@@ -18,9 +18,16 @@ ACRONYM = _pyproject["project"]["name"]
 _config = _pyproject.get("tool", {}).get("validate", {})
 ONTOLOGY_FILE = ROOT / _config.get("ontology_file", f"docs/current/{ACRONYM}.ttl")
 NAMESPACE = _config.get("namespace", f"http://purl.org/spar/{ACRONYM}/")
-FOOPS_API_URL = _config.get("foops_api_url", "https://foops.linkeddata.es/assessOntologyFile")
+
+def _urls(key, default):
+    value = _config.get(key, default)
+    return [value] if isinstance(value, str) else value
+
+
+# Each may be a single URL or a list tried in order (e.g. public instance, then a self-hosted one).
+FOOPS_API_URLS = _urls("foops_api_url", "https://foops.linkeddata.es/assessOntologyFile")
 MIN_FAIR_SCORE = _config.get("min_fair_score", 0.85)
-OOPS_API_URL = _config.get("oops_api_url", "https://oops.linkeddata.es/rest")
+OOPS_API_URLS = _urls("oops_api_url", "https://oops.linkeddata.es/rest")
 OOPS_NS = "{http://www.oeg-upm.net/oops}"
 
 PREFIXES = """
@@ -102,14 +109,18 @@ def test_consistency(graph):
     assert not semantics.error_messages, "Inconsistencies found:\n" + "\n".join(semantics.error_messages)
 
 
-def post_or_skip(service, url, **kwargs):
-    try:
-        response = requests.post(url, **kwargs)
-    except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
-        pytest.skip(f"{service} API unreachable: {e}")
-    if response.status_code >= 500:
-        pytest.skip(f"{service} API unavailable ({response.status_code})")
-    return response
+def post_or_skip(service, urls, **kwargs):
+    errors = []
+    for url in urls:
+        try:
+            response = requests.post(url, **kwargs)
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
+            errors.append(f"{url}: unreachable ({e})")
+            continue
+        if response.status_code < 500:
+            return response
+        errors.append(f"{url}: unavailable ({response.status_code})")
+    pytest.skip(f"{service} API unavailable:\n" + "\n".join(errors))
 
 
 def test_oops_pitfalls(graph):
@@ -127,7 +138,7 @@ def test_oops_pitfalls(graph):
     )
     response = post_or_skip(
         "OOPS!",
-        OOPS_API_URL,
+        OOPS_API_URLS,
         data=request.encode("utf-8"),
         headers={"Content-Type": "application/xml"},
         timeout=(15, 120),
@@ -157,14 +168,13 @@ def test_oops_pitfalls(graph):
 
 
 def test_fair_score():
-    with open(ONTOLOGY_FILE, "rb") as f:
-        response = post_or_skip(
-            "FOOPS!",
-            FOOPS_API_URL,
-            files={"file": (ONTOLOGY_FILE.name, f, "text/turtle")},
-            headers={"Accept": "application/json"},
-            timeout=(15, 60),
-        )
+    response = post_or_skip(
+        "FOOPS!",
+        FOOPS_API_URLS,
+        files={"file": (ONTOLOGY_FILE.name, ONTOLOGY_FILE.read_bytes(), "text/turtle")},
+        headers={"Accept": "application/json"},
+        timeout=(15, 60),
+    )
     assert response.ok, f"FOOPS! API request failed ({response.status_code}): {response.text[:500]}"
     try:
         data = response.json()
