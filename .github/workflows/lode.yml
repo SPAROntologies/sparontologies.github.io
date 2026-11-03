@@ -15,6 +15,10 @@ on:
         description: Space-separated patterns in the output folder that LODE must not touch
         default: "*.png *.graphml"
         type: string
+      args:
+        description: Extra space-separated options for lode build, e.g. "--imported" or "--closure --lang it"
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -37,14 +41,16 @@ jobs:
           ONTOLOGY: ${{ inputs.ontology }}
           READ_AS: ${{ inputs.read-as }}
           KEEP: ${{ inputs.keep }}
+          ARGS: ${{ inputs.args }}
         run: |
           out=$(dirname "$ONTOLOGY")
           file=$(basename "$ONTOLOGY")
           excludes=(--exclude "$file")
           set -f
           for p in $KEEP; do excludes+=(--exclude "$p"); done
+          read -ra extra <<< "$ARGS"
           set +f
-          lode build --file "$ONTOLOGY" --read-as "$READ_AS" --out "$RUNNER_TEMP/lode" --artefact-name "${file%.*}"
+          lode build --file "$ONTOLOGY" --read-as "$READ_AS" --out "$RUNNER_TEMP/lode" --artefact-name "${file%.*}" "${extra[@]}"
           rsync -a --delete "${excludes[@]}" "$RUNNER_TEMP/lode/" "$out/"
 
       - name: Commit changes
