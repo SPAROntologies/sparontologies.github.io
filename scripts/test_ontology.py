@@ -1,5 +1,8 @@
 # scripts/test_ontology.py
 
+import io
+import os
+import shutil
 import subprocess
 import tomllib
 import warnings
@@ -9,7 +12,7 @@ from pathlib import Path
 import pytest
 import requests
 from owlrl import OWLRL_Semantics
-from rdflib import OWL, Graph
+from rdflib import OWL, RDF, BNode, Graph, Namespace
 
 ROOT = Path.cwd()
 
@@ -29,6 +32,8 @@ FOOPS_API_URLS = _urls("foops_api_url", "https://foops.linkeddata.es/assessOntol
 MIN_FAIR_SCORE = _config.get("min_fair_score", 0.85)
 OOPS_API_URLS = _urls("oops_api_url", "https://oops.linkeddata.es/rest")
 OOPS_NS = "{http://www.oeg-upm.net/oops}"
+SWRL = Namespace("http://www.w3.org/2003/11/swrl#")
+ASKWOL_API_URLS =_urls("askwol_api_url", "https://askwol.net/api/validate?compact=true")
 
 PREFIXES = """
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -81,6 +86,26 @@ def graph():
     return Graph().parse(ONTOLOGY_FILE, format="turtle")
 
 
+@pytest.fixture(scope="session", autouse=True)
+def report_metadata(record_testsuite_property):
+    """Tie the JUnit report to what was tested: file, ontology version, commits and workflow run."""
+    record_testsuite_property("ontology_file", str(ONTOLOGY_FILE.relative_to(ROOT)))
+    try:
+        g = Graph().parse(ONTOLOGY_FILE, format="turtle")
+    except Exception:
+        g = Graph()  # missing or broken file: test_syntax reports it
+    for prop in (OWL.versionIRI, OWL.versionInfo):
+        for value in g.objects(None, prop):
+            record_testsuite_property(prop.fragment, str(value))
+    env = os.environ
+    record_testsuite_property("commit", env.get("GITHUB_SHA", "local"))
+    record_testsuite_property("tools_commit", env.get("TOOLS_SHA", "local"))
+    if "GITHUB_RUN_ID" in env:
+        record_testsuite_property(
+            "run", f"{env['GITHUB_SERVER_URL']}/{env['GITHUB_REPOSITORY']}/actions/runs/{env['GITHUB_RUN_ID']}"
+        )
+
+
 def test_syntax(graph):
     assert len(graph) > 0, "Ontology file contains no triples."
 
@@ -109,6 +134,68 @@ def test_consistency(graph):
     assert not semantics.error_messages, "Inconsistencies found:\n" + "\n".join(semantics.error_messages)
 
 
+def import_closure(graph):
+    """The ontology merged with everything it imports, transitively, without owl:imports triples.
+
+    Owlready2 fetches imports without content negotiation (it gets the HTML docs of SPAR ontologies),
+    so imports are resolved here with rdflib instead.
+    """
+    merged = Graph()
+    merged += graph
+    seen, pending = set(), list(graph.objects(None, OWL.imports))
+    while pending:
+        iri = pending.pop()
+        if iri in seen:
+            continue
+        seen.add(iri)
+        try:
+            imported = Graph().parse(iri)
+        except Exception as e:
+            warnings.warn(f"Import {iri} could not be loaded, reasoning without it: {e}")
+            continue
+        merged += imported
+        pending.extend(imported.objects(None, OWL.imports))
+    merged.remove((None, OWL.imports, None))
+    return merged
+
+
+def drop_builtin_rules(graph):
+    """Remove SWRL rules with built-in atoms (e.g. in the Pattern Ontology): HermiT rejects them."""
+    dropped = 0
+    for rule in set(graph.subjects(RDF.type, SWRL.Imp)):
+        nodes, stack = {rule}, [rule]
+        while stack:
+            for o in graph.objects(stack.pop()):
+                if isinstance(o, BNode) and o not in nodes:
+                    nodes.add(o)
+                    stack.append(o)
+        if any((n, RDF.type, SWRL.BuiltinAtom) in graph for n in nodes):
+            for n in nodes:
+                graph.remove((n, None, None))
+            dropped += 1
+    if dropped:
+        warnings.warn(f"{dropped} SWRL rule(s) with built-in atoms ignored: HermiT does not support them.")
+    return graph
+
+
+def test_dl_reasoner(graph):
+    owlready2 = pytest.importorskip("owlready2")
+    if not shutil.which("java"):
+        pytest.skip("Java not found: HermiT cannot run.")
+    world = owlready2.World()
+    content = drop_builtin_rules(import_closure(graph)).serialize(format="nt", encoding="utf-8")
+    world.get_ontology(NAMESPACE).load(fileobj=io.BytesIO(content), format="ntriples")
+    try:
+        owlready2.sync_reasoner_hermit(world, infer_property_values=False, debug=0)
+    except owlready2.OwlReadyInconsistentOntologyError:
+        pytest.fail("HermiT: the ontology (with its imports) is inconsistent.")
+    except owlready2.OwlReadyJavaError as e:
+        # HermiT also refuses some OWL 2 DL violations (e.g. non-simple properties in cardinality restrictions).
+        pytest.fail(f"HermiT could not reason over the ontology:\n{str(e)[-2000:]}")
+    unsatisfiable = [c.iri for c in world.inconsistent_classes() if c is not owlready2.Nothing]
+    assert not unsatisfiable, f"Unsatisfiable classes: {unsatisfiable}"
+
+
 def post_or_skip(service, urls, **kwargs):
     errors = []
     for url in urls:
@@ -117,7 +204,7 @@ def post_or_skip(service, urls, **kwargs):
         except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
             errors.append(f"{url}: unreachable ({e})")
             continue
-        if response.status_code < 500:
+        if response.status_code < 500 and response.status_code != 429:
             return response
         errors.append(f"{url}: unavailable ({response.status_code})")
     pytest.skip(f"{service} API unavailable:\n" + "\n".join(errors))
@@ -192,3 +279,29 @@ def test_fair_score():
         f"FAIR score ({overall_score * 100:.1f}%) is below the minimum threshold ({MIN_FAIR_SCORE * 100:.1f}%).\n"
         + "\n".join(failed_checks)
     )
+
+
+def test_askwol():
+    response = post_or_skip(
+        "Ask Wol",
+        ASKWOL_API_URLS,
+        files={"file": (ONTOLOGY_FILE.name, ONTOLOGY_FILE.read_bytes(), "text/turtle")},
+        data={"format": "turtle"},
+        timeout=(15, 300),
+    )
+    try:
+        data = response.json()
+    except ValueError:
+        pytest.fail(f"Ask Wol API returned a non-JSON response: {response.text[:500]}")
+    assert not data.get("input_error"), f"Ask Wol could not read the ontology: {data['input_error']}"
+    assert response.ok and "severity_summary" in data, (
+        f"Ask Wol API request failed ({response.status_code}): {response.text[:500]}"
+    )
+
+    summary = data["severity_summary"]
+    findings = summary.get("findings", [])
+    details = "\n".join(f"[{f['severity']}] {f['check']}: {f.get('subject', '')} {f['message']}" for f in findings)
+    counts = f"{summary.get('errors', 0)} errors, {summary.get('warnings', 0)} warnings, {summary.get('recommendations', 0)} recommendations"
+    assert not summary.get("has_errors"), f"Ask Wol found errors ({counts}):\n{details}"
+    if findings:
+        warnings.warn(f"Ask Wol findings ({counts}): none are errors, review them manually.\n{details}")
