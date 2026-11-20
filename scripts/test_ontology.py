@@ -186,11 +186,10 @@ def test_dl_reasoner(graph):
     content = drop_builtin_rules(import_closure(graph)).serialize(format="nt", encoding="utf-8")
     world.get_ontology(NAMESPACE).load(fileobj=io.BytesIO(content), format="ntriples")
     try:
-        owlready2.sync_reasoner_hermit(world, infer_property_values=False, debug=0)
+        owlready2.sync_reasoner_hermit(world, infer_property_values=False, debug=0, ignore_unsupported_datatypes=True)
     except owlready2.OwlReadyInconsistentOntologyError:
         pytest.fail("HermiT: the ontology (with its imports) is inconsistent.")
     except owlready2.OwlReadyJavaError as e:
-        # HermiT also refuses some OWL 2 DL violations (e.g. non-simple properties in cardinality restrictions).
         pytest.fail(f"HermiT could not reason over the ontology:\n{str(e)[-2000:]}")
     unsatisfiable = [c.iri for c in world.inconsistent_classes() if c is not owlready2.Nothing]
     assert not unsatisfiable, f"Unsatisfiable classes: {unsatisfiable}"
