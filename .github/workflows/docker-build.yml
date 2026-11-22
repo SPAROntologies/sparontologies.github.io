@@ -10,40 +10,47 @@ env:
   SERVIZIO_OC: sparontologies
   DOCKER_REGISTRY: opencitations
 
+
 jobs:
   docker-build-push:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
-      
-    - name: Read version from docker_version.txt
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39 # v8.2.0
+
+    - name: Check uv.lock is in sync with pyproject.toml
+      run: uv lock --check
+
+    - name: Read version from pyproject.toml
       id: get_version
       run: |
-        if [ ! -f docker_version.txt ]; then
-          echo "Error: docker_version.txt file not found"
+        if [ ! -f pyproject.toml ]; then
+          echo "Error: pyproject.toml file not found"
           exit 1
         fi
-        VERSION=$(cat docker_version.txt | tr -d '\n\r' | xargs)
+        VERSION=$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)
         if [ -z "$VERSION" ]; then
-          echo "Error: empty version in docker_version.txt"
+          echo "Error: empty version in pyproject.toml"
           exit 1
         fi
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
         echo "Found version: $VERSION"
-    
+
     - name: Check if image exists on DockerHub
       id: check_image
       env:
         VERSION: ${{ steps.get_version.outputs.VERSION }}
       run: |
         echo "Checking if image exists: ${{ env.DOCKER_REGISTRY }}/${{ env.SERVIZIO_OC }}:${VERSION}"
-        
+
         # Query DockerHub API to check if tag exists
         HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" \
           "https://hub.docker.com/v2/repositories/${{ env.DOCKER_REGISTRY }}/${{ env.SERVIZIO_OC }}/tags/${VERSION}/")
-        
+
         if [ "$HTTP_CODE" == "200" ]; then
           echo "Image already exists on DockerHub"
           echo "IMAGE_EXISTS=true" >> $GITHUB_OUTPUT
@@ -51,38 +58,38 @@ jobs:
           echo "Image not found on DockerHub, will build new one"
           echo "IMAGE_EXISTS=false" >> $GITHUB_OUTPUT
         fi
-    
+
     - name: Set up Docker Buildx
       if: steps.check_image.outputs.IMAGE_EXISTS == 'false'
-      uses: docker/setup-buildx-action@v3
-    
+      uses: docker/setup-buildx-action@4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd # v4.0.0
+
     - name: Login to DockerHub
       if: steps.check_image.outputs.IMAGE_EXISTS == 'false'
-      uses: docker/login-action@v3
+      uses: docker/login-action@4907a6ddec9925e35a0a9e82d7399ccc52663121 # v4.1.0
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-    
+
     - name: Build and push Docker image
       if: steps.check_image.outputs.IMAGE_EXISTS == 'false'
       env:
         VERSION: ${{ steps.get_version.outputs.VERSION }}
       run: |
         echo "Building image: ${{ env.DOCKER_REGISTRY }}/${{ env.SERVIZIO_OC }}:${VERSION}"
-        
+
         # Build image with no cache
         docker build --no-cache -t ${{ env.DOCKER_REGISTRY }}/${{ env.SERVIZIO_OC }}:${VERSION} .
         sleep 1
-        
+
         # Tag image
         docker tag ${{ env.DOCKER_REGISTRY }}/${{ env.SERVIZIO_OC }}:${VERSION} ${{ env.DOCKER_REGISTRY }}/${{ env.SERVIZIO_OC }}:${VERSION}
         sleep 1
-        
+
         # Push to registry
         echo "Pushing image to DockerHub..."
         docker push ${{ env.DOCKER_REGISTRY }}/${{ env.SERVIZIO_OC }}:${VERSION}
         sleep 1
-        
+
         # Check result
         if [ $? == 0 ]; then
           echo "ALL DONE !"
@@ -90,16 +97,16 @@ jobs:
           echo "NO NO NOOOOOOO !"
           exit 1
         fi
-    
+
     - name: Build summary
       run: |
         VERSION="${{ steps.get_version.outputs.VERSION }}"
         IMAGE_EXISTS="${{ steps.check_image.outputs.IMAGE_EXISTS }}"
-        
+
         echo "Build Summary:"
         echo "Version: ${VERSION}"
         echo "Image: ${{ env.DOCKER_REGISTRY }}/${{ env.SERVIZIO_OC }}:${VERSION}"
-        
+
         if [ "$IMAGE_EXISTS" == "true" ]; then
           echo "Status: Image already exists, skipped build"
         else

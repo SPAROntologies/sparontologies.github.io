@@ -7,30 +7,32 @@ ENV BASE_URL="www.sparontologies.net"
 
 # Ensure Python output is unbuffered
 ENV PYTHONUNBUFFERED=1
-# Install system dependencies required for Python package compilation
-# We clean up apt cache after installation to reduce image size
+
+# Install system dependencies + uv
 RUN apt-get update && \
     apt-get install -y \
     git \
-    curl \
-    ca-certificates \
     python3-dev \
-    build-essential
+    build-essential \
+    curl && \
+    curl -LsSf https://astral.sh/uv/install.sh | sh && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-# Install uv for dependency management
-ADD https://astral.sh/uv/install.sh /uv-installer.sh
-RUN sh /uv-installer.sh && rm /uv-installer.sh
+# Make uv available in PATH
 ENV PATH="/root/.local/bin:$PATH"
 
 # Set the working directory for our application
 WORKDIR /website
 
-# Copy the application code from the repository to the container
-# The code is already present in the repo, no need to git clone
-COPY . .
+# Copy dependency files first for better Docker layer caching
+COPY pyproject.toml uv.lock README.md ./
 
-# Install Python dependencies using uv
-RUN uv sync --frozen --no-dev
+# Install exact lockfile versions; --locked fails the build if uv.lock is out of sync with pyproject.toml
+RUN uv sync --locked --no-dev --no-install-project
+
+# Copy application code
+COPY . .
 
 # Expose the port that our service will listen on
 EXPOSE 8080
