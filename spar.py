@@ -106,12 +106,18 @@ class Home:
 class Static:
     def GET(self, name):
         """Serve static files"""
-        static_dir = "static"
-        file_path = os.path.join(static_dir, name)
-        
-        if not os.path.exists(file_path):
+        static_dir = os.path.realpath("static")
+
+        # Resolve the requested path and refuse anything that ends up outside
+        # the static folder (e.g. /static/../conf.json) or that is not a file
+        try:
+            file_path = os.path.realpath(os.path.join(static_dir, name))
+            inside = os.path.commonpath([static_dir, file_path]) == static_dir
+        except ValueError:
+            inside = False
+        if not inside or not os.path.isfile(file_path):
             raise web.notfound()
-        
+
         # Content types
         ext = os.path.splitext(name)[1]
         content_types = {
@@ -127,9 +133,9 @@ class Static:
             '.woff2': 'font/woff2',
             '.ttf': 'font/ttf',
         }
-        
+
         web.header('Content-Type', content_types.get(ext, 'application/octet-stream'))
-        
+
         with open(file_path, 'rb') as f:
             return f.read()
 
